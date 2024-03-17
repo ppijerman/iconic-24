@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
+import { IconicHeader } from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+        <link rel="stylesheet" href="https://use.typekit.net/vtv2fxa.css"/>
+      </Head>
+      <body className={inter.className}>
+        <IconicHeader />
+        {children}
+      </body>
     </html>
   );
 }

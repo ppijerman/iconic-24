@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -24,6 +24,10 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        primary2: "hsl(var(--primary2))",
+        primary3: "hsl(var(--primary3))",
+        accent2: "hsl(var(--accent-secondary))",
+        secondary2: "hsl(var(--secondary2))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -52,14 +56,6 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // New colors added below
-        base: "hsl(154, 67%, 18%)",
-        orange: "hsl(27, 98%, 48%)",
-        light: "hsl(60, 81%, 83%)",
-        green: "hsl(67, 46%, 39%)",
-        blue: "hsl(210, 86%, 56%)",
-        brown: "hsl(27, 65%, 24%)",
-        "green-2": "hsl(146, 42%, 52%)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,9 +76,12 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        'utile-display': ['"utile-display"', 'sans-serif'],
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
-};
+} satisfies Config;
 
 export default config;
