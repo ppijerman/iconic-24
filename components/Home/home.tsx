@@ -16,20 +16,30 @@ export function HomePage() {
           </h2>
         </div>
         <div className="flex flex-row gap-10">
-          <Button variant="secondary" className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg">
+          <Button
+            variant="secondary"
+            className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg"
+          >
             Register Now
           </Button>
-          <Button variant="secondary" className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg">
+          <Button
+            variant="secondary"
+            className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg"
+          >
             Submit Your Abstract
           </Button>
         </div>
       </div>
-      <div className="flex flex-row mt-10 items-center justify-center gap-20 bg-accent2 w-fit p-5 rounded-md text-primary">
+      <div className="flex flex-row mt-10 items-center justify-center gap-20 w-fit py-5 rounded-md text-secondary">
         <div className="flex flex-col gap-2 text-2xl">
           <h3>9.00 AM - 5.00 PM</h3>
           <h3>August 27th - August 28th 2024</h3>
         </div>
-        <h2 className="text-3xl font-semibold">Braunschweig, Germany</h2>
+        <div>
+          <h2 className="text-3xl font-semibold hover:bg-secondary hover:text-primary transition p-2 cursor-pointer">
+            Braunschweig, Germany
+          </h2>
+        </div>
       </div>
     </main>
   );

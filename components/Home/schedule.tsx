@@ -20,7 +20,8 @@ export function IconicSchedule() {
   ];
 
   return (
-    <section className="min-h-screen bg-accent flex flex-col justify-center text-white">
+    <section className="min-h-screen bg-accent2 flex flex-col items-center justify-center text-white">
+      <h1 className="text-6xl mb-10">Schedule</h1>
       <div className="flex flex-row gap-10 justify-center w-full">
         <div className="flex flex-col">
           <h1 className="text-5xl font-bold">ABSTRACT SUBMISSION DEADLINES</h1>

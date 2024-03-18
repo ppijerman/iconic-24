@@ -26,7 +26,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/vtv2fxa.css" />
       </head>
       <body className={`${inter.className}`}>
-        <IconicHeader />
+        {/* <IconicHeader /> */}
         {children}
       </body>
     </html>
