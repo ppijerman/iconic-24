@@ -12,7 +12,7 @@ export default function Page() {
         <p className="text-2xl">
           Join us to be at the{" "}
           <span className="font-bold">forefront of change</span>, accelerating
-          our nation's path towards a{" "}
+          our nation&apos;s path towards a{" "}
           <span className="font-bold">resilient</span> and{" "}
           <span className="font-bold">sustainable</span> green transition.
         </p>
@@ -64,8 +64,8 @@ export default function Page() {
         <div className="font-bold pt-20 w-[80%]">
           <h1 className="text-4xl">INTRODUCING OUR THEME:</h1>
           <h1 className="text-7xl">Low-Carbon Development</h1>
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-10 py-10">
-            <div className="flex flex-col items-center justify-center w-[85%]">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-10 py-10 w-full">
+            <div className="flex flex-col items-center justify-center w-full text-center">
               <h1 className="text-4xl py-3 min-h-[8rem] text-center">
                 Addressing Climate Urgency
               </h1>
@@ -75,8 +75,8 @@ export default function Page() {
                 natural disasters.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center w-[85%]">
-              <h1 className="text-4xl py-3 min-h-[8rem] text-center">
+            <div className="flex flex-col items-center justify-center w-full text-center">
+              <h1 className="text-4xl py-3 min-h-[8rem]">
                 Sustainable Economic Growth
               </h1>
               <p className="">
@@ -85,7 +85,7 @@ export default function Page() {
                 renewable energy.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center w-[85%]">
+            <div className="flex flex-col items-center justify-center w-full text-center">
               <h1 className="text-4xl py-3 min-h-[8rem] text-center">
                 Global Responsibility
               </h1>
