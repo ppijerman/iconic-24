@@ -16,7 +16,7 @@ export function IconicHeader() {
               <li>Home</li>
             </Link>
 
-            <Link href="/about">
+            <Link href="/what-is-iconic">
               <li>What is ICONIC?</li>
             </Link>
             <Link href="/speakers">
