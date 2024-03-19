@@ -1,44 +1,41 @@
 import iconicMainLogo from "@/assets/logo-text-main.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function HomePage() {
   return (
     <main className="min-h-screen flex flex-col justify-center px-10">
-      <div className="w-3/4">
-        <Image src={iconicMainLogo} alt="Iconic Logo" />
-      </div>
-      <div className="flex flex-row justify-between items-center w-[90%]">
+      <div className="flex flex-col w-full justify-center items-center">
+        <div className="">
+          <h1 className="text-7xl">ICONIC 2024</h1>
+        </div>
         <div className="flex flex-col py-2">
-          <h1 className="text-6xl font-bold">CONFERENCE 2024</h1>
-          <h2 className="text-3xl font-semibold mt-4">
-            Transformation for low-carbon development
+          <h2 className="text-4xl font-semibold mt-4 mr-auto pb-5">
+            Rethinking Development: Low Carbon, High Impact
           </h2>
         </div>
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-10 w-full">
           <Button
             variant="secondary"
             className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg"
           >
             Register Now
           </Button>
-          <Button
-            variant="secondary"
-            className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg"
-          >
-            Submit Your Abstract
-          </Button>
+          <Link href="/submit-abstract">
+            <Button
+              variant="secondary"
+              className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg"
+            >
+              Submit Your Abstract
+            </Button>
+          </Link>
         </div>
       </div>
-      <div className="flex flex-row mt-10 items-center justify-center gap-20 w-fit py-5 rounded-md text-secondary">
-        <div className="flex flex-col gap-2 text-2xl">
-          <h3>9.00 AM - 5.00 PM</h3>
-          <h3>August 27th - August 28th 2024</h3>
-        </div>
-        <div>
-          <h2 className="text-3xl font-semibold hover:bg-secondary hover:text-primary transition p-2 cursor-pointer">
-            Braunschweig, Germany
-          </h2>
+      <div className="flex flex-row mt-10 items-center justify-center w-full text-secondary">
+        <div className="text-4xl w-full flex gap-5 items-center justify-center font-semibold">
+          <h2>BRAUNSCHWEIG</h2>
+          <h2>27 - 28 AUGUST 2024</h2>
         </div>
       </div>
     </main>

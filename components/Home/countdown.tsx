@@ -34,20 +34,20 @@ export function Countdown() {
   }, [eventDate]);
 
   return (
-    <section className="flex flex-col justify-center items-center text-primary bg-secondary min-h-[20rem]">
+    <section className="flex flex-col justify-center items-center text-primary bg-accent2 min-h-[30rem] py-5">
       <div className="flex flex-col items-center space-y-3 text-4xl text-center">
-        <h2 className="text-accent">READY FOR</h2>
-        <h2 className="text-7xl font-semibold tracking-wide">
+        <h2 className="text-primary">READY FOR</h2>
+        <h2 className="text-5xl md:text-7xl font-semibold tracking-wide">
           LOW CARBON TRANSFORMATION
         </h2>
       </div>
-      <div className="grid grid-cols-4 items-center w-1/4 space-x-4 mt-10">
+      <div className="grid grid-cols-4 items-center w-full sm:w-full lg:w-1/2 mt-10">
         {Object.entries(countdown).map(([key, value]) => (
           <div key={key} className="flex flex-col items-center space-y-1">
-            <strong aria-label={key} className="text-4xl font-bold">
+            <strong aria-label={key} className="text-5xl font-bold">
               {value}
             </strong>
-            <span className="text-lg font-medium">{key.toUpperCase()}</span>
+            <span className="text-3xl font-medium">{key.toUpperCase()}</span>
           </div>
         ))}
       </div>

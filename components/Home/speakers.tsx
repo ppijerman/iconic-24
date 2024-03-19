@@ -34,8 +34,8 @@ export function SpeakersSection() {
   return (
     <section className="h-[600px] bg-white flex flex-col items-center justify-center">
       <h1 className="text-5xl font-bold">Speakers 2024</h1>
-      <div className="flex items-center justify-center">
-        <Carousel className="w-full py-10 px-5">
+      <div className="flex items-center justify-center px-10 w-[90%]">
+        <Carousel className="w-full py-10 px-5 cursor-grab">
           <CarouselContent className="">
             {speakers.map((speaker, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
