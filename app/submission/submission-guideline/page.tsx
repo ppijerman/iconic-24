@@ -41,23 +41,29 @@ export default function Page() {
 
   return (
     <main className="flex flex-col bg-secondary text-primary items-center">
-      <div className="w-[80%] text-2xl flex flex-col items-center justify-center">
+      <div className="w-[80%] text-2xl flex flex-col items-center justify-center text-justify">
         <div className="py-10 flex flex-col items-center justify-center w-full border-b-2">
-          <div className="flex flex-row gap-10 items-center justify-center">
-            <h1 className="text-3xl md:text-6xl font-bold">
+          <div className="flex flex-row gap-10 items-center justify-center py-10">
+            <h1 className="text-5xl md:text-6xl font-bold">
               Abstract Submission
             </h1>
           </div>
 
-          <div className="py-10 my-10 h-[300px] md:h-[100px] flex flex-row items-center gap-5 justify-center bg-accent w-full text-white  rounded-md">
-            <Image src={dico} alt="dico logo iconic" width={150} height={50} />
-            <h1 className="text-2xl">
+          <div className="py-10 my-10 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
+            <Image
+              src={dico}
+              alt="dico logo iconic"
+              className="w-[100px] md:[w-200px]"
+            />
+            <h1 className="text-lg md:text-2xl text-center">
               Please read the{" "}
-              <span className="text-3xl font-bold">submission guidelines</span>{" "}
+              <span className="text-xl md:text-3xl font-bold">
+                submission guidelines
+              </span>{" "}
               below for the abstract submission.
             </h1>
           </div>
-          <div className="flex flex-col py-10 w-full border-b-2 gap-10">
+          <div className="flex flex-col py-10 w-full border-b-2 gap-10 text-center">
             <h1 className="text-4xl font-semibold w-full pt-14 mb-5 text-center">
               Registration Guidelines
             </h1>
@@ -66,8 +72,13 @@ export default function Page() {
               author via the Oxford Portals. If not, please register as an
               author below.
             </p>
-            <Button className="w-full text-primary bg-accent hover:bg-primary hover:text-secondary py-8 px-12 text-3xl">
-              Register as an Author
+            <Button
+              asChild
+              className="w-full text-primary bg-accent hover:bg-primary hover:text-secondary p-5 py-10 md:py-8 md:px-12 text-2xl md:text-3xl"
+            >
+              <Link href="https://app.oxfordabstracts.com/">
+                Register as an Author
+              </Link>
             </Button>
           </div>
           <h1 className="text-4xl font-semibold w-full pt-14 mb-5 text-center">
@@ -75,14 +86,14 @@ export default function Page() {
           </h1>
           {guidelines.map((guideline, index) => (
             <div key={index} className="w-full">
-              <h2 className="text-2xl font-semibold pt-10 pb-3">
+              <h2 className="text-3xl font-semibold pt-10 pb-3">
                 {`${index + 1}. ${guideline.title}`}
               </h2>
-              <p className="text-lg">{guideline.description}</p>
+              <p className="text-xl">{guideline.description}</p>
             </div>
           ))}
           <div className="w-full">
-            <p className="text-lg py-3">
+            <p className="text-xl py-3">
               Abstracts should be written in{" "}
               <span className="font-bold">English</span>, including oral
               presentations and posters. Following the introduction (which does
@@ -90,16 +101,16 @@ export default function Page() {
               Results, and Conclusions—should be presented in separate
               paragraphs.
             </p>
-            <p className="py-3 text-lg">
+            <p className="py-3 text-xl">
               Abbreviations of materials or other measured quantities which are
               of major importance to the abstract’s content, or abbreviations
               which are familiar to few experts only, must be explained.
             </p>
-            <p className="py-3 text-left text-lg">
+            <p className="py-3 text-left text-xl">
               Keywords should not exceed approximately 5 words, separated by
               semicolons.
             </p>
-            <p className="py-3 text-lg">
+            <p className="py-3 text-xl">
               Submitted abstracts will be assessed by the chairman based on
               expert opinion for acceptance. Authors will be notified promptly
               if revisions are necessary or if their submissions cannot be
@@ -111,15 +122,15 @@ export default function Page() {
             <h1 className="text-2xl font-semibold pt-10 pb-4">
               4. Focus of Study
             </h1>
-            <p className="text-lg">
+            <p className="text-xl">
               Choose the relevant focus of study for your abstract from the
               following options:
             </p>
-            <ul className="list-decimal list-inside py-2 text-lg">
+            <ul className="list-decimal list-inside py-2 text-xl">
               <li>Economic and Social Implications of LCD</li>
               <li>Technological Innovation for LCD</li>
               <li>
-                Policital Economy of LCD within Global North and Global South
+                Political Economy of LCD within Global North and Global South
                 Dynamics
               </li>
               <li>LCD of the Built Environment</li>
@@ -129,7 +140,7 @@ export default function Page() {
             <h1 className="text-2xl font-semibold pt-10 pb-4">
               5. Type of Presentation
             </h1>
-            <p className="text-lg">
+            <p className="text-xl">
               Specify the preferred type of presentation (e.g.,{" "}
               <span className="font-semibold">
                 oral presentation, poster presentation
@@ -145,7 +156,7 @@ export default function Page() {
             <h1 className="text-2xl font-semibold pt-10 pb-4">
               6. Permission of Publication
             </h1>
-            <p className="text-lg">
+            <p className="text-xl">
               By submitting an abstract, authors grant permission for the
               abstract to be published in the conference proceedings.
             </p>
@@ -154,12 +165,32 @@ export default function Page() {
             <h1 className="text-2xl font-semibold pt-10 pb-4">
               7. Approval of Author(s)
             </h1>
-            <p className="text-lg">
+            <p className="text-xl">
               Ensure that all authors have read and approved the final version
               of the abstract before submission.
             </p>
           </div>
-          <div className="w-full"></div>
+          <div className="w-full">
+            <h1 className="text-2xl font-bold pt-10 pb-4">
+              8. Process of Abstract Submission
+            </h1>
+            <p className="text-xl">
+              Abstract submission will be facilitated solely through the Oxford
+              Abstract System. Authors must register as an author via{" "}
+              <span className="text-accent">
+                <a href="https://app.oxfordabstracts.com">Oxford Abstracts</a>
+              </span>{" "}
+              and carefully follow the provided instructions for inputting
+              author details and abstract content. Submit your abstract via the
+              conference&apos;s{" "}
+              <span className="text-accent">
+                <a href="https://app.oxfordabstracts.com/stages/41029/submitter">
+                  online submission portal{" "}
+                </a>
+              </span>{" "}
+              before the deadline.
+            </p>
+          </div>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="items-top flex space-x-2 w-full py-10 justify-center">
@@ -176,7 +207,7 @@ export default function Page() {
               >
                 Agree to the Abstract Submission Guidelines of ICONIC 2024.
               </label>
-              <p className="text-sm w-[70%]">
+              <p className="text-sm w-full md:w-[70%]">
                 By checking this box, I acknowledge that I have read and agree
                 to the Abstract Submission Guidelines of ICONIC 2024. I
                 understand that adherence to these guidelines is mandatory for
@@ -186,12 +217,12 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="h-[200px] flex flex-col w-full items-center justify-center">
+          <div className="h-[200px] flex flex-col w-full items-center justify-center px-4">
             <Button
               variant="outline"
               disabled={!isAgreed}
               type="submit"
-              className="border-none w-full bg-accent hover:bg-primary hover:text-secondary py-8 px-12 text-3xl"
+              className="border-none w-fit md:w-full bg-accent hover:bg-primary hover:text-secondary py-8 px-5 text-2xl md:text-3xl"
             >
               <Link href="https://ppij.org/ICONIC2024SubmissionPortal">
                 Submit Abstract

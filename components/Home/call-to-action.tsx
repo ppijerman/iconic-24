@@ -8,28 +8,16 @@ export function CallToActionRegister() {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen bg-primary text-secondary w-screen">
       <div className="flex flex-col items-center justify-center w-[80%] gap-7 py-10">
-        <Image
-          src={dicoMascot}
-          alt="Dico Mascot"
-          width={200}
-          height={200}
-          className="pb-5"
-        />
+        <Image src={iconicLogo2} alt="iconic Logo 2" width={700} height={500} />
         <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-          <h1 className="text-5xl text-center text-white md:text-6xl font-semibold p-4 bg-accent2 hover:text-accent transition cursor-default">
+          <h1 className="w-full md:w-fit text-3xl text-center text-white md:text-6xl font-semibold p-4 bg-accent2 hover:text-accent transition cursor-default">
             JOIN US.
           </h1>
-          <h1 className="text-5xl text-center md:text-6xl font-semibold p-4 text-primary bg-primary3 hover:text-accent transition cursor-default">
-            SEE THE FUTURE.
+          <h1 className="w-full md:w-fit text-3xl text-center md:text-6xl font-semibold p-4 text-primary bg-primary3 hover:text-accent transition cursor-default">
+            RETHINK DEVELOPMENT.
           </h1>
         </div>
-
-        <Image src={iconicLogo2} alt="iconic Logo 2" width={500} height={500} />
-        <p className="text-2xl md:text-3xl">
-          <span className="text-3xl font-bold text-accent">DICO</span> is
-          waiting for you.
-        </p>
-        <p className="text-lg md:text-xl md:text-center">
+        <p className="text-xl md:text-2xl md:text-center">
           Contribute to our future by submitting your abstract for
           Transformation for Low-Carbon Development.
         </p>

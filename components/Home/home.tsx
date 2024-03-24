@@ -23,8 +23,7 @@ export function HomePage() {
             <Image
               src={iconicMainLogo}
               alt="Iconic Logo"
-              width={1000}
-              height={100}
+              className="w-full md:max-w-[60%]"
             />
           </div>
           <div className="w-full md:w-1/2 py-10">
@@ -35,7 +34,7 @@ export function HomePage() {
           </div>
 
           <div className="flex flex-row mt-5 justify-center items-center w-full text-secondary">
-            <div className="text-2xl w-full flex gap-5 font-semibold">
+            <div className="text-2xl w-full flex flex-col md:flex-row gap-2 md:gap-5 font-semibold">
               <h2 className="font-bold">TBD</h2>
               <h2>6 - 8 September 2024</h2>
             </div>

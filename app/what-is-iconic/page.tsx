@@ -7,28 +7,29 @@ import { Subtopics } from "./subtopics";
 
 import { IconicImages } from "./iconic-images";
 import { Button } from "@/components/ui/button";
+import { FieldOfStudy } from "./field-of-study";
 
 export default function Page() {
   return (
     <main className="flex flex-col items-center">
       <div className="min-h-screen flex flex-col justify-center w-[80%] py-10">
-        <h1 className="font-bold text-4xl md:text-6xl w-full md:leading-tight">
+        <h1 className="font-bold text-4xl md:text-6xl w-full leading-normal md:leading-snug">
           Empowering Global Progress:{" "}
           <span className="bg-accent px-3 text-white">ICONIC 2024</span> –
           Bridging Indonesia and Germany Through Academic Excellence
         </h1>
-        <p className="text-2xl pt-16 leading-relaxed">
+        <p className="text-2xl pt-16 pb-10 leading-relaxed">
           Be at the <span className="font-bold">forefront of change</span>,
           accelerating our nation&apos;s path towards a{" "}
           <span className="font-bold">resilient</span> and{" "}
           <span className="font-bold">sustainable</span> green transition.
         </p>
-        <Button className="bg-accent2 text-white text-2xl md:text-4xl p-5 md:p-10 w-1/2 mx-auto">
-          Join Us
+        <Button className="bg-accent2 shadow-lg hover:bg-accent text-white text-2xl md:text-4xl px-5 py-12 md:p-10 w-full max-w-[500px] mx-auto md:mx-0">
+          JOIN US.
         </Button>
       </div>
       <div className="flex flex-col w-full min-h-screen bg-white items-center justify-center">
-        <h1 className="text-center text-4xl md:text-5xl lg:text-7xl pt-10 px-5 font-bold">
+        <h1 className="text-center text-4xl md:text-5xl lg:text-7xl pt-16 px-5 font-bold">
           What is ICONIC?
         </h1>
         <div className="flex flex-col justify-center items-center w-full lg:w-[80%]">
@@ -83,62 +84,39 @@ export default function Page() {
       </div>
 
       <div className="bg-secondary flex min-h-screen w-full text-primary flex-col items-center">
-        <div className="font-bold pt-20 w-[80%]">
-          <h1 className="text-4xl">INTRODUCING OUR THEME THIS YEAR:</h1>
-          <div className="flex py-5 flex-row w-full items-center gap-6">
+        <div className="font-bold pt-20 w-[80%] flex flex-col items-center justify-center">
+          <h1 className="text-3xl md:text-4xl">
+            INTRODUCING OUR THEME THIS YEAR:
+          </h1>
+          <div className="flex py-5 px-5 flex-row w-full items-center justify-center gap-6">
             <Image
               src={lowCarbon}
               alt="Iconic Logo"
               className="md:w-[100px] w-[60px]"
             />
-            <h1 className="text-5xl md:text-7xl">Low-Carbon Development</h1>
-          </div>
-
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-10 py-10 w-full">
-            <div className="flex flex-col items-center justify-center w-full text-center p-3 shadow-lg">
-              <h1 className="text-4xl py-3 min-h-[8rem] text-center">
-                Addressing Climate Urgency
-              </h1>
-              <p>
-                Low carbon development mitigates the impacts of climate change,
-                crucial for Indonesia’s resilience against rising sea levels and
-                natural disasters.
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center w-full text-center p-3 shadow-lg">
-              <h1 className="text-4xl py-3 min-h-[8rem]">
-                Sustainable Economic Growth
-              </h1>
-              <p className="">
-                Transitioning to low carbon pathways ensures long-term economic
-                stability by reducing dependency on fossil fuels and promoting
-                renewable energy.
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center w-full text-center p-3 shadow-lg">
-              <h1 className="text-4xl py-3 min-h-[8rem] text-center">
-                Global Responsibility
-              </h1>
-              <p className="">
-                Embracing low carbon development aligns Indonesia with
-                international commitments, contributing to global efforts in
-                combating climate change.
-              </p>
-            </div>
+            <h1 className="text-2xl md:text-5xl lg:text-7xl">
+              Transformation for Low-Carbon Development
+            </h1>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center w-full bg-secondary text-primary">
-          <h1 className="mb-15 text-6xl relative top-8 font-bold shadow-lg p-5 bg-primary text-secondary">
-            SUBTOPICS
+          <h1 className="mb-15 text-3xl md:text-6xl flex md:relative md:top-8 font-bold shadow-lg p-5 bg-primary text-secondary">
+            FOCUS OF STUDY
           </h1>
           <Subtopics />
         </div>
+        <FieldOfStudy />
       </div>
       <div className="bg-secondary text-primary w-full min-h-screen flex flex-col items-center justify-center">
-        <h1 className="text-5xl">Submit your Abstract here!</h1>
-        <div>
-          <p>Contribute</p>
-        </div>
+        <h1 className="text-4xl p-5 bg-accent transition hover:bg-primary2 md:text-5xl text-center">
+          Submit your Abstract.
+        </h1>
+        <h2 className="text-3xl md:text-4xl mt-10">Questions?</h2>
+        <h3>
+          <a href="mailto:info@iconic.ppijerman.org">
+            info@iconic.ppijerman.org
+          </a>
+        </h3>
       </div>
     </main>
   );

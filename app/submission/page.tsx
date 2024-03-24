@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export default function Page() {
   return (
@@ -10,9 +11,9 @@ export default function Page() {
           </h1>
           <p className="mx-auto max-w-[600px] text-secondary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-medium">
             Thank you for your interest in submitting an abstract for the
-            upcoming ICONIC Conference.
+            upcoming ICONIC 2024 Conference!
           </p>
-          <h1 className="text-2xl font-bold pt-10 pb-4">
+          <h1 className="text-2xl font-bold pt-10">
             Process of Abstract Submission
           </h1>
           <p className="mx-auto max-w-[600px] text-secondary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-medium">
@@ -29,16 +30,20 @@ export default function Page() {
                 online submission portal{" "}
               </a>
             </span>{" "}
-            before the deadline. Please follow the guidelines below to ensure
-            your submission is complete and to facilitate the review progress.
+            before the deadline.
+          </p>
+          <p className="mx-auto max-w-[600px] text-secondary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-medium pt-10">
+            Please follow the guidelines below to ensure your submission is
+            complete and to facilitate the review progress.
           </p>
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
           <Link
-            className="inline-flex h-10 items-center justify-center rounded-md  text-white bg-primary3  px-8 text-md font-medium shadow-sm transition-colors hover:bg-accent "
+            className="inline-flex items-center justify-center rounded-md text-white bg-accent px-8 text-2xl font-medium shadow-sm transition-colors hover:bg-primary2 py-3"
             href="/submission/submission-guideline"
           >
             Abstract Guideline
+            <ArrowTopRightIcon className="w-6 h-6 ml-2" />
           </Link>
         </div>
       </div>
