@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 import { IconicHeader } from "@/components/header";
+import { IconicFooter } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   description: "International Conference",
   icons: {
     icon: "/icon.png",
-    apple: '/apple-touch-icon.png',
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <IconicHeader />
         {children}
+        <IconicFooter />
       </body>
     </html>
   );

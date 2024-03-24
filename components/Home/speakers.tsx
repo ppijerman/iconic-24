@@ -15,6 +15,7 @@ import {
 import imgPlaceholder from "@/assets/img-round-placeholder.png";
 import Image from "next/image";
 import { DoubleArrowRightIcon } from "@radix-ui/react-icons";
+import { Button } from "../ui/button";
 
 export function SpeakersSection() {
   const speakers = [
@@ -32,14 +33,14 @@ export function SpeakersSection() {
   ];
 
   return (
-    <section className="h-[600px] bg-white flex flex-col items-center justify-center">
+    <section className="h-[850px] bg-white flex flex-col items-center justify-center py-10">
       <h1 className="text-5xl font-bold">Speakers 2024</h1>
       <div className="flex items-center justify-center px-10 w-[90%]">
         <Carousel className="w-full py-10 px-5 cursor-grab">
           <CarouselContent className="">
             {speakers.map((speaker, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <Card className="group bg-inherit border-none shadow-none hover:bg-white transition">
+                <Card className="group bg-inherit border-none shadow-none text-secondary hover:bg-white transition">
                   <CardHeader className="text-center text-2xl font-semibold">
                     <h2 className="group-hover:text-accent transition">
                       {speaker.name.toUpperCase()}
@@ -50,8 +51,8 @@ export function SpeakersSection() {
                       <Image
                         src={imgPlaceholder}
                         alt="Speaker"
-                        width={128}
-                        height={128}
+                        width={256}
+                        height={256}
                       />
                       <p className="mt-10 text-2xl">{speaker.title}</p>
                     </div>
@@ -70,10 +71,9 @@ export function SpeakersSection() {
           />
         </Carousel>
       </div>
-      <div className="flex flex-row items-center gap-5 group hover:text-accent2">
-        <h2 className="text-xl">See Full List Here</h2>
-        <DoubleArrowRightIcon className="w-6 h-6 group-hover:opacity-100 opacity-0 transition" />
-      </div>
+      <Button variant="secondary" className="p-10 text-3xl font-bold text-white hover:bg-accent shadow-lg">
+        See Full Speakers
+      </Button>
     </section>
   );
 }

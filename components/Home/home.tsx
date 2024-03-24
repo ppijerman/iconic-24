@@ -2,40 +2,44 @@ import iconicMainLogo from "@/assets/logo-text-main.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import PPIJLogo from "@/assets/PPIJ_Logo_Color.png";
 
 export function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col justify-center px-10">
-      <div className="flex flex-col w-full justify-center items-center">
-        <div className="">
-          <h1 className="text-7xl">ICONIC 2024</h1>
-        </div>
-        <div className="flex flex-col py-2">
-          <h2 className="text-4xl font-semibold mt-4 mr-auto pb-5">
-            Rethinking Development: Low Carbon, High Impact
-          </h2>
-        </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-10 w-full">
-          <Button
-            variant="secondary"
-            className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg"
-          >
-            Register Now
-          </Button>
-          <Link href="/submit-abstract">
-            <Button
-              variant="secondary"
-              className="p-8 text-4xl font-semibold hover:bg-accent shadow-lg"
-            >
-              Submit Your Abstract
-            </Button>
-          </Link>
-        </div>
-      </div>
-      <div className="flex flex-row mt-10 items-center justify-center w-full text-secondary">
-        <div className="text-4xl w-full flex gap-5 items-center justify-center font-semibold">
-          <h2>BRAUNSCHWEIG</h2>
-          <h2>27 - 28 AUGUST 2024</h2>
+    <main
+      className="min-h-screen flex flex-col justify-center"
+      style={{
+        backgroundImage: "url('/past-iconic-6.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div
+        className="min-h-screen w-screen flex flex-col justify-center px-10"
+        style={{ backgroundColor: "rgba(247, 247, 177, 0.7)" }}
+      >
+        <div className="flex flex-col w-fit gap-5 justify-center p-5 rounded-xl">
+          <div className="drop-shadow-xl">
+            <Image
+              src={iconicMainLogo}
+              alt="Iconic Logo"
+              width={1000}
+              height={100}
+            />
+          </div>
+          <div className="w-1/2 py-10">
+            <h1 className="text-5xl font-bold leading-tight">
+              Rethinking Development:{" "}
+              <span className="bg-primary2 p-1">Low Carbon</span>, High Impact
+            </h1>
+          </div>
+
+          <div className="flex flex-row mt-5 justify-center items-center w-full text-secondary">
+            <div className="text-4xl w-full flex gap-5 font-semibold">
+              <h2 className="font-bold">TBD</h2>
+              <h2>5 - 6 September 2024</h2>
+            </div>
+          </div>
         </div>
       </div>
     </main>

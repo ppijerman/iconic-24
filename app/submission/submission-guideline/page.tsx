@@ -1,8 +1,26 @@
+"use client";
+
 import dico from "@/assets/dico.png";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Page() {
+  const [isAgreed, setIsAgreed] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsAgreed(!isAgreed);
+  };
+
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    if (isAgreed) {
+      // Navigating to the link when the form is submitted and the checkbox is checked
+      window.open("https://ppij.org/ICONIC2024SubmissionPortal", "_blank");
+    }
+  };
   const guidelines = [
     {
       title: "Abstract Title",
@@ -22,17 +40,16 @@ export default function Page() {
   ];
 
   return (
-    <main className="min-h-screen bg-secondary flex flex-col items-center justify-center text-primary w-full">
+    <main className="flex flex-col bg-secondary text-primary items-center">
       <div className="w-[80%] text-2xl flex flex-col items-center justify-center">
-        <div className="py-10 flex flex-col items-center justify-center w-full">
+        <div className="py-10 flex flex-col items-center justify-center w-full border-b-2">
           <div className="flex flex-row gap-10 items-center justify-center">
-            <h1 className="text-5xl md:text-7xl font-bold">Abstract Submission</h1>
+            <h1 className="text-3xl md:text-6xl font-bold">
+              Abstract Submission
+            </h1>
           </div>
 
-          <h1 className="text-4xl font-semibold w-full pt-10 mb-5">
-            Submission Guidelines
-          </h1>
-          <div className="py-10 my-10 h-[300px] md:h-[100px] flex flex-row items-center gap-5 justify-center bg-accent2 w-full text-white  rounded-md">
+          <div className="py-10 my-10 h-[300px] md:h-[100px] flex flex-row items-center gap-5 justify-center bg-accent w-full text-white  rounded-md">
             <Image src={dico} alt="dico logo iconic" width={150} height={50} />
             <h1 className="text-2xl">
               Please read the{" "}
@@ -40,16 +57,32 @@ export default function Page() {
               below for the abstract submission.
             </h1>
           </div>
-          {guidelines.map((guideline) => (
-            <div key={guideline.title} className="w-full">
+          <div className="flex flex-col py-10 w-full border-b-2 gap-10">
+            <h1 className="text-4xl font-semibold w-full pt-14 mb-5 text-center">
+              Registration Guidelines
+            </h1>
+            <p className="w-full">
+              Before proceeding, make sure you are already registered as an
+              author via the Oxford Portals. If not, please register as an
+              author below.
+            </p>
+            <Button className="w-full text-primary bg-accent hover:bg-primary hover:text-secondary py-8 px-12 text-3xl">
+              Register as an Author
+            </Button>
+          </div>
+          <h1 className="text-4xl font-semibold w-full pt-14 mb-5 text-center">
+            Submission Guidelines
+          </h1>
+          {guidelines.map((guideline, index) => (
+            <div key={index} className="w-full">
               <h2 className="text-2xl font-semibold pt-10 pb-3">
-                {guideline.title}
+                {`${index + 1}. ${guideline.title}`}
               </h2>
-              <p className="text-xl">{guideline.description}</p>
+              <p className="text-lg">{guideline.description}</p>
             </div>
           ))}
           <div className="w-full">
-            <p className="text-xl py-3">
+            <p className="text-lg py-3">
               Abstracts should be written in{" "}
               <span className="font-bold">English</span>, including oral
               presentations and posters. Following the introduction (which does
@@ -57,16 +90,16 @@ export default function Page() {
               Results, and Conclusions—should be presented in separate
               paragraphs.
             </p>
-            <p className="py-3 text-xl">
+            <p className="py-3 text-lg">
               Abbreviations of materials or other measured quantities which are
               of major importance to the abstract’s content, or abbreviations
               which are familiar to few experts only, must be explained.
             </p>
-            <p className="py-3 text-left text-xl">
+            <p className="py-3 text-left text-lg">
               Keywords should not exceed approximately 5 words, separated by
               semicolons.
             </p>
-            <p className="py-3 text-xl">
+            <p className="py-3 text-lg">
               Submitted abstracts will be assessed by the chairman based on
               expert opinion for acceptance. Authors will be notified promptly
               if revisions are necessary or if their submissions cannot be
@@ -76,13 +109,13 @@ export default function Page() {
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              Focus of Study
+              4. Focus of Study
             </h1>
-            <p className="text-xl">
+            <p className="text-lg">
               Choose the relevant focus of study for your abstract from the
               following options:
             </p>
-            <ul className="list-decimal list-inside py-2 text-xl">
+            <ul className="list-decimal list-inside py-2 text-lg">
               <li>Economic and Social Implications of LCD</li>
               <li>Technological Innovation for LCD</li>
               <li>
@@ -94,9 +127,9 @@ export default function Page() {
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              Type of Presentation
+              5. Type of Presentation
             </h1>
-            <p className="text-xl">
+            <p className="text-lg">
               Specify the preferred type of presentation (e.g.,{" "}
               <span className="font-semibold">
                 oral presentation, poster presentation
@@ -110,53 +143,62 @@ export default function Page() {
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              Permission of Publication
+              6. Permission of Publication
             </h1>
-            <p className="text-xl">
+            <p className="text-lg">
               By submitting an abstract, authors grant permission for the
               abstract to be published in the conference proceedings.
             </p>
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              Approval of Author(s)
+              7. Approval of Author(s)
             </h1>
-            <p className="text-xl">
+            <p className="text-lg">
               Ensure that all authors have read and approved the final version
               of the abstract before submission.
             </p>
           </div>
-          <div className="w-full">
-            <h1 className="text-2xl font-semibold pt-10 pb-4">
-              Process of Abstract Submission
-            </h1>
-            <p className="text-xl">
-              Abstract submission will be facilitated solely through the Oxford
-              Abstract System. Authors must register as an author via{" "}
-              <span className="text-accent">
-                <a href="https://app.oxfordabstracts.com">Oxford Abstracts</a>
-              </span>{" "}
-              and carefully follow the provided instructions for inputting
-              author details and abstract content. Submit your abstract via the
-              conference&apos;s{" "}
-              <span className="text-accent">
-                <a href="https://app.oxfordabstracts.com/stages/41029/submitter">
-                  online submission portal{" "}
-                </a>
-              </span>{" "}
-              before the deadline. Ensure that all guidelines are followed to
-              facilitate the review process.
-            </p>
+          <div className="w-full"></div>
+        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="items-top flex space-x-2 w-full py-10 justify-center">
+            <Checkbox
+              id="terms1"
+              checked={isAgreed}
+              onChange={handleCheckboxChange}
+            />
+            <div className="grid gap-1.5 leading-snug">
+              <label
+                htmlFor="terms1"
+                className="text-sm font-medium leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                onClick={handleCheckboxChange}
+              >
+                Agree to the Abstract Submission Guidelines of ICONIC 2024.
+              </label>
+              <p className="text-sm w-[70%]">
+                By checking this box, I acknowledge that I have read and agree
+                to the Abstract Submission Guidelines of ICONIC 2024. I
+                understand that adherence to these guidelines is mandatory for
+                participation in the conference. I hereby commit to abide by
+                these guidelines, acknowledging that any violation may result in
+                disqualification from the event.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="h-[200px] flex flex-col w-full items-center justify-center">
-          <Button
-            variant="outline"
-            className="ring-2 ring-primary bg-secondary hover:bg-accent2 hover:text-primary py-8 px-12 text-3xl"
-          >
-            Submit
-          </Button>
-        </div>
+          <div className="h-[200px] flex flex-col w-full items-center justify-center">
+            <Button
+              variant="outline"
+              disabled={!isAgreed}
+              type="submit"
+              className="border-none w-full bg-accent hover:bg-primary hover:text-secondary py-8 px-12 text-3xl"
+            >
+              <Link href="https://ppij.org/ICONIC2024SubmissionPortal">
+                Submit Abstract
+              </Link>
+            </Button>
+          </div>
+        </form>
       </div>
     </main>
   );
