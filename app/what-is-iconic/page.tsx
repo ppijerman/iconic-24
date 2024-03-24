@@ -24,8 +24,10 @@ export default function Page() {
           <span className="font-bold">sustainable</span> green transition.
         </p>
       </div>
-      <div className="flex flex-col w-full min-h-screen bg-white items-center">
-        <h1 className="text-7xl pt-10 font-bold">What is ICONIC?</h1>
+      <div className="flex flex-col w-full min-h-screen bg-white items-center justify-center">
+        <h1 className="text-5xl md:text-7xl pt-10 font-bold">
+          What is ICONIC?
+        </h1>
         <div className="flex flex-col justify-center items-center w-full lg:w-[70%]">
           <div className="p-10 flex flex-col gap-6">
             <p className="text-xl text-justify leading-relaxed">
@@ -125,8 +127,10 @@ export default function Page() {
           <Subtopics />
         </div>
       </div>
-      <div className="bg-white w-full h-[200px]"></div>
-      <div>hello</div>
+      <div className="bg-secondary text-primary w-full min-h-screen flex flex-col items-center justify-center">
+        <h1 className="text-5xl">Submit your Abstract here!</h1>
+        <div><p>Contribute</p></div>
+      </div>
     </main>
   );
 }
