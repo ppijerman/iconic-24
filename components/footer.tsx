@@ -9,7 +9,7 @@ import {
 export function IconicFooter() {
   return (
     <footer className="bg-gray-600 text-white min-h-[200px] flex flex-col items-center justify-center">
-      <div className="flex flex-row gap-[4vw] justify-center w-[80%] p-5">
+      <div className="flex flex-row gap-[4vw] justify-center items-center w-[80%] p-5">
         <div className="flex flex-col justify-center items-center w-full">
           <Image src={PPIJLogo} alt="PPIJ Logo" width={500} height={200} />
         </div>
