@@ -3,11 +3,9 @@ import iconicLogo from "@/assets/logo.png";
 import Image from "next/image";
 import lowCarbon from "@/assets/icons/low-carbon.png";
 import { motion } from "framer-motion";
-import { Subtopics } from "../subject/subtopics";
 
 import { IconicImages } from "./iconic-images";
 import { Button } from "@/components/ui/button";
-import { FieldOfStudy } from "../subject/field-of-study";
 
 export default function Page() {
   return (
@@ -78,7 +76,6 @@ export default function Page() {
         </div>
         <div className="w-full flex flex-col items-center justify-center">
           <h1 className="pt-10 pb-20 text-4xl font-semibold">Past ICONIC</h1>
-
           <IconicImages />
         </div>
       </div>

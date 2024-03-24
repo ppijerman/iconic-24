@@ -1,6 +1,6 @@
 "use client";
 
-import iconicLogo from "@/assets/logo-main-pr.png";
+import iconicLogo from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -24,7 +24,7 @@ export function IconicHeader() {
             <Image
               src={iconicLogo}
               alt="Iconic Logo"
-              className="w-[150px] md:w-[300px] hover:bg-gray-300 p-2 transition"
+              className="w-[50px] md:w-[100px] hover:bg-gray-300 p-2 transition"
             />
           </Link>
         </div>
