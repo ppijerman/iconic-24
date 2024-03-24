@@ -1,5 +1,4 @@
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import { Button } from "../ui/button";
+import { motion } from "framer-motion";
 
 export function IconicSchedule() {
   const abstractSubmissionDeadlines = [
@@ -13,7 +12,7 @@ export function IconicSchedule() {
 
   const plenarySessions = [
     {
-      name: "Ministerial Talks and Meet the Industry September 6th, 2024",
+      name: "Ministerial Talks and Meet the Industry",
       date: "September 6th 2024",
     },
     {
@@ -25,11 +24,11 @@ export function IconicSchedule() {
 
   return (
     <section className="p-10 min-h-screen bg-secondary flex flex-col items-center justify-center text-primary w-full">
-      <h1 className="text-4xl md:text-7xl font-bold">Schedule</h1>
+      <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Schedule</h1>
       <div className="flex flex-col lg:flex-row gap-10 justify-center w-[90%] pt-20">
         <div className="flex flex-col w-full">
           <h1 className="text-3xl md:text-5xl font-bold">
-            ABSTRACT SUBMISSION
+            Abstract Submission
           </h1>
           <ul className="text-2xl md:text-3xl">
             {abstractSubmissionDeadlines.map((deadline) => (

@@ -51,7 +51,7 @@ export function IconicFooter() {
         </div>
 
         <div className="flex flex-col gap-3 w-full items border-b-2 md:border-none pb-3">
-          <ul className="flex flex-col gap-3 text-base md:text-lg hover:text-accent transition">
+          <ul className="flex flex-col gap-3 text-base md:text-lg">
             <Link
               href="/terms-and-conditions"
               className="hover:text-accent transition"

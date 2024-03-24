@@ -35,7 +35,9 @@ export function SpeakersSection() {
   return (
     <section className="h-[850px] bg-white flex flex-col items-center justify-center p-10 text-center">
       <h1 className="text-3xl md:text-5xl font-bold">Speakers 2024</h1>
-      <h1 className="text-2xl md:text-5xl mt-14 font-bold text-center">To Be Announced in June 2024</h1>
+      <h1 className="text-2xl md:text-5xl mt-14 font-bold text-center">
+        Expected Speakers to be Announced on April 15th 2024
+      </h1>
       {/* <div className="flex items-center justify-center px-10 w-[90%]">
         <Carousel className="w-full py-10 px-5 cursor-grab">
           <CarouselContent className="">

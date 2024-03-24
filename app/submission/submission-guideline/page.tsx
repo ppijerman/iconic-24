@@ -86,7 +86,7 @@ export default function Page() {
           </h1>
           {guidelines.map((guideline, index) => (
             <div key={index} className="w-full">
-              <h2 className="text-3xl font-semibold pt-10 pb-3">
+              <h2 className="text-2xl font-semibold pt-10 pb-4">
                 {`${index + 1}. ${guideline.title}`}
               </h2>
               <p className="text-xl">{guideline.description}</p>
@@ -120,7 +120,7 @@ export default function Page() {
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              4. Focus of Study
+              4. Focuses of Study
             </h1>
             <p className="text-xl">
               Choose the relevant focus of study for your abstract from the
@@ -135,10 +135,25 @@ export default function Page() {
               </li>
               <li>LCD of the Built Environment</li>
             </ul>
+            <h2 className="text-2xl font-semibold pt-10 pb-4">
+              5. Fields of Study
+            </h2>
+            <ul className="list-decimal list-inside py-2 text-xl">
+              <li>Finance, Economics and Business</li>
+              <li>Social Science</li>
+              <li>Geoscience, Climate and Ecology</li>
+              <li>International Relations</li>
+              <li>Science, Technology, Engineering, and Mathematics (STEM)</li>
+              <li>
+                Infrastructure, Architecture, Land-use and Spatial Planning
+              </li>
+              <li>Agriculture, Livestock, Fishery, and Forestry (ALFF)</li>
+              <li>Public Policy and STS (Science, Technology, and Society)</li>
+            </ul>
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              5. Type of Presentation
+              6. Type of Presentation
             </h1>
             <p className="text-xl">
               Specify the preferred type of presentation (e.g.,{" "}
@@ -154,7 +169,7 @@ export default function Page() {
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              6. Permission of Publication
+              7. Permission of Publication
             </h1>
             <p className="text-xl">
               By submitting an abstract, authors grant permission for the
@@ -163,7 +178,7 @@ export default function Page() {
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-semibold pt-10 pb-4">
-              7. Approval of Author(s)
+              8. Approval of Author(s)
             </h1>
             <p className="text-xl">
               Ensure that all authors have read and approved the final version
@@ -172,7 +187,7 @@ export default function Page() {
           </div>
           <div className="w-full">
             <h1 className="text-2xl font-bold pt-10 pb-4">
-              8. Process of Abstract Submission
+              9. Process of Abstract Submission
             </h1>
             <p className="text-xl">
               Abstract submission will be facilitated solely through the Oxford

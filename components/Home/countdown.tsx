@@ -41,16 +41,16 @@ export function Countdown() {
           Transformation For Low-Carbon Development
         </h2>
       </div>
-      <div className="grid grid-cols:2 md:grid-cols-4 items-center w-full sm:w-full lg:w-1/2 mt-10">
+      <div className="grid grid-cols:2 md:grid-cols-4 items-center w-full sm:w-full lg:w-1/2 py-5">
         {Object.entries(countdown).map(([key, value]) => (
           <div key={key} className="flex flex-col items-center space-y-1">
             <strong
               aria-label={key}
-              className="text-xl md:text-3xl lg:text-5xl font-bold text-accent"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-accent"
             >
               {value}
             </strong>
-            <span className="text-lg md:text-2xl lg:text-3xl font-medium">
+            <span className="text-xl md:text-2xl lg:text-3xl font-medium">
               {key.toUpperCase()}
             </span>
           </div>

@@ -49,7 +49,7 @@ export function Partners() {
                 variant="default"
                 className="text-3xl text-primary bg-accent px-10 py-7 hover:bg-primary2 transition shadow-lg w-[100%]"
               >
-                Help Dico.
+                Collaborate with us.
               </Button>
             </Link>
           </div>

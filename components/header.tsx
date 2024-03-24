@@ -19,12 +19,14 @@ export function IconicHeader() {
   return (
     <header className="flex items-center justify-center bg-white z-50">
       <nav className="flex flex-row justify-between items-center w-[95%] p-2 bg-white">
-        <div className="flex flex-row items-center justify-center gap-2">
-          <Image
-            src={iconicLogo}
-            alt="Iconic Logo"
-            className="w-[150px] md:w-[300px]"
-          />
+        <div className="flex flex-row items-center justify-center">
+          <Link href="/">
+            <Image
+              src={iconicLogo}
+              alt="Iconic Logo"
+              className="w-[150px] md:w-[300px] hover:bg-gray-300 p-2 transition"
+            />
+          </Link>
         </div>
         <div
           className={`${
@@ -34,9 +36,10 @@ export function IconicHeader() {
           <ul className="flex flex-col md:flex-row gap-14 md:gap-[4vw] md:justify-end md:items-center w-full font-semibold h-full">
             {[
               { href: "/", label: "Home" },
-              { href: "/what-is-iconic", label: "What is ICONIC?" },
+              { href: "/about", label: "About Us" },
+              { href: "/subject", label: "ICONIC 2024's Subject" },
               { href: "/speakers", label: "Speakers" },
-              { href: "/submission", label: "Submit now" },
+              { href: "/partnership", label: "Be a partner" },
             ].map((item) => (
               <Link href={item.href} key={item.href}>
                 <li

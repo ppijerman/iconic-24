@@ -3,11 +3,11 @@ import iconicLogo from "@/assets/logo.png";
 import Image from "next/image";
 import lowCarbon from "@/assets/icons/low-carbon.png";
 import { motion } from "framer-motion";
-import { Subtopics } from "./subtopics";
+import { Subtopics } from "../subject/subtopics";
 
 import { IconicImages } from "./iconic-images";
 import { Button } from "@/components/ui/button";
-import { FieldOfStudy } from "./field-of-study";
+import { FieldOfStudy } from "../subject/field-of-study";
 
 export default function Page() {
   return (
@@ -83,30 +83,6 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="bg-secondary flex min-h-screen w-full text-primary flex-col items-center">
-        <div className="font-bold pt-20 w-[80%] flex flex-col items-center justify-center">
-          <h1 className="text-3xl md:text-4xl">
-            INTRODUCING OUR THEME THIS YEAR:
-          </h1>
-          <div className="flex py-5 px-5 flex-row w-full items-center justify-center gap-6">
-            <Image
-              src={lowCarbon}
-              alt="Iconic Logo"
-              className="md:w-[100px] w-[60px]"
-            />
-            <h1 className="text-2xl md:text-5xl lg:text-7xl">
-              Transformation for Low-Carbon Development
-            </h1>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-center w-full bg-secondary text-primary">
-          <h1 className="mb-15 text-3xl md:text-6xl flex md:relative md:top-8 font-bold shadow-lg p-5 bg-primary text-secondary">
-            FOCUS OF STUDY
-          </h1>
-          <Subtopics />
-        </div>
-        <FieldOfStudy />
-      </div>
       <div className="bg-secondary text-primary w-full min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-4xl p-5 bg-accent transition hover:bg-primary2 md:text-5xl text-center">
           Submit your Abstract.

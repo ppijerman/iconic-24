@@ -4,10 +4,10 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 export default function Page() {
   return (
     <div className="w-full min-h-screen flex items-center justify-center space-y-6">
-      <div className="container space-y-4 text-center">
+      <div className="container space-y-4 text-center py-14">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Submit an Abstract
+            How to Submit Your Abstract
           </h1>
           <p className="mx-auto max-w-[600px] text-secondary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-medium">
             Thank you for your interest in submitting an abstract for the

@@ -11,10 +11,7 @@ export default function Introduction() {
           <Image
             src={pastIconic}
             alt="Past Iconic"
-            width={1500}
-            height={400}
-            objectFit="cover"
-            className="w-[1200px] h-[500px] object-cover"
+            className="w-full min-h-screen object-cover"
           />
         </div>
         <div className="flex flex-col items-center justify-center w-full p-10 px-16">
@@ -23,20 +20,30 @@ export default function Introduction() {
           </h2>
           <div className="flex flex-col justify-center gap-[2vw]">
             <p className="text-base md:text-xl text-justify leading-relaxed p-5">
-              <span className="font-bold text-2xl">ICONIC</span> - formed by PPI
-              Jerman (Vereinigung Indonesischer Studenten in Deutschland e.V) in
-              2013 - is a facility for academics, industries, professionals, and
-              government to exchange ideas about Indonesian industry in global
-              competition. This year is the fifth year of the{" "}
-              <span className="font-bold">ICONIC</span> event, which takes the
-              topic of the Transformation for Low - Carbon Development (LCD).
+              <span className="font-bold text-3xl">ICONIC</span>, launched by
+              PPI Jerman (Vereinigung Indonesischer Studenten in Deutschland
+              e.V) in 2014, aims to establish a platform for multi-stakeholder
+              engagement, facilitating knowledge exchange and strategic
+              networking. It serves as a bridge between Indonesia and the global
+              community, particularly Germany, addressing issues pertaining to
+              sustainable development. In 2024, ICONIC will celebrate its 10th
+              anniversary and fifth occurrence, centering on the subject
+              "Transformation for Low-Carbon Development".
             </p>
-            <Button
-              asChild
-              className="p-6 md:p-10 w-fit text-lg md:text-2xl bg-secondary hover:bg-accent text-white font-bold"
-            >
-              <Link href="/what-is-iconic">Learn More About ICONIC</Link>
-            </Button>
+            <p className="text-base md:text-xl text-justify leading-relaxed p-5">
+              Aligned with Indonesia's vision to become an advanced economy by
+              2045 and achieve net-zero emissions by 2060, ICONIC will delve
+              into innovative solutions and ideas to support Indonesia's journey
+              towards these ambitious objectives.
+            </p>
+            <div className="px-5">
+              <Button
+                asChild
+                className="p-6 md:p-10 w-fit text-lg md:text-2xl bg-secondary hover:bg-accent text-white font-bold"
+              >
+                <Link href="/what-is-iconic">Learn More About ICONIC</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
