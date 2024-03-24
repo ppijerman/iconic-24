@@ -19,7 +19,7 @@ export function HomePage() {
         style={{ backgroundColor: "rgba(247, 247, 177, 0.7)" }}
       >
         <div className="flex flex-col w-fit gap-5 justify-center p-5 rounded-xl">
-          <div className="drop-shadow-xl">
+          <div className="">
             <Image
               src={iconicMainLogo}
               alt="Iconic Logo"
@@ -27,15 +27,15 @@ export function HomePage() {
               height={100}
             />
           </div>
-          <div className="w-1/2 py-10">
-            <h1 className="text-5xl font-bold leading-tight">
+          <div className="w-full md:w-1/2 py-10">
+            <h1 className="text-3xl md:text-5xl font-bold leading-relaxed md:leading-tight">
               Rethinking Development:{" "}
               <span className="bg-primary2 p-1">Low Carbon</span>, High Impact
             </h1>
           </div>
 
           <div className="flex flex-row mt-5 justify-center items-center w-full text-secondary">
-            <div className="text-4xl w-full flex gap-5 font-semibold">
+            <div className="text-2xl w-full flex gap-5 font-semibold">
               <h2 className="font-bold">TBD</h2>
               <h2>5 - 6 September 2024</h2>
             </div>

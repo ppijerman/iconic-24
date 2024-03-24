@@ -1,14 +1,11 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/JCvs52wtNty
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+"use client";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import dicoLogo from "@/assets/dico.png";
+import { useState } from "react";
 
 export default function Component() {
   return (
@@ -18,11 +15,17 @@ export default function Component() {
           <div className="flex flex-col gap-3">
             <h1 className="text-4xl font-bold">Contact us for partnership</h1>
             <p className="">
-              Fill out the form below and we'll get back to you as soon as
+              Fill out the form below and we&apos;ll get back to you as soon as
               possible.
             </p>
           </div>
-          <Image className="hidden md:block" src={dicoLogo} alt="Dico Logo" width={100} height={100} />
+          <Image
+            className="hidden md:block"
+            src={dicoLogo}
+            alt="Dico Logo"
+            width={100}
+            height={100}
+          />
         </div>
         <div className="space-y-4">
           <div className="space-y-2">

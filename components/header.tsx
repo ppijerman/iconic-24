@@ -17,7 +17,7 @@ export function IconicHeader() {
   const isActive = (linkPath: string) => pathname === linkPath;
 
   return (
-    <header className="flex items-center justify-center bg-white">
+    <header className="flex items-center justify-center bg-white z-50">
       <nav className="flex flex-row justify-between items-center w-[95%] py-2 bg-white">
         <div className="flex flex-row items-center justify-center gap-2">
           <Image src={iconicLogo} alt="Iconic Logo" width={400} height={100} />
@@ -25,7 +25,7 @@ export function IconicHeader() {
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } md:flex absolute md:static bg-white min-h-[60vh] md:min-h-fit left-0 top-[8%] w-full items-center px-5`}
+          } md:flex absolute z-50 md:static bg-white min-h-[60vh] md:min-h-fit left-0 top-[8%] w-full items-center px-5`}
         >
           <ul className="flex flex-col md:flex-row gap-14 md:gap-[4vw] md:justify-end md:items-center w-full font-semibold h-full">
             {[
@@ -37,7 +37,7 @@ export function IconicHeader() {
               <Link href={item.href} key={item.href}>
                 <li
                   className={`hover:text-accent transition p-2 ${
-                    isActive(item.href) ? "bg-secondary p-2 rounded-md text-white" : ""
+                    isActive(item.href) ? "bg-accent2 p-2 rounded-md text-white" : ""
                   }`}
                 >
                   {item.label}
