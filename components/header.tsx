@@ -38,8 +38,9 @@ export function IconicHeader() {
               { href: "/", label: "Home" },
               { href: "/about", label: "About Us" },
               { href: "/subject", label: "ICONIC 2024's Subject" },
-              { href: "/speakers", label: "Speakers" },
+              // { href: "/speakers", label: "Speakers" },
               { href: "/partnership", label: "Be a partner" },
+              { href: "/submission", label: "Submission" },
             ].map((item) => (
               <Link href={item.href} key={item.href}>
                 <li
