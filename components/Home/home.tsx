@@ -7,7 +7,7 @@ import PPIJLogo from "@/assets/PPIJ_Logo_Color.png";
 export function HomePage() {
   return (
     <main
-      className="min-h-screen flex flex-col justify-center"
+      className="min-h-screen flex flex-col justify-center w-full"
       style={{
         backgroundImage: "url('/past-iconic-6.jpg')",
         backgroundSize: "cover",
@@ -15,10 +15,10 @@ export function HomePage() {
       }}
     >
       <div
-        className="min-h-screen w-screen flex flex-col justify-center px-10"
+        className="min-h-screen w-screen flex flex-col justify-center items-center px-5"
         style={{ backgroundColor: "rgba(247, 247, 177, 0.7)" }}
       >
-        <div className="flex flex-col w-fit gap-5 justify-center p-5 rounded-xl">
+        <div className="flex flex-col w-[90%] gap-5 justify-center rounded-xl">
           <div className="">
             <Image
               src={iconicMainLogo}
@@ -37,7 +37,7 @@ export function HomePage() {
           <div className="flex flex-row mt-5 justify-center items-center w-full text-secondary">
             <div className="text-2xl w-full flex gap-5 font-semibold">
               <h2 className="font-bold">TBD</h2>
-              <h2>5 - 6 September 2024</h2>
+              <h2>6 - 8 September 2024</h2>
             </div>
           </div>
         </div>

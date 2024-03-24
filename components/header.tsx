@@ -1,6 +1,6 @@
 "use client";
 
-import iconicLogo from "@/assets/logo-text-main.png";
+import iconicLogo from "@/assets/logo-main-pr.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -18,9 +18,13 @@ export function IconicHeader() {
 
   return (
     <header className="flex items-center justify-center bg-white z-50">
-      <nav className="flex flex-row justify-between items-center w-[95%] py-2 bg-white">
+      <nav className="flex flex-row justify-between items-center w-[95%] p-2 bg-white">
         <div className="flex flex-row items-center justify-center gap-2">
-          <Image src={iconicLogo} alt="Iconic Logo" width={400} height={100} />
+          <Image
+            src={iconicLogo}
+            alt="Iconic Logo"
+            className="w-[150px] md:w-[300px]"
+          />
         </div>
         <div
           className={`${
@@ -36,8 +40,10 @@ export function IconicHeader() {
             ].map((item) => (
               <Link href={item.href} key={item.href}>
                 <li
-                  className={`hover:text-accent transition p-2 ${
-                    isActive(item.href) ? "bg-accent2 p-2 rounded-md text-white" : ""
+                  className={`hover:text-accent transition p-2 text-xl ${
+                    isActive(item.href)
+                      ? "bg-accent2 p-2 rounded-md text-white"
+                      : ""
                   }`}
                 >
                   {item.label}

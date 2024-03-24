@@ -1,25 +1,45 @@
 import Image from "next/image";
 import dicoMascot from "@/assets/dico.png";
+import iconicLogo2 from "@/assets/logo-main-pr.png";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export function CallToActionRegister() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-primary text-secondary">
-      <Image
-        src={dicoMascot}
-        alt="Dico Mascot"
-        width={200}
-        height={200}
-        className="pb-5"
-      />
-      <h1 className="text-6xl font-semibold">
-        SEE THE FUTURE OF SUSTAINABILITY!
-      </h1>
-      <p className="text-3xl">
-        <span className="text-3xl font-bold text-accent">DICO</span> will be
-        waiting for you!
-      </p>
-      <Button className="mt-10 text-2xl">Register Now</Button>
+    <section className="flex flex-col items-center justify-center min-h-screen bg-primary text-secondary w-screen">
+      <div className="flex flex-col items-center justify-center w-[80%] gap-7 py-10">
+        <Image
+          src={dicoMascot}
+          alt="Dico Mascot"
+          width={200}
+          height={200}
+          className="pb-5"
+        />
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+          <h1 className="text-5xl text-center text-white md:text-6xl font-semibold p-4 bg-accent2 hover:text-accent transition cursor-default">
+            JOIN US.
+          </h1>
+          <h1 className="text-5xl text-center md:text-6xl font-semibold p-4 text-primary bg-primary3 hover:text-accent transition cursor-default">
+            SEE THE FUTURE.
+          </h1>
+        </div>
+
+        <Image src={iconicLogo2} alt="iconic Logo 2" width={500} height={500} />
+        <p className="text-2xl md:text-3xl">
+          <span className="text-3xl font-bold text-accent">DICO</span> is
+          waiting for you.
+        </p>
+        <p className="text-lg md:text-xl md:text-center">
+          Contribute to our future by submitting your abstract for
+          Transformation for Low-Carbon Development.
+        </p>
+        <Button
+          asChild
+          className="mt-5 bg-accent text-white hover:bg-primary2 px-5 py-10 md:p-10 text-xl font-bold md:text-3xl"
+        >
+          <Link href="/submission">Submit Your Abstract</Link>
+        </Button>
+      </div>
     </section>
   );
 }

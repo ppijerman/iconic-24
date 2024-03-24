@@ -12,14 +12,14 @@ export function Partners() {
     { name: "PCO", logo: "/pco.png" },
   ];
   return (
-    <section className="bg-secondary text-primary min-h-[600px] flex flex-col items-center justify-center p-10">
-      <div className="flex flex-col items-center justify-center w-[80%]">
-        <h1 className="text-5xl lg:text-7xl font-bold w-full p-4 text-center">
+    <section className="bg-secondary text-primary min-h-[600px] flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center w-[80%] py-2 px-4">
+        <h1 className="text-4xl lg:text-6xl font-bold w-full px-4 py-10 text-center leading-relaxed">
           PARTNERS OF ICONIC 2024
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-center w-full p-5">
-        <div className="flex flex-row py-10 gap-20 w-full items-center justify-center">
+      <div className="flex flex-col items-center justify-center w-full p-2">
+        {/* <div className="flex flex-row py-10 gap-20 w-full items-center justify-center">
           {partners.map((partner) => (
             <div
               key={partner.name}
@@ -29,8 +29,8 @@ export function Partners() {
               <h2 className="text-4xl font-semibold">{partner.name}</h2>
             </div>
           ))}
-        </div>
-        <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-center pt-14 w-[80%]">
+        </div> */}
+        <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-center pt-4 w-[80%]">
           <div className="flex flex-col w-full p-5">
             <p className="text-xl">
               Our esteemed partners have been pivotal in shaping the Low Carbon
@@ -39,7 +39,7 @@ export function Partners() {
             </p>
           </div>
           <div className="flex flex-col w-full justify-center gap-5 p-5">
-            <h1 className="text-3xl">Interested in becoming a partner?</h1>
+            <h1 className="text-xl">Interested in becoming a partner?</h1>
             <p className="text-xl">
               We are looking for partners to collaborate with us to change the
               future of development.
@@ -47,7 +47,7 @@ export function Partners() {
             <Link href="/partnership">
               <Button
                 variant="default"
-                className="text-3xl text-primary bg-accent px-10 py-7 hover:bg-primary2 transition shadow-lg w-[300px]"
+                className="text-3xl text-primary bg-accent px-10 py-7 hover:bg-primary2 transition shadow-lg w-[100%]"
               >
                 Help Dico.
               </Button>

@@ -8,7 +8,7 @@ import Introduction from "@/components/Home/introduction";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="w-screen">
       <HomePage />
       <Countdown />
       <Introduction />

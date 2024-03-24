@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Subtopics } from "./subtopics";
 
 import { IconicImages } from "./iconic-images";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
   return (
@@ -17,18 +18,20 @@ export default function Page() {
           Bridging Indonesia and Germany Through Academic Excellence
         </h1>
         <p className="text-2xl pt-16 leading-relaxed">
-          <span className="bg-accent2 p-1 text-white shadow-lg">Join us</span>{" "}
-          to be at the <span className="font-bold">forefront of change</span>,
+          Be at the <span className="font-bold">forefront of change</span>,
           accelerating our nation&apos;s path towards a{" "}
           <span className="font-bold">resilient</span> and{" "}
           <span className="font-bold">sustainable</span> green transition.
         </p>
+        <Button className="bg-accent2 text-white text-2xl md:text-4xl p-5 md:p-10 w-1/2 mx-auto">
+          Join Us
+        </Button>
       </div>
       <div className="flex flex-col w-full min-h-screen bg-white items-center justify-center">
-        <h1 className="text-5xl md:text-7xl pt-10 font-bold">
+        <h1 className="text-center text-4xl md:text-5xl lg:text-7xl pt-10 px-5 font-bold">
           What is ICONIC?
         </h1>
-        <div className="flex flex-col justify-center items-center w-full lg:w-[70%]">
+        <div className="flex flex-col justify-center items-center w-full lg:w-[80%]">
           <div className="p-10 flex flex-col gap-6">
             <p className="text-xl text-justify leading-relaxed">
               <span className="font-bold text-2xl">ICONIC</span> or the{" "}
@@ -51,20 +54,24 @@ export default function Page() {
               global stage. It upholds moral ideals that prioritize inclusivity
               and academic integrity, free from political compromises or
               interests that may hinder addressing real problems and concerns.
+            </p>
+            <p className="text-xl text-justify leading-relaxed">
               ICONIC is launched by PPI Jerman as a concrete endeavor to advance
               Indonesia&apos;s development on the global platform. It aims to
               facilitate knowledge exchange and serve as a nexus and
               multi-stakeholder hub connecting influential bodies across various
               fields like academia, economics, and policymaking, with the goal
-              of shaping Indonesia&apos;s development. The themes selected for
-              previous and current ICONIC conferences center around
-              sustainability and environmental awareness. They aim to facilitate
-              discussions, share ideas, address issues, and propose solutions
-              concerning global and national challenges, reflecting the
-              responsibility of participating in the international community’s
-              efforts to shape global progress towards a more inclusive and
-              sustainable future with an enhanced quality of life for all
-              citizens.
+              of shaping Indonesia&apos;s development.
+            </p>
+            <p className="text-xl text-justify leading-relaxed">
+              The themes selected for previous and current ICONIC conferences
+              center around sustainability and environmental awareness. They aim
+              to facilitate discussions, share ideas, address issues, and
+              propose solutions concerning global and national challenges,
+              reflecting the responsibility of participating in the
+              international community’s efforts to shape global progress towards
+              a more inclusive and sustainable future with an enhanced quality
+              of life for all citizens.
             </p>
           </div>
         </div>
@@ -129,7 +136,9 @@ export default function Page() {
       </div>
       <div className="bg-secondary text-primary w-full min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-5xl">Submit your Abstract here!</h1>
-        <div><p>Contribute</p></div>
+        <div>
+          <p>Contribute</p>
+        </div>
       </div>
     </main>
   );
