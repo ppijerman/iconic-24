@@ -28,13 +28,13 @@ export default function Introduction() {
               community, particularly Germany, addressing issues pertaining to
               sustainable development. In 2024, ICONIC will celebrate its 10th
               anniversary and fifth occurrence, centering on the subject
-              "Transformation for Low-Carbon Development".
+              &quot;Transformation for Low-Carbon Development&quot;.
             </p>
             <p className="text-base md:text-xl text-justify leading-relaxed p-5">
-              Aligned with Indonesia's vision to become an advanced economy by
-              2045 and achieve net-zero emissions by 2060, ICONIC will delve
-              into innovative solutions and ideas to support Indonesia's journey
-              towards these ambitious objectives.
+              Aligned with Indonesia&apos;s vision to become an advanced economy
+              by 2045 and achieve net-zero emissions by 2060, ICONIC will delve
+              into innovative solutions and ideas to support Indonesia&apos;s
+              journey towards these ambitious objectives.
             </p>
             <div className="px-5">
               <Button
