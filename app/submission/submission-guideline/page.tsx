@@ -210,14 +210,13 @@ export default function Page() {
         <form onSubmit={handleSubmit}>
           <div className="items-top flex space-x-2 w-full py-10 justify-center">
             <Checkbox
-              id="terms1"
-              checked={isAgreed}
+              id="terms1"    
               onChange={handleCheckboxChange}
             />
             <div className="grid gap-1.5 leading-snug">
               <label
                 htmlFor="terms1"
-                className="text-sm font-medium leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                className="text-sm font-medium leading-snug cursor-pointer w-full md:w-[70%] peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                 onClick={handleCheckboxChange}
               >
                 Agree to the Abstract Submission Guidelines of ICONIC 2024.
