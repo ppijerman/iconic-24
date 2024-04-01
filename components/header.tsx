@@ -5,11 +5,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
+import {
+  HamburgerMenuIcon,
+  Cross1Icon,
+  ChevronDownIcon,
+} from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
+
+const transition = {
+  type: "spring",
+  mass: 0.5,
+  damping: 11.5,
+  stiffness: 100,
+  restDelta: 0.001,
+  restSpeed: 0.001,
+};
 
 export function IconicHeader() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -24,33 +40,131 @@ export function IconicHeader() {
             <Image
               src={iconicLogo}
               alt="Iconic Logo"
-              className="w-[50px] md:w-[100px] hover:bg-gray-300 p-2 transition"
+              className="w-[48px] md:w-[60px] p-2 transition"
             />
           </Link>
         </div>
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } md:flex absolute z-50 md:static bg-white min-h-[60vh] md:min-h-fit left-0 top-[8%] w-full items-center px-5`}
+          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[8%] md:top-[10%] lg:top-0 w-full items-center px-5 py-5 lg:py-0`}
         >
-          <ul className="flex flex-col md:flex-row gap-14 md:gap-[4vw] md:justify-end md:items-center w-full font-semibold h-full">
+          <ul className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About Us" },
-              { href: "/subject", label: "ICONIC 2024's Subject" },
-              // { href: "/speakers", label: "Speakers" },
-              { href: "/partnership", label: "Be a partner" },
-              { href: "/submission", label: "Submission" },
+              {
+                href: "/program-and-subject-overview",
+                label: "Program and Subject Overview",
+                submenus: [
+                  { href: "/program", label: "Program" },
+                  { href: "/subject", label: "Subject Overview" },
+                  { href: "/events", label: "Events" },
+                ],
+              },
+              {
+                href: "/during-the-stay",
+                label: "During the Stay",
+                submenus: [
+                  {
+                    href: "/during-the-stay/preparation",
+                    label: "Preparation",
+                  },
+                  {
+                    href: "/during-the-stay/venue",
+                    label: "Venue Göttingen",
+                  },
+                  {
+                    href: "/during-the-stay/online-participant",
+                    label: "Online Participant",
+                  },
+                  {
+                    href: "/during-the-stay/city-day-trip",
+                    label: "City Day Trip",
+                  },
+                  {
+                    href: "/during-the-stay/faq",
+                  },
+                ],
+              },
+              {
+                href: "/event-registration",
+                label: "Event Registration",
+              },
+              { href: "/submission", label: "Abstract Submission" },
             ].map((item) => (
-              <Link href={item.href} key={item.href}>
+              <Link href={item.href} key={item.href} className="group">
                 <li
-                  className={`hover:text-accent transition p-2 text-xl ${
+                  className={`p-2 text-base ${
                     isActive(item.href)
-                      ? "bg-accent2 p-2 rounded-md text-white"
+                      ? "bg-accent2 shadow-md p-2 rounded-md text-white"
                       : ""
                   }`}
+                  onMouseEnter={() => setHoveredLink(item.label)} // Set the hovered link's href
+                  onMouseLeave={() => setHoveredLink("")} // Clear the hovered link's href
                 >
-                  {item.label}
+                  {(item.label && (
+                    <span className="flex flex-col lg:flex-row w-full gap-1 lg:items-center lg:justify-center">
+                      {item.label}
+                      {item.submenus && !isOpen && (
+                        <ChevronDownIcon
+                          className={`w-4 h-4 inline transition ${
+                            hoveredLink === item.label
+                              ? "rotate-0"
+                              : "rotate-180"
+                          }`}
+                        />
+                      )}
+                      <div className="lg:hidden flex flex-col gap-4 w-full text-sm mt-4 font-normal">
+                        {item.submenus?.map((submenu) => (
+                          <Link href={submenu.href} key={submenu.href}>
+                            <motion.div
+                              className="cursor-pointer hover:opacity-[0.9] dark:text-white"
+                              transition={{ duration: 0.3 }}
+                            >
+                              {submenu.label}
+                            </motion.div>
+                          </Link>
+                        ))}
+                      </div>
+                    </span>
+                  )) ||
+                    item.label}
+
+                  {/* dropdown */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.85, y: 10 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={transition}
+                  >
+                    {item.submenus &&
+                      hoveredLink === item.label &&
+                      item.submenus.length > 0 && (
+                        <div className="absolute">
+                          <motion.div
+                            transition={transition}
+                            layoutId="active" // layoutId ensures smooth animation
+                            className="bg-white backdrop-blur-sm overflow-hidden rounded-md shadow-md w-full h-full"
+                          >
+                            <motion.div
+                              layout // layout ensures smooth animation
+                              className="w-max h-full p-4 pr-10 flex flex-col gap-2"
+                            >
+                              {item.submenus.map((submenu) => (
+                                <Link href={submenu.href} key={submenu.href}>
+                                  <motion.div
+                                    className="cursor-pointer text-black hover:text-accent transition"
+                                    transition={{ duration: 0.3 }}
+                                  >
+                                    {submenu.label}
+                                  </motion.div>
+                                </Link>
+                              ))}
+                            </motion.div>
+                          </motion.div>
+                        </div>
+                      )}
+                  </motion.div>
                 </li>
               </Link>
             ))}
@@ -59,12 +173,12 @@ export function IconicHeader() {
         <div className="flex items-center gap-6">
           {isOpen ? (
             <Cross1Icon
-              className="md:hidden cursor-pointer"
+              className="lg:hidden cursor-pointer"
               onClick={toggleMenu}
             />
           ) : (
             <HamburgerMenuIcon
-              className="md:hidden cursor-pointer"
+              className="lg:hidden cursor-pointer"
               onClick={toggleMenu}
             />
           )}
