@@ -10,8 +10,8 @@ import { useState } from "react";
 export default function Page() {
   const [isAgreed, setIsAgreed] = useState(false);
 
-  const handleCheckboxChange = () => {
-    setIsAgreed(!isAgreed);
+  const handleCheckboxChange = (checked: boolean) => {
+    setIsAgreed(checked);
   };
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
@@ -210,14 +210,14 @@ export default function Page() {
         <form onSubmit={handleSubmit}>
           <div className="items-top flex space-x-2 w-full py-10 justify-center">
             <Checkbox
-              id="terms1"    
-              onChange={handleCheckboxChange}
+              id="terms1"
+              onCheckedChange={handleCheckboxChange}
+              checked={isAgreed}
             />
             <div className="grid gap-1.5 leading-snug">
               <label
                 htmlFor="terms1"
                 className="text-sm font-medium leading-snug cursor-pointer w-full md:w-[70%] peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                onClick={handleCheckboxChange}
               >
                 Agree to the Abstract Submission Guidelines of ICONIC 2024.
               </label>
@@ -238,9 +238,7 @@ export default function Page() {
               type="submit"
               className="border-none w-fit md:w-full bg-accent hover:bg-primary hover:text-secondary py-8 px-5 text-2xl md:text-3xl"
             >
-              <Link href="https://ppij.org/ICONIC2024SubmissionPortal">
-                Submit Abstract
-              </Link>
+              Submit Abstract
             </Button>
           </div>
         </form>
