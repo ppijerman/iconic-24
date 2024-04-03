@@ -105,7 +105,7 @@ export function IconicHeader() {
                   onMouseLeave={() => setHoveredLink("")} // Clear the hovered link's href
                 >
                   {(item.label && (
-                    <span className="flex flex-col lg:flex-row w-full gap-1 lg:items-center lg:justify-center h-full">
+                    <span className="flex flex-col hover:text-accent transition group lg:flex-row w-full gap-1 lg:items-center lg:justify-center h-full">
                       {item.label}
                       {item.submenus && !isOpen && (
                         <ChevronDownIcon
@@ -130,7 +130,7 @@ export function IconicHeader() {
                       </div>
                     </span>
                   )) ||
-                    item.label}
+                    ""}
 
                   {/* dropdown */}
                   <motion.div
