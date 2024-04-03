@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { IconicImages } from "./iconic-images";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -22,8 +23,11 @@ export default function Page() {
           <span className="font-bold">resilient</span> and{" "}
           <span className="font-bold">sustainable</span> green transition.
         </p>
-        <Button className="bg-accent2 shadow-lg hover:bg-accent text-white text-2xl md:text-4xl px-5 py-12 md:p-10 w-full max-w-[500px] mx-auto md:mx-0">
-          JOIN US.
+        <Button
+          asChild
+          className="bg-accent2 shadow-lg hover:bg-accent text-white text-2xl md:text-4xl px-5 py-12 md:p-10 w-full max-w-[500px] mx-auto md:mx-0"
+        >
+          <Link href="/event-registration">JOIN US.</Link>
         </Button>
       </div>
       <div className="flex flex-col w-full min-h-screen bg-white items-center justify-center">

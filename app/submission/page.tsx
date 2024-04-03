@@ -58,7 +58,7 @@ export default function Page() {
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
           <Link
-            className="inline-flex items-center justify-center rounded-md text-white bg-accent px-8 text-2xl font-medium shadow-sm transition-colors hover:bg-primary2 py-3"
+            className="inline-flex items-center justify-center rounded-md text-white bg-accent px-8 text-3xl font-medium shadow-sm transition-colors hover:bg-primary2 py-5"
             href="/submission/submission-guideline"
           >
             Submit Your Abstract

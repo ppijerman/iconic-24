@@ -13,13 +13,7 @@ const topics = [
     href: "/during-the-stay/preparation",
   },
   {
-    title: "Travel & Accommodation",
-    content:
-      "Find all the details you need to navigate your way to and around Göttingen smoothly. Whether you're flying in or joining us online, discover the best practices for a hassle-free travel experience.",
-    href: "/during-the-stay/travel-accommodation",
-  },
-  {
-    title: "Venue Göttingen",
+    title: "Venue — Göttingen",
     content:
       "Step into the venues that will host our inspiring sessions and discussions. Get to know the Alte Mensa, Adam-von-Trott-Saal, and ZHG, and plan your conference days with ease.",
     href: "/during-the-stay/venue",
@@ -47,7 +41,7 @@ const topics = [
 export default function DuringTheStay() {
   return (
     <main className="min-h-screen flex justify-center bg-white">
-      <div className="w-[80%] pb-32 pt-10 md:pt-20">
+      <div className="w-[90%] md:w-[80%] pb-32 pt-10 md:pt-20">
         <h1 className="font-bold text-3xl md:text-5xl">DURING THE STAY</h1>
         <div className="my-16 flex flex-col gap-10">
           <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
@@ -55,11 +49,11 @@ export default function DuringTheStay() {
               <Image
                 src={go}
                 alt="Göttingen"
-                className="w-full h-fit rounded-md shadow-lg"
+                className="w-full h-fit rounded-md shadow-lg border-[1.5px] border-black"
               />
             </div>
             <div className="flex flex-col gap-5 leading-[2rem] w-full text-lg">
-              <h2 className="text-2xl md:text-3xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold mb-10">
                 Welcome to the heart of your ICONIC 2024 journey!
               </h2>
               <p>
@@ -73,7 +67,7 @@ export default function DuringTheStay() {
                 From the essentials of preparing for your trip to immersing
                 yourself in the scientific and cultural offerings of Göttingen,
                 we&apos;ve got you covered. Dive deeper into each aspect of your
-                stay by exploring the topics below:
+                stay by exploring the topics below.
               </p>
             </div>
           </div>

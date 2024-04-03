@@ -44,16 +44,14 @@ export default function Page() {
     <main className="flex flex-col bg-white text-secondary items-center">
       <div className="w-[80%] text-xl flex flex-col items-center justify-center text-justify">
         <div className="py-10 flex flex-col justify-center w-full border-b-2">
-          <h1 className="text-3xl my-10 md:text-5xl font-bold">
+          <h1 className="text-3xl mt-10 md:text-5xl font-bold">
             Abstract Submission
           </h1>
-          <a href="https://ppijerman.org/wp-content/uploads/2024/04/Abstract-Submission-Deadlines-and-Guidelines-ICONIC-2024.docx.pdf">
-            <p>
-              Download as PDF
-              <span>
-                <DownloadIcon className="w-6 h-6 ml-2" />
-              </span>
-            </p>
+          <a href="https://ppijerman.org/wp-content/uploads/2024/04/Abstract-Submission-Deadlines-and-Guidelines-ICONIC-2024.docx.pdf" className="hover:text-accent mt-1 mb-16 w-fit">
+            <div className="flex flex-row gap-2 items-center">
+              <p>Download PDF File</p>
+              <DownloadIcon className="w-6 h-6" />
+            </div>
           </a>
 
           <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
@@ -70,8 +68,8 @@ export default function Page() {
               below for the abstract submission.
             </h1>
           </div>
-          <div className="flex flex-col py-10 w-full border-b-2 gap-3">
-            <h1 className="text-4xl font-semibold w-full pt-14 mb-5">
+          <div className="flex flex-col py-10 w-full gap-3">
+            <h1 className="text-4xl font-semibold w-full pt-14 mb-5 border-b-2 pb-1">
               Registration Guidelines
             </h1>
             <p className="w-full md:text-xl text-base pb-5 font-semibold">
@@ -81,14 +79,14 @@ export default function Page() {
             </p>
             <Button
               asChild
-              className="w-full text-primary bg-accent hover:bg-primary hover:text-secondary p-3 py-6 md:py-8 md:px-12 text-xl md:text-2xl"
+              className="w-full text-white bg-accent hover:bg-primary2 p-3 py-6 md:py-8 md:px-12 text-xl md:text-2xl"
             >
               <Link href="https://app.oxfordabstracts.com/">
                 Register as an Author
               </Link>
             </Button>
           </div>
-          <h1 className="text-4xl font-semibold w-full pt-14 mb-5">
+          <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
             Submission Guidelines
           </h1>
           {guidelines.map((guideline, index) => (
@@ -244,7 +242,8 @@ export default function Page() {
               disabled={!isAgreed}
               type="submit"
               className="border-none w-fit md:w-full bg-accent hover:bg-primary2
-              text-white py-8 px-5 text-2xl md:text-3xl"
+              text-white hover:text-white py-8 px-5 text-2xl md:text-3xl"
+              
             >
               Submit Abstract
             </Button>
