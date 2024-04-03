@@ -47,9 +47,9 @@ export function IconicHeader() {
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[8%] md:top-[10%] lg:top-0 w-full items-center px-5 py-5 lg:py-0`}
+          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[8%] md:top-[10%] lg:top-0 w-full items-center px-5 py-5 lg:py-0 shadow-lg lg:shadow-none rounded-lg`}
         >
-          <ul className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full">
+          <ul className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About Us" },
@@ -83,6 +83,7 @@ export function IconicHeader() {
                     label: "City Day Trip",
                   },
                   {
+                    label: "FAQ",
                     href: "/during-the-stay/faq",
                   },
                 ],
@@ -104,7 +105,7 @@ export function IconicHeader() {
                   onMouseLeave={() => setHoveredLink("")} // Clear the hovered link's href
                 >
                   {(item.label && (
-                    <span className="flex flex-col lg:flex-row w-full gap-1 lg:items-center lg:justify-center">
+                    <span className="flex flex-col lg:flex-row w-full gap-1 lg:items-center lg:justify-center h-full">
                       {item.label}
                       {item.submenus && !isOpen && (
                         <ChevronDownIcon
@@ -148,12 +149,12 @@ export function IconicHeader() {
                           >
                             <motion.div
                               layout // layout ensures smooth animation
-                              className="w-max h-full p-4 pr-10 flex flex-col gap-2"
+                              className="w-max h-full p-4 pr-10 flex flex-col gap-3"
                             >
                               {item.submenus.map((submenu) => (
                                 <Link href={submenu.href} key={submenu.href}>
                                   <motion.div
-                                    className="cursor-pointer text-black hover:text-accent transition"
+                                    className="cursor-pointer text-secondary hover:text-accent transition"
                                     transition={{ duration: 0.3 }}
                                   >
                                     {submenu.label}
