@@ -4,6 +4,12 @@ import Image from "next/image";
 import zhg1 from "@/assets/venue2/zhg_1.jpg";
 import zhg2 from "@/assets/venue2/zhg_2.jpg";
 import zhg3 from "@/assets/venue2/zhg_1.png";
+
+import alt1 from "@/assets/venue1/alte_mensa_.jpg";
+import alt2 from "@/assets/venue1/alte_mensa_2.jpg";
+import alt3 from "@/assets/venue1/alte_mensa_3.jpg";
+import alt4 from "@/assets/venue1/alte_mensa_4.jpg";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Preparation() {
@@ -48,21 +54,26 @@ const Venue1 = () => {
       <div className="flex flex-col gap-2">
         <div className="flex flex-col lg:flex-row gap-2">
           <Image
-            src={zhg1}
-            alt="Venue 1"
+            src={alt4}
+            alt="Venue 1 Alte Mensa"
             className="w-full h-[500px] object-cover object-center inset-0 "
           />
           <Image
-            src={zhg2}
-            alt="Venue 1"
+            src={alt1}
+            alt="Venue 1 Alte Mensa"
             className="w-full h-[500px] object-cover object-center inset-0"
           />
         </div>
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row gap-2">
           <Image
-            src={zhg3}
-            alt="Venue 1"
-            className="w-full h-[500px] object-cover object-center"
+            src={alt2}
+            alt="Venue 1 Alte Mensa"
+            className="w-full h-[500px] object-cover object-center inset-0 "
+          />
+          <Image
+            src={alt3}
+            alt="Venue 1 Alte Mensa"
+            className="w-full h-[500px] object-cover object-center inset-0"
           />
         </div>
       </div>
@@ -79,8 +90,27 @@ const Venue2 = () => {
         </h1>
         <p>Platz der Göttinger Sieben, 37073 Göttingen</p>
       </div>
-
-      <Image src={zhg2} alt="Venue 2" />
+      <div className="flex flex-col gap-2">
+        <div className="flex flex-col lg:flex-row gap-2">
+          <Image
+            src={zhg1}
+            alt="Venue 2 ZHG"
+            className="w-full h-[500px] object-cover object-center inset-0 "
+          />
+          <Image
+            src={zhg2}
+            alt="Venue 2 ZHG"
+            className="w-full h-[500px] object-cover object-center inset-0"
+          />
+        </div>
+        <div className="flex">
+          <Image
+            src={zhg3}
+            alt="Venue 2 ZHG"
+            className="w-full h-[500px] object-cover object-center"
+          />
+        </div>
+      </div>
     </div>
   );
 };
