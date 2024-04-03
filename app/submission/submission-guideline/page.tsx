@@ -40,16 +40,14 @@ export default function Page() {
   ];
 
   return (
-    <main className="flex flex-col bg-secondary text-primary items-center">
-      <div className="w-[80%] text-2xl flex flex-col items-center justify-center text-justify">
-        <div className="py-10 flex flex-col items-center justify-center w-full border-b-2">
-          <div className="flex flex-row gap-10 items-center justify-center py-10">
-            <h1 className="text-5xl md:text-6xl font-bold">
-              Abstract Submission
-            </h1>
-          </div>
+    <main className="flex flex-col bg-white text-secondary items-center">
+      <div className="w-[80%] text-xl flex flex-col items-center justify-center text-justify">
+        <div className="py-10 flex flex-col justify-center w-full border-b-2">
+          <h1 className="text-3xl my-10 md:text-5xl font-bold">
+            Abstract Submission
+          </h1>
 
-          <div className="py-10 my-10 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
+          <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
             <Image
               src={dico}
               alt="dico logo iconic"
@@ -63,25 +61,25 @@ export default function Page() {
               below for the abstract submission.
             </h1>
           </div>
-          <div className="flex flex-col py-10 w-full border-b-2 gap-10 text-center">
-            <h1 className="text-4xl font-semibold w-full pt-14 mb-5 text-center">
+          <div className="flex flex-col py-10 w-full border-b-2 gap-3">
+            <h1 className="text-4xl font-semibold w-full pt-14 mb-5">
               Registration Guidelines
             </h1>
-            <p className="w-full">
-              Before proceeding, make sure you are already registered as an
-              author via the Oxford Portals. If not, please register as an
-              author below.
+            <p className="w-full md:text-xl text-base pb-5 font-semibold">
+              *Before proceeding, make sure you are already registered as an
+              author via the Oxford Abstract Portal. If not, please register as
+              an author below.
             </p>
             <Button
               asChild
-              className="w-full text-primary bg-accent hover:bg-primary hover:text-secondary p-5 py-10 md:py-8 md:px-12 text-2xl md:text-3xl"
+              className="w-full text-primary bg-accent hover:bg-primary hover:text-secondary p-3 py-6 md:py-8 md:px-12 text-xl md:text-2xl"
             >
               <Link href="https://app.oxfordabstracts.com/">
                 Register as an Author
               </Link>
             </Button>
           </div>
-          <h1 className="text-4xl font-semibold w-full pt-14 mb-5 text-center">
+          <h1 className="text-4xl font-semibold w-full pt-14 mb-5">
             Submission Guidelines
           </h1>
           {guidelines.map((guideline, index) => (
@@ -212,13 +210,12 @@ export default function Page() {
             <Checkbox
               id="terms1"
               checked={isAgreed}
-              onChange={handleCheckboxChange}
+              onCheckedChange={handleCheckboxChange}
             />
             <div className="grid gap-1.5 leading-snug">
               <label
                 htmlFor="terms1"
                 className="text-sm font-medium leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                onClick={handleCheckboxChange}
               >
                 Agree to the Abstract Submission Guidelines of ICONIC 2024.
               </label>
@@ -237,7 +234,8 @@ export default function Page() {
               variant="outline"
               disabled={!isAgreed}
               type="submit"
-              className="border-none w-fit md:w-full bg-accent hover:bg-primary hover:text-secondary py-8 px-5 text-2xl md:text-3xl"
+              className="border-none w-fit md:w-full bg-accent hover:bg-primary2
+              text-white py-8 px-5 text-2xl md:text-3xl"
             >
               <Link href="https://ppij.org/ICONIC2024SubmissionPortal">
                 Submit Abstract
