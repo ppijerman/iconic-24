@@ -9,8 +9,8 @@ import { useState } from "react";
 
 export default function Component() {
   return (
-    <main className="bg-secondary text-primary flex items-center justify-center min-h-screen w-full">
-      <div className="w-full max-w-3xl space-y- p-5">
+    <main className="bg-white text-secondary flex items-center justify-center min-h-screen">
+      <div className="w-full max-w-3xl space-y-2 p-5">
         <div className="flex flex-col md:flex-row gap-5 py-5 justify-center md:justify-between items-center w-full">
           <div className="flex flex-col gap-3">
             <h1 className="text-4xl font-bold">Contact us for partnership</h1>
@@ -27,7 +27,7 @@ export default function Component() {
             height={100}
           />
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 text-xl">
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
             <Input
@@ -61,7 +61,7 @@ export default function Component() {
               placeholder="Enter your message"
             />
           </div>
-          <Button className="hover:text-primary hover:bg-accent">
+          <Button className="bg-white rounded-none hover:text-primary hover:bg-accent ring-secondary text-2xl font-bold px-10 py-7 ring-[1px]">
             Send message
           </Button>
         </div>

@@ -12,13 +12,19 @@ export function IconicFooter() {
     <footer className="bg-white text-gray-600 min-h-[200px] flex flex-col items-center justify-center w-full">
       <div className="flex flex-col md:flex-row gap-[4vw] justify-center items-center w-[80%] p-5">
         <div className="flex flex-col justify-center items-center w-full">
-          <Image src={PPIJLogo} alt="PPIJ Logo" width={500} height={200} />
+          <a
+            href="https://ppijerman.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src={PPIJLogo} alt="PPIJ Logo" width={500} height={200} />
+          </a>
         </div>
 
         <div className="flex flex-col w-full gap-4 border-b-2 md:border-none pb-3">
           <ul>
             <li>
-              <h2 className="text-xl">Contact Us</h2>
+              <h2 className="text-lg">Contact Us</h2>
             </li>
             <li>
               <p className="">
@@ -33,13 +39,10 @@ export function IconicFooter() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-3 w-full border-b-2 md:border-none pb-3">
-          <ul className="flex flex-col gap-3 text-base md:text-lg ">
-            <Link
-              href="/what-is-iconic"
-              className="hover:text-accent transition"
-            >
-              <li>What is ICONIC?</li>
+        <div className="flex flex-col gap-3 w-full border-b-2 border-l-0 md:border-l-2 md:border-b-0 pb-3 md:pl-3">
+          <ul className="flex flex-col gap-3 text-sm md:text-base">
+            <Link href="/about" className="hover:text-accent transition">
+              <li>About Us</li>
             </Link>
             <Link href="/our-team" className="hover:text-accent transition">
               <li>Our Team</li>
@@ -50,10 +53,19 @@ export function IconicFooter() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-3 w-full items border-b-2 md:border-none pb-3">
-          <ul className="flex flex-col gap-3 text-base md:text-lg">
+        <div className="flex flex-col gap-3 w-full items border-b-2 border-l-0 md:border-l-2 md:border-b-0 pb-3 md:pl-3">
+          <ul className="flex flex-col gap-3 text-sm md:text-base">
+            <Link
+              href="/during-the-stay"
+              className="hover:text-accent transition"
+            >
+              <li>During the Stay</li>
+            </Link>
             <Link href="/submission" className="hover:text-accent transition">
               <li>Submission</li>
+            </Link>
+            <Link href="/reviewers" className="hover:text-accent transition">
+              <li>Reviewers</li>
             </Link>
           </ul>
         </div>

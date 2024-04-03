@@ -4,7 +4,7 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 export default function Page() {
   return (
     <main className="min-h-screen flex justify-center space-y-6 bg-white">
-      <div className="w-[80%] pb-15 pt-10 md:pt-20">
+      <div className="w-[80%] pb-32 pt-10 md:pt-20">
         <div className="space-y-2 border-b-2 py-3 mb-10">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             How to Submit Your Abstract
@@ -48,6 +48,13 @@ export default function Page() {
             Please follow the guidelines below to ensure your submission is
             complete and to facilitate the review progress.
           </p>
+
+          <Link href="/reviewers">
+            <div className="text-2xl flex flex-row gap-2 text-secondary items-center justify-center ring-2 ring-secondary group w-fit py-5 px-10 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10">
+              <h1 className="font-bold ">Reviewer Team of ICONIC 2024</h1>
+              <ArrowTopRightIcon className="w-6 h-6 opacity-0 group-hover:opacity-100 transition duration-75" />
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
           <Link

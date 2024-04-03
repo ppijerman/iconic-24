@@ -3,6 +3,7 @@
 import dico from "@/assets/dico.png";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { DownloadIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -46,8 +47,13 @@ export default function Page() {
           <h1 className="text-3xl my-10 md:text-5xl font-bold">
             Abstract Submission
           </h1>
-          <a>
-            Download as PDF
+          <a href="https://ppijerman.org/wp-content/uploads/2024/04/Abstract-Submission-Deadlines-and-Guidelines-ICONIC-2024.docx.pdf">
+            <p>
+              Download as PDF
+              <span>
+                <DownloadIcon className="w-6 h-6 ml-2" />
+              </span>
+            </p>
           </a>
 
           <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
