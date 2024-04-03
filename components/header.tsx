@@ -50,7 +50,7 @@ export function IconicHeader() {
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[8%] md:top-[10%] lg:top-0 w-full items-center  lg:py-0 shadow-lg lg:shadow-none rounded-lg`}
+          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[6%] md:top-[8%] lg:top-0 w-full items-center  lg:py-0 lg:px-0 px-5 md:px-8 py-8 shadow-lg lg:shadow-none rounded-lg`}
         >
           <ul className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
             {[

@@ -47,7 +47,10 @@ export default function Page() {
           <h1 className="text-3xl mt-10 md:text-5xl font-bold">
             Abstract Submission
           </h1>
-          <a href="https://ppijerman.org/wp-content/uploads/2024/04/Abstract-Submission-Deadlines-and-Guidelines-ICONIC-2024.docx.pdf" className="hover:text-accent mt-1 mb-16 w-fit">
+          <a
+            href="https://ppijerman.org/wp-content/uploads/2024/04/Abstract-Submission-Deadlines-and-Guidelines-ICONIC-2024.docx.pdf"
+            className="hover:text-accent mt-1 mb-16 w-fit"
+          >
             <div className="flex flex-row gap-2 items-center">
               <p>Download PDF File</p>
               <DownloadIcon className="w-6 h-6" />
@@ -70,7 +73,7 @@ export default function Page() {
           </div>
           <div className="flex flex-col py-10 w-full gap-3">
             <h1 className="text-4xl font-semibold w-full pt-14 mb-5 border-b-2 pb-1">
-              Registration Guidelines
+              Registration
             </h1>
             <p className="w-full md:text-xl text-base pb-5 font-semibold">
               *Before proceeding, make sure you are already registered as an
@@ -86,6 +89,21 @@ export default function Page() {
               </Link>
             </Button>
           </div>
+
+          <div>
+            <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
+              Deadlines
+            </h1>
+            <h2 className="text-2xl font-semibold pb-4">Abstract Submission</h2>
+            <p className="pb-6">25th March - 30th April 2024</p>
+            <h2 className="text-2xl font-semibold pb-4">
+              Notification of Abstract Acceptance
+            </h2>
+            <p className="pb-6">9th May 2024</p>
+            <h2 className="text-2xl font-semibold pb-4">Conference Date</h2>
+            <p className="pb-6">4th - 7th September 2024</p>
+          </div>
+
           <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
             Submission Guidelines
           </h1>
@@ -141,7 +159,7 @@ export default function Page() {
               <li>LCD of the Built Environment</li>
             </ul>
             <h2 className="text-2xl font-semibold pt-10 pb-4">
-              5. Fields of Study
+              5. Field of Study
             </h2>
             <ul className="list-decimal list-inside py-2 text-xl">
               <li>Finance, Economics and Business</li>
@@ -208,9 +226,34 @@ export default function Page() {
                   online submission portal{" "}
                 </a>
               </span>{" "}
-              before the deadline.
+              before the deadline. Ensure that all guidelines are followed to
+              facilitate the review process.
+            </p>
+            <p className="text-xl pt-3">
+              <span className="font-bold">It is important</span> to note that in
+              the online portal, author information and affiliations must be
+              entered separately from the abstract text (title, body). Abstract
+              text can be directly inputted into the online form or transferred
+              from Word and other text programs using the "Copy & Paste"
+              function.
             </p>
           </div>
+
+          <div className="w-full">
+            <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
+              Further Information
+            </h1>
+            <p className="pb-6">
+              For any inquiries or assistance regarding abstract submission,
+              please contact{" "}
+              <a href="mailto:info@iconic.ppijerman.org" className="text-accent">
+                info@iconic.ppijerman.org
+              </a>
+              .
+            </p>
+          </div>
+
+          {/* Abstract Submission Checkbox */}
         </div>
         <form onSubmit={handleSubmit}>
           <div className="items-top flex space-x-2 w-full py-10 justify-center">
@@ -243,7 +286,6 @@ export default function Page() {
               type="submit"
               className="border-none w-fit md:w-full bg-accent hover:bg-primary2
               text-white hover:text-white py-8 px-5 text-2xl md:text-3xl"
-              
             >
               Submit Abstract
             </Button>
