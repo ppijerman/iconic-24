@@ -46,6 +46,9 @@ export default function Page() {
           <h1 className="text-3xl my-10 md:text-5xl font-bold">
             Abstract Submission
           </h1>
+          <a>
+            Download as PDF
+          </a>
 
           <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
             <Image
