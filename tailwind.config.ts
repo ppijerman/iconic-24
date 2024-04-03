@@ -17,7 +17,15 @@ const config = {
         "2xl": "1400px",
       },
     },
-    
+
+    listStyleType: {
+      disc: "disc",
+      decimal: "decimal",
+      none: "none",
+      square: "square",
+      roman: "upper-roman",
+    },
+
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -78,8 +86,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        'utile-display': ['"utile-display"', 'sans-serif'],
-      }
+        "utile-display": ['"utile-display"', "sans-serif"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
