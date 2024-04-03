@@ -17,7 +17,7 @@ export default function OnlineParticipant() {
             asChild
             className="w-full bg-secondary text-white text-xl text-md md:w-auto mb-5 md:py-5 md:px-20 hover:bg-accent"
           >
-            <Link href="/register" >
+            <Link href="/event-registration" >
               Register here!
             </Link>
           </Button>
