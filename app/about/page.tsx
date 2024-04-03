@@ -80,6 +80,12 @@ export default function Page() {
         </div>
       </div>
 
+      <div className="min-h-screen flex justify-center w-[80%] py-10">
+        <div className="w-full flex flex-col items-center">
+          <h1 className="pt-10 pb-20 text-5xl font-semibold">Commitee Structure</h1>
+        </div>
+      </div>
+
       <div className="bg-secondary text-primary w-full min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-4xl p-5 bg-accent transition hover:bg-primary2 md:text-5xl text-center">
           Submit your Abstract.
