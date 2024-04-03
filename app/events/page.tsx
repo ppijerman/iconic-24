@@ -14,8 +14,8 @@ export default function Page() {
       </ul>
       <h3 className="text-center">
         Your event booklet will provide detailed schedules, speaker bios,
-        session descriptions, profiles of companies participating in the "Meet
-        the Industry" session, and other essential information to help you make
+        session descriptions, profiles of companies participating in the &quot;Meet
+        the Industry&quot; session, and other essential information to help you make
         the most out of your ICONIC 2024 experience. Stay tuned for updates on
         how to access your event booklet!
       </h3>
