@@ -3,7 +3,7 @@
 import dico from "@/assets/dico.png";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { DownloadIcon } from "@radix-ui/react-icons";
+import { DownloadIcon, InfoCircledIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -57,29 +57,31 @@ export default function Page() {
             </div>
           </a>
 
-          <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
+          <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-3 md:gap-6 justify-center bg-accent2 w-full text-white rounded-md">
             <Image
               src={dico}
               alt="dico logo iconic"
               className="w-[100px] md:[w-200px]"
             />
-            <h1 className="text-lg md:text-2xl text-center">
-              Please read the{" "}
-              <span className="text-xl md:text-3xl font-bold">
-                submission guidelines
-              </span>{" "}
-              below for the abstract submission.
+            <InfoCircledIcon className="w-12 h-12" />
+            <h1 className="text-lg md:text-2xl text-center font-bold">
+              Please read the submission guidelines below for the abstract
+              submission.
             </h1>
           </div>
           <div className="flex flex-col py-10 w-full gap-3">
             <h1 className="text-4xl font-semibold w-full pt-14 mb-5 border-b-2 pb-1">
               Registration
             </h1>
-            <p className="w-full md:text-xl text-base pb-5 font-semibold">
-              *Before proceeding, make sure you are already registered as an
-              author via the Oxford Abstract Portal. If not, please register as
-              an author below.
-            </p>
+            <div className="flex flex-row gap-2 items-center justify-center pb-5">
+              <InfoCircledIcon className="w-6 h-6" />
+              <p className="w-full md:text-xl text-base font-semibold">
+                *Before proceeding, make sure you are already registered as an
+                author via the Oxford Abstract Portal. If not, please register
+                as an author below.
+              </p>
+            </div>
+
             <Button
               asChild
               className="w-full text-white bg-accent hover:bg-primary2 p-3 py-6 md:py-8 md:px-12 text-xl md:text-2xl"
@@ -234,8 +236,8 @@ export default function Page() {
               the online portal, author information and affiliations must be
               entered separately from the abstract text (title, body). Abstract
               text can be directly inputted into the online form or transferred
-              from Word and other text programs using the "Copy & Paste"
-              function.
+              from Word and other text programs using the &quot;Copy &
+              Paste&quot; function.
             </p>
           </div>
 
@@ -246,7 +248,10 @@ export default function Page() {
             <p className="pb-6">
               For any inquiries or assistance regarding abstract submission,
               please contact{" "}
-              <a href="mailto:info@iconic.ppijerman.org" className="text-accent">
+              <a
+                href="mailto:info@iconic.ppijerman.org"
+                className="text-accent"
+              >
                 info@iconic.ppijerman.org
               </a>
               .
