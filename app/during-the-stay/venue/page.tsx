@@ -51,31 +51,29 @@ const Venue1 = () => {
         </h1>
         <p>Wilhelmsplatz 3, 37073 Göttingen</p>
       </div>
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-col lg:flex-row gap-2">
-          <Image
-            src={alt4}
-            alt="Venue 1 Alte Mensa"
-            className="w-full h-[500px] object-cover object-center inset-0 "
-          />
-          <Image
-            src={alt1}
-            alt="Venue 1 Alte Mensa"
-            className="w-full h-[500px] object-cover object-center inset-0"
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-2">
-          <Image
-            src={alt2}
-            alt="Venue 1 Alte Mensa"
-            className="w-full h-[500px] object-cover object-center inset-0 "
-          />
-          <Image
-            src={alt3}
-            alt="Venue 1 Alte Mensa"
-            className="w-full h-[500px] object-cover object-center inset-0"
-          />
-        </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <Image
+          src={alt4}
+          alt="Venue 1 Alte Mensa"
+          className="w-full max-h-[500px] object-cover object-center inset-0 rounded-md shadow-lg border-[1.5px] border-black"
+        />
+        <Image
+          src={alt1}
+          alt="Venue 1 Alte Mensa"
+          className="w-full max-h-[500px] object-cover object-center inset-0
+          rounded-md shadow-lg border-[1.5px] border-black"
+        />
+
+        <Image
+          src={alt2}
+          alt="Venue 1 Alte Mensa"
+          className="w-full max-h-[500px] h-full object-cover object-center inset-0 rounded-md shadow-lg border-[1.5px] border-black"
+        />
+        <Image
+          src={alt3}
+          alt="Venue 1 Alte Mensa"
+          className="w-full max-h-[500px] h-full object-cover object-center inset-0 rounded-md shadow-lg border-[1.5px] border-black"
+        />
       </div>
     </div>
   );
@@ -90,24 +88,24 @@ const Venue2 = () => {
         </h1>
         <p>Platz der Göttinger Sieben, 37073 Göttingen</p>
       </div>
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-col lg:flex-row gap-2">
+      <div className="flex flex-col gap-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <Image
             src={zhg1}
             alt="Venue 2 ZHG"
-            className="w-full h-[500px] object-cover object-center inset-0 "
+            className="w-full max-h-[500px] object-cover object-center inset-0 rounded-md shadow-lg border-[1.5px] border-black"
           />
           <Image
             src={zhg2}
             alt="Venue 2 ZHG"
-            className="w-full h-[500px] object-cover object-center inset-0"
+            className="w-full max-h-[500px] object-cover object-center inset-0 rounded-md shadow-lg border-[1.5px] border-black"
           />
         </div>
         <div className="flex">
           <Image
             src={zhg3}
             alt="Venue 2 ZHG"
-            className="w-full h-[500px] object-cover object-center"
+            className="w-full max-h-[500px] object-cover object-center rounded-md shadow-lg border-[1.5px] border-black"
           />
         </div>
       </div>

@@ -3,6 +3,7 @@
 import dico from "@/assets/dico.png";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { DownloadIcon, InfoCircledIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -43,46 +44,69 @@ export default function Page() {
     <main className="flex flex-col bg-white text-secondary items-center">
       <div className="w-[80%] text-xl flex flex-col items-center justify-center text-justify">
         <div className="py-10 flex flex-col justify-center w-full border-b-2">
-          <h1 className="text-3xl my-10 md:text-5xl font-bold">
+          <h1 className="text-3xl mt-10 md:text-5xl font-bold">
             Abstract Submission
           </h1>
-          <a>
-            Download as PDF
+          <a
+            href="https://ppijerman.org/wp-content/uploads/2024/04/Abstract-Submission-Deadlines-and-Guidelines-ICONIC-2024.docx.pdf"
+            className="hover:text-accent mt-1 mb-16 w-fit"
+          >
+            <div className="flex flex-row gap-2 items-center">
+              <p>Download PDF File</p>
+              <DownloadIcon className="w-6 h-6" />
+            </div>
           </a>
 
-          <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-2 md:gap-5 justify-center bg-accent2 w-full text-white rounded-md">
+          <div className="py-10 my-3 h-fit px-5 md:px-0 md:h-[100px] flex flex-col md:flex-row items-center gap-3 md:gap-6 justify-center bg-accent2 w-full text-white rounded-md">
             <Image
               src={dico}
               alt="dico logo iconic"
               className="w-[100px] md:[w-200px]"
             />
-            <h1 className="text-lg md:text-2xl text-center">
-              Please read the{" "}
-              <span className="text-xl md:text-3xl font-bold">
-                submission guidelines
-              </span>{" "}
-              below for the abstract submission.
+            <InfoCircledIcon className="w-12 h-12" />
+            <h1 className="text-lg md:text-2xl text-center font-bold">
+              Please read the submission guidelines below for the abstract
+              submission.
             </h1>
           </div>
-          <div className="flex flex-col py-10 w-full border-b-2 gap-3">
-            <h1 className="text-4xl font-semibold w-full pt-14 mb-5">
-              Registration Guidelines
+          <div className="flex flex-col py-10 w-full gap-3">
+            <h1 className="text-4xl font-semibold w-full pt-14 mb-5 border-b-2 pb-1">
+              Registration
             </h1>
-            <p className="w-full md:text-xl text-base pb-5 font-semibold">
-              *Before proceeding, make sure you are already registered as an
-              author via the Oxford Abstract Portal. If not, please register as
-              an author below.
-            </p>
+            <div className="flex flex-row gap-2 items-center justify-center pb-5">
+              <InfoCircledIcon className="w-6 h-6" />
+              <p className="w-full md:text-xl text-base font-semibold">
+                *Before proceeding, make sure you are already registered as an
+                author via the Oxford Abstract Portal. If not, please register
+                as an author below.
+              </p>
+            </div>
+
             <Button
               asChild
-              className="w-full text-primary bg-accent hover:bg-primary hover:text-secondary p-3 py-6 md:py-8 md:px-12 text-xl md:text-2xl"
+              className="w-full text-white bg-accent hover:bg-primary2 p-3 py-6 md:py-8 md:px-12 text-xl md:text-2xl"
             >
               <Link href="https://app.oxfordabstracts.com/">
                 Register as an Author
               </Link>
             </Button>
           </div>
-          <h1 className="text-4xl font-semibold w-full pt-14 mb-5">
+
+          <div>
+            <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
+              Deadlines
+            </h1>
+            <h2 className="text-2xl font-semibold pb-4">Abstract Submission</h2>
+            <p className="pb-6">25th March - 30th April 2024</p>
+            <h2 className="text-2xl font-semibold pb-4">
+              Notification of Abstract Acceptance
+            </h2>
+            <p className="pb-6">9th May 2024</p>
+            <h2 className="text-2xl font-semibold pb-4">Conference Date</h2>
+            <p className="pb-6">4th - 7th September 2024</p>
+          </div>
+
+          <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
             Submission Guidelines
           </h1>
           {guidelines.map((guideline, index) => (
@@ -137,7 +161,7 @@ export default function Page() {
               <li>LCD of the Built Environment</li>
             </ul>
             <h2 className="text-2xl font-semibold pt-10 pb-4">
-              5. Fields of Study
+              5. Field of Study
             </h2>
             <ul className="list-decimal list-inside py-2 text-xl">
               <li>Finance, Economics and Business</li>
@@ -204,9 +228,37 @@ export default function Page() {
                   online submission portal{" "}
                 </a>
               </span>{" "}
-              before the deadline.
+              before the deadline. Ensure that all guidelines are followed to
+              facilitate the review process.
+            </p>
+            <p className="text-xl pt-3">
+              <span className="font-bold">It is important</span> to note that in
+              the online portal, author information and affiliations must be
+              entered separately from the abstract text (title, body). Abstract
+              text can be directly inputted into the online form or transferred
+              from Word and other text programs using the &quot;Copy &
+              Paste&quot; function.
             </p>
           </div>
+
+          <div className="w-full">
+            <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
+              Further Information
+            </h1>
+            <p className="pb-6">
+              For any inquiries or assistance regarding abstract submission,
+              please contact{" "}
+              <a
+                href="mailto:info@iconic.ppijerman.org"
+                className="text-accent"
+              >
+                info@iconic.ppijerman.org
+              </a>
+              .
+            </p>
+          </div>
+
+          {/* Abstract Submission Checkbox */}
         </div>
         <form onSubmit={handleSubmit}>
           <div className="items-top flex space-x-2 w-full py-10 justify-center">
@@ -238,7 +290,7 @@ export default function Page() {
               disabled={!isAgreed}
               type="submit"
               className="border-none w-fit md:w-full bg-accent hover:bg-primary2
-              text-white py-8 px-5 text-2xl md:text-3xl"
+              text-white hover:text-white py-8 px-5 text-2xl md:text-3xl"
             >
               Submit Abstract
             </Button>

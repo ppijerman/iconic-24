@@ -30,11 +30,14 @@ export function IconicHeader() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   // Define a function to determine if a link is active based on the pathname
-  const isActive = (linkPath: string) => pathname === linkPath;
+  const isActive = (linkPath: string) => {
+    if (linkPath === "/") return pathname === "/";
+    return pathname === linkPath || pathname.includes(linkPath);
+  };
 
   return (
     <header className="flex items-center justify-center bg-white z-50">
-      <nav className="flex flex-row justify-between items-center w-[95%] p-2 bg-white">
+      <nav className="flex flex-row justify-between items-center w-[95%] p-1 bg-white">
         <div className="flex flex-row items-center justify-center">
           <Link href="/">
             <Image
@@ -47,7 +50,7 @@ export function IconicHeader() {
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[8%] md:top-[10%] lg:top-0 w-full items-center px-5 py-5 lg:py-0 shadow-lg lg:shadow-none rounded-lg`}
+          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[6%] md:top-[8%] lg:top-0 w-full items-center  lg:py-0 lg:px-0 px-5 md:px-8 py-8 shadow-lg lg:shadow-none rounded-lg`}
         >
           <ul className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
             {[
@@ -94,18 +97,16 @@ export function IconicHeader() {
               },
               { href: "/submission", label: "Abstract Submission" },
             ].map((item) => (
-              <Link href={item.href} key={item.href} className="group">
+              <Link href={item.href} key={item.href} className="">
                 <li
                   className={`p-2 text-base ${
-                    isActive(item.href)
-                      ? "bg-accent2 shadow-md p-2 rounded-md text-white"
-                      : ""
+                    isActive(item.href) ? "text-primary2" : ""
                   }`}
                   onMouseEnter={() => setHoveredLink(item.label)} // Set the hovered link's href
                   onMouseLeave={() => setHoveredLink("")} // Clear the hovered link's href
                 >
                   {(item.label && (
-                    <span className="flex flex-col hover:text-accent transition group lg:flex-row w-full gap-1 lg:items-center lg:justify-center h-full">
+                    <span className="flex flex-col hover:text-accent transition lg:flex-row w-full gap-1 lg:items-center lg:justify-center h-full">
                       {item.label}
                       {item.submenus && !isOpen && (
                         <ChevronDownIcon
@@ -116,21 +117,24 @@ export function IconicHeader() {
                           }`}
                         />
                       )}
-                      <div className="lg:hidden flex flex-col gap-4 w-full text-sm mt-4 font-normal">
-                        {item.submenus?.map((submenu) => (
-                          <Link href={submenu.href} key={submenu.href}>
-                            <motion.div
-                              className="cursor-pointer hover:opacity-[0.9] dark:text-white"
-                              transition={{ duration: 0.3 }}
-                            >
-                              {submenu.label}
-                            </motion.div>
-                          </Link>
-                        ))}
-                      </div>
                     </span>
                   )) ||
                     ""}
+
+                  {item.label && (
+                    <div className="lg:hidden flex flex-col gap-4 w-full text-sm mt-4 font-normal">
+                      {item.submenus?.map((submenu) => (
+                        <Link href={submenu.href} key={submenu.href}>
+                          <motion.div
+                            className="cursor-pointer hover:text-accent"
+                            transition={{ duration: 0.3 }}
+                          >
+                            {submenu.label}
+                          </motion.div>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
 
                   {/* dropdown */}
                   <motion.div
@@ -141,7 +145,7 @@ export function IconicHeader() {
                     {item.submenus &&
                       hoveredLink === item.label &&
                       item.submenus.length > 0 && (
-                        <div className="absolute">
+                        <div className="absolute lg:flex hidden">
                           <motion.div
                             transition={transition}
                             layoutId="active" // layoutId ensures smooth animation
