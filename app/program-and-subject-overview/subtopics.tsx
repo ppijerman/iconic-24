@@ -13,7 +13,7 @@ export function Subtopics() {
             certain social groups.
           </p>
         </div>
-        <div className="flex flex-col w-full items-center justify-center h-fit md:h-[350px] bg-accent2 p-5">
+        <div className="flex flex-col w-full items-center justify-center h-fit md:h-[350px] bg-primary2 p-5">
           <h1 className="text-3xl md:text-4xl font-semibold">
             Policital Economy of LCD within Global North and South Dynamics
           </h1>
@@ -26,7 +26,7 @@ export function Subtopics() {
         </div>
       </div>
       <div className="flex flex-col md:flex-row w-full items-center">
-        <div className="flex flex-col w-full items-center justify-center h-fit md:h-[350px] bg-primary3 p-5">
+        <div className="flex flex-col w-full items-center justify-center h-fit md:h-[350px] bg-accent2 p-5">
           <h1 className="text-3xl md:text-4xl font-semibold">
             Technological Innovation for LCD
           </h1>
@@ -38,7 +38,7 @@ export function Subtopics() {
             various sectors.
           </p>
         </div>
-        <div className="flex flex-col w-full items-center justify-center h-fit md:h-[350px] bg-primary2 p-5">
+        <div className="flex flex-col w-full items-center justify-center h-fit md:h-[350px] bg-primary3 p-5">
           <h1 className="text-3xl md:text-4xl font-semibold">
             LCD in Built Environment
           </h1>
