@@ -54,12 +54,12 @@ export function IconicHeader() {
               { href: "/", label: "Home" },
               { href: "/about", label: "About Us" },
               {
-                href: "/program-and-subject-overview",
+                href: "#",
                 label: "Program and Subject Overview",
                 submenus: [
-                  { href: "/program", label: "Program" },
-                  { href: "/subject", label: "Subject Overview" },
-                  { href: "/events", label: "Events" },
+                  { href: "/program-and-subject-overview/subject", label: "Subject" },
+                  { href: "/program-and-subject-overview/events", label: "Events" },
+                  { href: "/program-and-subject-overview/speakers", label: "Speakers" },
                 ],
               },
               {
