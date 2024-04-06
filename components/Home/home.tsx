@@ -45,8 +45,8 @@ export function HomePage() {
 
           <div className="flex flex-row mt-5 justify-center items-center w-full text-secondary">
             <div className="text-2xl w-full flex flex-col md:flex-row gap-2 md:gap-5 font-semibold">
-              <h2 className="font-bold">TBD</h2>
-              <h2>September 6th - 8th 2024</h2>
+              <h2 className="font-bold">Göttingen</h2>
+              <h2>September 4th - 7th 2024</h2>
             </div>
           </div>
         </div>
