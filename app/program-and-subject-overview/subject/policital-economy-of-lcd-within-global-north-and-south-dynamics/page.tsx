@@ -12,7 +12,7 @@ export default function TopicTwo() {
         <div className="my-10">
           <p className="mb-3">
             During the Earth Summit in Rio de Janeiro, 1992, the principle of
-            “Common But Differentiated Responsibilities” was formalized. The
+            &quot;Common But Differentiated Responsibilities&quot; was formalized. The
             principle emphasizes the{" "}
             <span className="font-bold">commonly shared obligation</span> in
             addressing climate change but{" "}
@@ -32,8 +32,9 @@ export default function TopicTwo() {
             The <span className="font-bold">distinction</span> between countries
             of the global north and south became{" "}
             <span className="font-bold">increasingly prominent</span> in the{" "}
-            <span className="font-bold">Kyoto Protocol</span> (1997). <span className="font-bold">
-            Industrialized nations were assigned emission reduction targets
+            <span className="font-bold">Kyoto Protocol</span> (1997).{" "}
+            <span className="font-bold">
+              Industrialized nations were assigned emission reduction targets
             </span>
             , while <span className="font-bold">developing countries</span>{" "}
             participated in programs which{" "}
@@ -45,7 +46,7 @@ export default function TopicTwo() {
           <p className="mb-3">
             However, the{" "}
             <span className="font-bold">
-              "Common But Differentiated Responsibilities"
+              &quot;Common But Differentiated Responsibilities&quot;
             </span>{" "}
             principle has faced criticism for its simplistic division between
             developed and developing nations. Developing countries, for
@@ -58,8 +59,8 @@ export default function TopicTwo() {
           </p>
           <p className="mb-3">
             In 2016, <span className="font-bold">the Paris Agreement</span>{" "}
-            notably departed from the "Common But Differentiated
-            Responsibilities" approach, allowing each nation to establish its{" "}
+            notably departed from the &quot;Common But Differentiated
+            Responsibilities&quot; approach, allowing each nation to establish its{" "}
             <span className="font-bold">own national climate targets</span>{" "}
             based on the countries&apos; own circumstances. This shift prompted{" "}
             <span className="font-bold">Indonesia</span> to commit to{" "}
@@ -68,8 +69,8 @@ export default function TopicTwo() {
             <span className="font-bold">2030</span>.
           </p>
           <p className="mb-3">
-            Despite ongoing disputes, the "Common But Differentiated
-            Responsibility" principle{" "}
+            Despite ongoing disputes, the &quot;Common But Differentiated
+            Responsibility&quot; principle{" "}
             <span className="font-bold">remains relevant</span> in global
             climate governance today, particularly in light of the{" "}
             <span className="font-bold">economic impacts of COVID-19</span> and
@@ -94,14 +95,12 @@ export default function TopicTwo() {
             towards climate change adaptation and mitigation efforts.
           </p>
           <p className="mb-3">
-            What's your take on this ongoing debate? Should developed
-            nations financially support climate initiatives in developing
-            countries? Or should developing nations independently tackle this
-            issue?
+            What&apos;s your take on this ongoing debate? Should developed nations
+            financially support climate initiatives in developing countries? Or
+            should developing nations independently tackle this issue?
           </p>
           <p>
-            Share your thoughts, insights, and ideas with us at ICONIC
-            2024!
+            Share your thoughts, insights, and ideas with us at ICONIC 2024!
           </p>
         </div>
         <Button
@@ -114,9 +113,9 @@ export default function TopicTwo() {
         <ul class="list-disc">
           <li>
             <a href="https://doi.org/10.1111/1467-9388.00243" target="_blank">
-              Rajamani, Lavanya. (2002). "The Principle of Common but
+              Rajamani, Lavanya. (2002). &quot;The Principle of Common but
               Differentiated Responsibility and the Balance of Commitments under
-              the Climate Regime". Review of European Community & International
+              the Climate Regime&quot;. Review of European Community & International
               Environmental Law. 9, 2: 128–129.
             </a>
           </li>
@@ -135,7 +134,7 @@ export default function TopicTwo() {
               target="_blank"
             >
               Tomoi, Hiroaki., Ohsawa, T., Quevedo, J., Kohsaka, R. (2022). Is
-              “Common But Differentiated Responsibilities” principle applicable
+              &quot;Common But Differentiated Responsibilities&quot; principle applicable
               in biodiversity? – Towards approaches for shared responsibilities
               based on updated capabilities and data. Ecological Indicators.
               145.

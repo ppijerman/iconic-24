@@ -46,7 +46,7 @@ export default function TopicThree() {
             </span>{" "}
             in the global south (Pigato et al., 2020),{" "}
             <span className="font-bold">
-              integrating technology isn't straightforward
+              integrating technology is not straightforward
             </span>
             . It demands various capabilities across{" "}
             <span className="font-bold">
