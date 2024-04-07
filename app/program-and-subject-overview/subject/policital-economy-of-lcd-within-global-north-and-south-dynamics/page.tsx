@@ -110,7 +110,7 @@ export default function TopicTwo() {
           <Link href="/submission">Submit Your Abstract</Link>
         </Button>
         <p className="mt-10 mb-1">Sources:</p>
-        <ul class="list-disc">
+        <ul className="list-disc">
           <li>
             <a href="https://doi.org/10.1111/1467-9388.00243" target="_blank">
               Rajamani, Lavanya. (2002). &quot;The Principle of Common but

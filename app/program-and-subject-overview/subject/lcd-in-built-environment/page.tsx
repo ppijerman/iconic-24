@@ -67,7 +67,7 @@ export default function TopicFour() {
           <Link href="/submission">Submit Your Abstract</Link>
         </Button>
         <p className="mt-10 mb-1">Sources:</p>
-        <ul class="list-disc">
+        <ul className="list-disc">
           <li>Abrissmemoratorium Deutsche Architekturverband</li>
           <li>
             <a href="https://www.treehugger.com/" target="_blank">

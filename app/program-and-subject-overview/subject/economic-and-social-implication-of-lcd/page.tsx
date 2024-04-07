@@ -90,7 +90,7 @@ export default function TopicOne() {
           <Link href="/submission">Submit Your Abstract</Link>
         </Button>
         <p className="mt-10 mb-1">Sources:</p>
-        <ul class="list-disc">
+        <ul className="list-disc">
           <li>
             <a
               href="https://www.adb.org/publications/transition-from-coals-to-renewable-energy-evidence-from-indonesia"

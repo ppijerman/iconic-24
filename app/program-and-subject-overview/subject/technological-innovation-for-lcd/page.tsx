@@ -91,7 +91,7 @@ export default function TopicThree() {
           <Link href="/submission">Submit Your Abstract</Link>
         </Button>
         <p className="mt-10 mb-1">Sources:</p>
-        <ul class="list-disc">
+        <ul className="list-disc">
           <li>
             <a href="https://unfccc.int/process-and-meetings/the-paris-agreement" target="_blank">
               United Nations Framework Convention on Climate Change. (Retrieved 25/03/2024). The Paris Agreement. 
