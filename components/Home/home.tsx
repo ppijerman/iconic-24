@@ -9,7 +9,7 @@ export function HomePage() {
     <main
       className="min-h-screen flex flex-col justify-center w-full"
       style={{
-        backgroundImage: "url('/past-iconic-6.jpg')",
+        backgroundImage: "url('/habibie.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -44,8 +44,8 @@ export function HomePage() {
           </motion.div>
 
           <div className="flex flex-row mt-5 justify-center items-center w-full text-secondary">
-            <div className="text-2xl w-full flex flex-col md:flex-row gap-2 md:gap-5 font-semibold">
-              <h2 className="font-bold">Göttingen</h2>
+            <div className="text-2xl w-full flex flex-col gap-2 font-semibold">
+              <h2 className="font-bold md:text-3xl">Göttingen</h2>
               <h2>September 4th - 7th 2024</h2>
             </div>
           </div>

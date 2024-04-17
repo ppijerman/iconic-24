@@ -5,6 +5,7 @@ import { SpeakersSection } from "@/components/Home/speakers";
 import { CallToActionRegister } from "@/components/Home/call-to-action";
 import { Partners } from "@/components/Home/partners";
 import Introduction from "@/components/Home/introduction";
+import { IconicOutput } from "@/components/Home/output-iconic";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomePage />
       <Countdown />
       <Introduction />
+      <IconicOutput />
       <IconicSchedule />
       <SpeakersSection />
       <CallToActionRegister />

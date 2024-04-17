@@ -41,7 +41,7 @@ export default function Introduction() {
                 asChild
                 className="p-6 md:p-10 w-fit text-lg md:text-2xl bg-secondary hover:bg-accent text-white font-bold"
               >
-                <Link href="/what-is-iconic">Learn More About ICONIC</Link>
+                <Link href="/about">Learn More About ICONIC</Link>
               </Button>
             </div>
           </div>
