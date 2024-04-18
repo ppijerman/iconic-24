@@ -11,7 +11,7 @@ export default function Introduction() {
           <Image
             src={pastIconic}
             alt="Past Iconic"
-            className="w-full min-h-screen object-cover"
+            className="w-full h-fit object-cover"
           />
         </div>
         <div className="flex flex-col items-center justify-center w-full p-10 px-16">
