@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export function IconicSchedule() {
   const abstractSubmissionDeadlines = [
     { name: "Abstract Submission", date: "March 25th - April 30th 2024" },

@@ -55,7 +55,7 @@ export function IconicHeader() {
           <ul className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
             {[
               { href: "/", label: "Home" },
-              { href: "/about", label: "About Us" },
+              { href: "/about", label: "About" },
               {
                 href: "#",
                 label: "Program and Subject Overview",

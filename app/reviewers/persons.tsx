@@ -1,7 +1,7 @@
 // persons.tsx
 export const persons = [
   {
-    name: "Iriana Rafiana",
+    name: "Iriana Rafliana",
     institution: "Universität Bonn",
     field: "Knowledge Scociology, STS, Social Constructions of Risks",
   },

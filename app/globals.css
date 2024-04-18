@@ -80,6 +80,7 @@ body,
 @layer base {
   * {
     @apply border-border;
+    @apply font-inter;
   }
   body {
     @apply bg-background text-foreground;

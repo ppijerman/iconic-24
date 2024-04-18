@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import Image from "next/image";
-import pastIconic from "@/public/past-iconic-5.jpg";
+import pastIconic from "@/public/habibie.jpeg";
 import Link from "next/link";
 
 export default function Introduction() {
@@ -11,7 +11,7 @@ export default function Introduction() {
           <Image
             src={pastIconic}
             alt="Past Iconic"
-            className="w-full min-h-screen object-cover"
+            className="w-full h-fit object-cover"
           />
         </div>
         <div className="flex flex-col items-center justify-center w-full p-10 px-16">
@@ -41,7 +41,7 @@ export default function Introduction() {
                 asChild
                 className="p-6 md:p-10 w-fit text-lg md:text-2xl bg-secondary hover:bg-accent text-white font-bold"
               >
-                <Link href="/what-is-iconic">Learn More About ICONIC</Link>
+                <Link href="/about">Learn More About ICONIC</Link>
               </Button>
             </div>
           </div>

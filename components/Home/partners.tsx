@@ -13,8 +13,8 @@ export function Partners() {
   ];
   return (
     <section className="bg-secondary text-primary min-h-[600px] flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center w-[80%] py-2 px-4">
-        <h1 className="text-4xl lg:text-6xl font-bold w-full px-4 py-10 text-center leading-relaxed">
+      <div className="flex flex-col items-center py-5 justify-center w-[80%] px-4">
+        <h1 className="text-4xl lg:text-6xl font-bold w-full px-4 text-center leading-relaxed">
           PARTNERS OF ICONIC 2024
         </h1>
       </div>
@@ -30,15 +30,15 @@ export function Partners() {
             </div>
           ))}
         </div> */}
-        <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-center pt-4 w-[80%]">
-          <div className="flex flex-col w-full p-5">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-center pt-4 w-[90%] md:w-[80%]">
+          <div className="flex flex-col w-full p-1 py-5 md:p-5">
             <p className="text-xl">
               Our esteemed partners have been pivotal in shaping the Low Carbon
               Development Conference, driving forward sustainable solutions and
               innovations for a greener future.
             </p>
           </div>
-          <div className="flex flex-col w-full justify-center gap-5 p-5">
+          <div className="flex flex-col w-full justify-center gap-5 p-1 py-5 md:p-5">
             <h1 className="text-xl">Interested in becoming a partner?</h1>
             <p className="text-xl">
               We are looking for partners to collaborate with us to change the
@@ -47,7 +47,7 @@ export function Partners() {
             <Link href="/partnership">
               <Button
                 variant="default"
-                className="text-3xl text-primary bg-accent px-10 py-7 hover:bg-primary2 transition shadow-lg w-[100%]"
+                className="text-xl md:text-3xl text-primary bg-accent px-10 py-7 hover:bg-primary2 transition shadow-lg w-[100%]"
               >
                 Collaborate with us.
               </Button>

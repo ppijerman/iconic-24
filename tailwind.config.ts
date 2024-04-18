@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -87,6 +89,7 @@ const config = {
       },
       fontFamily: {
         "utile-display": ['"utile-display"', "sans-serif"],
+        "inter": ['Inter var', ...defaultTheme.fontFamily.sans]
       },
     },
   },
