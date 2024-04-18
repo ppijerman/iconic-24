@@ -12,7 +12,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export function IconicOutput() {
   return (
-    <section className="bg-white min-h-screen w-full flex flex-col md:justify-center items-center p-3">
+    <section className="bg-white min-h-screen w-full flex flex-col md:justify-center items-center p-3 text-secondary">
       <div className="flex flex-col items-center w-[80%] justify-center">
         <h1 className="pb-10 md:text-5xl text-3xl font-bold py-5 pt-16">
           ICONIC as Multi-Stakeholders Platform

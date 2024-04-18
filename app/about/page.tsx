@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 import { IconicImages } from "./iconic-images";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { IconicOutput } from "./output-iconic";
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center">
-      <div className="min-h-screen flex flex-col justify-center w-[80%] py-10">
+    <main className="flex flex-col items-center bg-white">
+      <div className="min-h-screen flex flex-col justify-center w-[90%] md:w-[80%] py-10">
         <h1 className="font-bold text-4xl md:text-6xl w-full leading-normal md:leading-snug">
           Empowering Global Progress:{" "}
           <span className="bg-accent px-3 text-white">ICONIC 2024</span> –
@@ -30,7 +31,7 @@ export default function Page() {
           <Link href="/event-registration">JOIN US.</Link>
         </Button>
       </div>
-      <div className="flex flex-col w-full min-h-screen bg-white items-center justify-center">
+      <div className="flex flex-col w-full min-h-screen bg-white text-secondary items-center justify-center">
         <h1 className="text-center text-4xl md:text-5xl lg:text-7xl pt-16 px-5 font-bold">
           What is ICONIC?
         </h1>
@@ -78,6 +79,7 @@ export default function Page() {
             </p>
           </div>
         </div>
+        <IconicOutput />
         <div className="w-full flex flex-col items-center justify-center">
           <h1 className="pt-10 pb-20 text-4xl font-semibold">Past ICONIC</h1>
           <IconicImages />
@@ -86,20 +88,10 @@ export default function Page() {
 
       <div className="min-h-screen flex justify-center w-[80%] py-10">
         <div className="w-full flex flex-col items-center">
-          <h1 className="pt-10 pb-20 text-5xl font-semibold">Commitee Structure</h1>
+          <h1 className="pt-10 pb-20 text-5xl font-semibold">
+            Commitee Structure
+          </h1>
         </div>
-      </div>
-
-      <div className="bg-secondary text-primary w-full min-h-screen flex flex-col items-center justify-center">
-        <h1 className="text-4xl p-5 bg-accent transition hover:bg-primary2 md:text-5xl text-center">
-          Submit your Abstract.
-        </h1>
-        <h2 className="text-3xl md:text-4xl mt-10">Questions?</h2>
-        <h3>
-          <a href="mailto:info@iconic.ppijerman.org">
-            info@iconic.ppijerman.org
-          </a>
-        </h3>
       </div>
     </main>
   );
