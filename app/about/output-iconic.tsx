@@ -2,10 +2,8 @@
 import { motion } from "framer-motion";
 import {
   ArrowDownIcon,
-  ArrowRightIcon,
   BookmarkFilledIcon,
   FileIcon,
-  FileTextIcon,
   IdCardIcon,
   ReaderIcon,
 } from "@radix-ui/react-icons";

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import iconicLogo2 from "@/assets/logo-main-pr.png";
+import iconicLogo2 from "@/assets/logo-main-white.png";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { ImagesSlider } from "../images-slider";
@@ -9,7 +9,14 @@ import { motion } from "framer-motion";
 
 export function CallToActionRegister() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-primary text-secondary w-screen">
+    <section
+      className="flex flex-col items-center justify-center min-h-screen text-secondary w-screen font-utile-display"
+      style={{
+        backgroundImage: "url('/arc-bali.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <motion.div
         className="flex flex-col items-center justify-center w-[80%] gap-7 py-10 z-50"
         initial={{
@@ -24,16 +31,22 @@ export function CallToActionRegister() {
           duration: 0.6,
         }}
       >
-        <Image src={iconicLogo2} alt="iconic Logo 2" width={700} height={500} />
+        <Image
+          src={iconicLogo2}
+          alt="iconic Logo 2"
+          width={700}
+          height={500}
+          className="drop-shadow-lg"
+        />
         <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-          <h1 className="w-full md:w-fit text-3xl text-center text-white md:text-6xl font-semibold p-4 bg-accent2 hover:text-accent transition cursor-default shadow-lg">
+          <h1 className="w-full md:w-fit text-4xl text-center text-white md:text-6xl font-semibold p-4 hover:text-accent transition cursor-default">
             JOIN US.
           </h1>
-          <h1 className="w-full md:w-fit text-3xl text-center md:text-6xl font-semibold p-4 text-white bg-primary3 hover:text-accent transition cursor-default shadow-lg">
+          <h1 className="w-full md:w-fit text-4xl text-center md:text-6xl font-semibold p-4 text-white hover:text-accent transition cursor-default shadow-lg">
             RETHINK DEVELOPMENT.
           </h1>
         </div>
-        <p className="text-xl md:text-2xl md:text-center ">
+        <p className="text-lg text-white md:text-2xl md:text-center rounded-md px-2">
           Contribute to our future by{" "}
           <span className="font-bold">submitting your abstract</span> for
           Transformation for Low-Carbon Development.

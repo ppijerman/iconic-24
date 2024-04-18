@@ -74,7 +74,7 @@ export default function DuringTheStay() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-x-5 gap-y-8">
             {topics.map((topic, index) => (
               <Link href={topic.href} key={index}>
-                <Card className="text-secondary group h-fit md:h-[220px]">
+                <Card className="text-secondary group h-fit md:h-[250px] flex flex-col">
                   <CardHeader>
                     <div className="flex justify-between">
                       <h1

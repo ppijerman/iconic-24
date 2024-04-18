@@ -30,6 +30,8 @@ import alain from "@/assets/speakers/04-Alain.jpeg";
 import styles from "./speakersScrollBar.module.css";
 import { Button } from "../ui/button";
 
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+
 export function SpeakersSection() {
   const speakers = [
     {
@@ -71,7 +73,8 @@ export function SpeakersSection() {
     },
     {
       name: "Dr. Rukka Sombolinggi",
-      title: "Secretary General of Indonesian Archipelago Indigenous People Alliance (AMAN)",
+      title:
+        "Secretary General of Indonesian Archipelago Indigenous People Alliance (AMAN)",
       image: rukka,
     },
     {
@@ -81,12 +84,14 @@ export function SpeakersSection() {
     },
     {
       name: "Prof. Dr. Delik Hudalah",
-      title: "Professor of Territorial and Rural Planning (Bandung Institute of Technology, ITB)",
+      title:
+        "Professor of Territorial and Rural Planning (Bandung Institute of Technology, ITB)",
       image: delik,
     },
     {
       name: "Prof. Dr. Alain Thierstein",
-      title: "Professor of Spatial Development (Technical University of Munich)",
+      title:
+        "Professor of Spatial Development (Technical University of Munich)",
       image: alain,
     },
   ];
@@ -98,7 +103,7 @@ export function SpeakersSection() {
       </h1>
 
       <div
-        className={`${styles.scrollbarContainer} flex flex-row gap-8 px-5 py-10 overflow-x-scroll scroll-smooth scrollbar-hide`}
+        className={`${styles.scrollbarContainer} flex flex-row gap-4 md:gap-8 px-2 md:px-5 py-10 overflow-x-scroll scroll-smooth scrollbar-hide`}
         style={{ width: "100%" }}
       >
         {speakers.map((speaker, index) => (
@@ -109,18 +114,21 @@ export function SpeakersSection() {
             <Image
               src={speaker.image}
               alt="placeholder"
-              className="w-48 h-48 rounded-full object-cover object-top"
+              className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
             />
             <div className="flex flex-col gap-2 w-full text-center items-center mt-10">
-              <h1 className="text-lg font-bold">{speaker.name}</h1>
+              <h1 className="text-md md:text-lg font-bold">{speaker.name}</h1>
               <p className="text-sm">{speaker.title}</p>
             </div>
           </div>
         ))}
       </div>
-      <Button className="bg-white rounded-none px-10 py-7 ring-secondary ring-2 font-bold text-lg">
-        See Speaker Details
-      </Button>
+      <Link href="/program-and-subject-overview/speakers">
+        <div className="text-2xl flex flex-row gap-2 text-secondary items-center justify-center ring-2 ring-secondary group w-fit py-5 px-10 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10">
+          <h1 className="font-bold ">See Speaker Details</h1>
+          <ArrowTopRightIcon className="w-6 h-6 opacity-0 group-hover:opacity-100 transition duration-75" />
+        </div>
+      </Link>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import Image from "next/image";
-import pastIconic from "@/public/past-iconic-5.jpg";
+import pastIconic from "@/public/habibie.jpeg";
 import Link from "next/link";
 
 export default function Introduction() {

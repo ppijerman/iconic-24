@@ -13,8 +13,8 @@ export function Partners() {
   ];
   return (
     <section className="bg-secondary text-primary min-h-[600px] flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center w-[80%] py-2 px-4">
-        <h1 className="text-4xl lg:text-6xl font-bold w-full px-4 py-10 text-center leading-relaxed">
+      <div className="flex flex-col items-center py-5 justify-center w-[80%] px-4">
+        <h1 className="text-4xl lg:text-6xl font-bold w-full px-4 text-center leading-relaxed">
           PARTNERS OF ICONIC 2024
         </h1>
       </div>
