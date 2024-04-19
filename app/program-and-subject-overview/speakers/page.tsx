@@ -13,6 +13,7 @@ import ottmar from "@/assets/speakers/Ottmar Edenhofer.jpg";
 //01
 import havas from "@/assets/speakers/01-dubes-ri.jpg";
 import kristina from "@/assets/speakers/01-Kristina.jpeg";
+import georg from "@/assets/speakers/01-Georg.jpeg";
 
 //02
 import yurdi from "@/assets/speakers/02-Yurdi.jpeg";
@@ -81,8 +82,8 @@ export default function SpeakersSection() {
     },
     {
       name: "Georg Buchholz",
-      title: "Program Director, FOrests and Climate Change Programme, GIZ",
-      image: imgPlaceholder,
+      title: "Program Director, Forests and Climate Change Programme, GIZ",
+      image: georg,
     },
   ];
 
@@ -95,7 +96,7 @@ export default function SpeakersSection() {
     },
     {
       name: "Stefan Schlosser",
-      title: "Direct of Deutscher Verband für Negative Emission (DVNE)",
+      title: "Director of Deutscher Verband für Negative Emission (DVNE)",
       image: stefan,
     },
   ];
@@ -104,13 +105,12 @@ export default function SpeakersSection() {
     {
       name: "Prof. Dr. Delik Hudalah",
       title:
-        "Professor of Territorial and Rural Planning (Bandung Institute of Technology, ITB)",
+        "Professor of Territorial and Rural Planning, Bandung Institute of Technology",
       image: delik,
     },
     {
       name: "Prof. Dr. Alain Thierstein",
-      title:
-        "Professor of Spatial Development (Technical University of Munich)",
+      title: "Professor of Spatial Development, Technical University of Munich",
       image: alain,
     },
   ];
@@ -118,14 +118,14 @@ export default function SpeakersSection() {
   return (
     <section className="min-h-screen flex justify-center bg-white">
       <div className="w-[80%] pb-15 pt-10 md:pt-20">
-        <h1 className="font-bold text-3xl md:text-5xl">Speakers</h1>
+        <h1 className="font-bold text-3xl md:text-5xl">Potential Speakers</h1>
         <div className="py-10 flex flex-col gap-5">
           <div className="flex flex-col py-2">
-            <h1 className="text-xl md:text-3xl px-3 border-b-4 border-secondary w-fit pb-2">
+            <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
               <span className="font-bold">Ministerial Talk</span> - Financing
               Low-Carbon Development in Indonesia
             </h1>
-            <div className="flex flex-row gap-4 md:gap-8 px-2 md:px-5 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-4 md:gap-8 px-2 md:px-5 py-10">
               {speakersFinance.map((speaker, index) => (
                 <div
                   key={index}
@@ -136,7 +136,7 @@ export default function SpeakersSection() {
                     alt="placeholder"
                     className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
                   />
-                  <div className="flex flex-col gap-2 w-full text-center items-center mt-10">
+                  <div className="flex flex-col gap-2 w-full text-center items-center mt-5 md:mt-10">
                     <h1 className="text-lg md:text-xl font-bold">
                       {speaker.name}
                     </h1>
@@ -148,11 +148,11 @@ export default function SpeakersSection() {
           </div>
 
           <div className="flex flex-col py-2">
-            <h1 className="text-xl md:text-3xl px-3 border-b-4 border-secondary w-fit pb-2">
+            <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
               <span className="font-bold">Panel Discussion</span> -
               Decarbonization in Global South: Who Should Bear the Cost?
             </h1>
-            <div className="flex flex-row gap-4 md:gap-8 px-2 md:px-5 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-10 md:gap-8 px-2 md:px-5 py-10">
               {speakersDecarbonization.map((speaker, index) => (
                 <div
                   key={index}
@@ -163,7 +163,7 @@ export default function SpeakersSection() {
                     alt="placeholder"
                     className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
                   />
-                  <div className="flex flex-col gap-2 w-full text-center items-center mt-10">
+                  <div className="flex flex-col gap-2 w-full text-center items-center mt-5 md:mt-10">
                     <h1 className="text-lg md:text-xl font-bold">
                       {speaker.name}
                     </h1>
@@ -175,10 +175,13 @@ export default function SpeakersSection() {
           </div>
 
           <div className="flex flex-col py-2">
-            <h1 className="text-xl md:text-3xl px-3 border-b-4 border-secondary w-fit pb-2">
-              Financing Low-Carbon Development in Indonesia
+            <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
+              <span className="font-bold">
+                Keynote Speeches and Panel Discussion
+              </span>{" "}
+              - Reducing AFOLU-Emission: Balancing Development and Conservation
             </h1>
-            <div className="flex flex-row gap-4 md:gap-8 px-2 md:px-5 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8 md:gap-8 px-2 md:px-5 py-10">
               {speakersReducingEmissions.map((speaker, index) => (
                 <div
                   key={index}
@@ -189,7 +192,7 @@ export default function SpeakersSection() {
                     alt="placeholder"
                     className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
                   />
-                  <div className="flex flex-col gap-2 w-full text-center items-center mt-10">
+                  <div className="flex flex-col gap-2 w-full text-center items-center mt-5 md:mt-10">
                     <h1 className="text-lg md:text-xl font-bold">
                       {speaker.name}
                     </h1>
@@ -201,10 +204,14 @@ export default function SpeakersSection() {
           </div>
 
           <div className="flex flex-col py-2">
-            <h1 className="text-xl md:text-3xl px-3 border-b-4 border-secondary w-fit pb-2">
-              Financing Low-Carbon Development in Indonesia
+            <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
+              <span className="font-bold">
+                Keynote Speeches and Panel Discussion
+              </span>{" "}
+              - Carbon Capture, Storage and Removal: Between Low-Tech and
+              High-Tech
             </h1>
-            <div className="flex flex-row gap-4 md:gap-8 px-2 md:px-5 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-4 md:gap-8 px-2 md:px-5 py-10">
               {speakersCarbonCapture.map((speaker, index) => (
                 <div
                   key={index}
@@ -215,7 +222,7 @@ export default function SpeakersSection() {
                     alt="placeholder"
                     className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
                   />
-                  <div className="flex flex-col gap-2 w-full text-center items-center mt-10">
+                  <div className="flex flex-col gap-2 w-full text-center items-center mt-5 md:mt-10">
                     <h1 className="text-lg md:text-xl font-bold">
                       {speaker.name}
                     </h1>
@@ -227,10 +234,13 @@ export default function SpeakersSection() {
           </div>
 
           <div className="flex flex-col py-2">
-            <h1 className="text-xl md:text-3xl px-3 border-b-4 border-secondary w-fit pb-2">
-              Financing Low-Carbon Development in Indonesia
+            <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
+              <span className="font-bold">
+                Keynote Speeches and Panel Discussion
+              </span>{" "}
+              - Perspectives on Low-Carbon Territorial Planning
             </h1>
-            <div className="flex flex-row gap-4 md:gap-8 px-2 md:px-5 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-8 px-2 md:px-5 py-10">
               {speakersPerspectives.map((speaker, index) => (
                 <div
                   key={index}
@@ -241,7 +251,7 @@ export default function SpeakersSection() {
                     alt="placeholder"
                     className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
                   />
-                  <div className="flex flex-col gap-2 w-full text-center items-center mt-10">
+                  <div className="flex flex-col gap-2 w-full text-center items-center mt-5 md:mt-10">
                     <h1 className="text-lg md:text-xl font-bold">
                       {speaker.name}
                     </h1>

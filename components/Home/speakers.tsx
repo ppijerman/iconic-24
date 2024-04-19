@@ -13,6 +13,7 @@ import ottmar from "@/assets/speakers/Ottmar Edenhofer.jpg";
 //01
 import havas from "@/assets/speakers/01-dubes-ri.jpg";
 import kristina from "@/assets/speakers/01-Kristina.jpeg";
+import georg from "@/assets/speakers/01-Georg.jpeg";
 
 //02
 import yurdi from "@/assets/speakers/02-Yurdi.jpeg";
@@ -61,6 +62,11 @@ export function SpeakersSection() {
       image: kristina,
     },
     {
+      name: "Matthias Boerner",
+      title: "Sector Economict for Green Climate Fund KFW",
+      image: imgPlaceholder,
+    },
+    {
       name: "Dr. Yurdi Yasmi",
       title: "Deputy Director / Special Coordinator of FAO",
       image: yurdi,
@@ -72,6 +78,11 @@ export function SpeakersSection() {
       image: carola,
     },
     {
+      name: "Georg Buchholz",
+      title: "Program Director, Forests and Climate Change Programme, GIZ",
+      image: georg,
+    },
+    {
       name: "Dr. Rukka Sombolinggi",
       title:
         "Secretary General of Indonesian Archipelago Indigenous People Alliance (AMAN)",
@@ -79,19 +90,19 @@ export function SpeakersSection() {
     },
     {
       name: "Stefan Schlosser",
-      title: "Direct of Deutscher Verband für Negative Emission (DVNE)",
+      title: "Managing Director of Deutscher Verband für Negative Emission (DVNE)",
       image: stefan,
     },
     {
       name: "Prof. Dr. Delik Hudalah",
       title:
-        "Professor of Territorial and Rural Planning (Bandung Institute of Technology, ITB)",
+        "Professor of Territorial and Rural Planning, Bandung Institute of Technology",
       image: delik,
     },
     {
       name: "Prof. Dr. Alain Thierstein",
       title:
-        "Professor of Spatial Development (Technical University of Munich)",
+        "Professor of Spatial Development, Technical University of Munich",
       image: alain,
     },
   ];
@@ -99,7 +110,7 @@ export function SpeakersSection() {
   return (
     <section className="bg-white flex flex-col items-center justify-center gap-10 py-10">
       <h1 className="text-3xl md:text-5xl font-bold pt-10">
-        Expected Speakers
+        Potential Speakers
       </h1>
 
       <div
