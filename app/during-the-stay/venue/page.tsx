@@ -20,7 +20,8 @@ export default function Preparation() {
 
         {/* Tabs */}
         <div className="w-full flex flex-col my-20 min-h-screen">
-          <Tabs defaultValue="venue1">
+          <Venue2 />
+          {/* <Tabs defaultValue="venue1">
             <TabsList className="w-full grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 h-fit gap-3">
               <TabsTrigger value="venue1" className="text-3xl">
                 Venue 1
@@ -35,7 +36,7 @@ export default function Preparation() {
             <TabsContent value="venue2">
               <Venue2 />
             </TabsContent>
-          </Tabs>
+          </Tabs> */}
         </div>
       </div>
     </main>
