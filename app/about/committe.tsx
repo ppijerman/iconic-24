@@ -20,7 +20,7 @@ import kinasih from "@/assets/team/kinasih.jpg";
 import evelyn from "@/assets/team/evelyn.jpg";
 import syifa from "@/assets/team/syifa.jpg";
 import taqi from "@/assets/team/taqi.jpg";
-import nata from "@/assets/team/nata.jpg";
+import nata from "@/assets/team/natadaffa.jpg";
 import maulana from "@/assets/team/maulana.jpg";
 import tasa from "@/assets/team/tasallia.jpg";
 import aditya from "@/assets/team/aditya.jpg";
