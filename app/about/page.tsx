@@ -26,14 +26,14 @@ import eunike from "@/assets/commitee/eunike.png";
 import hosea from "@/assets/commitee/Hosea.jpg";
 import marcelian from "@/assets/commitee/Marcelian.jpg";
 import hapsari from "@/assets/commitee/hapsari.jpg";
-import fadlilah from "@/assets/commitee/fadlilah.jpg";
+import fadlilah from "@/assets/commitee/Fadlilah.jpg";
 import bea from "@/assets/commitee/Bea.jpg";
 import santi from "@/assets/commitee/Santi.jpg";
 import kinasih from "@/assets/commitee/Kinasih.jpg";
 import evelyn from "@/assets/commitee/evelyn.jpg";
 import syifa from "@/assets/commitee/Syifa.jpg";
 import taqi from "@/assets/commitee/Taqi.jpg";
-import nata from "@/assets/commitee/nata.jpg";
+import nata from "@/assets/commitee/Nata.jpg";
 import maulana from "@/assets/commitee/Maulana.jpg";
 import tasa from "@/assets/commitee/Tasallia.jpg";
 import aditya from "@/assets/commitee/aditya.jpg";
@@ -41,7 +41,7 @@ import kafa from "@/assets/commitee/Kafa.jpg";
 import tazya from "@/assets/commitee/tazya.jpg";
 import christine from "@/assets/commitee/Christine.jpg";
 import risma from "@/assets/commitee/Risma.jpeg";
-import kemal from "@/assets/commitee/kemal.jpg";
+import kemal from "@/assets/commitee/Kemal.jpg";
 
 import nopic from "@/assets/img-round-placeholder.png";
 
