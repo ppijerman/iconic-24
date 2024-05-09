@@ -30,8 +30,81 @@ import christine from "@/assets/commitee/christine.jpg";
 import risma from "@/assets/commitee/risma.jpeg";
 import kemal from "@/assets/commitee/kemal.jpg";
 
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
+interface informations {
+  imageSrc: ImageProps["src"];
+  name: string;
+  position: string;
+  positionPPIJ: string;
+  education: string;
+  occupation: string;
+}
+
+const DuaTeratas: React.FC<informations> = ({
+  imageSrc,
+  name,
+  position,
+  positionPPIJ,
+  education,
+  occupation,
+}) => {
+  return (
+    <div className="lg:max-w-[550px] lg:h-[280px] rounded-xl overflow-hidden p-6 gap-6 bg-[#F0F0F0] flex items-center justify-center flex-col lg:flex-row">
+      <div className="p-2 flex items-center justify-center lg:w-[400px] lg:h-[230px]">
+        <Image
+          src={imageSrc}
+          alt="Sekar"
+          className="w-full h-full lg:mb-0 object-cover rounded-md"
+        />
+      </div>
+      <div className="gap-1">
+        <h5 className="text-[28px] font-bold">{name}</h5>
+        <p className="text-neutral-500 text-xl font-bold dark:text-neutral-300">
+          {position}
+        </p>
+        <ul className="list-disc ml-4">
+          <li>
+            <p className="text-neutral-500 text-sm dark:text-neutral-300">
+              {positionPPIJ}
+            </p>
+          </li>
+          <li>
+            <p className="text-neutral-500 text-sm dark:text-neutral-300">
+              {education}
+            </p>
+          </li>
+          <li>
+            <p className="text-neutral-500 text-sm dark:text-neutral-300">
+              {occupation}
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const orangDuaTeratas = [
+  {
+    imageSrc: sekar,
+    name: "Sekar Ayu Lestari",
+    position: "President",
+    positionPPIJ: "President of PPI Jerman",
+    education:
+      "M.Sc. Candidate Electrical and Electronics Engineering, Technische Universität München",
+    occupation: "Working Student in Measurement Engineering at IAB GmbH",
+  },
+  {
+    imageSrc: agnia,
+    name: "Agnia Dewi Larasati",
+    position: "Board of Advisory",
+    positionPPIJ: "President of PPI Jerman",
+    education:
+      "M.Sc. Candidate Electrical and Electronics Engineering, Technische Universität München",
+    occupation: "Working Student in Measurement Engineering at IAB GmbH",
+  },
+];
 
 export const Committee = () => {
   return (
@@ -39,73 +112,17 @@ export const Committee = () => {
       <div className="w-full flex flex-col items-center">
         <h1 className="pt-10 pb-20 text-5xl font-semibold">Meet The Team</h1>
         <div className="grid gap-6 md:grid-cols-2 mb-5">
-          <div className="lg:max-w-[550px] lg:h-[280px] rounded-xl overflow-hidden p-6 gap-6 bg-[#F0F0F0] flex items-center justify-center flex-col lg:flex-row">
-            <div className="p-2 flex items-center justify-center lg:w-[400px] lg:h-[230px]">
-              <Image
-                src={sekar}
-                alt="Sekar"
-                className="w-full h-full lg:mb-0 object-cover rounded-md"
-              />
-            </div>
-            <div className="gap-1">
-              <h5 className="text-[28px] font-bold">Sekar Yunita</h5>
-              <p className="text-neutral-500 text-xl font-bold dark:text-neutral-300">
-                Director of ICONIC 2024
-              </p>
-              <ul className="list-disc ml-4">
-                <li>
-                  <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                    Vice President of PPI Jerman
-                  </p>
-                </li>
-                <li>
-                  <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                    PhD Candidate Forest Economics and Sustainable Land Use
-                    Planning, Universität Göttingen
-                  </p>
-                </li>
-                <li>
-                  <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                    Doctoral Researcher Forest Economics and Sustainable Land
-                    Use Planning, Universität Göttingen
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="lg:max-w-[550px] lg:h-[280px] rounded-xl overflow-hidden p-6 gap-6 bg-[#F0F0F0] flex items-center justify-center flex-col lg:flex-row">
-            <div className="p-2 flex items-center justify-center lg:w-[400px] lg:h-[230px]">
-              <Image
-                src={agnia}
-                alt="Agnia"
-                className="w-full h-full lg:mb-0 object-cover rounded-md"
-              />
-            </div>
-            <div className="gap-1">
-              <h5 className="text-[28px] font-bold">Agnia Dewi Larasati</h5>
-              <p className="text-neutral-500 text-xl font-bold dark:text-neutral-300">
-                Board of Advisory
-              </p>
-              <ul className="list-disc ml-4">
-                <li>
-                  <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                    President of PPI Jerman
-                  </p>
-                </li>
-                <li>
-                  <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                    M.Sc. Candidate Electrical and Electronics Engineering,
-                    Technische Universität München
-                  </p>
-                </li>
-                <li>
-                  <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                    Working Student in Measurement Engineering at IAB GmbH
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+          {orangDuaTeratas.map((orang) => (
+            <DuaTeratas
+              key={orang.name}
+              imageSrc={orang.imageSrc}
+              name={orang.name}
+              position={orang.position}
+              positionPPIJ={orang.positionPPIJ}
+              education={orang.education}
+              occupation={orang.occupation}
+            />
+          ))}
         </div>
         <div className="grid gap-6 md:grid-cols-3 mb-5">
           <div className="lg:max-w-[500px] lg:h-[250px] rounded-xl overflow-hidden p-6 gap-6 bg-[#F0F0F0] flex items-center justify-center flex-col lg:flex-row">
