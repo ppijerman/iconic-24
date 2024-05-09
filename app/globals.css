@@ -83,7 +83,7 @@ body,
     @apply font-inter;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-foreground;
   }
 }
 
