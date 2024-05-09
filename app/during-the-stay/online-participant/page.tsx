@@ -11,7 +11,7 @@ export default function OnlineParticipant() {
             We warmly invite global attendees to participate in the ICONIC 2024
             International Conference virtually via Zoom. To ensure a seamless
             online experience, please complete your registration through the
-            following link:
+            following link: Gak tau mau ganti apa jadi disin aja.
           </p>
           <Button
             asChild
