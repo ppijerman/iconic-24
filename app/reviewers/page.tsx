@@ -1,5 +1,4 @@
 import Image from "next/image";
-import placeholder from "@/assets/img-round-placeholder.png";
 import { persons } from "./persons";
 
 export default function Reviewers() {
@@ -12,19 +11,21 @@ export default function Reviewers() {
             {persons.map((person, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center w-full max-w-[150px] py-10"
+                className="flex flex-col items-center justify-center w-full max-w-[150px] md:max-w-[200px] py-10 gap-5 mx-auto"
               >
                 <Image
-                  src={placeholder}
+                  src={person.image}
                   alt="placeholder"
-                  className="w-32 h-fit rounded-full"
+                  width={300}
+                  height={300}
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top"
                 />
-                <div className="flex flex-col gap-2  w-full mt-3 text-center h-[180px]">
-                  <h1 className="text-xl font-extrabold">
+                <div className="flex flex-col gap-2 w-full mt-3 text-center h-[180px]">
+                  <h1 className="text-lg md:text-xl font-extrabold">
                     {person.name.toUpperCase()}
                   </h1>
-                  <p className="font-semibold">{person.institution}</p>
-                  <p className="text-sm">{person.field}</p>
+                  <p className="text-sm md:text-base font-semibold">{person.institution}</p>
+                  <p className="text-xs md:text-sm">{person.field}</p>
                 </div>
               </div>
             ))}
