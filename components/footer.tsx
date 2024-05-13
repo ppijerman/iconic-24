@@ -71,13 +71,12 @@ export function IconicFooter() {
         </div>
       </div>
       <div className="flex flex-row gap-2 pb-5">
-        <Link href="https://instagram.com/ppijerman">
+        <Link href="https://instagram.com/iconic.ppij">
           <InstagramLogoIcon className="w-10 h-10  hover:text-accent transition" />
         </Link>
         <Link href="https://www.linkedin.com/company/ppijerman/">
           <LinkedInLogoIcon className="w-10 h-10  hover:text-accent transition" />
         </Link>
-        <TwitterLogoIcon className="w-10 h-10  hover:text-accent transition" />
       </div>
       <div className="flex w-[70%] flex-col items-center py-3 border-t-2 border-t-gray-300">
         Copyright &copy; ICONIC 2024

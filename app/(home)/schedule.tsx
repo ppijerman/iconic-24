@@ -1,10 +1,18 @@
 export function IconicSchedule() {
   const abstractSubmissionDeadlines = [
-    { name: "Abstract Submission", date: "March 25th - April 30th 2024" },
+    { name: "First Call of Abstract", date: "March 25th - April 30th 2024" },
 
     {
-      name: "Notification of Final Abstract Acceptance",
+      name: "First Issuance - Letter of Acceptance",
       date: "May 9th 2024",
+    },
+    {
+      name: "Second Call of Abstract",
+      date: "May 15th - June 30th 2024",
+    },
+    {
+      name: "Second Issuance - Letter of Acceptance",
+      date: "July 9th 2024",
     },
   ];
 

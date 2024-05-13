@@ -73,7 +73,7 @@ export default function Page() {
           What is ICONIC?
         </h1>
         <div className="flex flex-col justify-center items-center w-full lg:w-[80%]">
-          <div className="p-10 flex flex-col gap-6">
+          <div className="px-5 md:px-0 py-10 flex flex-col gap-6">
             <p className="text-xl text-justify leading-relaxed">
               <span className="font-bold text-2xl">ICONIC</span> or the{" "}
               <span className="font-bold text-2xl line">
