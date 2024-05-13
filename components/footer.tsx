@@ -44,7 +44,13 @@ export function IconicFooter() {
             <Link href="/about" className="hover:text-accent transition">
               <li>About Us</li>
             </Link>
-            <Link href="/our-team" className="hover:text-accent transition">
+            <Link href="/program-and-subject-overview/subject">
+              <li>Subject</li>
+            </Link>
+            <Link
+              href="/about/our-team"
+              className="hover:text-accent transition"
+            >
               <li>Our Team</li>
             </Link>
             <Link href="/partnership" className="hover:text-accent transition">
