@@ -1,12 +1,12 @@
-import { HomePage } from "@/components/Home/home";
-import { Countdown } from "@/components/Home/countdown";
-import { IconicSchedule } from "@/components/Home/schedule";
-import { SpeakersSection } from "@/components/Home/speakers";
-import { CallToActionRegister } from "@/components/Home/call-to-action";
-import { Partners } from "@/components/Home/partners";
-import Introduction from "@/components/Home/introduction";
+import { HomePage } from "@/app/(home)/home";
+import { Countdown } from "@/app/(home)/countdown";
+import { IconicSchedule } from "@/app/(home)/schedule";
+import { SpeakersSection } from "@/app/(home)/speakers";
+import { CallToActionRegister } from "@/app/(home)/call-to-action";
+import { Partners } from "@/app/(home)/partners";
+import Introduction from "@/app/(home)/introduction";
 import { IconicOutput } from "@/app/about/output-iconic";
-import { StayInformation } from "@/components/Home/during-the-stay-home";
+import { StayInformation } from "@/app/(home)/during-the-stay-home";
 
 export default function Home() {
   return (

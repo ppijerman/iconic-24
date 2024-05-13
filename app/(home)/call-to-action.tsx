@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import iconicLogo2 from "@/assets/logo-main-white.png";
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 import Link from "next/link";
-import { ImagesSlider } from "../images-slider";
+import { ImagesSlider } from "../../components/images-slider";
 import { motion } from "framer-motion";
 
 export function CallToActionRegister() {

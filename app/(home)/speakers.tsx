@@ -29,7 +29,7 @@ import delik from "@/assets/speakers/04-Delik.jpg";
 import alain from "@/assets/speakers/04-Alain.jpeg";
 
 import styles from "./speakersScrollBar.module.css";
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 

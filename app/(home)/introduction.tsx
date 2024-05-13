@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 import Image from "next/image";
 import pastIconic from "@/public/habibie.jpeg";
 import Link from "next/link";
