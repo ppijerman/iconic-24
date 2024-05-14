@@ -119,7 +119,7 @@ export default function Page() {
               </div>
             </div>
             <h2 className="text-2xl font-semibold pb-4">Conference Date</h2>
-            <p className="pb-6">4th - 7th September 2024</p>
+            <p className="pb-6">4th - 6th September 2024</p>
           </div>
 
           <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
