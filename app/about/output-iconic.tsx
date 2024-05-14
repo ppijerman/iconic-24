@@ -133,7 +133,7 @@ export function IconicOutput() {
               <CardContent>
                 <p className="text-sm">
                   Scientific publication (with ISBN and indexing) of all
-                  accepted and presented abstracts.
+                  accepted and presented abstracts through remarkable German publiser Cuvillier Verlag.
                 </p>
               </CardContent>
             </div>
