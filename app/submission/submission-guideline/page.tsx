@@ -42,7 +42,7 @@ export default function Page() {
 
   return (
     <main className="flex flex-col bg-white text-secondary items-center">
-      <div className="w-[80%] text-xl flex flex-col items-center justify-center text-justify">
+      <div className="container text-xl flex flex-col items-center justify-center text-justify">
         <div className="py-10 flex flex-col justify-center w-full border-b-2">
           <h1 className="text-3xl mt-10 md:text-5xl font-bold">
             Abstract Submission
@@ -73,7 +73,7 @@ export default function Page() {
             <h1 className="text-4xl font-semibold w-full pt-14 mb-5 border-b-2 pb-1">
               Registration
             </h1>
-            <div className="flex flex-row gap-2 items-center justify-center pb-5">
+            <div className="flex flex-row gap-2 items-start justify-center pb-5">
               <InfoCircledIcon className="w-6 h-6" />
               <p className="w-full md:text-xl text-base font-semibold">
                 *Before proceeding, make sure you are already registered as an
@@ -92,18 +92,34 @@ export default function Page() {
             </Button>
           </div>
 
-          <div>
+          <div className="w-full text-start">
             <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
               Deadlines
             </h1>
-            <h2 className="text-2xl font-semibold pb-4">Abstract Submission</h2>
-            <p className="pb-6">25th March - 30th April 2024</p>
-            <h2 className="text-2xl font-semibold pb-4">
-              Notification of Abstract Acceptance
-            </h2>
-            <p className="pb-6">9th May 2024</p>
+            <div className="flex flex-col md:flex-row w-full gap-y-8 md:gap-3 justify-between pb-6">
+              <div className="w-full border-l-4 border-secondary pl-4">
+                <h2 className="text-2xl font-semibold pb-4">
+                  First Call - Abstract Submission
+                </h2>
+                <p className="pb-6">March 25th - April 30th 2024</p>
+                <h2 className="text-2xl font-semibold pb-4">
+                  Notification of Abstract Acceptance
+                </h2>
+                <p className="">May 9th 2024</p>
+              </div>
+              <div className="w-full border-l-4 border-secondary pl-4 md:pt-0">
+                <h2 className="text-2xl font-semibold pb-4">
+                  Second Call - Abstract Submission
+                </h2>
+                <p className="pb-6">May 15th - June 30th 2024</p>
+                <h2 className="text-2xl font-semibold pb-4">
+                  Notification of Abstract Acceptance
+                </h2>
+                <p className="">July 9th 2024</p>
+              </div>
+            </div>
             <h2 className="text-2xl font-semibold pb-4">Conference Date</h2>
-            <p className="pb-6">4th - 7th September 2024</p>
+            <p className="">4th - 6th September 2024</p>
           </div>
 
           <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
