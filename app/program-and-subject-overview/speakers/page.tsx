@@ -1,5 +1,3 @@
-"use client";
-
 import imgPlaceholder from "@/assets/img-round-placeholder.png";
 import Image from "next/image";
 import Link from "next/link";
