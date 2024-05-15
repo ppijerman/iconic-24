@@ -145,9 +145,7 @@ export const Committee: React.FC = () => {
         </div>
 
         <div className="flex flex-col pt-5">
-          <h1 className="pb-5 text-3xl font-bold">
-            Scientific Committee
-          </h1>
+          <h1 className="pb-5 text-3xl font-bold">Scientific Committee</h1>
           <div className="grid gap-6 md:grid-cols-2 mb-10">
             {scientificCommittee.map((orang: ScientificCommittee) => (
               <div
@@ -184,11 +182,11 @@ export const Committee: React.FC = () => {
           </div>
         </div>
 
-        {teams.map((team: Team) => (
+        {teams.map((team) => (
           <div key={team.team} className="flex flex-col">
             <h1 className="pb-5 text-3xl font-bold border-b-2">{team.team}</h1>
             <div className="grid gap-x-[100px] gap-y-3 md:grid-cols-4 mb-5 mt-[25px]">
-              {team.members.map((member: CommitteeMember) => (
+              {team.members.map((member) => (
                 <div
                   className="lg:w-[180px] lg:h-[350px] items-center gap-2 overflow-hidden flex flex-col"
                   key={member.name}
