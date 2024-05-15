@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { APP_NAME } from "@/lib/constants";
 import Link from "next/link";
+
+export const metadata = {
+  title: APP_NAME + "| Technological Innovation for Low-Carbon Development",
+  description: "Technological Innovation for Low-Carbon Development",
+};
 
 export default function TopicThree() {
   return (
@@ -10,8 +16,12 @@ export default function TopicThree() {
         </h1>
         <div className="my-10">
           <p className="mb-5">
-            &quot;<span className="italic">To build collective prosperity, we need to prioritize
-            innovation and cut carbon emission</span>&quot; &minus;{" "}
+            &quot;
+            <span className="italic">
+              To build collective prosperity, we need to prioritize innovation
+              and cut carbon emission
+            </span>
+            &quot; &minus;{" "}
             <span className="font-bold">
               Jean-Pascal Tricoire, CEO, Schneider Electric
             </span>
@@ -70,19 +80,24 @@ export default function TopicThree() {
             that facilitate their adoption and encourage local innovation. 
           </p>
           <p className="mb-3">
-            Consequently, the <span className="font-bold">transfer of Low-Carbon Technologies</span> (LCT) is an
-            ongoing process that involves <span className="font-bold">learning and collaborative efforts</span>.
-            The sustainability of this process relies on the ability to deploy,
-            operate, maintain, adapt, improve, and replicate the transferred
-            technology, ultimately fostering the capacity to innovate new
-            technologies (Pigato et al., 2020).
+            Consequently, the{" "}
+            <span className="font-bold">
+              transfer of Low-Carbon Technologies
+            </span>{" "}
+            (LCT) is an ongoing process that involves{" "}
+            <span className="font-bold">
+              learning and collaborative efforts
+            </span>
+            . The sustainability of this process relies on the ability to
+            deploy, operate, maintain, adapt, improve, and replicate the
+            transferred technology, ultimately fostering the capacity to
+            innovate new technologies (Pigato et al., 2020).
           </p>
           <p className="mb-3">
-            So, in regards to technology innovation, do you have suggestions to help Indonesia in achieving net zero emissions by 2060?
+            So, in regards to technology innovation, do you have suggestions to
+            help Indonesia in achieving net zero emissions by 2060?
           </p>
-          <p>
-            Share your ideas with us at ICONIC 2024!
-          </p>
+          <p>Share your ideas with us at ICONIC 2024!</p>
         </div>
         <Button
           asChild
@@ -93,8 +108,12 @@ export default function TopicThree() {
         <p className="mt-10 mb-1">Sources:</p>
         <ul className="list-disc">
           <li>
-            <a href="https://unfccc.int/process-and-meetings/the-paris-agreement" target="_blank">
-              United Nations Framework Convention on Climate Change. (Retrieved 25/03/2024). The Paris Agreement. 
+            <a
+              href="https://unfccc.int/process-and-meetings/the-paris-agreement"
+              target="_blank"
+            >
+              United Nations Framework Convention on Climate Change. (Retrieved
+              25/03/2024). The Paris Agreement.
             </a>
           </li>
           <li>
@@ -102,7 +121,9 @@ export default function TopicThree() {
               href="https://www.worldbank.org/en/topic/macroeconomics/publication/technology-transfer-and-innovation-for-low-carbon-development"
               target="_blank"
             >
-              Pigato, M., Black, S., Dussaux, D., Mao, Z., McKenna, M., Rafaty, R., Touboul, S., 2020. Technology Transfer and Innovation for Low-Carbon Development. The World Bank. 
+              Pigato, M., Black, S., Dussaux, D., Mao, Z., McKenna, M., Rafaty,
+              R., Touboul, S., 2020. Technology Transfer and Innovation for
+              Low-Carbon Development. The World Bank.
             </a>
           </li>
           <li>
@@ -110,7 +131,10 @@ export default function TopicThree() {
               href="https://www.cell.com/heliyon/fulltext/S2405-8440(22)00592-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405844022005928%3Fshowall%3Dtrue"
               target="_blank"
             >
-              Sambodo, M.T., Yuliana, C.I., Hidayat, S., Novandra, R., Handoyo, F.W., Farandy, A.R., Inayah, I., Yuniarti, P.I., 2022. Breaking barriers to low-carbon development in Indonesia: deployment of renewable energy. Heliyon 8, e09304. 
+              Sambodo, M.T., Yuliana, C.I., Hidayat, S., Novandra, R., Handoyo,
+              F.W., Farandy, A.R., Inayah, I., Yuniarti, P.I., 2022. Breaking
+              barriers to low-carbon development in Indonesia: deployment of
+              renewable energy. Heliyon 8, e09304.
             </a>
           </li>
         </ul>

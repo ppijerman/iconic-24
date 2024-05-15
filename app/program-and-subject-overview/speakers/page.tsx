@@ -29,6 +29,13 @@ import delik from "@/assets/speakers/04-Delik.jpg";
 import alain from "@/assets/speakers/04-Alain.jpeg";
 
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | " + "Potential Speakers",
+  description: "Potential Speakers for the conference",
+};
+
 
 export default function SpeakersSection() {
   const speakersFinance = [

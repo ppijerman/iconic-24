@@ -1,0 +1,1 @@
+export const APP_NAME = "ICONIC 2024"

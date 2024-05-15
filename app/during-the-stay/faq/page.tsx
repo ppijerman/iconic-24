@@ -5,6 +5,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | FAQ",
+  description: "Frequently asked questions about the conference",
+};
+
 export default function FAQ() {
   return (
     <main className="min-h-screen flex justify-center bg-white">

@@ -2,6 +2,12 @@ import { Subtopics } from "./subtopics";
 import { FieldOfStudy } from "./field-of-study";
 import Image from "next/image";
 import lowCarbon from "@/assets/icons/low-carbon.png";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | Subject",
+  description: "Learn more about the subject of the conference",
+};
 
 export default function Page() {
   return (

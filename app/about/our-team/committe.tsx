@@ -7,7 +7,7 @@ import {
   teams,
 } from "./committe-persons";
 
-interface informations {
+interface Information {
   imageSrc: ImageProps["src"];
   name: string;
   position: string;
@@ -16,7 +16,28 @@ interface informations {
   occupation: string;
 }
 
-const DuaTeratas: React.FC<informations> = ({
+interface ScientificCommittee {
+  image: ImageProps["src"];
+  name: string;
+  position: string;
+  education: string;
+  occupation: string;
+}
+
+interface CommitteeMember {
+  image: ImageProps["src"];
+  name: string;
+  position: string;
+  education: string;
+  university: string;
+}
+
+interface Team {
+  team: string;
+  members: CommitteeMember[];
+}
+
+const DuaTeratas: React.FC<Information> = ({
   imageSrc,
   name,
   position,
@@ -29,7 +50,7 @@ const DuaTeratas: React.FC<informations> = ({
       <div className="p-2 flex items-center justify-center xl:w-[400px] xl:h-[230px] lg:w-full lg:h-[400px]">
         <Image
           src={imageSrc}
-          alt="Sekar"
+          alt={name}
           className="w-full h-full lg:mb-0 object-cover rounded-md"
         />
       </div>
@@ -39,11 +60,13 @@ const DuaTeratas: React.FC<informations> = ({
           {position}
         </p>
         <ul className="list-disc ml-4">
-          <li>
-            <p className="text-neutral-500 text-sm dark:text-neutral-300">
-              {positionPPIJ}
-            </p>
-          </li>
+          {positionPPIJ && (
+            <li>
+              <p className="text-neutral-500 text-sm dark:text-neutral-300">
+                {positionPPIJ}
+              </p>
+            </li>
+          )}
           <li>
             <p className="text-neutral-500 text-sm dark:text-neutral-300">
               {education}
@@ -60,15 +83,17 @@ const DuaTeratas: React.FC<informations> = ({
   );
 };
 
-export const Committee = () => {
+export const Committee: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center container py-10">
       <div className="w-full flex flex-col items-center gap-3">
-        <h1 className="container pt-10 pb-20 text-5xl font-bold">Meet The Team</h1>
+        <h1 className="container pt-10 pb-20 text-5xl font-bold">
+          Meet The Team
+        </h1>
         <div className="flex flex-col">
           <h1 className="py-10 font-bold text-3xl">Board of Directors</h1>
           <div className="grid gap-6 gap-x-10 md:grid-cols-2 mb-5">
-            {duaTeratas.map((orang) => (
+            {duaTeratas.map((orang: Information) => (
               <DuaTeratas
                 key={orang.name}
                 imageSrc={orang.imageSrc}
@@ -83,14 +108,14 @@ export const Committee = () => {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3 mb-5">
-          {tigaTeratas.map((orang) => (
+          {tigaTeratas.map((orang: ScientificCommittee) => (
             <div
               className="xl:max-w-[500px] xl:h-[250px] rounded-xl overflow-hidden p-6 gap-6 bg-[#F0F0F0] flex items-center justify-center flex-col xl:flex-row"
               key={orang.name}
             >
               <div className="p-2 flex items-center justify-center xl:w-[300px] xl:h-[200px]">
                 <Image
-                  src={orang.imageSrc}
+                  src={orang.image}
                   alt={orang.name}
                   className="w-full h-full lg:mb-0 object-cover rounded-md"
                 />
@@ -119,73 +144,73 @@ export const Committee = () => {
           ))}
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 mb-10">
-          {scientificCommittee.map((orang) => (
-            <div
-              className="xl:max-w-[550px] xl:h-[250px] rounded-xl overflow-hidden p-6 gap-6 bg-[#F0F0F0] flex items-center justify-center flex-col xl:flex-row"
-              key={orang.name}
-            >
-              <div className="p-2 flex items-center justify-center xl:w-[400px] xl:h-[200px]">
-                <Image
-                  src={orang.imageSrc}
-                  alt="Risma"
-                  className="w-full h-full lg:mb-0 object-cover rounded-md"
-                />
+        <div className="flex flex-col pt-5">
+          <h1 className="pb-5 text-3xl font-bold">
+            Scientific Committee
+          </h1>
+          <div className="grid gap-6 md:grid-cols-2 mb-10">
+            {scientificCommittee.map((orang: ScientificCommittee) => (
+              <div
+                className="xl:max-w-[550px] xl:h-[250px] rounded-xl overflow-hidden p-6 gap-6 bg-[#F0F0F0] flex items-center justify-center flex-col xl:flex-row"
+                key={orang.name}
+              >
+                <div className="p-2 flex items-center justify-center xl:w-[400px] xl:h-[200px]">
+                  <Image
+                    src={orang.image}
+                    alt={orang.name}
+                    className="w-full h-full lg:mb-0 object-cover rounded-md"
+                  />
+                </div>
+                <div className="gap-1">
+                  <h5 className="text-[20px] font-bold">{orang.name}</h5>
+                  <p className="text-neutral-500 text-[18px] font-bold dark:text-neutral-300">
+                    {orang.position}
+                  </p>
+                  <ul className="list-disc ml-4">
+                    <li>
+                      <p className="text-neutral-500 text-[13px] dark:text-neutral-300">
+                        {orang.education}
+                      </p>
+                    </li>
+                    <li>
+                      <p className="text-neutral-500 text-[13px] dark:text-neutral-300">
+                        {orang.occupation}
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="gap-1">
-                <h5 className="text-[20px] font-bold">{orang.name}</h5>
-                <p className="text-neutral-500 text-[18px] font-bold dark:text-neutral-300">
-                  {orang.position}
-                </p>
-                <ul className="list-disc ml-4">
-                  <li>
-                    <p className="text-neutral-500 text-[13px] dark:text-neutral-300">
-                      {orang.education}
-                    </p>
-                  </li>
-                  <li>
-                    <p className="text-neutral-500 text-[13px] dark:text-neutral-300">
-                      {orang.occupation}
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {teams.map((orang) => (
-          <div key={orang.team} className="flex flex-col">
-            <h1 className="pb-5 text-3xl font-bold border-b-2">{orang.team}</h1>
+        {teams.map((team: Team) => (
+          <div key={team.team} className="flex flex-col">
+            <h1 className="pb-5 text-3xl font-bold border-b-2">{team.team}</h1>
             <div className="grid gap-x-[100px] gap-y-3 md:grid-cols-4 mb-5 mt-[25px]">
-              {orang.members.map((member) => (
+              {team.members.map((member: CommitteeMember) => (
                 <div
                   className="lg:w-[180px] lg:h-[350px] items-center gap-2 overflow-hidden flex flex-col"
-                  key={orang.team}
+                  key={member.name}
                 >
-                  <div
-                    className="lg:w-[180px] lg:h-[350px] items-center gap-2 overflow-hidden flex flex-col"
-                    key={member.name}
-                  >
-                    <div className="overflow-hidden rounded-full lg:w-[150px] lg:h-[150px]">
-                      <Image
-                        src={member.imageSrc}
-                        alt={member.name}
-                        className="w-full rounded-md lg:mb-0"
-                      />
-                    </div>
-                    <div className="text-center mt-4 gap-1">
-                      <h5 className="text-base font-bold">{member.name}</h5>
-                      <p className="text-neutral-500 text-sm font-bold dark:text-neutral-300">
-                        {member.position}
-                      </p>
-                      <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                        {member.education}
-                      </p>
-                      <p className="text-neutral-500 text-sm dark:text-neutral-300">
-                        {member.university}
-                      </p>
-                    </div>
+                  <div className="overflow-hidden rounded-full lg:w-[150px] lg:h-[150px]">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full rounded-md lg:mb-0"
+                    />
+                  </div>
+                  <div className="text-center mt-4 gap-1">
+                    <h5 className="text-base font-bold">{member.name}</h5>
+                    <p className="text-neutral-500 text-sm font-bold dark:text-neutral-300">
+                      {member.position}
+                    </p>
+                    <p className="text-neutral-500 text-sm dark:text-neutral-300">
+                      {member.education}
+                    </p>
+                    <p className="text-neutral-500 text-sm dark:text-neutral-300">
+                      {member.university}
+                    </p>
                   </div>
                 </div>
               ))}

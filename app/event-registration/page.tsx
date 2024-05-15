@@ -1,5 +1,11 @@
 import Image from "next/image";
 import dicoImage from "@/assets/dico.png";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | " + "Event Registration",
+  description: "Registration page for the conference",
+};
 
 export default function Registration() {
   return (

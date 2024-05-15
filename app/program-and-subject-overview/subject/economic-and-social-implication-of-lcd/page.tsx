@@ -1,6 +1,16 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title:
+    APP_NAME +
+    " | " +
+    "Economic and Social Implication of Low-Carbon Development",
+  description: "Economic and Social Implication of Low-Carbon Development",
+};
+
 export default function TopicOne() {
   return (
     <main className="min-h-screen flex justify-center bg-white">

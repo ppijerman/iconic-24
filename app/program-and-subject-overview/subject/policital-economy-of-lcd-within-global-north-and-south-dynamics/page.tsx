@@ -1,5 +1,14 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title:
+    APP_NAME +
+    "| Political Economy of Low-Carbon Development within Global North and South Dynamics",
+  description:
+    "Political Economy of Low-Carbon Development within Global North and South Dynamics",
+};
 
 export default function TopicTwo() {
   return (
@@ -12,8 +21,8 @@ export default function TopicTwo() {
         <div className="my-10">
           <p className="mb-3">
             During the Earth Summit in Rio de Janeiro, 1992, the principle of
-            &quot;Common But Differentiated Responsibilities&quot; was formalized. The
-            principle emphasizes the{" "}
+            &quot;Common But Differentiated Responsibilities&quot; was
+            formalized. The principle emphasizes the{" "}
             <span className="font-bold">commonly shared obligation</span> in
             addressing climate change but{" "}
             <span className="font-bold">denying equal responsibilities</span> of
@@ -60,8 +69,8 @@ export default function TopicTwo() {
           <p className="mb-3">
             In 2016, <span className="font-bold">the Paris Agreement</span>{" "}
             notably departed from the &quot;Common But Differentiated
-            Responsibilities&quot; approach, allowing each nation to establish its{" "}
-            <span className="font-bold">own national climate targets</span>{" "}
+            Responsibilities&quot; approach, allowing each nation to establish
+            its <span className="font-bold">own national climate targets</span>{" "}
             based on the countries&apos; own circumstances. This shift prompted{" "}
             <span className="font-bold">Indonesia</span> to commit to{" "}
             <span className="font-bold">reduce emissions up to 29-41%</span>{" "}
@@ -95,9 +104,10 @@ export default function TopicTwo() {
             towards climate change adaptation and mitigation efforts.
           </p>
           <p className="mb-3">
-            What&apos;s your take on this ongoing debate? Should developed nations
-            financially support climate initiatives in developing countries? Or
-            should developing nations independently tackle this issue?
+            What&apos;s your take on this ongoing debate? Should developed
+            nations financially support climate initiatives in developing
+            countries? Or should developing nations independently tackle this
+            issue?
           </p>
           <p>
             Share your thoughts, insights, and ideas with us at ICONIC 2024!
@@ -115,8 +125,8 @@ export default function TopicTwo() {
             <a href="https://doi.org/10.1111/1467-9388.00243" target="_blank">
               Rajamani, Lavanya. (2002). &quot;The Principle of Common but
               Differentiated Responsibility and the Balance of Commitments under
-              the Climate Regime&quot;. Review of European Community & International
-              Environmental Law. 9, 2: 128–129.
+              the Climate Regime&quot;. Review of European Community &
+              International Environmental Law. 9, 2: 128–129.
             </a>
           </li>
           <li>
@@ -134,10 +144,10 @@ export default function TopicTwo() {
               target="_blank"
             >
               Tomoi, Hiroaki., Ohsawa, T., Quevedo, J., Kohsaka, R. (2022). Is
-              &quot;Common But Differentiated Responsibilities&quot; principle applicable
-              in biodiversity? – Towards approaches for shared responsibilities
-              based on updated capabilities and data. Ecological Indicators.
-              145.
+              &quot;Common But Differentiated Responsibilities&quot; principle
+              applicable in biodiversity? – Towards approaches for shared
+              responsibilities based on updated capabilities and data.
+              Ecological Indicators. 145.
             </a>
           </li>
           <li>

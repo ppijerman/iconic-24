@@ -20,9 +20,9 @@ import ZulfiqarImg from "@/assets/reviewers/Zulfikar Adlan Nadzir.jpg";
 
 export const persons = [
   {
-    name: "Iriana Rafiana",
+    name: "Irina Rafiana",
     institution: "Universität Bonn",
-    field: "Knowledge Scociology, STS, Social Constructions of Risks",
+    field: "Knowledge Scociology, Science and Technology Studies",
     image: IrianaImg,
   },
   {
@@ -62,7 +62,7 @@ export const persons = [
     image: placeholder,
   },
   {
-    name: "Zulfiqar Adlan Nadzir",
+    name: "Zulfikar Adlan Nadzir",
     institution: "Universität Bonn",
     field: "Geodesy",
     image: ZulfiqarImg,
@@ -111,8 +111,8 @@ export const persons = [
   },
   {
     name: "Arif Luqman",
-    institution: "Universität Tübingen",
-    field: "Microbial Genetics",
+    institution: "University of Würzburg",
+    field: "Institute of Molecular Infection Biology",
     image: ArifImg,
   },
   {

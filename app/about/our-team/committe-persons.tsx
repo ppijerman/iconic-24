@@ -42,9 +42,9 @@ import tazya from "@/assets/team/tazya.jpg";
 export const duaTeratas = [
   {
     imageSrc: sekar,
-    name: "Sekar Ayu Yunita",
-    position: "President",
-    positionPPIJ: "President of PPI Jerman",
+    name: "Sekar Yunita",
+    position: "Director",
+    positionPPIJ: "Vice President of PPI Jerman",
     education:
       "M.Sc. Candidate Electrical and Electronics Engineering, Technische Universität München",
     occupation: "Working Student in Measurement Engineering at IAB GmbH",
@@ -90,19 +90,18 @@ export const tigaTeratas = [
 export const scientificCommittee = [
   {
     imageSrc: risma,
-    name: "Risma Sari",
-    position: "Scientific Committee",
+    name: "Risma Rizkia Nurdianti",
+    position: "Editor-in-Chief & Coordinator",
     education:
-      "M.Sc. Candidate Sustainable International Agriculture, Georg-August-Universität Göttingen",
-    occupation: "Working Student in Data Engineering, HOMIRO Metrology GmbH",
+      "Ph.D. Candidate Animal Nutrition and Rangeland Management, Universität Hohenheim",
+    occupation: "Researcher in Universität Hohenheim, AFENUE IPB, FAPET UNPAD",
   },
   {
     imageSrc: kemal,
-    name: "Kemal Fadillah",
-    position: "Scientific Committee",
-    education:
-      "M.Sc. Candidate Sustainable International Agriculture, Georg-August-Universität Göttingen",
-    occupation: "Working Student in Data Engineering, HOMIRO Metrology GmbH",
+    name: "Kemal Firdaus",
+    position: "Deputy Coordinator",
+    education: "Ph.D. Candidate Mathematics, Universität Hamburg",
+    occupation: "Research Associate, Universität Hamburg",
   },
 ];
 

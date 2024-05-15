@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | Online Participant",
+  description: "Frequently asked questions about the conference",
+};
 
 export default function OnlineParticipant() {
   return (

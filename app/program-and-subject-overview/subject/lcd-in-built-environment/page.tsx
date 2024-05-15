@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | Low-Carbon Development in Built Environment",
+  description: "Low-Carbon Development in Built Environment",
+};
 
 export default function TopicFour() {
   return (

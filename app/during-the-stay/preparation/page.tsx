@@ -1,3 +1,11 @@
+// Description: This is the preparation page for the conference.
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | Preparation",
+  description: "Learn more about the preparation for the conference",
+};
+
 export default function Preparation() {
   return (
     <main className="min-h-screen flex justify-center bg-white">

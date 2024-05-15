@@ -1,3 +1,10 @@
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | City Day Trip",
+  description: "Learn more about the city day trip",
+};
+
 export default function CityDayTrip() {
   return (
     <main className="min-h-screen flex justify-center bg-white">

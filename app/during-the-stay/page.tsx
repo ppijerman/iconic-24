@@ -4,6 +4,7 @@ import go from "@/assets/göttingen/go1.jpg";
 import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { APP_NAME } from "@/lib/constants";
 
 const topics = [
   {
@@ -37,6 +38,11 @@ const topics = [
     href: "/during-the-stay/faq",
   },
 ];
+
+export const metadata = {
+  title: APP_NAME + " | " + "During the Stay",
+  description: "Information about your stay during the conference",
+};
 
 export default function DuringTheStay() {
   return (

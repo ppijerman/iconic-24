@@ -5,7 +5,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import dicoLogo from "@/assets/dico.png";
-import { useState } from "react";
+import { Metadata } from "next";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: APP_NAME + " | " + "Partnership",
+  description: "Contact us for partnership",
+};
 
 export default function Component() {
   return (

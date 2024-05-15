@@ -12,6 +12,12 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 import nopic from "@/assets/img-round-placeholder.png";
 import { TeamCTA } from "./team-cta";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | " + "About",
+  description: "Learn more about the conference",
+};
 
 export default function Page() {
   return (

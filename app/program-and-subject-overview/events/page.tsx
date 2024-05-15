@@ -1,6 +1,12 @@
 import dico from "@/assets/dico.png";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | Events",
+  description: "Learn more about the events of the conference",
+};
 
 export default function Page() {
   return (

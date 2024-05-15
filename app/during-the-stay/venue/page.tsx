@@ -12,6 +12,13 @@ import alt4 from "@/assets/venue1/alte_mensa_4.jpg";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+import { APP_NAME } from "@/lib/constants";
+
+export const metadata = {
+  title: APP_NAME + " | Venue",
+  description: "Learn more about the venue of the conference",
+};
+
 export default function Preparation() {
   return (
     <main className="min-h-screen flex justify-center bg-white">
