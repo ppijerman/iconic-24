@@ -20,7 +20,7 @@ import ZulfiqarImg from "@/assets/reviewers/Zulfikar Adlan Nadzir.jpg";
 
 export const persons = [
   {
-    name: "Irina Rafiana",
+    name: "Irina Rafliana",
     institution: "Universität Bonn",
     field: "Knowledge Scociology, Science and Technology Studies",
     image: IrianaImg,
