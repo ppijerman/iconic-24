@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import zhg1 from "@/assets/venue2/zhg_1.jpg";
 import zhg2 from "@/assets/venue2/zhg_2.jpg";
