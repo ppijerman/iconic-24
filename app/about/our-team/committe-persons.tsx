@@ -121,7 +121,7 @@ export const teams = [
         name: "Fadlilah Nur Hasanah",
         position: "Staff of Public Relations, Design & Media",
         education: "B.Sc. Bioinformatik",
-        univesrity: "Universität des Saarlandes",
+        university: "Universität des Saarlandes",
       },
       {
         imageSrc: bea,
