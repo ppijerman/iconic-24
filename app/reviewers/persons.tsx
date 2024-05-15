@@ -81,7 +81,7 @@ export const persons = [
   },
   {
     name: "Retno Widyastuti",
-    institution: "Universiät Bonn",
+    institution: "Universität Bonn",
     field: "South East Asian Studies",
     image: RetnoImg,
   },

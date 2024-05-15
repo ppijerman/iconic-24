@@ -26,7 +26,6 @@ import stefan from "@/assets/speakers/03-stefan.jpeg";
 import delik from "@/assets/speakers/04-Delik.jpg";
 import alain from "@/assets/speakers/04-Alain.jpeg";
 
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { APP_NAME } from "@/lib/constants";
 
 export const metadata = {

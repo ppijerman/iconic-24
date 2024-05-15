@@ -46,8 +46,9 @@ export const duaTeratas = [
     position: "Director",
     positionPPIJ: "Vice President of PPI Jerman",
     education:
-      "M.Sc. Candidate Electrical and Electronics Engineering, Technische Universität München",
-    occupation: "Working Student in Measurement Engineering at IAB GmbH",
+      "PhD Candidate Forest Economics and Sustainable Land Use Planning, Georg-August-Universität Göttingen",
+    occupation:
+      "Doctoral Researcher Forest Economics and Sustainable Land Use Planning, Universität Göttingen",
   },
   {
     imageSrc: agnia,
