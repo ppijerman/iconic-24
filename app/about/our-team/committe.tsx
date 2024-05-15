@@ -17,7 +17,7 @@ interface Information {
 }
 
 interface ScientificCommittee {
-  image: ImageProps["src"];
+  imageSrc: ImageProps["src"];
   name: string;
   position: string;
   education: string;
@@ -25,7 +25,7 @@ interface ScientificCommittee {
 }
 
 interface CommitteeMember {
-  image: ImageProps["src"];
+  imageSrc: ImageProps["src"];
   name: string;
   position: string;
   education: string;
@@ -115,7 +115,7 @@ export const Committee: React.FC = () => {
             >
               <div className="p-2 flex items-center justify-center xl:w-[300px] xl:h-[200px]">
                 <Image
-                  src={orang.image}
+                  src={orang.imageSrc}
                   alt={orang.name}
                   className="w-full h-full lg:mb-0 object-cover rounded-md"
                 />
@@ -156,7 +156,7 @@ export const Committee: React.FC = () => {
               >
                 <div className="p-2 flex items-center justify-center xl:w-[400px] xl:h-[200px]">
                   <Image
-                    src={orang.image}
+                    src={orang.imageSrc}
                     alt={orang.name}
                     className="w-full h-full lg:mb-0 object-cover rounded-md"
                   />
@@ -195,7 +195,7 @@ export const Committee: React.FC = () => {
                 >
                   <div className="overflow-hidden rounded-full lg:w-[150px] lg:h-[150px]">
                     <Image
-                      src={member.image}
+                      src={member.imageSrc}
                       alt={member.name}
                       className="w-full rounded-md lg:mb-0"
                     />
