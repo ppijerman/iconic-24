@@ -2,12 +2,13 @@ import Image from "next/image";
 import { persons } from "./persons";
 import type { Metadata } from "next";
 import { APP_NAME } from "@/lib/constants";
+import { ImageProps } from "next/image";
 
 type Person = {
   name: string;
   institution: string;
   field: string;
-  image: string;
+  image: ImageProps["src"];
 };
 
 export const metadata: Metadata = {
