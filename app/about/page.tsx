@@ -13,6 +13,7 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import nopic from "@/assets/img-round-placeholder.png";
 import { TeamCTA } from "./team-cta";
 import { APP_NAME } from "@/lib/constants";
+import { PastIconic } from "./past-iconic";
 
 export const metadata = {
   title: APP_NAME + " | " + "About",
@@ -89,13 +90,14 @@ export default function Page() {
             </p>
           </div>
         </div>
-        
+
         <IconicOutput />
         <TeamCTA />
 
         <div className="w-full flex flex-col items-center justify-center">
           <h1 className="pt-10 pb-20 text-4xl font-semibold">Past ICONIC</h1>
           <IconicImages />
+          <PastIconic />
         </div>
       </div>
     </main>

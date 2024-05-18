@@ -2,29 +2,38 @@ import imgPlaceholder from "@/assets/img-round-placeholder.png";
 import Image from "next/image";
 import Link from "next/link";
 // speakers
-
 //00
-import sriMulyani from "@/assets/speakers/00-SriMulyani.jpg";
+import sriMulyani from "@/assets/speakers/Minister_SriMulyani.jpg";
+import svenja from "@/assets/speakers/BMZ Schulze.jpeg";
+import metin from "@/assets/speakers/President Uni Göttingen.jpeg";
+import sekar from "@/assets/team/sekar.jpeg";
 import antjeBiber from "@/assets/speakers/Biber.jpeg";
-import ottmar from "@/assets/speakers/Ottmar Edenhofer.jpg";
 
 //01
-import havas from "@/assets/speakers/01-dubes-ri.jpg";
-import kristina from "@/assets/speakers/01-Kristina.jpeg";
-import georg from "@/assets/speakers/01-Georg.jpeg";
+import havas from "@/assets/speakers/Dubes_Havas.jpg";
+import kristina from "@/assets/speakers/Kristina.jpeg";
+import frank from "@/assets/speakers/Frank Bohnet.jpeg";
 
 //02
-import yurdi from "@/assets/speakers/02-Yurdi.jpeg";
-import carola from "@/assets/speakers/02-Carola.jpeg";
-// import buchhholz from "@/assets/speakers/";
+import rukka from "@/assets/speakers/Rukka Sombolinggi.jpg";
+import gary from "@/assets/speakers/Gary Dunning.jpeg";
+import buchholz from "@/assets/speakers/Georg Buchholz.jpeg";
 
 //03
-import rukka from "@/assets/speakers/03-Rukka.jpg";
-import stefan from "@/assets/speakers/03-stefan.jpeg";
+import joko from "@/assets/speakers/Joko Tri Haryanto.jpeg";
 
 //04
-import delik from "@/assets/speakers/04-Delik.jpg";
-import alain from "@/assets/speakers/04-Alain.jpeg";
+import rachmat from "@/assets/speakers/Rachmat Kaimuddin.png";
+import stefan from "@/assets/speakers/Stefan Schlosser.jpeg";
+import desti from "@/assets/speakers/Desti.webp";
+
+//05
+import mia from "@/assets/speakers/Mia Amalia.jpeg";
+import francis from "@/assets/speakers/Francis Kere.webp";
+import amy from "@/assets/speakers/Amy Oen.webp";
+
+//06
+import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
 
 import { APP_NAME } from "@/lib/constants";
 
@@ -33,8 +42,26 @@ export const metadata = {
   description: "Potential Speakers for the conference",
 };
 
-
 export default function SpeakersSection() {
+  const speakersOpening = [
+    {
+      name: "Arif Havas Oegroseno",
+      title: "Indonesian Ambassador for the Federal Republic of Germany",
+      image: havas,
+    },
+    {
+      name: "Prof. Dr. Metin Tolan",
+      title: "President of the University of Göttingen",
+      image: metin,
+    },
+    {
+      name: "Sekar Yunita",
+      title:
+        "Director of ICONIC 2024, Doctoral Researcher Forest Economics and Sustainable Land Use Planning, Universität Göttingen",
+      image: sekar,
+    },
+  ];
+
   const speakersFinance = [
     {
       name: "Sri Mulyani Indrawati, PhD.",
@@ -42,20 +69,15 @@ export default function SpeakersSection() {
       image: sriMulyani,
     },
     {
-      name: "Antje Biber",
-      title: "Head of SDG Office, Feri Group",
-      image: antjeBiber,
+      name: "Svenja Schulze",
+      title: "Development Minister of the Federal Republic of Germany",
+      image: svenja,
     },
-    // {
-    //   name: "Prof Dr. Ottmar Edenhofer",
-    //   title: "Director of Potsdam Institut for Climate Impact Research",
-    //   image: ottmar,
-    // },
   ];
 
-  const speakersDecarbonization = [
+  const speakersDecarbonizationGlobalSouth = [
     {
-      name: "Arief Havas Oegroeseno",
+      name: "Arif Havas Oegroseno",
       title: "Indonesian Ambassador for the Federal Republic of Germany",
       image: havas,
     },
@@ -66,56 +88,96 @@ export default function SpeakersSection() {
       image: kristina,
     },
     {
-      name: "Matthias Boerner",
-      title: "Sector Economict for Green Climate Fund KFW",
-      image: imgPlaceholder,
+      name: "Frank Bohnet",
+      title:
+        "Director of Development Finance East Asia and South-East Asia, KfW Development Bank",
+      image: frank,
     },
   ];
 
   const speakersReducingEmissions = [
     {
-      name: "Dr. Yurdi Yasmi",
-      title: "Deputy Director / Special Coordinator of FAO",
-      image: yurdi,
+      name: "Gary Dunning",
+      title: "Executive Director, The Forests Dialogue",
+      image: gary,
     },
     {
-      name: "Prof. Dr. Carola Paul",
-      title:
-        "Professor of Forest Economics and Sustainable Land-Use Planning Development, University of Göttingen",
-      image: carola,
-    },
-    {
-      name: "Georg Buchholz",
-      title: "Program Director, Forests and Climate Change Programme, GIZ",
-      image: georg,
-    },
-  ];
-
-  const speakersCarbonCapture = [
-    {
-      name: "Dr. Rukka Sombolinggi",
+      name: "Rukka Sombolinggi",
       title:
         "Secretary General of Indonesian Archipelago Indigenous People Alliance (AMAN)",
       image: rukka,
     },
     {
+      name: "Georg Buchholz",
+      title: "Program Director, Forests and Climate Change Programme, GIZ",
+      image: buchholz,
+    },
+  ];
+
+  const speakersDecarbonization = [
+    {
+      name: "Dr. Joko Tri Haryanto",
+      title:
+        "Senior Researcher of Fiscal Policy Agency for Climate Change Financing and Multilateral Policy",
+      image: joko,
+    },
+    {
+      name: "Frank Bohnet",
+      title:
+        "Director of Development Finance East Asia and South-East Asia, KfW Development Bank",
+      image: frank,
+    },
+    {
+      name: "Tonny Wagey",
+      title:
+        "Executive Director of Indonesia Climate Change Trust Fund (ICCTF), Ministry of National Development Planning (BAPPENAS)",
+      image: tonny,
+    },
+    {
+      name: "Antje Biber",
+      title: "Head of SDG Office, Feri Group",
+      image: antjeBiber,
+    },
+  ];
+
+  const speakersCarbonCapture = [
+    {
+      name: "Rachmat Kaimuddin",
+      title:
+        "Deputy Coordinating Minister of Maritime Affairs and Investments in Infrastructure and Transportation",
+      image: rachmat,
+    },
+    {
       name: "Stefan Schlosser",
-      title: "Director of Deutscher Verband für Negative Emission (DVNE)",
+      title:
+        "Managing Director of Deutscher Verband für Negative Emission (DVNE)",
       image: stefan,
+    },
+    {
+      name: "Desti Alkano, Ph.D.",
+      title: "CEO of Energy Academy Indonesia (ECADIN)",
+      image: desti,
     },
   ];
 
   const speakersPerspectives = [
     {
-      name: "Prof. Dr. Delik Hudalah",
+      name: "Mia Amalia, Ph.D.",
       title:
-        "Professor of Territorial and Rural Planning, Bandung Institute of Technology",
-      image: delik,
+        "Deputy of Planning and Land Management of Nusantara Authority (IKN, the New Capital City of Indonesia)",
+      image: mia,
     },
     {
-      name: "Prof. Dr. Alain Thierstein",
-      title: "Professor of Spatial Development, Technical University of Munich",
-      image: alain,
+      name: "Prof. Francis Kéré",
+      title:
+        "Pritzker Price Awarded Architect and Professor of Architectural Design and Participation, Technical University of Munich",
+      image: francis,
+    },
+    {
+      name: "Dr. Amy Oen",
+      title:
+        "PHUSICOS Project Coordinator and Senior Researcher at the Norwegian Geotechnical Institute",
+      image: amy,
     },
   ];
 
@@ -154,10 +216,10 @@ export default function SpeakersSection() {
           <div className="flex flex-col py-2">
             <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
               <span className="font-bold">Panel Discussion</span> -
-              Decarbonization in Global South: Who Should Bear the Cost?
+              Decarbonization in Global South: Who should Bear the Costs?
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-10 md:gap-8 px-2 md:px-5 py-10">
-              {speakersDecarbonization.map((speaker, index) => (
+              {speakersDecarbonizationGlobalSouth.map((speaker, index) => (
                 <div
                   key={index}
                   className="flex flex-col items-center justify-start max-w-[300px] px-5"
@@ -264,6 +326,35 @@ export default function SpeakersSection() {
                 </div>
               ))}
             </div>
+
+            <div className="flex flex-col py-2">
+              <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
+                <span className="font-bold">Decarbonization Projects</span> -
+                Review and Outlook
+              </h1>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-10 md:gap-8 px-2 md:px-5 py-10">
+                {speakersDecarbonization.map((speaker, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center justify-start max-w-[300px] px-5"
+                  >
+                    <Image
+                      src={speaker.image}
+                      alt="placeholder"
+                      className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
+                    />
+                    <div className="flex flex-col gap-2 w-full text-center items-center mt-5 md:mt-10">
+                      <h1 className="text-lg md:text-xl font-bold">
+                        {speaker.name}
+                      </h1>
+                      <p className="text-sm">{speaker.title}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            
           </div>
         </div>
       </div>
