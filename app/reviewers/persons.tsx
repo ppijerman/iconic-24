@@ -17,6 +17,8 @@ import SaptadiImg from "@/assets/reviewers/Saptadi Nugroho.jpeg";
 import ViddyImg from "@/assets/reviewers/Viddy Ranawijaya.jpg";
 import WindiImg from "@/assets/reviewers/Windi Kurnia Perangin-Angin.jpeg";
 import ZulfiqarImg from "@/assets/reviewers/Zulfikar Adlan Nadzir.jpg";
+import HilmanImg from "@/assets/reviewers/Muhammad Hilman Fatoni.jpg";
+import DitoImg from "@/assets/reviewers/Andita Aulia Pratama.jpeg";
 
 export const persons = [
   {
@@ -35,7 +37,7 @@ export const persons = [
     name: "Andita Aulia Pratama",
     institution: "Universität Freiburg",
     field: "Forest and Environmental Policy",
-    image: placeholder,
+    image: DitoImg,
   },
   {
     name: "Elvira Sari Dewi",
@@ -128,10 +130,10 @@ export const persons = [
     image: HesselImg,
   },
   {
-    name: "Hilman Fatoni",
+    name: "Muhammad Hilman Fatoni",
     institution: "TU München",
     field: "Electrical and Computer Engineering",
-    image: placeholder,
+    image: HilmanImg,
   },
   {
     name: "Ilham Akhsanu Ridlo",
@@ -162,5 +164,5 @@ export const persons = [
     institution: "TU Braunschweig",
     field: "Testing and Calibration, Energy",
     image: WindiImg,
-  }
+  },
 ];

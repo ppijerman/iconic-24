@@ -3,30 +3,39 @@
 import imgPlaceholder from "@/assets/img-round-placeholder.png";
 import Image from "next/image";
 import Link from "next/link";
-// speakers
 
+// speakers
 //00
-import sriMulyani from "@/assets/speakers/00-SriMulyani.jpg";
+import sriMulyani from "@/assets/speakers/Minister_SriMulyani.jpg";
+import svenja from "@/assets/speakers/BMZ Schulze.jpeg";
+import metin from "@/assets/speakers/President Uni Göttingen.jpeg";
 import antjeBiber from "@/assets/speakers/Biber.jpeg";
-import ottmar from "@/assets/speakers/Ottmar Edenhofer.jpg";
 
 //01
-import havas from "@/assets/speakers/01-dubes-ri.jpg";
-import kristina from "@/assets/speakers/01-Kristina.jpeg";
-import georg from "@/assets/speakers/01-Georg.jpeg";
+import havas from "@/assets/speakers/Dubes_Havas.jpg";
+import kristina from "@/assets/speakers/Kristina.jpeg";
+import frank from "@/assets/speakers/Frank Bohnet.jpeg";
 
 //02
-import yurdi from "@/assets/speakers/02-Yurdi.jpeg";
-import carola from "@/assets/speakers/02-Carola.jpeg";
-// import buchhholz from "@/assets/speakers/";
+import rukka from "@/assets/speakers/Rukka Sombolinggi.jpg";
+import gary from "@/assets/speakers/Gary Dunning.jpeg";
+import buchholz from "@/assets/speakers/Georg Buchholz.jpeg";
 
 //03
-import rukka from "@/assets/speakers/03-Rukka.jpg";
-import stefan from "@/assets/speakers/03-stefan.jpeg";
+import joko from "@/assets/speakers/Joko Tri Haryanto.jpeg";
 
 //04
-import delik from "@/assets/speakers/04-Delik.jpg";
-import alain from "@/assets/speakers/04-Alain.jpeg";
+import rachmat from "@/assets/speakers/Rachmat Kaimuddin.png";
+import stefan from "@/assets/speakers/Stefan Schlosser.jpeg";
+import desti from "@/assets/speakers/Desti.webp";
+
+//05
+import mia from "@/assets/speakers/Mia Amalia.jpeg";
+import francis from "@/assets/speakers/Francis Kere.webp";
+import amy from "@/assets/speakers/Amy Oen.webp";
+
+//06
+import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
 
 import styles from "./speakersScrollBar.module.css";
 import { Button } from "../../components/ui/button";
@@ -41,19 +50,24 @@ export function SpeakersSection() {
       image: sriMulyani,
     },
     {
-      name: "Antje Biber",
-      title: "Head of SDG Office, Feri Group",
-      image: antjeBiber,
+      name: "Svenja Schulze",
+      title: "Development Minister of the Federal Republic of Germany",
+      image: svenja,
     },
-    // {
-    //   name: "Prof Dr. Ottmar Edenhofer",
-    //   title: "Director of Potsdam Institut for Climate Impact Research",
-    //   image: ottmar,
-    // },
     {
       name: "Arief Havas Oegroeseno",
       title: "Indonesian Ambassador for the Federal Republic of Germany",
       image: havas,
+    },
+    {
+      name: "Prof. Dr. Metin Tolan",
+      title: "President of the University of Göttingen",
+      image: metin,
+    },
+    {
+      name: "Antje Biber",
+      title: "Head of SDG Office, Feri Group",
+      image: antjeBiber,
     },
     {
       name: "Prof. Dr. Kriztina Kis-Katos",
@@ -62,48 +76,73 @@ export function SpeakersSection() {
       image: kristina,
     },
     {
-      name: "Matthias Boerner",
-      title: "Sector Economict for Green Climate Fund KFW",
-      image: imgPlaceholder,
-    },
-    {
-      name: "Dr. Yurdi Yasmi",
-      title: "Deputy Director / Special Coordinator of FAO",
-      image: yurdi,
-    },
-    {
-      name: "Prof. Dr. Carola Paul",
+      name: "Frank Bohnet",
       title:
-        "Professor of Forest Economics and Sustainable Land-Use Planning Development, University of Göttingen",
-      image: carola,
+        "Director of Development Finance East Asia and South-East Asia, KfW Development Bank",
+      image: frank,
+    },
+    {
+      name: "Gary Dunning",
+      title: "Executive Director, The Forests Dialogue",
+      image: gary,
     },
     {
       name: "Georg Buchholz",
       title: "Program Director, Forests and Climate Change Programme, GIZ",
-      image: georg,
+      image: buchholz,
     },
     {
-      name: "Dr. Rukka Sombolinggi",
+      name: "Rukka Sombolinggi",
       title:
         "Secretary General of Indonesian Archipelago Indigenous People Alliance (AMAN)",
       image: rukka,
     },
     {
+      name: "Dr. Joko Tri Haryanto",
+      title:
+        "Senior Researcher of Fiscal Policy Agency for Climate Change Financing and Multilateral Policy",
+      image: joko,
+    },
+    {
       name: "Stefan Schlosser",
-      title: "Managing Director of Deutscher Verband für Negative Emission (DVNE)",
+      title:
+        "Managing Director of Deutscher Verband für Negative Emission (DVNE)",
       image: stefan,
     },
     {
-      name: "Prof. Dr. Delik Hudalah",
-      title:
-        "Professor of Territorial and Rural Planning, Bandung Institute of Technology",
-      image: delik,
+      name: "Desti Alkano, Ph.D.",
+      title: "CEO of Energy Academy Indonesia (ECADIN)",
+      image: desti,
     },
     {
-      name: "Prof. Dr. Alain Thierstein",
+      name: "Rachmat Kaimuddin",
       title:
-        "Professor of Spatial Development, Technical University of Munich",
-      image: alain,
+        "Deputy Coordinating Minister of Maritime Affairs and Investments in Infrastructure and Transportation",
+      image: rachmat,
+    },
+    {
+      name: "Mia Amalia, Ph.D.",
+      title:
+        "Deputy of Planning and Land Management of Nusantara Authority (IKN, the New Capital City of Indonesia)",
+      image: mia,
+    },
+    {
+      name: "Prof. Francis Kéré",
+      title:
+        "Pritzker Price Awarded Architect and Professor of Architectural Design and Participation, Technical University of Munich",
+      image: francis,
+    },
+    {
+      name: "Dr. Amy Oen",
+      title:
+        "PHUSICOS Project Coordinator and Senior Researcher at the Norwegian Geotechnical Institute",
+      image: amy,
+    },
+    {
+      name: "Tonny Wagey",
+      title:
+        "Executive Director of Indonesia Climate Change Trust Fund (ICCTF), Ministry of National Development Planning (BAPPENAS)",
+      image: tonny,
     },
   ];
 
