@@ -188,6 +188,32 @@ export default function SpeakersSection() {
         <div className="py-10 flex flex-col gap-5">
           <div className="flex flex-col py-2">
             <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
+              <span className="font-bold">ICONIC 2024 Opening</span>
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-10 md:gap-8 px-2 md:px-5 py-10">
+              {speakersOpening.map((speaker, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-start max-w-[300px] px-5"
+                >
+                  <Image
+                    src={speaker.image}
+                    alt="placeholder"
+                    className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-top drop-shadow-lg"
+                  />
+                  <div className="flex flex-col gap-2 w-full text-center items-center mt-5 md:mt-10">
+                    <h1 className="text-lg md:text-xl font-bold">
+                      {speaker.name}
+                    </h1>
+                    <p className="text-sm">{speaker.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col py-2">
+            <h1 className="text-xl md:text-3xl px-3 border-b-2 border-secondary w-fit pb-2">
               <span className="font-bold">Ministerial Talk</span> - Financing
               Low-Carbon Development in Indonesia
             </h1>
@@ -353,8 +379,6 @@ export default function SpeakersSection() {
                 ))}
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
