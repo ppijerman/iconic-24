@@ -4,6 +4,7 @@ import Head from "next/head";
 import "./globals.css";
 import { IconicHeader } from "@/components/header";
 import { IconicFooter } from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <IconicHeader />
         {children}
         <IconicFooter />
+        <Analytics />
       </body>
     </html>
   );
