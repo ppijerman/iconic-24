@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Button } from "../../components/ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { PATHS } from "@/lib/constants";
 
 import logoCBL from "@/assets/sponsors/Platinum_CBL_NoBG.png";
 import logoUniGoe from "@/assets/sponsors/Platinum_University of Göttingen/GOE_Logo_Quer_IPC_Farbe_RGB.png";
@@ -86,7 +88,7 @@ export function Partners() {
           ))}
         </motion.div>
       </div>
-      <div className="container flex flex-col md:flex-row gap-2 md:gap-6 justify-center pt-4">
+      <div className="container flex flex-col gap-4 md:gap-6 justify-center py-10 text-center">
         <div className="flex flex-col w-full p-1 py-5 md:p-5">
           <p className="text-xl text-gray-500">
             Our esteemed sponsors and media partners have been pivotal in
@@ -94,10 +96,14 @@ export function Partners() {
             sustainable solutions and innovations for a greener future.
           </p>
         </div>
-        <Link href="/partnership" className="w-full">
-          <div className="text-2xl flex flex-row gap-2 text-secondary items-center justify-center ring-2 ring-secondary group w-full h-full py-5 px-10 hover:text-primary2 hover:ring-primary2 transition duration-150">
-            <h1 className="font-bold ">Partnership of ICONIC 2024</h1>
-          </div>
+        <Link
+          href={PATHS.PARTNERSHIP}
+          className="flex items-center justify-center mx-auto gap-5 w-fit p-2 hover:text-accent2 transition duration-500"
+        >
+          <h1 className="font-bold text-center text-xl md:text-2xl lg:text-4xl">
+            Learn more about becoming a partner with ICONIC
+          </h1>
+          <ArrowRightIcon className="w-12 h-12" />
         </Link>
       </div>
     </section>

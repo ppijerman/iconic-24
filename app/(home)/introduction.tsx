@@ -4,6 +4,7 @@ import pastIconic from "@/public/habibie.jpeg";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { PATHS } from "@/lib/constants";
+import dicoImg from "@/assets/dico.png";
 
 export default function Introduction() {
   return (
@@ -17,9 +18,16 @@ export default function Introduction() {
           />
         </div>
         <div className="flex flex-col items-center justify-center w-full container px-4 py-20">
-          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-10">
-            What is ICONIC?
-          </h2>
+          <div className="flex justify-center items-center gap-6 py-4">
+            <Image
+              src={dicoImg}
+              alt="Dinosaurus Iconic Image"
+              className="w-32 h-32"
+            />
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+              What is ICONIC?
+            </h2>
+          </div>
 
           <div className="flex flex-col justify-center gap-10 max-w-5xl px-4">
             <h3 className="py-5 text-lg md:text-2xl lg:text-3xl">
@@ -46,7 +54,7 @@ export default function Introduction() {
               journey towards these ambitious objectives.
             </p>
             <Link
-              href={PATHS.SUBJECT}
+              href={PATHS.ABOUT}
               className="flex items-center gap-5 w-fit hover:text-accent transition duration-300 group"
             >
               <h1 className="font-bold text-xl md:text-2xl lg:text-4xl">

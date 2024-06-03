@@ -3,6 +3,7 @@ export const APP_NAME = "ICONIC 2024"
 export const PATHS = {
     HOME: "/",
     ABOUT: "/about",
+    PARTNERSHIP: "/partnership",
     PROGRAM_AND_SUBJECT_OVERVIEW: "/program-and-subject-overview",
     SUBJECT: "/program-and-subject-overview/subject",
     EVENTS: "/program-and-subject-overview/events",

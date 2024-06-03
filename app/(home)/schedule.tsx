@@ -90,7 +90,7 @@ export function IconicSchedule() {
         </div>
 
         <Link
-          href={PATHS.SUBJECT}
+          href={PATHS.EVENTS}
           className="flex items-center gap-5 w-fit p-2 hover:text-accent2 transition duration-500"
         >
           <h1 className="font-bold text-xl md:text-2xl lg:text-4xl">
