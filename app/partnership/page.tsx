@@ -20,7 +20,7 @@ import logoGenauID from "@/assets/mediaPartner/Genau_Indonesia.png";
 import logoLindungiHutan from "@/assets/mediaPartner/LindungiHutan.jpeg";
 import logoDeventer from "@/assets/mediaPartner/PPIDev.png";
 import logoAmerop from "@/assets/mediaPartner/Salinan Amerop.png";
-import logoRPD from "@/assets/mediaPartner/RPD-bright.png";
+import logoRPD from "@/assets/mediaPartner/logorpd.png";
 import logoEnterNusantara from "@/assets/mediaPartner/EnterNusantara.png";
 import logoDoctrineUK from "@/assets/mediaPartner/DoctrineUK.png";
 import logoIGMadeAndi from "@/assets/mediaPartner/madeandi.png";
