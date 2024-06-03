@@ -8,7 +8,7 @@ export function StayInformation() {
     <section className="bg-white flex justify-center">
       <div className="w-full flex flex-col gap-10 items-center">
         <div className="w-full h-fit pt-16 flex flex-col items-center justify-center font-utile-display">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center gap-3">
             <h1 className="text-5xl font-bold">Göttingen</h1>
             <p className="text-xl">Stadt, die Wissen Schaft</p>
           </div>

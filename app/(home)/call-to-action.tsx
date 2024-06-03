@@ -12,13 +12,13 @@ export function CallToActionRegister() {
     <section
       className="flex flex-col items-center justify-center min-h-screen text-secondary w-screen font-utile-display"
       style={{
-        backgroundImage: "url('/arc-bali.webp')",
+        backgroundImage: "url('/Bamboo_with_Gradient.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <div
-        className="w-screen h-screen flex flex-col items-center justify-center z-50 bg-black/30"
+        className="w-screen h-screen flex flex-col items-center justify-center z-50"
       >
         <motion.div
           className="flex flex-col items-center justify-center w-[80%] gap-7 py-10 z-50"
