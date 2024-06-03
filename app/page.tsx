@@ -5,8 +5,8 @@ import { SpeakersSection } from "@/app/(home)/speakers";
 import { CallToActionRegister } from "@/app/(home)/call-to-action";
 import { Partners } from "@/app/(home)/partners";
 import Introduction from "@/app/(home)/introduction";
-import { IconicOutput } from "@/app/about/output-iconic";
 import { StayInformation } from "@/app/(home)/during-the-stay-home";
+import { ThemeOverview } from "./(home)/theme-overview";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <HomePage />
       <Countdown />
       <Introduction />
+      <ThemeOverview />
       <IconicSchedule />
       <SpeakersSection />
       <CallToActionRegister />

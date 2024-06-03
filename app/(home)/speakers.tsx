@@ -3,6 +3,8 @@
 import imgPlaceholder from "@/assets/img-round-placeholder.png";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { PATHS } from "@/lib/constants";
 
 // speakers
 //00
@@ -147,7 +149,14 @@ export function SpeakersSection() {
   ];
 
   return (
-    <section className="bg-white flex flex-col items-center justify-center gap-10 py-10">
+    <section
+      className="bg-[#e3e3e5] flex flex-col items-center justify-center gap-10 py-10"
+      style={{
+        backgroundImage: "url('/blurry_iconic_2.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "right bottom",
+      }}
+    >
       <h1 className="text-3xl md:text-5xl font-bold pt-10">
         Potential Speakers
       </h1>
@@ -173,11 +182,14 @@ export function SpeakersSection() {
           </div>
         ))}
       </div>
-      <Link href="/program-and-subject-overview/speakers">
-        <div className="text-2xl flex flex-row gap-2 text-secondary items-center justify-center ring-2 ring-secondary group w-fit py-5 px-10 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10">
-          <h1 className="font-bold ">See Speaker Details</h1>
-          <ArrowTopRightIcon className="w-6 h-6 opacity-0 group-hover:opacity-100 transition duration-75" />
-        </div>
+      <Link
+        href={PATHS.SPEAKERS}
+        className="flex items-center gap-5 w-fit p-2 hover:text-accent2 transition duration-500"
+      >
+        <h1 className="font-bold text-xl md:text-2xl lg:text-4xl">
+          View Speaker Details
+        </h1>
+        <ArrowRightIcon className="w-12 h-12" />
       </Link>
     </section>
   );

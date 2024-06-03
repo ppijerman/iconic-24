@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export function IconicFooter() {
   return (
-    <footer className="bg-white text-gray-600 min-h-[200px] flex flex-col items-center justify-center w-full">
+    <footer className="bg-white text-gray-600 min-h-[200px] flex flex-col items-center justify-center w-full py-8">
       <div className="flex flex-col md:flex-row gap-[4vw] justify-center items-center w-[80%] p-5">
         <div className="flex flex-col justify-center items-center w-full">
           <a
@@ -54,7 +54,7 @@ export function IconicFooter() {
               <li>Our Team</li>
             </Link>
             <Link href="/partnership" className="hover:text-accent transition">
-              <li>Be a partner</li>
+              <li>Partnership</li>
             </Link>
           </ul>
         </div>
