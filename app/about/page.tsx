@@ -3,8 +3,6 @@ import iconicLogo from "@/assets/logo.png";
 import Image from "next/image";
 import lowCarbon from "@/assets/icons/low-carbon.png";
 import { motion } from "framer-motion";
-
-import { IconicImages } from "./iconic-images";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { IconicOutput } from "./output-iconic";
@@ -14,6 +12,7 @@ import nopic from "@/assets/img-round-placeholder.png";
 import { TeamCTA } from "./team-cta";
 import { APP_NAME } from "@/lib/constants";
 import { PastIconic } from "./past-iconic";
+import { IconicImages } from "./iconic-images";
 
 export const metadata = {
   title: APP_NAME + " | " + "About",
@@ -94,10 +93,13 @@ export default function Page() {
         <IconicOutput />
         <TeamCTA />
 
-        <div className="w-full flex flex-col items-center justify-center">
-          <h1 className="pt-10 pb-20 text-4xl font-semibold">Past ICONIC</h1>
-          <IconicImages />
+        <div className="w-full flex flex-col items-center justify-center gap-5 pb-20">
+          <h1 className="pt-10 text-7xl font-bold">Past ICONIC</h1>
+          <p className="text-gray-600 text-lg pb-10">
+            Explore our past ICONIC events
+          </p>
           <PastIconic />
+          <IconicImages />
         </div>
       </div>
     </main>

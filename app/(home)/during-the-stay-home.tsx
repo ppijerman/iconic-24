@@ -12,7 +12,7 @@ export function StayInformation() {
             <h1 className="text-5xl font-bold">Göttingen</h1>
             <p className="text-xl">Stadt, die Wissen Schaft</p>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-10 w-[90%] md:w-1/2 mt-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 w-[90%] md:w-1/2 mt-6">
             <p className="border-l-4 pl-3 border-secondary py-2 w-full">
               We are excited to welcome you to Göttingen, a city that has been
               known for its rich history and academic excellence. Check out our

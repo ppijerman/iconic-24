@@ -4,13 +4,67 @@ import iconicLogo from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   HamburgerMenuIcon,
   Cross1Icon,
   ChevronDownIcon,
 } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
+
+import { PATHS } from "@/lib/constants";
+
+type NavigationItem = {
+  title: string;
+  href: string;
+  description: string;
+};
+
+const programAndSubjectOverview: NavigationItem[] = [
+  {
+    title: "Subject",
+    href: PATHS.SUBJECT,
+    description: "Learn more about the subjects of the conference.",
+  },
+  {
+    title: "Events",
+    href: PATHS.EVENTS,
+    description: "Learn more about the events of the conference.",
+  },
+  {
+    title: "Speakers",
+    href: PATHS.SPEAKERS,
+    description: "Learn more about the speakers of the conference.",
+  },
+];
+
+const duringTheStay: NavigationItem[] = [
+  {
+    title: "Preparation",
+    href: PATHS.PREPARATION,
+    description: "Learn more about the preparation for the conference.",
+  },
+  {
+    title: "Venue Göttingen",
+    href: PATHS.VENUE,
+    description: "Learn more about the venue in Göttingen.",
+  },
+  {
+    title: "Online Participant",
+    href: PATHS.ONLINE_PARTICIPANT,
+    description: "Learn more about the online participation.",
+  },
+  {
+    title: "City Day Trip",
+    href: PATHS.CITY_DAY_TRIP,
+    description: "Learn more about the city day trip.",
+  },
+  {
+    title: "FAQ",
+    href: PATHS.FAQ,
+    description: "Learn more about the frequently asked questions.",
+  },
+];
 
 const transition = {
   type: "spring",
@@ -26,6 +80,12 @@ export function IconicHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+
+
+  // Close the menu when the component mounts
+  useEffect(() => {
+    setIsOpen(false);
+  }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -52,7 +112,7 @@ export function IconicHeader() {
             isOpen ? "flex" : "hidden"
           } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[6%] md:top-[8%] lg:top-0 w-full items-center  lg:py-0 lg:px-0 px-5 md:px-8 py-8 shadow-lg lg:shadow-none rounded-lg`}
         >
-          <ul className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
+          <ul className="flex flex-col lg:flex-row gap-5 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
@@ -60,9 +120,18 @@ export function IconicHeader() {
                 href: "#",
                 label: "Program and Subject Overview",
                 submenus: [
-                  { href: "/program-and-subject-overview/subject", label: "Subject" },
-                  { href: "/program-and-subject-overview/events", label: "Events" },
-                  { href: "/program-and-subject-overview/speakers", label: "Speakers" },
+                  {
+                    href: "/program-and-subject-overview/subject",
+                    label: "Subject",
+                  },
+                  {
+                    href: "/program-and-subject-overview/events",
+                    label: "Events",
+                  },
+                  {
+                    href: "/program-and-subject-overview/speakers",
+                    label: "Speakers",
+                  },
                 ],
               },
               {
@@ -121,7 +190,7 @@ export function IconicHeader() {
                   )) ||
                     ""}
 
-                  {item.label && (
+                  {item.submenus && (
                     <div className="lg:hidden flex flex-col gap-4 w-full text-sm mt-4 font-normal">
                       {item.submenus?.map((submenu) => (
                         <Link href={submenu.href} key={submenu.href}>
@@ -173,9 +242,10 @@ export function IconicHeader() {
                 </li>
               </Link>
             ))}
+
           </ul>
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2">
           {isOpen ? (
             <Cross1Icon
               className="lg:hidden cursor-pointer"

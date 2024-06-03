@@ -1,36 +1,63 @@
+import Image from "next/image";
+import pastIconic01 from "@/assets/past-events/Iconic_2014.png";
+import pastIconic02 from "@/assets/past-events/Iconic_2016.jpeg";
+import pastIconic03 from "@/assets/past-events/03.jpg";
+import pastIconic04 from "@/assets/past-events/Iconic_2022.png";
+
 export function PastIconic() {
   const items = [
     {
       title: "ICONIC 2022",
+      place: "Technische Universität Nürnberg",
       description:
-        "Scientists at a leading research institution unveil a groundbreaking breakthrough in quantum computing.",
+        "Enhancement of Triple Helix Collaboration to Accelerate Urban and Rural Sustainable Development.",
+      image: pastIconic04,
     },
     {
       title: "ICONIC 2018",
-      description:
-        "The first quantum computer is built by a team of researchers in a laboratory in the United States.",
+      place: "Universität Hamburg",
+      description: "Science and Technology for Sustainable Development.",
+      image: pastIconic03,
     },
     {
       title: "ICONIC 2016",
+      place: "Leibniz Universität Hannover",
       description:
-        "A group of scientists in Europe publish a paper on quantum computing research.",
+        "Industrial Revival: Optimizing Strategy on Business, Government, and Education.",
+      image: pastIconic02,
     },
     {
       title: "ICONIC 2014",
+      place: "RWTH Aachen",
       description:
-        "A team of researchers in Asia makes a significant breakthrough in quantum computing.",
+        "Global Competitiveness and Developing Nations: A Strategic Approach towards Holistic Development",
+      image: pastIconic01,
     },
   ];
 
   return (
-    <div className="p-6 sm:p-10">
-      <div className="after:absolute after:inset-y-0 after:w-px after:bg-accent relative pl-6 after:left-0 grid gap-10 dark:after:bg-gray-400/20">
+    <div className="container">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {items.map((item, index) => (
-          <div key={index} className="grid gap-1 text-sm relative">
-            <div className="aspect-square w-3 bg-accent rounded-full absolute left-0 translate-x-[-29.5px] z-10 top-1 dark:bg-gray-50" />
-            <div className="text-2xl font-bold">{item.title}</div>
-            <div className="text-gray-500 dark:text-gray-400">
-              {item.description}
+          <div
+            className="bg-white dark:bg-gray-950 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            key={index}
+          >
+            <Image
+              src={item.image}
+              alt="Event Image"
+              width={600}
+              height={800}
+              className="w-full rounded-t-2xl h-[250px] lg:h-[500px] object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-xl lg:text-2xl font-bold mb-2">{item.title}</h2>
+              <p className="text-gray-500 dark:text-gray-400 mb-4">
+                {item.place}
+              </p>
+              <p className="text-gray-700 dark:text-gray-300">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}
