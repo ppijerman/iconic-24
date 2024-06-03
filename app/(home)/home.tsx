@@ -102,7 +102,7 @@ export function HomePage() {
               <h2>September 4th - 6th 2024</h2>
             </div>
             <Link href="/submission" className="w-full">
-              <div className="text-2xl flex flex-row gap-2 text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10 shadow-lg">
+              <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10 shadow-lg">
                 <h1 className="font-bold ">Submit Your Abstract</h1>
               </div>
             </Link>
