@@ -147,7 +147,14 @@ export function SpeakersSection() {
   ];
 
   return (
-    <section className="bg-[#e3e3e5] flex flex-col items-center justify-center gap-10 py-10">
+    <section
+      className="bg-[#e3e3e5] flex flex-col items-center justify-center gap-10 py-10"
+      style={{
+        backgroundImage: "url('/blurry_iconic_2.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "right bottom",
+      }}
+    >
       <h1 className="text-3xl md:text-5xl font-bold pt-10">
         Potential Speakers
       </h1>

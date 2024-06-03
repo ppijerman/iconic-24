@@ -32,7 +32,9 @@ export function IconicSchedule() {
   ];
 
   return (
-    <section className="bg-white w-full text-secondary">
+    <section
+      className="bg-white w-full text-secondary"
+    >
       <div className="container flex flex-col items-center justify-center py-12 md:py-16 lg:py-20">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Schedule</h1>
         <div className="flex text-md items-center justify-center">

@@ -19,7 +19,14 @@ export function ThemeOverview() {
   ];
 
   return (
-    <div className="bg-[#e3e3e5] w-full py-12 md:py-16 lg:py-20">
+    <div
+      className="bg-[#e3e3e5] w-full py-12 md:py-16 lg:py-20"
+      style={{
+        backgroundImage: "url('/blurry_iconic_2.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+      }}
+    >
       <section className="container px-4 md:px-6">
         <main className="flex flex-col items-center justify-center">
           <div className="flex flex-col gap-2 text-center">
