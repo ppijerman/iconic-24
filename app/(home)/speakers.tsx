@@ -147,7 +147,7 @@ export function SpeakersSection() {
   ];
 
   return (
-    <section className="bg-white flex flex-col items-center justify-center gap-10 py-10">
+    <section className="bg-[#e3e3e5] flex flex-col items-center justify-center gap-10 py-10">
       <h1 className="text-3xl md:text-5xl font-bold pt-10">
         Potential Speakers
       </h1>
@@ -174,8 +174,8 @@ export function SpeakersSection() {
         ))}
       </div>
       <Link href="/program-and-subject-overview/speakers">
-        <div className="text-2xl flex flex-row gap-2 text-secondary items-center justify-center ring-2 ring-secondary group w-fit py-5 px-10 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10">
-          <h1 className="font-bold ">See Speaker Details</h1>
+        <div className="text-xl md:text-2xl flex flex-row gap-2 text-secondary items-center justify-center ring-2 ring-secondary group w-fit py-5 px-5 md:px-10 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10">
+          <h1 className="font-bold">See Speaker Details</h1>
           <ArrowTopRightIcon className="w-6 h-6 opacity-0 group-hover:opacity-100 transition duration-75" />
         </div>
       </Link>

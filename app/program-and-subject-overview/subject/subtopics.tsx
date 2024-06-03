@@ -11,20 +11,20 @@ export function Subtopics() {
             </h1>
             <p className="group-hover:text-white p-5">
               Low-carbon development has impacts on the existing economic and
-              social practices. Due to the transformative nature of lowcarbon
+              social practices. Due to the transformative nature of low-carbon
               development, abrupt changes possibly threaten the sustainability
               of certain social groups.
             </p>
           </div>
         </Link>
-        <Link href="/program-and-subject-overview/subject/policital-economy-of-lcd-within-global-north-and-south-dynamics">
+        <Link href="/program-and-subject-overview/subject/political-economy-of-lcd-within-global-north-and-south-dynamics">
           <div className="group hover:bg-[#358257] transition duration-300 flex flex-col w-full items-center justify-center h-fit md:h-[350px] bg-primary2 p-5 text-center">
             <h1 className="group-hover:text-white text-3xl md:text-4xl font-semibold">
-              Policital Economy of LCD within Global North and South Dynamics
+              Political Economy of LCD within Global North and South Dynamics
             </h1>
             <p className="group-hover:text-white p-5">
               Low-carbon transformation and its inevitable influence on
-              geopolitical and geoeconomic dynamics in international relations,
+              geopolitical and geo-economic dynamics in international relations,
               and analyzing which voices are included and excluded in its
               discourse and selected approaches.
             </p>

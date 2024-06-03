@@ -54,7 +54,7 @@ export function IconicFooter() {
               <li>Our Team</li>
             </Link>
             <Link href="/partnership" className="hover:text-accent transition">
-              <li>Be a partner</li>
+              <li>Partnership</li>
             </Link>
           </ul>
         </div>

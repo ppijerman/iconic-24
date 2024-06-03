@@ -5,7 +5,7 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export function StayInformation() {
   return (
-    <section className="bg-white flex justify-center">
+    <section className="bg-[#e3e3e5] flex justify-center">
       <div className="w-full flex flex-col gap-10 items-center">
         <div className="w-full h-fit pt-16 flex flex-col items-center justify-center font-utile-display">
           <div className="flex flex-col items-center gap-3">

@@ -20,7 +20,7 @@ const scrollVariants = {
       x: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 30, // Adjust duration as needed
+        duration: 15, // Adjust duration as needed
         ease: "linear",
       },
     },
@@ -55,7 +55,7 @@ export function Partners() {
     },
   ];
 
-  const doubledSponsors = [...sponsors, ...sponsors, ...sponsors];
+  const doubledSponsors = [...sponsors, ...sponsors, ...sponsors, ...sponsors];
 
   return (
     <section className="bg-white text-secondary min-h-[600px] w-full flex flex-col items-center justify-center py-12 md:py-16 lg:py-20">

@@ -2,48 +2,58 @@ import { Button } from "../../components/ui/button";
 import Image from "next/image";
 import pastIconic from "@/public/habibie.jpeg";
 import Link from "next/link";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { PATHS } from "@/lib/constants";
 
 export default function Introduction() {
   return (
     <section className="bg-white text-secondary h-fit w-screen">
-      <div className="flex flex-col lg:flex-row w-full items-center justify-center">
+      <div className="grid grid-cols-1 xl:grid-cols-2 w-full">
         <div className="w-full">
           <Image
             src={pastIconic}
             alt="Past Iconic"
-            className="w-full h-fit object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex flex-col items-center justify-center w-full p-10 px-16">
-          <h2 className="text-3xl font-bold text-center mb-10">
+        <div className="flex flex-col items-center justify-center w-full container px-4 py-20">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-10">
             What is ICONIC?
           </h2>
-          <div className="flex flex-col justify-center gap-[2vw]">
-            <p className="text-base md:text-xl text-justify leading-relaxed p-5">
-              <span className="font-bold text-3xl">ICONIC</span>, launched by
-              PPI Jerman (Vereinigung Indonesischer Studenten in Deutschland
-              e.V) in 2014, aims to establish a platform for multi-stakeholder
-              engagement, facilitating knowledge exchange and strategic
-              networking. It serves as a bridge between Indonesia and the global
-              community, particularly Germany, addressing issues pertaining to
-              sustainable development. In 2024, ICONIC will celebrate its 10th
-              anniversary and fifth occurrence, centering on the subject
-              &quot;Transformation for Low-Carbon Development&quot;.
+
+          <div className="flex flex-col justify-center gap-10 max-w-5xl px-4">
+            <h3 className="py-5 text-lg md:text-2xl lg:text-3xl">
+              INTERNATIONAL CONFERENCE OF INTEGRATED INTELLECTUAL COMMUNITY
+            </h3>
+            <p className="text-base md:text-xl text-justify leading-relaxed">
+              <span className="font-bold">
+                ICONIC (International Conference of Integrated Intellectual
+                Community)
+              </span>
+              , launched by PPI Jerman (Vereinigung Indonesischer Studenten in
+              Deutschland e.V) in 2014, aims to establish a platform for
+              multi-stakeholder engagement, facilitating knowledge exchange and
+              strategic networking. It serves as a bridge between Indonesia and
+              the global community, particularly Germany, addressing issues
+              pertaining to sustainable development. In 2024, ICONIC will
+              celebrate its 10th anniversary and fifth occurrence, centering on
+              the subject &quot;Transformation for Low-Carbon Development&quot;.
             </p>
-            <p className="text-base md:text-xl text-justify leading-relaxed p-5">
+            <p className="text-base md:text-xl text-justify leading-relaxed">
               Aligned with Indonesia&apos;s vision to become an advanced economy
               by 2045 and achieve net-zero emissions by 2060, ICONIC will delve
               into innovative solutions and ideas to support Indonesia&apos;s
               journey towards these ambitious objectives.
             </p>
-            <div className="px-5">
-              <Button
-                asChild
-                className="p-6 md:p-10 w-fit text-lg md:text-2xl bg-secondary hover:bg-accent text-white font-bold"
-              >
-                <Link href="/about">Learn More About ICONIC</Link>
-              </Button>
-            </div>
+            <Link
+              href={PATHS.SUBJECT}
+              className="flex items-center gap-5 w-fit hover:text-accent transition duration-300 group"
+            >
+              <h1 className="font-bold text-xl md:text-2xl lg:text-4xl">
+                Learn more about ICONIC 2024
+              </h1>
+              <ArrowRightIcon className="w-12 h-12" />
+            </Link>
           </div>
         </div>
       </div>
