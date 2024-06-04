@@ -81,7 +81,6 @@ export function IconicHeader() {
 
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
-
   // Close the menu when the component mounts
   useEffect(() => {
     setIsOpen(false);
@@ -114,57 +113,70 @@ export function IconicHeader() {
         >
           <ul className="flex flex-col lg:flex-row gap-5 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
             {[
-              { href: "/", label: "Home" },
-              { href: "/about", label: "About" },
+              { href: PATHS.HOME, label: "Home" },
+              {
+                href: PATHS.ABOUT,
+                label: "About",
+                submenus: [
+                  {
+                    href: PATHS.OUR_TEAM,
+                    label: "Our Team",
+                  },
+                  {
+                    href: PATHS.REVIEWERS,
+                    label: "Reviewers",
+                  },
+                ],
+              },
               {
                 href: "#",
                 label: "Program and Subject Overview",
                 submenus: [
                   {
-                    href: "/program-and-subject-overview/subject",
+                    href: PATHS.SUBJECT,
                     label: "Subject",
                   },
                   {
-                    href: "/program-and-subject-overview/events",
+                    href: PATHS.EVENTS,
                     label: "Events",
                   },
                   {
-                    href: "/program-and-subject-overview/speakers",
+                    href: PATHS.SPEAKERS,
                     label: "Speakers",
                   },
                 ],
               },
               {
-                href: "/during-the-stay",
+                href: PATHS.DURING_THE_STAY,
                 label: "During the Stay",
                 submenus: [
                   {
-                    href: "/during-the-stay/preparation",
+                    href: PATHS.PREPARATION,
                     label: "Preparation",
                   },
                   {
-                    href: "/during-the-stay/venue",
+                    href: PATHS.VENUE,
                     label: "Venue Göttingen",
                   },
                   {
-                    href: "/during-the-stay/online-participant",
+                    href: PATHS.ONLINE_PARTICIPANT,
                     label: "Online Participant",
                   },
                   {
-                    href: "/during-the-stay/city-day-trip",
+                    href: PATHS.CITY_DAY_TRIP,
                     label: "City Day Trip",
                   },
                   {
+                    href: PATHS.FAQ,
                     label: "FAQ",
-                    href: "/during-the-stay/faq",
                   },
                 ],
               },
               {
-                href: "/event-registration",
+                href: PATHS.EVENT_REGISTRATION,
                 label: "Event Registration",
               },
-              { href: "/submission", label: "Abstract Submission" },
+              { href: PATHS.SUBMISSION, label: "Abstract Submission" },
             ].map((item) => (
               <Link href={item.href} key={item.href} className="">
                 <li
@@ -242,7 +254,6 @@ export function IconicHeader() {
                 </li>
               </Link>
             ))}
-
           </ul>
         </div>
         <div className="flex items-center gap-2">
