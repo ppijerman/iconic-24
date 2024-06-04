@@ -6,6 +6,7 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { PATHS } from "@/lib/constants";
 
 export function IconicFooter() {
   return (
@@ -41,19 +42,22 @@ export function IconicFooter() {
 
         <div className="flex flex-col gap-3 w-full border-b-2 border-l-0 md:border-l-2 md:border-b-0 pb-3 md:pl-3">
           <ul className="flex flex-col gap-3 text-sm md:text-base">
-            <Link href="/about" className="hover:text-accent transition">
+            <Link href={PATHS.ABOUT} className="hover:text-accent transition">
               <li>About Us</li>
             </Link>
-            <Link href="/program-and-subject-overview/subject">
+            <Link href={PATHS.SUBJECT}>
               <li>Subject</li>
             </Link>
             <Link
-              href="/about/our-team"
+              href={PATHS.OUR_TEAM}
               className="hover:text-accent transition"
             >
               <li>Our Team</li>
             </Link>
-            <Link href="/partnership" className="hover:text-accent transition">
+            <Link
+              href={PATHS.PARTNERSHIP}
+              className="hover:text-accent transition"
+            >
               <li>Partnership</li>
             </Link>
           </ul>
@@ -62,16 +66,25 @@ export function IconicFooter() {
         <div className="flex flex-col gap-3 w-full items border-b-2 border-l-0 md:border-l-2 md:border-b-0 pb-3 md:pl-3">
           <ul className="flex flex-col gap-3 text-sm md:text-base">
             <Link
-              href="/during-the-stay"
+              href={PATHS.DURING_THE_STAY}
               className="hover:text-accent transition"
             >
               <li>During the Stay</li>
             </Link>
-            <Link href="/submission" className="hover:text-accent transition">
+            <Link
+              href={PATHS.SUBMISSION}
+              className="hover:text-accent transition"
+            >
               <li>Submission</li>
             </Link>
-            <Link href="/reviewers" className="hover:text-accent transition">
+            <Link
+              href={PATHS.REVIEWERS}
+              className="hover:text-accent transition"
+            >
               <li>Reviewers</li>
+            </Link>
+            <Link href={PATHS.FAQ}>
+              <li>FAQ</li>
             </Link>
           </ul>
         </div>
