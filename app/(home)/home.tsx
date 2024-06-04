@@ -95,8 +95,8 @@ export function HomePage() {
           </motion.div>
           <SecondCall />
           <div className="flex flex-col md:flex-row justify-center items-center w-full text-secondary">
-            <div className="text-2xl w-full flex flex-col gap-2 font-semibold border-l-8 border-secondary pl-3">
-              <h2 className="font-bold md:text-3xl drop-shadow-lg shadow-white">
+            <div className="bg-gradient-to-r from-[#e3e3e5] to-transparent text-2xl w-full flex flex-col gap-2 font-semibold border-l-8 border-secondary pl-3">
+              <h2 className=" font-bold md:text-3xl drop-shadow-lg shadow-white">
                 Göttingen
               </h2>
               <h2>September 4th - 6th 2024</h2>
