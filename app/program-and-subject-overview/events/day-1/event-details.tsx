@@ -1,6 +1,7 @@
 import React from "react";
 import { Speakers } from "@/lib/speakers";
-import { EventSpeaker } from "./event-speakers";
+import { EventSpeaker } from "../event-speakers";
+import { Session } from "../event-session";
 
 // Main EventDetails Component
 export function EventDetails() {
@@ -18,239 +19,79 @@ export function EventDetails() {
 function Rundown() {
   return (
     <div className="flex flex-col gap-12 leading-relaxed">
-      <PreSession />
-      <PlenarySession />
-      <ParallelSessions />
-      <MeetTheIndustry />
+      <Sessions />
     </div>
   );
 }
 
-interface SessionProps {
-  timeStart: string;
-  timeEnd?: string;
-  title: string;
-  venue?: string;
-  details?: React.ReactNode;
-}
-// Session Component
-function Session({ timeStart, timeEnd, title, venue, details }: SessionProps) {
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-4 items-start">
-      <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center">
-        <div className="text-4xl font-bold">{timeStart}</div>
-        {timeEnd && (
-          <div className="text-gray-500 dark:text-gray-400">- {timeEnd}</div>
-        )}
-      </div>
-      <div className="flex flex-col gap-2 justify-center">
-        <h3 className="text-xl font-bold">{title}</h3>
-        {venue && <p className="text-gray-500 dark:text-gray-400">{venue}</p>}
-        {details && <div>{details}</div>}
-      </div>
-    </div>
-  );
-}
-
-function PreSession() {
+function Sessions() {
   return (
     <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4">Pre-session</h3>
       <Session
         timeStart="08:00"
-        timeEnd="08:45"
-        title="Registration & Snack"
-        venue="ZHG - Welcoming Hall"
-      />
-      <Session
-        timeStart="08:45"
         timeEnd="09:00"
-        title="Opening Remarks"
-        venue="ZHG - Main Lecture Hall"
-        details="Opening by Sekar Yunita, Director of ICONIC 2024"
+        title="Registration & Snack"
+        venue="Foyer, Zentralhörsaal-Gebäude (ZHG)"
       />
-    </div>
-  );
-}
-
-function PlenarySession() {
-  return (
-    <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4">Plenary Session</h3>
       <Session
         timeStart="09:00"
-        timeEnd="10:45"
-        title="Decarbonization in Global South: Who Should Bear the Cost?"
-        venue="ZHG - Main Lecture Hall"
+        timeEnd="09:00"
+        title="Opening Remarks"
+        venue="Main Plenary-Hall (Hall 10), Zentralhörsaal-Gebäude (ZHG)"
         details={
           <div className="flex flex-col gap-2">
             <p>
-              Overview: The plenary session aims to facilitate multi-stakeholder
-              dialogue on Low Carbon Development (LCD). ICONIC 2024 aspires to
-              serve as a central hub for innovation, ideas, and knowledge,
-              translating discussions into concrete policy recommendations and
-              action plans for advancing LCD in Indonesia. The session will
-              address the historical and economic dynamics between the Global
-              North and South, highlighting the need for collaboration,
-              financial aid, and technology transfer to achieve Net Zero goals.
+              ICONIC 2024 would officially be opened with some short words and
+              remarks from the Indonesian Ambassador for the Federal Republic of
+              Germany, Arif Havas Oegroseno, Prof. Dr. Metin Tolan as the
+              President of the University of Göttingen, as well as Sekar Yunita
+              as the Director of ICONIC 2024. This session would officially
+              commemorate the start of ICONIC 2024.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
-              speakers={[
-                Speakers.SVENJA,
-                Speakers.SRIMUL,
-                Speakers.HAVAS,
-                Speakers.METIN,
-              ]}
+              speakers={[Speakers.HAVAS, Speakers.METIN, Speakers.SEKAR]}
             />
           </div>
         }
       />
       <Session
-        timeStart="10:45"
-        timeEnd="11:00"
-        title="Coffee Break"
-        venue="ZHG - Welcoming Hall"
-      />
-      <Session
-        timeStart="11:00"
-        timeEnd="12:45"
-        title="Reducing AFOLU Emissions: Balancing Development and Conservation"
-        venue="ZHG - Main Lecture Hall"
+        timeStart="10.00"
+        timeEnd="12.00"
+        title="Ministerial Talk: Financing Low-Carbon Development in Indonesia"
+        venue="Main Plenary-Hall (Hall 10), Zentralhörsaal-Gebäude (ZHG)"
         details={
-          <>
+          <div className="flex flex-col gap-2">
             <p>
-              Overview: This session will address the major contributions of
-              land-use change and forestry to greenhouse gas emissions in
-              Indonesia. The session will explore current policies and
-              regulatory frameworks aimed at emissions reduction in agriculture,
-              forestry, and other land uses (AFOLU). With insights into
-              deforestation trends, the impact of palm oil production, and
-              international attention on Indonesia&apos;s deforestation, this
-              session will feature discussions on harmonizing economic
-              activities with conservation efforts.
+              The Ministerial Talk session would be a discussion focusing on the
+              topic of financing low-carbon initiatives and developments.
+              especially in the Global South, with Indonesia as a
+              representative. Sri Mulyani Indrawati, Ph.D, as Indonesia&apos;s
+              Finance Minister would highlight approaches taken by Indonesia in
+              terms of financing sustainability. Svenja Schulze, as
+              Germany&apos;s Minister for Development would bring upon insights
+              on how Germany finances its sustainability and low-carbon
+              initiatives.
             </p>
-            <p>Speakers:</p>
-            <ul>
-              <li>Gary Dunning, Executive Director, The Forests Dialogue</li>
-              <li>
-                Rukka Sombolinggi, Secretary General of Indonesian Archipelago
-                Indigenous People Alliance (AMAN)
-              </li>
-              <li>
-                Georg Buchholz, Program Director, Forests and Climate Change
-                Programme, GIZ
-              </li>
-            </ul>
-          </>
+            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
+            <EventSpeaker speakers={[Speakers.SRIMUL, Speakers.SVENJA]} />
+          </div>
         }
       />
-      <Session timeStart="12:45" timeEnd="14:30" title="Lunch Break" />
-    </div>
-  );
-}
-
-// Parallel Sessions Component
-function ParallelSessions() {
-  return (
-    <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4">
-        Parallel Conference Sessions
-      </h3>
       <Session
-        timeStart="14:30"
+        timeStart="12:00"
+        timeEnd="14:00"
+        title="Lunch Break"
+        venue="Foyer, Zentralhörsaal-Gebäude (ZHG)"
+        details="Lunch session of all invited guests, partners, and participants of ICONIC 2024 that would also serve as one of the numerous networking opportunities between the diverse participants and stakeholders of ICONIC 2024."
+      />
+      <Session
+        timeStart="14:00"
         timeEnd="18:00"
-        title="Economic and Social Implication of Low Carbon Development"
-        venue="ZHG - Conference Venue 1"
-        details={
-          <>
-            <p>
-              Overview: This session will explore the intersection of
-              environmental sustainability and economic and social progress. Low
-              carbon development strategies aim to mitigate climate change
-              impacts through energy efficiency, renewable energy sources, and
-              smarter urban planning. The economic implications include job
-              creation in new industries and transformation of existing sectors,
-              while social implications encompass lifestyle changes, reductions
-              in energy poverty, and improved public health.
-            </p>
-            <p>Speakers:</p>
-            <ul>
-              <li>Gary Dunning, Executive Director, The Forests Dialogue</li>
-              <li>
-                Rukka Sombolinggi, Secretary General of Indonesian Archipelago
-                Indigenous People Alliance (AMAN)
-              </li>
-              <li>
-                Georg Buchholz, Program Director, Forests and Climate Change
-                Programme, GIZ
-              </li>
-            </ul>
-          </>
-        }
-      />
-      <Session
-        timeStart="14:30"
-        timeEnd="18:00"
-        title="Political Economy of LCD within Global North and South Dynamics"
-        venue="ZHG - Conference Venue 2"
-        details={
-          <>
-            <p>
-              Overview: This session will explore the complex and dynamic
-              relationship between the Global North and South regarding
-              decarbonization, influenced by historical and economic factors.
-              Developed countries in the Global North have historically been
-              significant contributors to greenhouse gas emissions, while the
-              Global South has emitted fewer emissions per capita. However,
-              recent economic growth in the Global South has increased their
-              emissions, highlighting the urgency of action.
-            </p>
-            <p>Speakers:</p>
-            <ul>
-              <li>
-                Wisnu Harto Adiwijoyo PhD., Research Analyst at the World Bank
-                Group
-              </li>
-              <li>
-                Prof. Dr. Krisztina Kis-Katos, Professor for International
-                Economic Policy, University of Göttingen
-              </li>
-            </ul>
-          </>
-        }
-      />
-    </div>
-  );
-}
-
-// Meet the Industry Component
-function MeetTheIndustry() {
-  return (
-    <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4">
-        Meet The Industry
-      </h3>
-      <Session
-        timeStart="14:30"
-        timeEnd="18:00"
-        title="Opening Talk"
-        venue="ZHG - Main Lecture Hall"
-        details={
-          <>
-            <p>
-              Overview: In order to meet the goal of low carbon development,
-              collaborations are needed among different stakeholders, including
-              government policymakers, financial institutions, industries, and
-              the academic community. Industries serve as the frontline actors
-              in the collective effort to combat climate change. With
-              Indonesia’s Nationally Determined Contribution (NDC) aiming to
-              reduce its GHG emissions by 32% unconditionally and 43%
-              conditionally, support from innovative enterprises is crucial.
-            </p>
-            <p>Speakers:</p>
-          </>
-        }
+        title="Low-Carbon Study Trip"
+        venue="Göttingen city center, partner research centers and companies (to be announced)"
+        details="An optional study trip that would allow participants and invitees to explore more about the host city of ICONIC 2024; Göttingen. The trip would focus on visiting research centers operating in Göttingen, as well as visiting facilities of specific companies in Göttingen that are active in low-carbon initiatives.
+"
       />
     </div>
   );

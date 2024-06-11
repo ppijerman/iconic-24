@@ -32,21 +32,23 @@ const events = [
 
 export default function Page() {
   return (
-    <main className="min-h-screen flex justify-center bg-white">
+    <main
+      className="min-h-screen flex justify-center w-full"
+    >
       <div className="container pb-32 pt-10 md:pt-20">
         <h1 className="font-bold text-3xl md:text-5xl">EVENTS</h1>
         <div className="my-16 flex flex-col gap-10">
           <div className="grid grid-cols-1 gap-5">
             {events.map((event) => (
               <Link key={event.title} href={event.href} className="group">
-                <Card className="min-h-[200px] group-hover:bg-gray-100 transition duration-200 flex flex-col justify-between">
+                <Card className="min-h-[200px] group-hover:bg-gray-100 transition duration-200 flex flex-col justify-between ">
                   <CardHeader>
-                    <h1 className="font-bold text-3xl text-secondary">
+                    <h1 className="font-bold text-3xl text-secondary group-hover:text-accent2">
                       {event.title}
                     </h1>
                   </CardHeader>
                   <CardFooter>
-                    <div className="flex items-center gap-4 text-secondary ml-auto opacity-0 group-hover:opacity-100 transition duration-200">
+                    <div className="flex items-center gap-4 text-secondary ml-auto opacity-0 group-hover:opacity-100 transition duration-200 group-hover:text-accent2">
                       <h3 className="text-xl font-bold">Learn more</h3>
                       <ArrowRightIcon className="w-12 h-12" />
                     </div>

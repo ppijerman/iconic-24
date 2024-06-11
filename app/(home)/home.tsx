@@ -15,6 +15,7 @@ export function HomePage() {
         backgroundImage: "url('/Landing Page_neu_SVG.svg')",
         backgroundSize: "cover",
         backgroundPosition: "top left",
+        backgroundAttachment: "fixed",
       }}
     >
       <div className="min-h-screen w-screen flex flex-col justify-center items-center px-5">
