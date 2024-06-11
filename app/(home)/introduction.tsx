@@ -1,6 +1,6 @@
 import { Button } from "../../components/ui/button";
 import Image from "next/image";
-import pastIconic from "@/public/habibie.jpeg";
+import pastIconic from "@/assets/past-events/Iconic_2016.jpeg";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { PATHS } from "@/lib/constants";
