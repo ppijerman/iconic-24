@@ -1,4 +1,6 @@
 import React from "react";
+import { Speakers } from "@/lib/speakers";
+import { EventSpeaker } from "./event-speakers";
 
 // Main EventDetails Component
 export function EventDetails() {
@@ -81,7 +83,7 @@ function PlenarySession() {
         title="Decarbonization in Global South: Who Should Bear the Cost?"
         venue="ZHG - Main Lecture Hall"
         details={
-          <>
+          <div className="flex flex-col gap-2">
             <p>
               Overview: The plenary session aims to facilitate multi-stakeholder
               dialogue on Low Carbon Development (LCD). ICONIC 2024 aspires to
@@ -92,19 +94,16 @@ function PlenarySession() {
               North and South, highlighting the need for collaboration,
               financial aid, and technology transfer to achieve Net Zero goals.
             </p>
-            <p>Speakers:</p>
-            <ul>
-              <li>Arif Havas Oegroseno, Indonesian Ambassador to Germany</li>
-              <li>
-                Prof. Dr. Krisztina Kis-Katos, Professor for International
-                Economic Policy (Uni-Göttingen)
-              </li>
-              <li>
-                Frank Bohnet, Director of Development Finance East Asia and
-                South-East Asia, KfW Development Bank
-              </li>
-            </ul>
-          </>
+            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
+            <EventSpeaker
+              speakers={[
+                Speakers.SVENJA,
+                Speakers.SRIMUL,
+                Speakers.HAVAS,
+                Speakers.METIN,
+              ]}
+            />
+          </div>
         }
       />
       <Session
@@ -250,17 +249,6 @@ function MeetTheIndustry() {
               conditionally, support from innovative enterprises is crucial.
             </p>
             <p>Speakers:</p>
-            <ul>
-              <li>
-                Dr. Joko Tri Haryanto, Senior Researcher and Fiscal Policy
-                Agency for Climate Change Financing and Multilateral Policy at
-                the Indonesian Ministry of Finance
-              </li>
-              <li>
-                Frank Bohnet, Director of Development Finance East Asia and
-                South-East Asia, KfW Development Bank
-              </li>
-            </ul>
           </>
         }
       />
