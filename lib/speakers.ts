@@ -7,7 +7,7 @@ import antjeBiber from "@/assets/speakers/Biber.jpeg";
 
 //01
 import havas from "@/assets/speakers/Dubes_Havas.jpg";
-import kristina from "@/assets/speakers/Kristina.jpeg";
+import krisztina from "@/assets/speakers/Kristina.jpeg";
 import frank from "@/assets/speakers/Frank Bohnet.jpeg";
 
 //02
@@ -57,11 +57,11 @@ export const Speakers = {
     title: "Development Minister of the Federal Republic of Germany",
     image: svenja,
   },
-  KRIZTINA: {
-    name: "Prof. Dr. Kriztina Kis-Katos",
+  KRISZTINA: {
+    name: "Prof. Dr. Krisztina Kis-Katos",
     title:
       "Professor for International Economic Policy, University of Göttingen",
-    image: kristina,
+    image: krisztina,
   },
   FRANK: {
     name: "Frank Bohnet",
