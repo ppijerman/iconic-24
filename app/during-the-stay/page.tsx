@@ -16,7 +16,7 @@ const topics = [
   {
     title: "Venue — Göttingen",
     content:
-      "Step into the venues that will host our inspiring sessions and discussions. Get to know the Alte Mensa, Adam-von-Trott-Saal, and ZHG, and plan your conference days with ease.",
+      "Step into the venues that will host our inspiring sessions and discussions. Get to know the official venue of ICONIC, and plan your conference days with ease.",
     href: "/during-the-stay/venue",
   },
   {
