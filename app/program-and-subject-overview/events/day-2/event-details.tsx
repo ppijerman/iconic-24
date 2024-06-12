@@ -8,6 +8,7 @@ export function EventDetails() {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="text-2xl font-semibold md:text-4xl">Rundown</h2>
+      <span className="border-secondary border-b-8 w-[60px] py-4"></span>
       <div className="flex flex-col gap-4 leading-relaxed">
         <Rundown />
       </div>
@@ -30,7 +31,9 @@ function Rundown() {
 function PreSession() {
   return (
     <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">Pre-session</h3>
+      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
+        Pre-session
+      </h3>
       <Session
         timeStart="08:00"
         timeEnd="08:45"
@@ -51,7 +54,9 @@ function PreSession() {
 function PlenarySession() {
   return (
     <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">Plenary Session</h3>
+      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
+        Plenary Session
+      </h3>
       <Session
         timeStart="09:00"
         timeEnd="10:45"
@@ -112,7 +117,12 @@ function PlenarySession() {
           </div>
         }
       />
-      <Session timeStart="12:45" timeEnd="14:30" title="Lunch Break" venue="Göttingen" />
+      <Session
+        timeStart="12:45"
+        timeEnd="14:30"
+        title="Lunch Break"
+        venue="Göttingen"
+      />
     </div>
   );
 }
@@ -171,12 +181,6 @@ function ParallelSessions() {
           </div>
         }
       />
-      <h3 className="text-xl font-medium md:text-2xl pt-4">
-        Shared Details for Both Conference Sessions
-      </h3>
-      <div className="flex flex-col gap-3">
-        <h4></h4>
-      </div>
     </div>
   );
 }

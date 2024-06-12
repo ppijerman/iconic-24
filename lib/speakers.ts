@@ -28,6 +28,8 @@ import mia from "@/assets/speakers/Mia Amalia.jpeg";
 import francis from "@/assets/speakers/Francis Kere.webp";
 import amy from "@/assets/speakers/Amy Oen.webp";
 
+import britta from "@/assets/speakers/britta.jpg";
+
 //06
 import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
 export const Speakers = {
@@ -136,5 +138,11 @@ export const Speakers = {
     title:
       "PHUSICOS Project Coordinator and Senior Researcher at the Norwegian Geotechnical Institute",
     image: amy,
+  },
+  BRITTA: {
+    name: "Britta Peters",
+    title:
+      "Senior Advisor at the Hamburg Institute for Innovation, Climate Protection and Circular Economy (HiiCCE)",
+    image: britta,
   },
 };

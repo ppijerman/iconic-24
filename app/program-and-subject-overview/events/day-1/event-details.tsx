@@ -8,6 +8,7 @@ export function EventDetails() {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="text-2xl font-semibold md:text-4xl">Rundown</h2>
+      <span className="border-secondary border-b-8 w-[60px] py-4"></span>
       <div className="flex flex-col gap-4 leading-relaxed">
         <Rundown />
       </div>

@@ -5,7 +5,7 @@ export default function DayOne() {
     <main className="min-h-screen flex justify-center bg-white">
       <div className="container py-12 md:py-16 lg:py-20">
         <h1 className="font-bold text-3xl md:text-5xl">
-          Day 1 - Ministerial Talk & Optional City Trip
+          Day 3 - Plenary Sessions, Parallel Conference & Meet the Industry
         </h1>
         <div className="flex flex-col gap-10 py-4 md:py-6 lg:py-8">
           {/* Add the following content */}
@@ -14,28 +14,27 @@ export default function DayOne() {
             <span className="border-secondary border-b-8 w-[60px] py-4"></span>
             <div className="flex flex-col gap-4 leading-relaxed">
               <p className="">
-                <span className="bg-primary2 text-2xl font-bold py-1 px-3 text-white">
-                  DAY 1
-                </span>{" "}
-                of ICONIC 2024&apos;s range of events would start with an
-                official opening session by the Indonesian Ambassador for
-                Germany, the president of our host university, the University of
-                Göttingen, and the director of ICONIC 2024. It would then be
-                followed by a Ministerial Talk speech and discussion session on
-                the topic of low-carbon development financing, with ministerial
-                guest speakers from Indonesia and Germany.
+                <span className="bg-accent text-2xl font-bold py-1 px-3 text-white">DAY 3</span>{" "}
+                of ICONIC 2024 will focus on carbon capture, storage, and
+                removal technologies, as well as low-carbon territorial
+                planning. The sessions will involve policymakers, researchers,
+                industry leaders, and other stakeholders discussing innovative
+                solutions and policy frameworks to achieve a sustainable
+                low-carbon future.
               </p>
               <p>
-                Afterwards, a lunch break which will be attended by all of
-                ICONIC 2024&apos;s guest speakers, scientific chairs, as well as
-                industry presenters and partners as a networking opportunity.
-                The range of events for the day would then conclude with a city
-                trip delving into and peeking a glimpse into Göttingen&apos;s
-                world of research and academic pedigree by visiting a few
-                research centers and historical sites.
+                The goal is to develop actionable insights and strategies to
+                advance low carbon development in Indonesia and globally.
+                Participants will gain insights into the latest advancements in
+                low-carbon technologies and explore practical applications to
+                mitigate carbon emissions. Additionally, the day will highlight
+                the importance of integrating low-carbon principles into urban
+                planning and the built environment, addressing the challenges
+                and opportunities for creating sustainable and resilient cities.
               </p>
             </div>
           </section>
+
           <EventDetails />
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold md:text-4xl">

@@ -11,9 +11,13 @@ export default function DayOne() {
           {/* Add the following content */}
           <section className="flex flex-col gap-4">
             <h2 className="text-2xl font-semibold md:text-4xl">Overview</h2>
+            <span className="border-secondary border-b-8 w-[60px] py-4"></span>
             <div className="flex flex-col gap-4 leading-relaxed">
               <p className="">
-                Day 2 of ICONIC 2024 will focus on various aspects of low carbon
+                <span className="bg-accent2 text-2xl font-bold py-1 px-3 text-white">
+                  DAY 2
+                </span>{" "}
+                of ICONIC 2024 will focus on various aspects of low carbon
                 development, emphasizing the intersection of environmental
                 sustainability, economic progress, and social equity. The
                 day&apos;s sessions will facilitate multi-stakeholder dialogues
@@ -59,9 +63,7 @@ export default function DayOne() {
                 </a>
               </li>
             </ul>
-            <p>
-              Gofundme
-            </p>
+            <p>Gofundme</p>
           </div>
         </div>
       </div>
