@@ -93,7 +93,7 @@ export function IconicFooter() {
         <Link href="https://instagram.com/iconic.ppij">
           <InstagramLogoIcon className="w-10 h-10  hover:text-accent transition" />
         </Link>
-        <Link href="https://www.linkedin.com/company/ppijerman/">
+        <Link href="https://www.linkedin.com/company/iconicppij/">
           <LinkedInLogoIcon className="w-10 h-10  hover:text-accent transition" />
         </Link>
       </div>

@@ -29,6 +29,10 @@ const config = {
     },
 
     extend: {
+      backgroundImage: {
+        "landing": "url('/Landing Page_neu_SVG.svg')",
+
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

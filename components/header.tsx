@@ -133,16 +133,16 @@ export function IconicHeader() {
                 label: "Program and Subject Overview",
                 submenus: [
                   {
-                    href: PATHS.SUBJECT,
-                    label: "Subject",
-                  },
-                  {
                     href: PATHS.EVENTS,
                     label: "Events",
                   },
                   {
                     href: PATHS.SPEAKERS,
                     label: "Speakers",
+                  },
+                  {
+                    href: PATHS.SUBJECT,
+                    label: "Subject",
                   },
                 ],
               },

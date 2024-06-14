@@ -1,41 +1,9 @@
 import imgPlaceholder from "@/assets/img-round-placeholder.png";
 import Image from "next/image";
 import Link from "next/link";
-// speakers
-//00
-import sriMulyani from "@/assets/speakers/Minister_SriMulyani.jpg";
-import svenja from "@/assets/speakers/BMZ Schulze.jpeg";
-import metin from "@/assets/speakers/President Uni Göttingen.jpeg";
-import sekar from "@/assets/team/sekar.jpeg";
-import antjeBiber from "@/assets/speakers/Biber.jpeg";
-
-//01
-import havas from "@/assets/speakers/Dubes_Havas.jpg";
-import kristina from "@/assets/speakers/Kristina.jpeg";
-import frank from "@/assets/speakers/Frank Bohnet.jpeg";
-
-//02
-import rukka from "@/assets/speakers/Rukka Sombolinggi.jpg";
-import gary from "@/assets/speakers/Gary Dunning.jpeg";
-import buchholz from "@/assets/speakers/Georg Buchholz.jpeg";
-
-//03
-import joko from "@/assets/speakers/Joko Tri Haryanto.jpeg";
-
-//04
-import rachmat from "@/assets/speakers/Rachmat Kaimuddin.png";
-import stefan from "@/assets/speakers/Stefan Schlosser.jpeg";
-import desti from "@/assets/speakers/Desti.webp";
-
-//05
-import mia from "@/assets/speakers/Mia Amalia.jpeg";
-import francis from "@/assets/speakers/Francis Kere.webp";
-import amy from "@/assets/speakers/Amy Oen.webp";
-
-//06
-import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
 
 import { APP_NAME } from "@/lib/constants";
+import { Speakers } from "@/lib/speakers";
 
 export const metadata = {
   title: APP_NAME + " | " + "Potential Speakers",
@@ -43,143 +11,36 @@ export const metadata = {
 };
 
 export default function SpeakersSection() {
-  const speakersOpening = [
-    {
-      name: "Arif Havas Oegroseno",
-      title: "Indonesian Ambassador for the Federal Republic of Germany",
-      image: havas,
-    },
-    {
-      name: "Prof. Dr. Metin Tolan",
-      title: "President of the University of Göttingen",
-      image: metin,
-    },
-    {
-      name: "Sekar Yunita",
-      title:
-        "Director of ICONIC 2024, Doctoral Researcher Forest Economics and Sustainable Land Use Planning, Universität Göttingen",
-      image: sekar,
-    },
-  ];
+  const speakersOpening = [Speakers.HAVAS, Speakers.METIN, Speakers.SEKAR];
 
-  const speakersFinance = [
-    {
-      name: "Sri Mulyani Indrawati, PhD.",
-      title: "Finance Minister of the Republic of Indonesia",
-      image: sriMulyani,
-    },
-    {
-      name: "Svenja Schulze",
-      title: "Development Minister of the Federal Republic of Germany",
-      image: svenja,
-    },
-  ];
+  const speakersFinance = [Speakers.SRIMUL, Speakers.SVENJA];
 
   const speakersDecarbonizationGlobalSouth = [
-    {
-      name: "Arif Havas Oegroseno",
-      title: "Indonesian Ambassador for the Federal Republic of Germany",
-      image: havas,
-    },
-    {
-      name: "Prof. Dr. Kriztina Kis-Katos",
-      title:
-        "Professor for International Economic Policy, University of Göttingen",
-      image: kristina,
-    },
-    {
-      name: "Frank Bohnet",
-      title:
-        "Director of Development Finance East Asia and South-East Asia, KfW Development Bank",
-      image: frank,
-    },
+    Speakers.HAVAS,
+    Speakers.KRISZTINA,
+    Speakers.FRANK,
   ];
 
   const speakersReducingEmissions = [
-    {
-      name: "Gary Dunning",
-      title: "Executive Director, The Forests Dialogue",
-      image: gary,
-    },
-    {
-      name: "Rukka Sombolinggi",
-      title:
-        "Secretary General of Indonesian Archipelago Indigenous People Alliance (AMAN)",
-      image: rukka,
-    },
-    {
-      name: "Georg Buchholz",
-      title: "Program Director, Forests and Climate Change Programme, GIZ",
-      image: buchholz,
-    },
+    Speakers.GARY,
+    Speakers.RUKKA,
+    Speakers.GEORG,
   ];
 
   const speakersDecarbonization = [
-    {
-      name: "Dr. Joko Tri Haryanto",
-      title:
-        "Senior Researcher of Fiscal Policy Agency for Climate Change Financing and Multilateral Policy",
-      image: joko,
-    },
-    {
-      name: "Frank Bohnet",
-      title:
-        "Director of Development Finance East Asia and South-East Asia, KfW Development Bank",
-      image: frank,
-    },
-    {
-      name: "Tonny Wagey",
-      title:
-        "Executive Director of Indonesia Climate Change Trust Fund (ICCTF), Ministry of National Development Planning (BAPPENAS)",
-      image: tonny,
-    },
-    {
-      name: "Antje Biber",
-      title: "Head of SDG Office, Feri Group",
-      image: antjeBiber,
-    },
+    Speakers.JOKO,
+    Speakers.FRANK,
+    Speakers.TONNY,
+    Speakers.ANTJE,
   ];
 
   const speakersCarbonCapture = [
-    {
-      name: "Rachmat Kaimuddin",
-      title:
-        "Deputy Coordinating Minister of Maritime Affairs and Investments in Infrastructure and Transportation",
-      image: rachmat,
-    },
-    {
-      name: "Stefan Schlosser",
-      title:
-        "Managing Director of Deutscher Verband für Negative Emission (DVNE)",
-      image: stefan,
-    },
-    {
-      name: "Desti Alkano, Ph.D.",
-      title: "CEO of Energy Academy Indonesia (ECADIN)",
-      image: desti,
-    },
+    Speakers.RACHMAT,
+    Speakers.STEFAN,
+    Speakers.DESTI,
   ];
 
-  const speakersPerspectives = [
-    {
-      name: "Mia Amalia, Ph.D.",
-      title:
-        "Deputy of Planning and Land Management of Nusantara Authority (IKN, the New Capital City of Indonesia)",
-      image: mia,
-    },
-    {
-      name: "Prof. Francis Kéré",
-      title:
-        "Pritzker Price Awarded Architect and Professor of Architectural Design and Participation, Technical University of Munich",
-      image: francis,
-    },
-    {
-      name: "Dr. Amy Oen",
-      title:
-        "PHUSICOS Project Coordinator and Senior Researcher at the Norwegian Geotechnical Institute",
-      image: amy,
-    },
-  ];
+  const speakersPerspectives = [Speakers.MIA, Speakers.FRANCIS, Speakers.AMY];
 
   return (
     <section className="min-h-screen flex justify-center bg-white">
