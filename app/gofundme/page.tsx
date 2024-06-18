@@ -16,7 +16,7 @@ export default function GoFundMe() {
             <div className="grid gap-6 lg:grid-cols-[1fr_550px] lg:gap-12 xl:grid-cols-[1fr_650px]">
               <div className="space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none" style={{ color: '#0F4C32' }}>
-                    Let's Plant Mangroves along Indonesia's Coastlines!
+                    Let&apos;s Plant Mangroves along Indonesia&apos;s Coastlines!
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                 We are teaming up with <a className="transition duration-300 text-[#146643] font-bold hover:text-[#F36F02]" href="https://lindungihutan.com/">
@@ -59,8 +59,8 @@ export default function GoFundMe() {
                 <p className="mt-4 text-gray-500 md:text-xl dark:text-gray-400">
                     ICONIC 2024, in partnership with LindungiHutan, invites you to join us in our mission 
                     for environmental conservation and low-carbon development in Indonesia. 
-                    As we prepare for our international conference, we're not just talking; 
-                    <span className="font-bold text-[#146643]"> we're taking action</span>.
+                    As we prepare for our international conference, we&apos;re not just talking; 
+                    <span className="font-bold text-[#146643]"> we&apos;re taking action</span>.
                 </p>
                 <p className="mt-4 text-gray-500 md:text-xl dark:text-gray-400">
                     We are launching a campaign to plant trees in <span className="font-bold text-[#F36F02]">Pasisir Pamanukan, West Java</span>. 
@@ -108,7 +108,7 @@ export default function GoFundMe() {
             <div className="space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl" style={{ color: '#0F4C32' }}>How You Can Help</h2>
               <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl dark:text-gray-400">
-                Every contribution, big or small, brings us closer to our goals. Here's how you can get involved:
+                Every contribution, big or small, brings us closer to our goals. Here&apos;s how you can get involved:
               </p>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -116,7 +116,7 @@ export default function GoFundMe() {
                 <h3 className="text-xl font-bold" style={{ color: '#0F4C32' }}>Share</h3>
                 <p className="text-gray-500 dark:text-gray-400">
                 Spread the word about our campaign! Share this page to your friends and colleagues, 
-                and social networks and let's amplify our impact together.
+                and social networks and let&apos;s amplify our impact together.
                 </p>
               </div>
               <div className="space-y-2 text-center">
@@ -129,7 +129,7 @@ export default function GoFundMe() {
               <div className="space-y-2 text-center">
                 <h3 className="text-xl font-bold" style={{ color: '#0F4C32' }}>Engage</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                Want to see for yourself what's going on? 
+                Want to see for yourself what&apos;s going on? 
                 Share your ideas on our page and join ICONIC in Göttingen from 4th to 6th September 2024.
                 </p>
               </div>
