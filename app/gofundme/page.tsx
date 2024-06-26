@@ -79,7 +79,7 @@ export default function GofundmePage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-secondary">Indonesia's Coastline: A Vital Lifeline</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-secondary">Indonesia&apos;s Coastline: A Vital Lifeline</h2>
                 <p className="mt-4 text-gray-500 md:text-xl dark:text-gray-400">
                     Indonesia boasts the world&apos;s longest coastline, 
                     stretching <span className="font-bold text-accent">54,716 kilometers</span> (source: <a href="https://www.cia.gov/the-world-factbook/countries/indonesia/">CIA World Factbook</a>). 
