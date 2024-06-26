@@ -322,17 +322,28 @@ export default function GofundmePage() {
               </div>
 
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tighter sm:text-4xl text-secondary">
-                Donate Now to Support Our Cause
+                Be a Hero for Our Coasts: Plant Mangroves Today!
               </h2>
               <p className="max-w-[600px] mx-auto text-gray-500 md:text-xl dark:text-gray-400">
-                Join us in saving the planet, one tree at a time!
+                Every mangrove planted is a step toward a healthier, more
+                resilient coastline. Your support helps preserve biodiversity
+                and protect local communities. Click here to plant your mangrove
+                and leave a green legacy.
               </p>
-              <div className="mx-auto max-w-md space-y-2 ">
+              <div className="grid grid-cols-2 gap-10 pt-6">
                 <Button
                   asChild
-                  className="bg-accent h-10 text-white hover:bg-primary2 px-8 md:p-8 text-sm font-bold md:text-2xl shadow-lg"
+                  className="bg-secondary h-10 text-white hover:bg-primary2 px-8 md:p-8 text-sm font-bold md:text-2xl shadow-lg"
                 >
-                  <Link href="https://gofund.me/15fc916e">Donate Now</Link>
+                  <Link href="https://gofund.me/15fc916e">Plant Now (€)</Link>
+                </Button>
+                <Button
+                  asChild
+                  className="bg-secondary h-10 text-white hover:bg-primary2 px-8 md:p-8 text-sm font-bold md:text-2xl shadow-lg"
+                >
+                  <Link href="https://lindungihutan.com/lets-plant-mangroves-along-indonesias-coastlines">
+                    Plant Now (IDR)
+                  </Link>
                 </Button>
               </div>
             </div>
