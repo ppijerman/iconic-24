@@ -5,6 +5,7 @@ export const PATHS = {
   ABOUT: "/about",
   OUR_TEAM: "/about/our-team",
   REVIEWERS: "/reviewers",
+  JOIN_THE_MOVEMENT: "/join-the-movement",
   SUBJECT: "/program-and-subject-overview/subject",
   EVENTS: "/program-and-subject-overview/events",
   SPEAKERS: "/program-and-subject-overview/speakers",

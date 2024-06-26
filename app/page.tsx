@@ -7,12 +7,14 @@ import { Partners } from "@/app/(home)/partners";
 import Introduction from "@/app/(home)/introduction";
 import { StayInformation } from "@/app/(home)/during-the-stay-home";
 import { ThemeOverview } from "./(home)/theme-overview";
+import { DonationSection } from "./(home)/donation-section";
 
 export default function Home() {
   return (
     <main className="w-screen">
       <HomePage />
       <Countdown />
+      <DonationSection />
       <Introduction />
       <ThemeOverview />
       <IconicSchedule />
