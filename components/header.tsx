@@ -126,6 +126,10 @@ export function IconicHeader() {
                     href: PATHS.REVIEWERS,
                     label: "Reviewers",
                   },
+                  {
+                    href: PATHS.JOIN_THE_MOVEMENT,
+                    label: "Join the Movement",
+                  },
                 ],
               },
               {
