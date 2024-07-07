@@ -1,4 +1,7 @@
 import { EventDetails } from "./event-details";
+import { PATHS } from "@/lib/constants";
+import Link from "next/link";
+
 
 export default function DayOne() {
   return (
@@ -41,28 +44,28 @@ export default function DayOne() {
             <h2 className="text-2xl font-semibold md:text-4xl">
               Additional Information
             </h2>
-            <p>Observer/Attendee Ticket links:</p>
-            <ul>
-              <li>
-                Offline:{" "}
-                <a
-                  href="https://ppij.org/ICONIC24Day2Offline"
-                  className="text-blue-500 hover:underline"
-                >
-                  https://ppij.org/ICONIC24Day2Offline
-                </a>
-              </li>
-              <li>
-                Online:{" "}
-                <a
-                  href="https://ppij.org/ICONIC24Day2Online"
-                  className="text-blue-500 hover:underline"
-                >
-                  https://ppij.org/ICONIC24Day2Online
-                </a>
-              </li>
-            </ul>
-            <p>Gofundme</p>
+            <p>
+              Join us for this exciting event, free of charge, where we unite
+              for a cause that matters. In our commitment to promoting
+              low-carbon development, we are launching a crowdfunding campaign.
+              Your generous contributions will not only support the event but
+              also make a tangible impact on the environment. A portion of the
+              funds raised will be donated to a dedicated company specializing
+              in planting mangroves, vital for combating climate change and
+              protecting coastal ecosystems. Together, let&apos;s make a
+              difference and contribute to a greener, more sustainable future!
+            </p>
+            <Link
+              className="text-lg font-semibold hover:text-accent2 transition"
+              href={PATHS.JOIN_THE_MOVEMENT}
+            >
+              <h1 className="py-4 w-fit">Join The Movement.</h1>
+            </Link>
+            <Link href={PATHS.EVENT_REGISTRATION}>
+              <p className="bg-secondary text-white py-4 px-8 w-fit rounded-lg hover:bg-primary2 transition">
+                Get your tickets here!
+              </p>
+            </Link>
           </div>
         </div>
       </div>
