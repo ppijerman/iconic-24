@@ -1,4 +1,6 @@
 //00
+
+import placeholderPic from "@/assets/img-round-placeholder.png";
 import sriMulyani from "@/assets/speakers/Minister_SriMulyani.jpg";
 import svenja from "@/assets/speakers/BMZ Schulze.jpeg";
 import metin from "@/assets/speakers/President Uni Göttingen.jpeg";
@@ -32,6 +34,7 @@ import britta from "@/assets/speakers/britta.jpg";
 
 //06
 import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
+
 export const Speakers = {
   HAVAS: {
     name: "Arif Havas Oegroseno",
@@ -144,5 +147,62 @@ export const Speakers = {
     title:
       "Senior Advisor at the Hamburg Institute for Innovation, Climate Protection and Circular Economy (HiiCCE)",
     image: britta,
+  },
+  RYANZA: {
+    name: "Ryanda Dwi Ryanza",
+    title:
+      "Director of Climate Change Adaptation, Ministry of National Development Planning (BAPPENAS)",
+    image: placeholderPic,
+  },
+  HERSTATT: {
+    name: "Prof. Dr. Dr. h.c. Cornelia Herstatt",
+    title:
+      "Professor for Technology and Innovation Management, Technical University of Hamburg",
+    image: placeholderPic,
+  },
+  KLEINSCHMIT: {
+    name: "Prof. Dr. Daniela Kleinschmit",
+    title:
+      "Professor of Forest and Environmental Policy, University of Freiburg",
+    image: placeholderPic,
+  },
+  SCHWEGLER: {
+    name: "Prof. Dr. Thomas Schweigler",
+    title: "Professor of Forest Economics, University of Göttingen",
+    image: placeholderPic,
+  },
+  BERNHARDT: {
+    name: "Prof. Bernhard Brümmer",
+    title:
+      "Vice-President for Research and Sustainability of the Göttingen University",
+    image: placeholderPic,
+  },
+  CHRISTIANE: {
+    name: "Christiane Ehringhaus, Ph.D.",
+    title:
+      "Senior Sector Economist on Agriculture and Rural Development, KfW Development Bank",
+    image: placeholderPic,
+  },
+  GEORG_SCHILLER: {
+    name: "Dr. -Ing. Georg Schiller",
+    title:
+      "Head of Research Group Anthropogenic and Natural Resources, Leibniz Institute of Ecological Urban and Regional Development, University of Göttingen",
+    image: placeholderPic,
+  },
+  PRABAHARYAKA: {
+    name: "Indrawan Prabaharyaka, Ph.D.",
+    title: "Researcher of Urban Anthropology, Humboldt University of Berlin",
+    image: placeholderPic,
+  },
+  VIERHOUT: {
+    name: "Rob Vierhout",
+    title:
+      "Chair of International Sustainability & Carbon Certification (ISCC)",
+    image: placeholderPic,
+  },
+  BIMO_KUSUMO: {
+    name: "Bimo Kusumo",
+    title: "Project Development Manager at WPD GmbH",
+    image: placeholderPic,
   },
 };

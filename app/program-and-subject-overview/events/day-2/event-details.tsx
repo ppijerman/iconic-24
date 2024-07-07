@@ -22,8 +22,6 @@ function Rundown() {
     <div className="flex flex-col gap-12 leading-relaxed">
       <PreSession />
       <PlenarySession />
-      <ParallelSessions />
-      <MeetTheIndustry />
     </div>
   );
 }
@@ -44,7 +42,7 @@ function PreSession() {
         timeStart="08:45"
         timeEnd="09:00"
         title="Opening Remarks"
-        venue="ZHG - Main Lecture Hall"
+        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
         details="Opening by Sekar Yunita, Director of ICONIC 2024"
       />
     </div>
@@ -60,8 +58,8 @@ function PlenarySession() {
       <Session
         timeStart="09:00"
         timeEnd="10:45"
-        title="Decarbonization in Global South: Who Should Bear the Cost?"
-        venue="ZHG - Main Lecture Hall"
+        title="Carbon Capture, Storage, and Removal: Approaches to Low-Carbon Development"
+        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
         details={
           <div className="flex flex-col gap-2">
             <p>
@@ -77,10 +75,10 @@ function PlenarySession() {
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
               speakers={[
-                Speakers.SVENJA,
-                Speakers.SRIMUL,
-                Speakers.HAVAS,
-                Speakers.METIN,
+                Speakers.STEFAN,
+                Speakers.DESTI,
+                Speakers.RYANZA,
+                Speakers.HERSTATT,
               ]}
             />
           </div>
@@ -96,7 +94,7 @@ function PlenarySession() {
         timeStart="11:00"
         timeEnd="12:45"
         title="Reducing AFOLU Emissions: Balancing Development and Conservation"
-        venue="ZHG - Main Lecture Hall"
+        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
         details={
           <div className="flex flex-col gap-2">
             <p>
@@ -112,7 +110,12 @@ function PlenarySession() {
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
-              speakers={[Speakers.GARY, Speakers.RUKKA, Speakers.GEORG]}
+              speakers={[
+                Speakers.KLEINSCHMIT,
+                Speakers.RUKKA,
+                Speakers.GEORG,
+                Speakers.SCHWEGLER,
+              ]}
             />
           </div>
         }
@@ -121,109 +124,80 @@ function PlenarySession() {
         timeStart="12:45"
         timeEnd="14:30"
         title="Lunch Break"
-        venue="Göttingen"
+        venue="Mensa, Zentrales Hörsaalgebäude (ZHG)"
+      />
+      <Session
+        timeStart="14:30"
+        timeEnd="16:15"
+        title="Decarbonization and Circularity in the Construction Industry"
+        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
+        details={
+          <div className="flex flex-col gap-2">
+            <p>
+              This plenary session aims to address and discuss present and past
+              efforts in decarbonizing the traditionally high carbon-emitting
+              construction industry. The discussion would focus on how
+              construction processes, materials, and the design of our living
+              spaces as well as economic spaces can be geared to prioritize the
+              minimization of carbon emissions, and maximize efficiency of
+              energy and materials. The speakers would focus their topics on
+              exploration of sustainable materials and building practices,
+              innovative construction techniques, among others, as an essential
+              part in shaping the larger adage of Low-Carbon Development. Proven
+              projects and cases will be expounded, and future prospects on how
+              sustainability in this sector could look like, would also be
+              imagined in this discussion.
+            </p>
+            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
+            <EventSpeaker speakers={[Speakers.GEORG_SCHILLER]} />
+          </div>
+        }
+      />
+
+      <Session
+        timeStart="16:15"
+        timeEnd="16:30"
+        title="Coffee Break"
+        venue="ZHG - Welcoming Hall"
+      />
+
+      <Session
+        timeStart="16:30"
+        timeEnd="18:15"
+        title="Adaptation and Mitigation in the Built Environment in a Heating Climate"
+        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
+        details={
+          <div className="flex flex-col gap-2">
+            <p>
+              The session &quot;Adaptation and Mitigation in the Built
+              Environment in a Heating Climate&quot; will explore strategies and
+              policies for integrating low-carbon principles into territorial
+              planning at the face of an increasingly heating climate, and would
+              encompass, urban development, urban climatology, and regional
+              planning. This session will address climate change-related
+              challenges in planning and how to adapt to changing environmental
+              circumstances within the framework of low-carbon development.
+              Experts in this field, from both Indonesian and European contexts,
+              will contribute their insights and expertise, focusing on topics
+              such as circular economy and nature-based solutions like
+              blue-green infrastructure.
+            </p>
+            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
+            <EventSpeaker speakers={[Speakers.MIA, Speakers.PRABAHARYAKA]} />
+          </div>
+        }
       />
     </div>
   );
 }
 
 // Parallel Sessions Component
-function ParallelSessions() {
-  return (
-    <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
-        Parallel Conference Sessions
-      </h3>
-      <Session
-        timeStart="14:30"
-        timeEnd="18:00"
-        title="Economic and Social Implication of Low Carbon Development"
-        venue="ZHG - Conference Venue 1"
-        details={
-          <div className="flex flex-col gap-2">
-            <p>
-              Overview: This session will explore the intersection of
-              environmental sustainability and economic and social progress. Low
-              carbon development strategies aim to mitigate climate change
-              impacts through energy efficiency, renewable energy sources, and
-              smarter urban planning. The economic implications include job
-              creation in new industries and transformation of existing sectors,
-              while social implications encompass lifestyle changes, reductions
-              in energy poverty, and improved public health.
-            </p>
-            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker
-              speakers={[Speakers.GARY, Speakers.RUKKA, Speakers.GEORG]}
-            />
-          </div>
-        }
-      />
-      <Session
-        timeStart="14:30"
-        timeEnd="18:00"
-        title="Political Economy of LCD within Global North and South Dynamics"
-        venue="ZHG - Conference Venue 2"
-        details={
-          <div className="flex flex-col gap-2">
-            <p>
-              Overview: This session will explore the complex and dynamic
-              relationship between the Global North and South regarding
-              decarbonization, influenced by historical and economic factors.
-              Developed countries in the Global North have historically been
-              significant contributors to greenhouse gas emissions, while the
-              Global South has emitted fewer emissions per capita. However,
-              recent economic growth in the Global South has increased their
-              emissions, highlighting the urgency of action.
-            </p>
-            <h3 className="pt-2 font-semibold text-xl">Chair</h3>
-            <h3 className="pt-2 font-semibold text-xl">Co-Chair</h3>
-            <EventSpeaker speakers={[Speakers.KRISZTINA]} />
-          </div>
-        }
-      />
-    </div>
-  );
-}
-
-// Meet the Industry Component
-function MeetTheIndustry() {
-  return (
-    <div className="flex flex-col gap-8 leading-relaxed">
-      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
-        Meet The Industry
-      </h3>
-      <Session
-        timeStart="14:30"
-        timeEnd="18:00"
-        title="Keynote speeches, Panel Discussions, and Company Presentations"
-        venue="ZHG - Main Lecture Hall"
-        details={
-          <div className="flex flex-col gap-2">
-            <p>
-              Overview: In order to meet the goal of low carbon development,
-              collaborations are needed among different stakeholders, including
-              government policymakers, financial institutions, industries, and
-              the academic community. Industries serve as the frontline actors
-              in the collective effort to combat climate change. With
-              Indonesia’s Nationally Determined Contribution (NDC) aiming to
-              reduce its GHG emissions by 32% unconditionally and 43%
-              conditionally, support from innovative enterprises is crucial.
-            </p>
-            <p>
-              This collaboration will help shape
-              investment-and-business-friendly policies that are socially just
-              and inclusive. ICONIC has the goal to provide the platform for the
-              companies which sponsor our event to pitch their business ideas
-              and enable further discussion in attendance of the invited
-              ministerial officers or government, investors, and academics as to
-              how to advance low-carbon development projects in developing
-              countries, especially Indonesia.
-            </p>
-            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker speakers={[Speakers.JOKO, Speakers.FRANK]} />
-          </div>
-        }
-      />
-    </div>
-  );
-}
+// function ParallelSessions() {
+//   return (
+//     <div className="flex flex-col gap-8 leading-relaxed">
+//       <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
+//         Plenary Session
+//       </h3>
+//     </div>
+//   );
+// }
