@@ -19,7 +19,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon, ExclamationTriangleIcon } from "@radix-ui/react-icons";
 import { PATHS } from "@/lib/constants";
 
 // export const metadata = {
@@ -50,7 +50,7 @@ const registrationLinks: RegistrationLinks = {
 };
 
 export default function Registration() {
-  const [selectedTab, setSelectedTab] = useState("on-site");
+  const [selectedTab, setSelectedTab] = useState("");
   const [selectedDay, setSelectedDay] = useState("");
 
   const handleSelectDay = (value: string) => {
@@ -74,7 +74,7 @@ export default function Registration() {
       <section className="py-12 md:py-16 lg:py-20">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            <div className="space-y-6">
+            <div className="flex flex-col gap-6">
               <div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
                   ICONIC 2024 Registration
@@ -83,11 +83,20 @@ export default function Registration() {
                   Join us for 3 days of inspiring talks, networking, and
                   hands-on workshops.
                 </p>
-                <p className="mt-4 text-sm text-muted-foreground">
-                  Attend in-person or virtually from anywhere in the world.
-                </p>
               </div>
+              <span className="border-secondary border-b-8 w-[60px]"></span>
+              <p className="mt-4 text-sm text-muted-foreground">
+                Attend in-person or virtually from anywhere in the world for{" "}
+                <span className="font-bold">FREE</span>.
+              </p>
+
               <div className="space-y-4">
+                {(!selectedDay || !selectedTab) && (
+                  <div className="flex items-center gap-2 ring-2 ring-yellow-500 bg-yellow-100 text-yellow-600 p-4 rounded-lg">
+                    <ExclamationTriangleIcon className="w-5 h-5" />{" "}
+                    <p className="text-sm">Event type and day required!</p>
+                  </div>
+                )}
                 <div className="flex items-center justify-center gap-4">
                   <Button
                     size="lg"
@@ -118,7 +127,7 @@ export default function Registration() {
                   <Button
                     size="lg"
                     className="w-full"
-                    disabled={!selectedDay}
+                    disabled={!selectedDay || !selectedTab}
                     onClick={handlePurchaseClick}
                   >
                     Purchase {selectedTab === "onsite" ? "On-Site" : "Virtual"}{" "}
