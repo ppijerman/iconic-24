@@ -58,7 +58,7 @@ function PlenarySession() {
       <Session
         timeStart="09:00"
         timeEnd="10:45"
-        title="Carbon Capture, Storage, and Removal: Approaches to Low-Carbon Development"
+        title="Carbon Capture, Storage, and Removal: A Pathway to Low Carbon Development"
         venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
         details={
           <div className="flex flex-col gap-2">
@@ -149,7 +149,14 @@ function PlenarySession() {
               imagined in this discussion.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker speakers={[Speakers.GEORG_SCHILLER]} />
+            <EventSpeaker
+              speakers={[
+                Speakers.GEORG_SCHILLER,
+                Speakers.LIM_MASULIN,
+                Speakers.HUNAWAN_WIDJAJANTO,
+                Speakers.MARKUS_EURING,
+              ]}
+            />
           </div>
         }
       />
@@ -183,9 +190,23 @@ function PlenarySession() {
               blue-green infrastructure.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker speakers={[Speakers.MIA, Speakers.PRABAHARYAKA]} />
+            <EventSpeaker
+              speakers={[
+                Speakers.MIA,
+                Speakers.PRABAHARYAKA,
+                Speakers.THOMAS_AUER,
+                Speakers.DWIKORITA_KARNAWATI,
+              ]}
+            />
           </div>
         }
+      />
+
+      <Session
+        timeStart="19:00"
+        timeEnd="21:00"
+        title="Dinner (optional)"
+        venue="Altstadt (TBH)"
       />
     </div>
   );
