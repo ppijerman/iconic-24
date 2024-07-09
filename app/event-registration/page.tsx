@@ -83,9 +83,12 @@ export default function Registration() {
                   Join us for 3 days of inspiring talks, networking, and
                   hands-on workshops.
                 </p>
+                <p className="mt-4 text-sm text-muted-foreground">
+                  Attend in-person or virtually from anywhere in the world.
+                </p>
               </div>
               <div className="space-y-4">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                   <Button
                     size="lg"
                     variant={selectedTab === "onsite" ? "default" : "outline"}
@@ -101,7 +104,7 @@ export default function Registration() {
                     Virtual
                   </Button>
                 </div>
-                <div className="grid gap-2">
+                <div className="grid gap-4 py-4">
                   <Select onValueChange={handleSelectDay}>
                     <SelectTrigger className="w-full">
                       <SelectValue placeholder="Select day" />
@@ -125,6 +128,7 @@ export default function Registration() {
               </div>
             </div>
             <div className="space-y-6">
+              <h3 className="text-secondary text-2xl">Program Overview</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-4 bg-gray-100 text-secondary rounded-lg p-4">
                   <h3 className="text-lg font-semibold">Day 1</h3>
