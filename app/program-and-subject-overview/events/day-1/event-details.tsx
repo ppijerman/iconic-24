@@ -81,9 +81,9 @@ function Sessions() {
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
               speakers={[
-                Speakers.DEWANTHI,
-                Speakers.DIRK_MEYER,
                 Speakers.HAVAS,
+                Speakers.SVENJA,
+                Speakers.SITI_NURBAYA,
               ]}
             />
           </div>

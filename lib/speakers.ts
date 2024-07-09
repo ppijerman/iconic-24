@@ -5,7 +5,6 @@ import sriMulyani from "@/assets/speakers/Minister_SriMulyani.jpg";
 import svenja from "@/assets/speakers/BMZ Schulze.jpeg";
 import metin from "@/assets/speakers/President Uni Göttingen.jpeg";
 
-import sekar from "@/assets/team/sekar.jpeg";
 import rismaImg from "@/assets/team/risma.jpeg";
 
 import antjeBiber from "@/assets/speakers/Biber.jpeg";
@@ -37,6 +36,42 @@ import britta from "@/assets/speakers/britta.jpg";
 
 //06
 import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
+
+// 00 Opening
+import bernhard from "@/assets/speakers/Prof. Bernhard Brümmer - Vice President Uni Gö.jpg";
+import sekar from "@/assets/team/sekar.jpeg";
+
+// 02_Plenary 1_ Green Financing and Sustainable Investment for LCD
+import sitiNurbaya from "@/assets/speakers/Dr. Siti Nurbaya Bakar - Minister of Environment and Forestry.jpg";
+
+import edwinSyahruzad from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Edwin Syahruzad, PT Sarana Multi Infrastructure.png";
+
+import christianSewing from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Christian Sewing, Deutsche Bank.jpg";
+
+import christianeEhringhaus from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Christiane Ehringhaus - KfW_.jpg";
+
+import darmawanJunaidi from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Darmawan Junaidi, Mandiri.jpg";
+
+import royke from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Royke Tumilaar, BNI.jpg";
+
+import sunarso from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Sunarso, BRI.jpg";
+
+import wempi from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Wempi Saputra, World Bank Group of SEA.jpg";
+
+// 03
+
+import arif from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Arif Suhartono, Pelindo.png";
+import bimo from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Bimo Kusumo, WPD.jpg";
+import djony from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Djony Bunarto Tjondro, Astra.jpg";
+import donny from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Donny Arsal, PT Semen Indonesia.webp";
+import jochen from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Jochen Thewes, DB Schenker.jpg";
+import kevinkuvs from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Kevin Kufs, Hermes.jpg";
+import mmaIndah from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/MMA Indah Preastuty, Angkasa Pura.jpg";
+import mFeriadi from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Mohamad Feriadi, JNE.jpg";
+import nickeWidyawati from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Nicke Widyawati, Pertamina.jpg";
+import rahmadPribadi from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Rahmad Pribadi, Pupuk Indonesia.jpeg";
+import robVierhout from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Rob Vierhout, ISCC.jpg";
+import darmawanPrasodjo from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Darmawan Prasodjo, PLN.jpg";
 
 export const Speakers = {
   HAVAS: {
@@ -116,6 +151,11 @@ export const Speakers = {
       "Deputy Coordinating Minister of Maritime Affairs and Investments in Infrastructure and Transportation",
     image: rachmat,
   },
+  SITI_NURBAYA: {
+    name: "Dr. Siti Nurbaya Bakar",
+    title: "Minister of Environment and Forestry of the Republic of Indonesia",
+    image: sitiNurbaya,
+  },
   STEFAN: {
     name: "Stefan Schlosser",
     title:
@@ -179,13 +219,13 @@ export const Speakers = {
     name: "Prof. Bernhard Brümmer",
     title:
       "Vice-President for Research and Sustainability of the Göttingen University",
-    image: placeholderPic,
+    image: bernhard,
   },
   CHRISTIANE: {
     name: "Christiane Ehringhaus, Ph.D.",
     title:
       "Senior Sector Economist on Agriculture and Rural Development, KfW Development Bank",
-    image: placeholderPic,
+    image: christianeEhringhaus,
   },
   GEORG_SCHILLER: {
     name: "Dr. -Ing. Georg Schiller",
@@ -202,12 +242,12 @@ export const Speakers = {
     name: "Rob Vierhout",
     title:
       "Chair of International Sustainability & Carbon Certification (ISCC)",
-    image: placeholderPic,
+    image: robVierhout,
   },
   BIMO_KUSUMO: {
     name: "Bimo Kusumo",
     title: "Project Development Manager at WPD GmbH",
-    image: placeholderPic,
+    image: bimo,
   },
   DEWANTHI: {
     name: "Laksmi Dhewanthi",
@@ -223,77 +263,77 @@ export const Speakers = {
   DJONY: {
     name: "Djony Bunarto Tjondro",
     title: "CEO of Astra International",
-    image: placeholderPic,
+    image: djony,
   },
   KEVIN_KUFS: {
     name: "Kevin Kufs",
     title: "CEO of Hermes Fulfillment GmbH",
-    image: placeholderPic,
+    image: kevinkuvs,
   },
   JOCHEN_THEWES: {
     name: "Jochen Thewes",
     title: "CEO of DB Schenker",
-    image: placeholderPic,
+    image: jochen,
   },
   DONNY_ARSAL: {
     name: "Donny Arsal",
     title: "PT Semen Indonesia",
-    image: placeholderPic,
+    image: donny,
   },
   RAHMAD: {
     name: "Rahmad Pribadi",
     title: "CEO of Pupuk Indonesia",
-    image: placeholderPic,
+    image: rahmadPribadi,
   },
   MOHAMAD_FERIADI: {
     name: "Mohamad Feriadi",
     title: "President Director of JNE",
-    image: placeholderPic,
+    image: mFeriadi,
   },
   ARIF_SUHARTONO: {
     name: "Arif Suhartono",
     title: "President Director of Pelindo",
-    image: placeholderPic,
+    image: arif,
   },
   MMA_INDAH: {
     name: "MMA Indah Preastuty",
     title: "CEO of Angkasa Pura",
-    image: placeholderPic,
+    image: mmaIndah,
   },
   DARMAWAN_PRASODJO: {
     name: "Darmawan Prasodjo",
     title: "President Director of PLN",
-    image: placeholderPic,
+    image: darmawanPrasodjo,
   },
   NICKE_WIDYAWATI: {
     name: "Nicke Widyawati",
     title: "President Director and CEO of Pertamina",
-    image: placeholderPic,
+    image: nickeWidyawati,
   },
   WEMPI_SAPUTRA: {
     name: "Wempi Saputra",
     title: "Executive Director of the World Bank Group of Southeast Asia",
-    image: placeholderPic,
+    image: wempi,
   },
   ROYKE_TUMILAAR: {
     name: "Royke Tumilaar",
     title: "President Director of BNI",
-    image: placeholderPic,
+    image: royke,
   },
   DARMAWAN_JUNAIDI: {
     name: "Darmawan Junaidi",
     title: "President Director of Bank Mandiri",
-    image: placeholderPic,
+    image: darmawanJunaidi,
   },
   SUNARSO: {
     name: "Sunarso",
     title: "President Director of BRI",
-    image: placeholderPic,
+    image: sunarso,
   },
   CHRISTIAN_SEWING: {
     name: "Christian Sewing",
     title: "CEO of Deutsche Bank",
-    image: placeholderPic,
+    image: christianSewing,
   },
   EDWIN_SYAHRUZAD: {
     name: "Edwin Syahruzad",
