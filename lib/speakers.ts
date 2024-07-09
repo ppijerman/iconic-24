@@ -63,8 +63,20 @@ import robVierhout from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Indus
 import darmawanPrasodjo from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Darmawan Prasodjo, PLN.jpg";
 
 // 04
+import herstatt from "@/assets/speakers/04/Prof. Dr. Dr. h.c. Cornelius Herstatt, TU Hamburg.webp";
 
+// 05
+import johannesSchwegler from "@/assets/speakers/05/Johannes Schwegler, TREEO.jpg";
+import danielaKleinschmit from "@/assets/speakers/05/Daniela Kleinschmit, Uni Freiburg.jpg";
 
+//06
+import georgSchiller from "@/assets/speakers/06_Plenary 5_ Decarbonization and Circularity in Construction Sector/Dr. -Ing. Georg Schiller, Uni Gö.jpg";
+import limMasulin from "@/assets/speakers/06_Plenary 5_ Decarbonization and Circularity in Construction Sector/Lim Masulin, BYOLiving.avif";
+
+//07
+import indrawanPrabaharyaka from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Indrawan Prabaharyaka, HU Berlin.jpg";
+import dwikorita from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Dwikorita Karnawati, BMKG.png";
+import thomasAuer from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Thomas Auer, Transsolar.jpg";
 
 export const Speakers = {
   HAVAS: {
@@ -194,19 +206,19 @@ export const Speakers = {
     name: "Prof. Dr. Dr. h.c. Cornelia Herstatt",
     title:
       "Professor for Technology and Innovation Management, Technical University of Hamburg",
-    image: placeholderPic,
+    image: herstatt,
   },
   KLEINSCHMIT: {
     name: "Prof. Dr. Daniela Kleinschmit",
     title:
       "Professor of Forest and Environmental Policy, University of Freiburg",
-    image: placeholderPic,
+    image: danielaKleinschmit,
   },
   SCHWEGLER: {
-    name: "Jonas Schwegler",
+    name: "Johannes Schwegler",
     title:
       "Executive Director and Founder of TREEO, Platinum Sponsor of ICONIC",
-    image: placeholderPic,
+    image: johannesSchwegler,
   },
   BERNHARDT: {
     name: "Prof. Bernhard Brümmer",
@@ -224,12 +236,12 @@ export const Speakers = {
     name: "Dr. -Ing. Georg Schiller",
     title:
       "Head of Research Group Anthropogenic and Natural Resources, Leibniz Institute of Ecological Urban and Regional Development, University of Göttingen",
-    image: placeholderPic,
+    image: georgSchiller,
   },
   PRABAHARYAKA: {
     name: "Indrawan Prabaharyaka, Ph.D.",
     title: "Researcher of Urban Anthropology, Humboldt University of Berlin",
-    image: placeholderPic,
+    image: indrawanPrabaharyaka,
   },
   VIERHOUT: {
     name: "Rob Vierhout",
@@ -333,10 +345,10 @@ export const Speakers = {
     title: "President Director of PT. Sarana Multi Infrastructure",
     image: edwinSyahruzad,
   },
-  LIM_SAMSULIM: {
-    name: "Lim Samsulim",
+  LIM_MASULIN: {
+    name: "Lim Masulin",
     title: "CEO of Byo Living",
-    image: placeholderPic,
+    image: limMasulin,
   },
   HUNAWAN_WIDJAJANTO: {
     name: "Hunawan Widjajanto",
@@ -353,7 +365,7 @@ export const Speakers = {
     name: "Prof. Dwikorita Karnawati",
     title:
       "Head of Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG)",
-    image: placeholderPic,
+    image: dwikorita,
   },
   SILVIA_BENEDITO: {
     name: "Prof. Silvia Benedito",
@@ -375,5 +387,11 @@ export const Speakers = {
     name: "Yosias Gandhi",
     title: "",
     image: placeholderPic,
+  },
+  THOMAS_AUER: {
+    name: "Thomas Auer",
+    title:
+      "Profesor for Building Technology and Climate Responsive Design, Managing Director of Transsolar",
+    image: thomasAuer,
   },
 };
