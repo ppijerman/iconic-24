@@ -4,7 +4,10 @@ import placeholderPic from "@/assets/img-round-placeholder.png";
 import sriMulyani from "@/assets/speakers/Minister_SriMulyani.jpg";
 import svenja from "@/assets/speakers/BMZ Schulze.jpeg";
 import metin from "@/assets/speakers/President Uni Göttingen.jpeg";
+
 import sekar from "@/assets/team/sekar.jpeg";
+import rismaImg from "@/assets/team/risma.jpeg";
+
 import antjeBiber from "@/assets/speakers/Biber.jpeg";
 
 //01
@@ -167,8 +170,9 @@ export const Speakers = {
     image: placeholderPic,
   },
   SCHWEGLER: {
-    name: "Prof. Dr. Thomas Schweigler",
-    title: "Professor of Forest Economics, University of Göttingen",
+    name: "Jonas Schwegler",
+    title:
+      "Executive Director and Founder of TREEO, Platinum Sponsor of ICONIC",
     image: placeholderPic,
   },
   BERNHARDT: {
@@ -294,6 +298,49 @@ export const Speakers = {
   EDWIN_SYAHRUZAD: {
     name: "Edwin Syahruzad",
     title: "President Director of PT. Sarana Multi Infrastructure",
+    image: placeholderPic,
+  },
+  LIM_SAMSULIM: {
+    name: "Lim Samsulim",
+    title: "CEO of Byo Living",
+    image: placeholderPic,
+  },
+  HUNAWAN_WIDJAJANTO: {
+    name: "Hunawan Widjajanto",
+    title: "CEO of PT. Kayu Lapis Indonesia",
+    image: placeholderPic,
+  },
+  MARKUS_EURING: {
+    name: "Dr. Markus Euring",
+    title:
+      "Researcher, Chair of Wood Technology and Wood-based Composites, University of Göttingen",
+    image: placeholderPic,
+  },
+  DWIKORITA_KARNAWATI: {
+    name: "Prof. Dwikorita Karnawati",
+    title:
+      "Head of Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG)",
+    image: placeholderPic,
+  },
+  SILVIA_BENEDITO: {
+    name: "Prof. Silvia Benedito",
+    title:
+      "Associate Professor at Harvard Graduate School of Design and Climate Adaptation Consultant at UNIOLA",
+    image: placeholderPic,
+  },
+  RISMA_RIZKIA: {
+    name: "Risma Rizkia Nurdianti",
+    title: "Editor In Chief ICONIC 2024",
+    image: rismaImg,
+  },
+  WISNU_HARTO: {
+    name: "Wisnu Harto Adiwijoyo, Ph.D.",
+    title: "",
+    image: placeholderPic,
+  },
+  YOSIAS_GANDHI: {
+    name: "Yosias Gandhi",
+    title: "",
     image: placeholderPic,
   },
 };

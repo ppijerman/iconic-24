@@ -149,7 +149,14 @@ function PlenarySession() {
               imagined in this discussion.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker speakers={[Speakers.GEORG_SCHILLER]} />
+            <EventSpeaker
+              speakers={[
+                Speakers.GEORG_SCHILLER,
+                Speakers.LIM_SAMSULIM,
+                Speakers.HUNAWAN_WIDJAJANTO,
+                Speakers.MARKUS_EURING,
+              ]}
+            />
           </div>
         }
       />
@@ -183,7 +190,14 @@ function PlenarySession() {
               blue-green infrastructure.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker speakers={[Speakers.MIA, Speakers.PRABAHARYAKA]} />
+            <EventSpeaker
+              speakers={[
+                Speakers.MIA,
+                Speakers.PRABAHARYAKA,
+                Speakers.SILVIA_BENEDITO,
+                Speakers.DWIKORITA_KARNAWATI,
+              ]}
+            />
           </div>
         }
       />
