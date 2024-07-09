@@ -205,4 +205,65 @@ export const Speakers = {
     title: "Project Development Manager at WPD GmbH",
     image: placeholderPic,
   },
+  DEWANTHI: {
+    name: "Laksmi Dhewanthi",
+    title: "Director-General of Climate Change Control",
+    image: placeholderPic,
+  },
+  DIRK_MEYER: {
+    name: "Dirk Meyer",
+    title:
+      "Director-General of Department of Multilateral Development Policy, Transformation, and Climate of the Federal Republic of Germany",
+    image: placeholderPic,
+  },
+  DJONY: {
+    name: "Djony Bunarto Tjondro",
+    title: "CEO of Astra International",
+    image: placeholderPic,
+  },
+  KEVIN_KUFS: {
+    name: "Kevin Kufs",
+    title: "CEO of Hermes Fulfillment GmbH",
+    image: placeholderPic,
+  },
+  JOCHEN_THEWES: {
+    name: "Jochen Thewes",
+    title: "CEO of DB Schenker",
+    image: placeholderPic,
+  },
+  DONNY_ARSAL: {
+    name: "Donny Arsal",
+    title: "PT Semen Indonesia",
+    image: placeholderPic,
+  },
+  RAHMAD: {
+    name: "Rahmad Pribadi",
+    title: "CEO of Pupuk Indonesia",
+    image: placeholderPic,
+  },
+  MOHAMAD: {
+    name: "Mohamad Feriadi",
+    title: "President Director of JNE",
+    image: placeholderPic,
+  },
+  ARIF: {
+    name: "Arif Suhartono",
+    title: "President Director of Pelindo",
+    image: placeholderPic,
+  },
+  MMA: {
+    name: "MMA Indah Preastuty",
+    title: "CEO of Angkasa Pura",
+    image: placeholderPic,
+  },
+  DARMAWAN: {
+    name: "Darmawan Prasodjo",
+    title: "President Director of PLN",
+    image: placeholderPic,
+  },
+  NICKE: {
+    name: "Nicke Widyawati",
+    title: "President Director and CEO of Pertamina",
+    image: placeholderPic,
+  },
 };
