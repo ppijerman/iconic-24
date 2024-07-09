@@ -137,6 +137,7 @@ function PlenarySession() {
                 Speakers.SUNARSO,
                 Speakers.CHRISTIAN_SEWING,
                 Speakers.ANTJE,
+                Speakers.EDWIN_SYAHRUZAD,
               ]}
             />
           </div>

@@ -1,12 +1,9 @@
 //00
-
 import placeholderPic from "@/assets/img-round-placeholder.png";
 import sriMulyani from "@/assets/speakers/Minister_SriMulyani.jpg";
 import svenja from "@/assets/speakers/BMZ Schulze.jpeg";
 import metin from "@/assets/speakers/President Uni Göttingen.jpeg";
-
 import rismaImg from "@/assets/team/risma.jpeg";
-
 import antjeBiber from "@/assets/speakers/Biber.jpeg";
 
 //01
@@ -31,7 +28,6 @@ import desti from "@/assets/speakers/Desti.webp";
 import mia from "@/assets/speakers/Mia Amalia.jpeg";
 import francis from "@/assets/speakers/Francis Kere.webp";
 import amy from "@/assets/speakers/Amy Oen.webp";
-
 import britta from "@/assets/speakers/britta.jpg";
 
 //06
@@ -43,19 +39,12 @@ import sekar from "@/assets/team/sekar.jpeg";
 
 // 02_Plenary 1_ Green Financing and Sustainable Investment for LCD
 import sitiNurbaya from "@/assets/speakers/Dr. Siti Nurbaya Bakar - Minister of Environment and Forestry.jpg";
-
 import edwinSyahruzad from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Edwin Syahruzad, PT Sarana Multi Infrastructure.png";
-
 import christianSewing from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Christian Sewing, Deutsche Bank.jpg";
-
 import christianeEhringhaus from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Christiane Ehringhaus - KfW_.jpg";
-
 import darmawanJunaidi from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Darmawan Junaidi, Mandiri.jpg";
-
 import royke from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Royke Tumilaar, BNI.jpg";
-
 import sunarso from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Sunarso, BRI.jpg";
-
 import wempi from "@/assets/speakers/02_Plenary 1_ Green Financing and Sustainable Investment for LCD/Wempi Saputra, World Bank Group of SEA.jpg";
 
 // 03
@@ -72,6 +61,10 @@ import nickeWidyawati from "@/assets/speakers/03_Plenary 2_ Decarbonizing the In
 import rahmadPribadi from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Rahmad Pribadi, Pupuk Indonesia.jpeg";
 import robVierhout from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Rob Vierhout, ISCC.jpg";
 import darmawanPrasodjo from "@/assets/speakers/03_Plenary 2_ Decarbonizing the Industrial and Transport Sectors/Darmawan Prasodjo, PLN.jpg";
+
+// 04
+
+
 
 export const Speakers = {
   HAVAS: {
@@ -338,7 +331,7 @@ export const Speakers = {
   EDWIN_SYAHRUZAD: {
     name: "Edwin Syahruzad",
     title: "President Director of PT. Sarana Multi Infrastructure",
-    image: placeholderPic,
+    image: edwinSyahruzad,
   },
   LIM_SAMSULIM: {
     name: "Lim Samsulim",
