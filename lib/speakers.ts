@@ -241,29 +241,59 @@ export const Speakers = {
     title: "CEO of Pupuk Indonesia",
     image: placeholderPic,
   },
-  MOHAMAD: {
+  MOHAMAD_FERIADI: {
     name: "Mohamad Feriadi",
     title: "President Director of JNE",
     image: placeholderPic,
   },
-  ARIF: {
+  ARIF_SUHARTONO: {
     name: "Arif Suhartono",
     title: "President Director of Pelindo",
     image: placeholderPic,
   },
-  MMA: {
+  MMA_INDAH: {
     name: "MMA Indah Preastuty",
     title: "CEO of Angkasa Pura",
     image: placeholderPic,
   },
-  DARMAWAN: {
+  DARMAWAN_PRASODJO: {
     name: "Darmawan Prasodjo",
     title: "President Director of PLN",
     image: placeholderPic,
   },
-  NICKE: {
+  NICKE_WIDYAWATI: {
     name: "Nicke Widyawati",
     title: "President Director and CEO of Pertamina",
+    image: placeholderPic,
+  },
+  WEMPI_SAPUTRA: {
+    name: "Wempi Saputra",
+    title: "Executive Director of the World Bank Group of Southeast Asia",
+    image: placeholderPic,
+  },
+  ROYKE_TUMILAAR: {
+    name: "Royke Tumilaar",
+    title: "President Director of BNI",
+    image: placeholderPic,
+  },
+  DARMAWAN_JUNAIDI: {
+    name: "Darmawan Junaidi",
+    title: "President Director of Bank Mandiri",
+    image: placeholderPic,
+  },
+  SUNARSO: {
+    name: "Sunarso",
+    title: "President Director of BRI",
+    image: placeholderPic,
+  },
+  CHRISTIAN_SEWING: {
+    name: "Christian Sewing",
+    title: "CEO of Deutsche Bank",
+    image: placeholderPic,
+  },
+  EDWIN_SYAHRUZAD: {
+    name: "Edwin Syahruzad",
+    title: "President Director of PT. Sarana Multi Infrastructure",
     image: placeholderPic,
   },
 };

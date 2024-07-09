@@ -37,7 +37,7 @@ function Sessions() {
       />
       <Session
         timeStart="09:00"
-        timeEnd="09:00"
+        timeEnd="10:00"
         title="Opening Remarks"
         venue="Foyer, Zentrales Hörsaalgebäude (ZHG)"
         details={
@@ -45,14 +45,15 @@ function Sessions() {
             <p>
               ICONIC 2024 would officially be opened with some short words and
               remarks from the Indonesian Ambassador for the Federal Republic of
-              Germany, Arif Havas Oegroseno, Prof. Dr. Metin Tolan as the
-              President of the University of Göttingen, as well as Sekar Yunita
-              as the Director of ICONIC 2024. This session would officially
-              commemorate the start of ICONIC 2024.
+              Germany, Arif Havas Oegroseno, Prof. Bernhard Brümmer as the
+              Vice-President for Research and Sustainability of the Göttingen
+              University, as well as Sekar Yunita as the Director of ICONIC
+              2024. This session would officially commemorate the start of
+              ICONIC 2024.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
-              speakers={[Speakers.HAVAS, Speakers.METIN, Speakers.SEKAR]}
+              speakers={[Speakers.HAVAS, Speakers.BERNHARDT, Speakers.SEKAR]}
             />
           </div>
         }
@@ -79,7 +80,11 @@ function Sessions() {
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
-              speakers={[Speakers.HAVAS, Speakers.SRIMUL, Speakers.SVENJA]}
+              speakers={[
+                Speakers.DEWANTHI,
+                Speakers.DIRK_MEYER,
+                Speakers.HAVAS,
+              ]}
             />
           </div>
         }
@@ -122,7 +127,18 @@ function PlenarySession() {
               expounded in this session.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker speakers={[Speakers.JOKO, Speakers.CHRISTIANE]} />
+            <EventSpeaker
+              speakers={[
+                Speakers.JOKO,
+                Speakers.CHRISTIANE,
+                Speakers.WEMPI_SAPUTRA,
+                Speakers.ROYKE_TUMILAAR,
+                Speakers.DARMAWAN_JUNAIDI,
+                Speakers.SUNARSO,
+                Speakers.CHRISTIAN_SEWING,
+                Speakers.ANTJE,
+              ]}
+            />
           </div>
         }
       />
@@ -157,7 +173,23 @@ function PlenarySession() {
               inspiration for future ideas in low-carbon development.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker speakers={[Speakers.TONNY]} />
+            <EventSpeaker
+              speakers={[
+                Speakers.VIERHOUT,
+                Speakers.TONNY,
+                Speakers.BIMO_KUSUMO,
+                Speakers.DJONY,
+                Speakers.KEVIN_KUFS,
+                Speakers.JOCHEN_THEWES,
+                Speakers.DONNY_ARSAL,
+                Speakers.RAHMAD,
+                Speakers.MOHAMAD_FERIADI,
+                Speakers.ARIF_SUHARTONO,
+                Speakers.MMA_INDAH,
+                Speakers.DARMAWAN_PRASODJO,
+                Speakers.NICKE_WIDYAWATI,
+              ]}
+            />
           </div>
         }
       />
