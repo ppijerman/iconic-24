@@ -18,16 +18,28 @@ export function IconicSchedule() {
       name: "Second Issuance - Letter of Acceptance",
       date: "July 9th 2024",
     },
+    {
+      name: "Third Call of Abstract",
+      date: "July 15th - August 4th 2024",
+    },
+    {
+      name: "Third Issuance - Letter of Acceptance",
+      date: "August 15th 2024",
+    },
   ];
 
   const plenarySessions = [
     {
-      name: "Opening, Ministerial Talk, and Optional City Trip",
+      name: "Opening Ceremony, Ministerial Talk & Plenary Sessions",
       date: "September 4th 2024",
     },
     {
-      name: "Plenary Session, Parallel Conference, and Meet the Industry",
-      date: "September 5th - 6th 2024",
+      name: "Plenary Session, Parallel Conference & Meet the Industry",
+      date: "September 5th 2024",
+    },
+    {
+      name: "Plenary Session, Parallel Conference & Closing Ceremony",
+      date: "September 6th 2024",
     },
   ];
 

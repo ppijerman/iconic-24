@@ -96,7 +96,7 @@ export default function Page() {
             <h1 className="text-4xl font-semibold w-full pt-20 mb-5 border-b-2 pb-1">
               Deadlines
             </h1>
-            <div className="flex flex-col md:flex-row w-full gap-y-8 md:gap-3 justify-between pb-6">
+            <div className="flex flex-col md:flex-row w-full gap-y-8 md:gap-y-3 md:gap-x-6 justify-between pb-6">
               <div className="w-full border-l-4 border-secondary pl-4">
                 <h2 className="text-2xl font-semibold pb-4">
                   First Call - Abstract Submission
@@ -116,6 +116,16 @@ export default function Page() {
                   Notification of Abstract Acceptance
                 </h2>
                 <p className="">July 9th 2024</p>
+              </div>
+              <div className="w-full border-l-4 border-secondary pl-4 md:pt-0">
+                <h2 className="text-2xl font-semibold pb-4">
+                  Third Call - Abstract Submission
+                </h2>
+                <p className="pb-6">July 15th - August 4th 2024</p>
+                <h2 className="text-2xl font-semibold pb-4">
+                  Notification of Abstract Acceptance
+                </h2>
+                <p className="">August 15th 2024</p>
               </div>
             </div>
             <h2 className="text-2xl font-semibold pb-4">Conference Date</h2>
