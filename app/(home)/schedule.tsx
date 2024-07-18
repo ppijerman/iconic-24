@@ -18,26 +18,36 @@ export function IconicSchedule() {
       name: "Second Issuance - Letter of Acceptance",
       date: "July 9th 2024",
     },
+    {
+      name: "Third Call of Abstract",
+      date: "July 15th - August 4th 2024",
+    },
+    {
+      name: "Third Issuance - Letter of Acceptance",
+      date: "August 15th 2024",
+    },
   ];
 
   const plenarySessions = [
     {
-      name: "Opening, Ministerial Talk, and Optional City Trip",
+      name: "Opening Ceremony, Ministerial Talk & Plenary Sessions",
       date: "September 4th 2024",
     },
     {
-      name: "Plenary Session, Parallel Conference, and Meet the Industry",
-      date: "September 5th - 6th 2024",
+      name: "Plenary Session, Parallel Conference & Meet the Industry",
+      date: "September 5th 2024",
+    },
+    {
+      name: "Plenary Session, Parallel Conference & Closing Ceremony",
+      date: "September 6th 2024",
     },
   ];
 
   return (
-    <section
-      className="bg-white w-full text-secondary"
-    >
+    <section className="bg-white w-full text-secondary">
       <div className="container flex flex-col items-center justify-center py-12 md:py-16 lg:py-20">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Schedule</h1>
-        <div className="flex text-md items-center justify-center">
+        <div className=" py-4 flex text-md items-center justify-center">
           <p>
             *Please note that schedule is subject to change. Stay tuned for more
             information!
@@ -45,17 +55,17 @@ export function IconicSchedule() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center">
           <div className="flex flex-col w-full py-12 md:py-16 lg:py-20">
-            <h1 className="text-3xl md:text-5xl font-bold">
+            <h1 className="text-2xl md:text-4xl font-bold">
               Abstract Submission
             </h1>
             <ul className="text-2xl md:text-3xl">
               {abstractSubmissionDeadlines.map((deadline) => (
                 <li className="mt-7" key={deadline.name}>
                   <div className="flex flex-col border-b-2">
-                    <h3 className="text-gray-500 text-lg md:text-xl">
+                    <h3 className="text-gray-500 text-md md:text-lg">
                       {deadline.date}
                     </h3>
-                    <h2 className="font-semibold text-2xl md:text-3xl">
+                    <h2 className="font-semibold text-xl md:text-2xl">
                       {deadline.name}
                     </h2>
                     {deadline.name === "Abstract Submission" && (
@@ -71,15 +81,15 @@ export function IconicSchedule() {
             </ul>
           </div>
           <div className="flex flex-col w-full py-12 md:py-16 lg:py-20">
-            <h1 className="text-3xl md:text-5xl font-bold">D-Day*</h1>
+            <h1 className="text-2xl md:text-4xl font-bold">D-Day*</h1>
             <ul className="text-2xl md:text-3xl">
               {plenarySessions.map((event) => (
                 <li className="mt-7" key={event.name}>
                   <div className="flex flex-col border-b-2">
-                    <h3 className="text-gray-500 text-lg md:text-xl">
+                    <h3 className="text-gray-500 text-md md:text-lg">
                       {event.date}
                     </h3>
-                    <h2 className="font-semibold text-2xl md:text-3xl">
+                    <h2 className="font-semibold text-xl md:text-2xl">
                       {event.name}
                     </h2>
                   </div>

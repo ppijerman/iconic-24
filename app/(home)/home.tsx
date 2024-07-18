@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { SecondCall } from "./second-call";
+import { PATHS } from "@/lib/constants";
 
 export function HomePage() {
   return (
@@ -102,9 +103,16 @@ export function HomePage() {
               </h2>
               <h2>September 4th - 6th 2024</h2>
             </div>
-            <Link href="/submission" className="w-full">
-              <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 my-10 shadow-lg">
+          </div>
+          <div className="flex flex-col md:flex-row w-full gap-y-4 gap-x-10 py-10 px-6">
+            <Link href={PATHS.SUBMISSION} className="w-full">
+              <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
                 <h1 className="font-bold ">Submit Your Abstract</h1>
+              </div>
+            </Link>
+            <Link href={PATHS.EVENT_REGISTRATION} className="w-full">
+              <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
+                <h1 className="font-bold ">Get your tickets!</h1>
               </div>
             </Link>
           </div>
