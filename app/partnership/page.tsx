@@ -145,7 +145,7 @@ export default function Component() {
         <p className="text-gray-600 dark:text-gray-400">Becoming a sponsor for ICONIC 2024, a biennial international scientific conference in Germany by PPI Jerman, offers your company a prime opportunity to enhance its visibility on the international academic stage. ICONIC bridges Indonesia and Germany through discussions on sustainability and environmental awareness, engaging key decision-makers and industry leaders from academia, economics, and policymaking.</p>
         <p className="text-gray-600 dark:text-gray-400">By supporting ICONIC 2024, you can effectively reach your target audience, build meaningful connections, and demonstrate your commitment to sustainable solutions. Seize this chance to connect, influence, and lead towards a more inclusive and sustainable future.</p>
         <div className="flex sm:flex-row flex-col gap-5 mt-5">
-          <div className="sm:w-fit flex p-5 pe-0.5 justify-between sm:justify-center bg-[#66d998] rounded shadow-lg">
+          <div className="sm:w-fit flex p-5 pe-0.5 justify-between sm:justify-center bg-gray-100 rounded shadow-lg">
             <div className="text-sm md:text-base text-white text-left font-bold">
               <p>Hosted <br></br> by</p>              
             </div>
