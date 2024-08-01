@@ -9,9 +9,9 @@
 import iconicLogo from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, motion, useMotionValueEvent } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { PATHS } from "@/lib/constants";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -115,12 +115,22 @@ export function IconicHeader() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false);
+
   // Close the menu when the component mounts
   useEffect(() => {
     setIsOpen(false);
   }, []);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   // Define a function to determine if a link is active based on the pathname
   const isActive = (linkPath: string) => {
@@ -129,13 +139,17 @@ export function IconicHeader() {
   };
 
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
+    <motion.header
+      className="sticky top-0 flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-white z-50"
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+    >
       <Link href={PATHS.HOME}>
-        <Image
-          src={iconicLogo}
-          alt="Iconic Logo"
-          className="w-12"
-        />
+        <Image src={iconicLogo} alt="Iconic Logo" className="w-12" />
       </Link>
       <Sheet>
         <SheetTrigger asChild>
@@ -257,7 +271,7 @@ export function IconicHeader() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-    </header>
+    </motion.header>
   );
 }
 
