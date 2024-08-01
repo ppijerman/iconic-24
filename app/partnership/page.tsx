@@ -92,12 +92,28 @@ const mediaPartners = [
     logo: logoLindungiHutan,
   },
   {
+    name: "PPIDev",
+    logo: logoDeventer,
+  },
+  {
     name: "Deutsche Welle",
     logo: logoDW,
   },
   {
+    name: "Salinan Amerop",
+    logo: logoAmerop,
+  },
+  {
     name: "Enter Nusantara",
     logo: logoEnterNusantara,
+  },
+  {
+    name: "Doctrine UK",
+    logo: logoDoctrineUK,
+  },
+  {
+    name: "RPD",
+    logo: logoRPD,
   },
   {
     name: "Made Andi",
