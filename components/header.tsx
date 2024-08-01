@@ -107,6 +107,7 @@ const navItems: NavItem[] = [
       { href: PATHS.FAQ, label: "FAQ" },
     ],
   },
+  { href: PATHS.PARTNERSHIP, label: "Partnership" },
   { href: PATHS.EVENT_REGISTRATION, label: "Registration" },
   { href: PATHS.SUBMISSION, label: "Abstract Submission" },
 ];
