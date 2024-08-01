@@ -113,16 +113,11 @@ const navItems: NavItem[] = [
 
 export function IconicHeader() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
 
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
-  // Close the menu when the component mounts
-  useEffect(() => {
-    setIsOpen(false);
-  }, []);
-
+  // show/hide header on scroll
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
     if (latest > previous && latest > 150) {
