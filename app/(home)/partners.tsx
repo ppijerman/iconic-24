@@ -10,10 +10,12 @@ import { PATHS } from "@/lib/constants";
 
 import logoCBL from "@/assets/sponsors/Platinum_CBL_NoBG.png";
 import logoUniGoe from "@/assets/sponsors/Platinum_University of Göttingen/GOE_Logo_Quer_IPC_Farbe_RGB.png";
-import logoDW from "@/assets/sponsors/Platinum_DW.svg";
 import logoKBRIBerlin from "@/assets/sponsors/Platinum_KBRI.jpeg";
 import logoTreeo from "@/assets/sponsors/Platinum_Treeo.png";
-import logoGIZ from "@/assets/sponsors/Platinum_GIZ/Platinum_giz.jpg";
+import logoZink from "@/assets/sponsors/Silver_Zinkpower.png";
+import logoKJRIFrankfurt from "@/assets/sponsors/Silver_KJRI.png";
+import logoAstra from "@/assets/sponsors/Platinum_Astra.png";
+import logoEcadin from "@/assets/sponsors/ECADIN_Bright.webp";
 
 const scrollVariants = {
   animate: {
@@ -36,12 +38,12 @@ export function Partners() {
       logo: logoCBL,
     },
     {
-      name: "University of Göttingen",
-      logo: logoUniGoe,
+      name: "Astra International",
+      logo: logoAstra
     },
     {
-      name: "Deutsche Welle",
-      logo: logoDW,
+      name: "University of Göttingen",
+      logo: logoUniGoe,
     },
     {
       name: "KBRI Berlin",
@@ -52,9 +54,17 @@ export function Partners() {
       logo: logoTreeo,
     },
     {
-      name: "GIZ",
-      logo: logoGIZ,
+      name: "ECADIN",
+      logo: logoEcadin,
     },
+    {
+      name: "ZinkPower",
+      logo: logoZink,
+    },
+    {
+      name: "KJRI Frankfurt",
+      logo: logoKJRIFrankfurt ,
+    }
   ];
 
   const doubledSponsors = [...sponsors, ...sponsors, ...sponsors, ...sponsors];
@@ -101,7 +111,7 @@ export function Partners() {
           className="flex items-center justify-center mx-auto gap-5 w-fit p-2 hover:text-accent2 transition duration-500"
         >
           <h1 className="font-bold text-center text-xl md:text-2xl lg:text-4xl">
-            Our Sponsors
+            Learn more about ICONIC&apos;s partners
           </h1>
           <ArrowRightIcon className="w-12 h-12" />
         </Link>

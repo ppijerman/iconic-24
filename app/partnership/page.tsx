@@ -14,7 +14,6 @@ import logoCBL from "@/assets/sponsors/Platinum_CBL_NoBG.png";
 import logoUniGoe from "@/assets/sponsors/Platinum_University of Göttingen/GOE_Logo_Quer_IPC_Farbe_RGB.png";
 import logoKBRIBerlin from "@/assets/sponsors/Platinum_KBRI.jpeg";
 import logoTreeo from "@/assets/sponsors/Platinum_Treeo.png";
-import logoGIZ from "@/assets/sponsors/Platinum_GIZ/Platinum_giz.jpg";
 import logoAstra from "@/assets/sponsors/Platinum_Astra.png";
 import logoQSI from "@/assets/sponsors/Platinum_QSI.png";
 import logoKJRIFrankfurt from "@/assets/sponsors/Silver_KJRI.png";
@@ -30,6 +29,7 @@ import logoRPD from "@/assets/mediaPartner/logorpd.png";
 import logoEnterNusantara from "@/assets/mediaPartner/EnterNusantara.png";
 import logoDoctrineUK from "@/assets/mediaPartner/DoctrineUK.png";
 import logoIGMadeAndi from "@/assets/mediaPartner/madeandi.png";
+import logoDW from "@/assets/mediaPartner/logoDW.png";
 
 export const metadata: Metadata = {
   title: APP_NAME + " | " + "Partnership",
@@ -37,10 +37,6 @@ export const metadata: Metadata = {
 };
 
 const sponsorsPlatinum = [
-  {
-    name: "GIZ",
-    logo: logoGIZ,
-  },
   {
     name: "Treeo",
     logo: logoTreeo,
@@ -96,24 +92,12 @@ const mediaPartners = [
     logo: logoLindungiHutan,
   },
   {
-    name: "PPIDev",
-    logo: logoDeventer,
-  },
-  {
-    name: "Salinan Amerop",
-    logo: logoAmerop,
-  },
-  {
-    name: "RPD",
-    logo: logoRPD,
+    name: "Deutsche Welle",
+    logo: logoDW,
   },
   {
     name: "Enter Nusantara",
     logo: logoEnterNusantara,
-  },
-  {
-    name: "Doctrine UK",
-    logo: logoDoctrineUK,
   },
   {
     name: "Made Andi",
@@ -141,20 +125,45 @@ export default function Component() {
 
       <div className="container flex flex-col gap-5 mt-10 lg:w-1/2 text-center justify-center items-center ">
         <h2 className="text-4xl font-bold mt-8 text-center">Our Sponsors</h2>
-        <p className="text-gray-600 dark:text-gray-400">Becoming a sponsor for ICONIC 2024, a biennial international scientific conference in Germany by PPI Jerman, offers your company a prime opportunity to enhance its visibility on the international academic stage. ICONIC bridges Indonesia and Germany through discussions on sustainability and environmental awareness, engaging key decision-makers and industry leaders from academia, economics, and policymaking.</p>
-        <p className="text-gray-600 dark:text-gray-400">By supporting ICONIC 2024, you can effectively reach your target audience, build meaningful connections, and demonstrate your commitment to sustainable solutions. Seize this chance to connect, influence, and lead towards a more inclusive and sustainable future.</p>
+        <p className="text-gray-600 dark:text-gray-400">
+          Becoming a sponsor for ICONIC 2024, a biennial international
+          scientific conference in Germany by PPI Jerman, offers your company a
+          prime opportunity to enhance its visibility on the international
+          academic stage. ICONIC bridges Indonesia and Germany through
+          discussions on sustainability and environmental awareness, engaging
+          key decision-makers and industry leaders from academia, economics, and
+          policymaking.
+        </p>
+        <p className="text-gray-600 dark:text-gray-400">
+          By supporting ICONIC 2024, you can effectively reach your target
+          audience, build meaningful connections, and demonstrate your
+          commitment to sustainable solutions. Seize this chance to connect,
+          influence, and lead towards a more inclusive and sustainable future.
+        </p>
         <div className="flex sm:flex-row flex-col gap-5 mt-5">
           <div className="sm:w-fit flex p-5 pe-0.5 justify-between sm:justify-center bg-zinc-400 rounded shadow-lg">
             <div className="text-sm md:text-base text-white text-left font-bold">
-              <p>Hosted <br></br> by</p>              
+              <p>
+                Hosted <br></br> by
+              </p>
             </div>
-            <Image src={logoPPIJ} alt="Logo PPIJ" className="max-h-20 max-w-48"/>
+            <Image
+              src={logoPPIJ}
+              alt="Logo PPIJ"
+              className="max-h-20 max-w-48"
+            />
           </div>
           <div className="sm:w-fit flex gap-5 p-5 justify-between sm:justify-center bg-zinc-400 rounded shadow-lg">
             <div className="text-sm md:text-base text-white text-left font-bold ">
-              <p>Knowledge <br></br> Partner</p>
+              <p>
+                Knowledge <br></br> Partner
+              </p>
             </div>
-            <Image src={logoEcadin} alt="Logo Ecadin" className="max-h-20 max-w-60"/>
+            <Image
+              src={logoEcadin}
+              alt="Logo Ecadin"
+              className="max-h-20 max-w-60"
+            />
           </div>
         </div>
       </div>
@@ -162,56 +171,79 @@ export default function Component() {
       <section className="container mt-5 pt-10 md:py-10 divide-y-2 divide-grey-200">
         <div className="w-full pb-10 flex flex-col items-center gap-5">
           <div className="flex items-center justify-center gap-5">
-            <Image width="50" height="50" src="https://img.icons8.com/ios/68/6b7280/hand-planting.png" alt="hand-planting" className="size-fit"/>
-            <h2 className="w-min sm:w-fit font-bold text-3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400">PLATINUM SPONSOR</h2>
+            <Image
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/68/6b7280/hand-planting.png"
+              alt="hand-planting"
+              className="size-fit"
+            />
+            <h2 className="w-min sm:w-fit font-bold text-3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400">
+              PLATINUM SPONSOR
+            </h2>
           </div>
           <div className="w-full flex justify-center flex-wrap gap-7">
             {sponsorsPlatinum.map((partner) => (
-                <div
-                  key={partner.name}
-                  className="flex justify-center items-center"
-                >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={150}
-                    height={150}
-                  />
-                </div>
-              ))}
-          </div>
-        </div> 
-        <div className="w-full pb-10 flex flex-col items-center gap-5">
-          <div className="flex items-center justify-center gap-5 mt-5">
-            <Image width="50" height="50" src="https://img.icons8.com/ios/68/F9C620/hand-planting.png" alt="hand-planting" className="size-fit"/>
-            <h2 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-200 to-amber-400">GOLD SPONSOR</h2>
-          </div>
-          <div className="w-full flex justify-center flex-wrap gap-5 ">
-            <p className="text-2xl">TO BE ANNOUNCED</p>      
+              <div
+                key={partner.name}
+                className="flex justify-center items-center"
+              >
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={150}
+                  height={150}
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div className="w-full pb-10 flex flex-col items-center gap-5">
           <div className="flex items-center justify-center gap-5 mt-5">
-            <Image width="50" height="50" src="https://img.icons8.com/ios/68/A1A1AA/hand-planting.png" alt="hand-planting" className="size-fit"/>
-            <h2 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 to-zinc-200">SILVER SPONSOR</h2>
+            <Image
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/68/F9C620/hand-planting.png"
+              alt="hand-planting"
+              className="size-fit"
+            />
+            <h2 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-200 to-amber-400">
+              GOLD SPONSOR
+            </h2>
+          </div>
+          <div className="w-full flex justify-center flex-wrap gap-5 ">
+            <p className="text-2xl">TO BE ANNOUNCED</p>
+          </div>
+        </div>
+        <div className="w-full pb-10 flex flex-col items-center gap-5">
+          <div className="flex items-center justify-center gap-5 mt-5">
+            <Image
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/68/A1A1AA/hand-planting.png"
+              alt="hand-planting"
+              className="size-fit"
+            />
+            <h2 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 to-zinc-200">
+              SILVER SPONSOR
+            </h2>
           </div>
           <div className="w-full flex justify-center flex-wrap gap-10">
             {sponsorsSilver.map((partner) => (
-                <div
-                  key={partner.name}
-                  className="flex justify-center items-center"
-                >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={150}
-                    height={150}
-                  />
-                </div>
-              ))}
+              <div
+                key={partner.name}
+                className="flex justify-center items-center"
+              >
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={150}
+                  height={150}
+                />
+              </div>
+            ))}
           </div>
         </div>
-        
       </section>
       <section className="px-10">
         <div className="container p-10 text-center shadow-2xl rounded-xl">
@@ -238,8 +270,13 @@ export default function Component() {
           <div className="flex flex-col gap-3">
             <h1 className="text-4xl font-bold">Contact us for partnership</h1>
             <p className="">
-              Fill out the form below and we&apos;ll get back to you as soon as
-              possible.
+              Send an email to{" "}
+              <a
+                className="font-bold hover:text-accent"
+                href="mailto:partnership@iconic.ppijerman.org"
+              >
+                partnership@iconic.ppijerman.org
+              </a>{" "}
             </p>
           </div>
           <Image
@@ -249,44 +286,6 @@ export default function Component() {
             width={100}
             height={100}
           />
-        </div>
-        <div className="space-y-4 text-xl">
-          <div className="space-y-2">
-            <Label htmlFor="name">Name</Label>
-            <Input
-              id="name"
-              className="bg-white text-black"
-              placeholder="Enter your name"
-            />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              className="bg-white text-black"
-              placeholder="Enter your email"
-              type="email"
-            />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="company">Company Name</Label>
-            <Input
-              id="company"
-              className="bg-white text-black"
-              placeholder="Enter your company"
-            />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
-            <Textarea
-              className="min-h-[120px] bg-white text-black"
-              id="message"
-              placeholder="Enter your message"
-            />
-          </div>
-          <Button className="bg-white rounded-none text-secondary hover:text-primary2 hover:bg-white hover:ring-primary2 ring-secondary text-2xl font-bold px-10 py-7 ring-[1px]">
-            Send message
-          </Button>
         </div>
       </div>
     </main>
