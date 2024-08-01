@@ -61,7 +61,7 @@ const navItems: NavItem[] = [
   },
   {
     href: PATHS.EVENTS,
-    label: "Program and Subject Overview",
+    label: "Program Overview",
     submenus: [
       {
         href: PATHS.EVENTS,
@@ -107,7 +107,7 @@ const navItems: NavItem[] = [
       { href: PATHS.FAQ, label: "FAQ" },
     ],
   },
-  { href: PATHS.EVENT_REGISTRATION, label: "Event Registration" },
+  { href: PATHS.EVENT_REGISTRATION, label: "Registration" },
   { href: PATHS.SUBMISSION, label: "Abstract Submission" },
 ];
 
@@ -130,14 +130,21 @@ export function IconicHeader() {
 
   return (
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
+      <Link href={PATHS.HOME}>
+        <Image
+          src={iconicLogo}
+          alt="Iconic Logo"
+          className="w-12"
+        />
+      </Link>
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline" size="icon" className="lg:hidden">
+          <Button variant="outline" size="icon" className="lg:hidden ml-auto">
             <MenuIcon className="h-6 w-6" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="left">
+        <SheetContent side="right">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <Image
               src={iconicLogo}
@@ -146,11 +153,11 @@ export function IconicHeader() {
             />
             <span className="text-lg font-bold">ICONIC 2024</span>
           </Link>
-          <div className="grid gap-2 py-6">
+          <div className="grid gap-4 py-6">
             {navItems.map((item, index) =>
               item.submenus ? (
                 <Collapsible className="grid gap-4" key={index}>
-                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
+                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90 py-2">
                     {item.label}{" "}
                     <ChevronRightIcon className="ml-auto h-5 w-5 transition-all" />
                   </CollapsibleTrigger>
