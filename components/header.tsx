@@ -1,92 +1,131 @@
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/m5bNsrk1NbL
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+
 "use client";
 
 import iconicLogo from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useScroll, motion, useMotionValueEvent } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-import {
-  HamburgerMenuIcon,
-  Cross1Icon,
-  ChevronDownIcon,
-} from "@radix-ui/react-icons";
-import { motion } from "framer-motion";
-
+import { useState, useEffect, use } from "react";
 import { PATHS } from "@/lib/constants";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
+} from "@/components/ui/collapsible";
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuLink,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+} from "@/components/ui/navigation-menu";
 
-type NavigationItem = {
-  title: string;
+type NavItem = {
   href: string;
-  description: string;
+  label: string;
+  description?: string;
+  submenus?: NavItem[];
 };
 
-const programAndSubjectOverview: NavigationItem[] = [
+const navItems: NavItem[] = [
+  { href: PATHS.HOME, label: "Home" },
   {
-    title: "Subject",
-    href: PATHS.SUBJECT,
-    description: "Learn more about the subjects of the conference.",
+    href: PATHS.ABOUT,
+    label: "About",
+    submenus: [
+      {
+        href: PATHS.OUR_TEAM,
+        label: "Our Team",
+        description: "Meet our dedicated team",
+      },
+      {
+        href: PATHS.REVIEWERS,
+        label: "Reviewers",
+        description: "Our panel of reviewers",
+      },
+      {
+        href: PATHS.JOIN_THE_MOVEMENT,
+        label: "Join the Movement",
+        description: "Join the movement to plant mangrooves with ICONIC 2024",
+      },
+    ],
   },
   {
-    title: "Events",
     href: PATHS.EVENTS,
-    description: "Learn more about the events of the conference.",
+    label: "Program Overview",
+    submenus: [
+      {
+        href: PATHS.EVENTS,
+        label: "Events and Schedule",
+        description: "Explore our 3-day event and schedule",
+      },
+      {
+        href: PATHS.SPEAKERS,
+        label: "Speakers",
+        description: "Meet our list of potential speakers",
+      },
+      {
+        href: PATHS.SUBJECT,
+        label: "Subject",
+        description: "Learn about the subjects of ICONIC 2024",
+      },
+    ],
   },
   {
-    title: "Speakers",
-    href: PATHS.SPEAKERS,
-    description: "Learn more about the speakers of the conference.",
+    href: PATHS.DURING_THE_STAY,
+    label: "During the Stay",
+    submenus: [
+      {
+        href: PATHS.PREPARATION,
+        label: "Preparation",
+        description: "Get ready for the conference",
+      },
+      {
+        href: PATHS.VENUE,
+        label: "Venue Göttingen",
+        description: "Explore the ICONIC 2024's Venue",
+      },
+      {
+        href: PATHS.ONLINE_PARTICIPANT,
+        label: "Online Participant",
+        description: "Guidelines for online participation",
+      },
+      {
+        href: PATHS.CITY_DAY_TRIP,
+        label: "City Day Trip",
+        description: "Explore the city of Göttingen",
+      },
+      { href: PATHS.FAQ, label: "FAQ" },
+    ],
   },
+  { href: PATHS.EVENT_REGISTRATION, label: "Registration" },
+  { href: PATHS.SUBMISSION, label: "Abstract Submission" },
 ];
-
-const duringTheStay: NavigationItem[] = [
-  {
-    title: "Preparation",
-    href: PATHS.PREPARATION,
-    description: "Learn more about the preparation for the conference.",
-  },
-  {
-    title: "Venue Göttingen",
-    href: PATHS.VENUE,
-    description: "Learn more about the venue in Göttingen.",
-  },
-  {
-    title: "Online Participant",
-    href: PATHS.ONLINE_PARTICIPANT,
-    description: "Learn more about the online participation.",
-  },
-  {
-    title: "City Day Trip",
-    href: PATHS.CITY_DAY_TRIP,
-    description: "Learn more about the city day trip.",
-  },
-  {
-    title: "FAQ",
-    href: PATHS.FAQ,
-    description: "Learn more about the frequently asked questions.",
-  },
-];
-
-const transition = {
-  type: "spring",
-  mass: 0.5,
-  damping: 11.5,
-  stiffness: 100,
-  restDelta: 0.001,
-  restSpeed: 0.001,
-};
 
 export function IconicHeader() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
 
-  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false);
 
-  // Close the menu when the component mounts
-  useEffect(() => {
-    setIsOpen(false);
-  }, []);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
+  // show/hide header on scroll
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   // Define a function to determine if a link is active based on the pathname
   const isActive = (linkPath: string) => {
@@ -95,185 +134,198 @@ export function IconicHeader() {
   };
 
   return (
-    <header className="flex items-center justify-center bg-white z-50">
-      <nav className="flex flex-row justify-between items-center w-[95%] p-1 bg-white">
-        <div className="flex flex-row items-center justify-center">
-          <Link href="/">
+    <motion.header
+      className="sticky top-0 flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-white z-50"
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+    >
+      <Link href={PATHS.HOME}>
+        <Image src={iconicLogo} alt="Iconic Logo" className="w-12" />
+      </Link>
+      <Sheet>
+        <SheetTrigger asChild>
+          <Button variant="outline" size="icon" className="lg:hidden ml-auto">
+            <MenuIcon className="h-6 w-6" />
+            <span className="sr-only">Toggle navigation menu</span>
+          </Button>
+        </SheetTrigger>
+        <SheetContent side="right">
+          <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <Image
               src={iconicLogo}
               alt="Iconic Logo"
               className="w-[48px] md:w-[60px] p-2 transition"
             />
+            <span className="text-lg font-bold">ICONIC 2024</span>
           </Link>
-        </div>
-        <div
-          className={`${
-            isOpen ? "flex" : "hidden"
-          } lg:flex absolute z-50 lg:static bg-white min-h-[60vh] lg:min-h-fit left-0 top-[6%] md:top-[8%] lg:top-0 w-full items-center  lg:py-0 lg:px-0 px-5 md:px-8 py-8 shadow-lg lg:shadow-none rounded-lg`}
-        >
-          <ul className="flex flex-col lg:flex-row gap-5 lg:gap-4 lg:justify-end lg:items-center w-full font-semibold h-full border-b-2 md:border-0">
-            {[
-              { href: PATHS.HOME, label: "Home" },
-              {
-                href: PATHS.ABOUT,
-                label: "About",
-                submenus: [
-                  {
-                    href: PATHS.OUR_TEAM,
-                    label: "Our Team",
-                  },
-                  {
-                    href: PATHS.REVIEWERS,
-                    label: "Reviewers",
-                  },
-                  {
-                    href: PATHS.JOIN_THE_MOVEMENT,
-                    label: "Join the Movement",
-                  },
-                ],
-              },
-              {
-                href: "#",
-                label: "Program and Subject Overview",
-                submenus: [
-                  {
-                    href: PATHS.EVENTS,
-                    label: "Events",
-                  },
-                  {
-                    href: PATHS.SPEAKERS,
-                    label: "Speakers",
-                  },
-                  {
-                    href: PATHS.SUBJECT,
-                    label: "Subject",
-                  },
-                ],
-              },
-              {
-                href: PATHS.DURING_THE_STAY,
-                label: "During the Stay",
-                submenus: [
-                  {
-                    href: PATHS.PREPARATION,
-                    label: "Preparation",
-                  },
-                  {
-                    href: PATHS.VENUE,
-                    label: "Venue Göttingen",
-                  },
-                  {
-                    href: PATHS.ONLINE_PARTICIPANT,
-                    label: "Online Participant",
-                  },
-                  {
-                    href: PATHS.CITY_DAY_TRIP,
-                    label: "City Day Trip",
-                  },
-                  {
-                    href: PATHS.FAQ,
-                    label: "FAQ",
-                  },
-                ],
-              },
-              {
-                href: PATHS.EVENT_REGISTRATION,
-                label: "Event Registration",
-              },
-              { href: PATHS.SUBMISSION, label: "Abstract Submission" },
-            ].map((item) => (
-              <Link href={item.href} key={item.href} className="">
-                <li
-                  className={`p-2 text-base ${
-                    isActive(item.href) ? "text-primary2" : ""
-                  }`}
-                  onMouseEnter={() => setHoveredLink(item.label)} // Set the hovered link's href
-                  onMouseLeave={() => setHoveredLink("")} // Clear the hovered link's href
-                >
-                  {(item.label && (
-                    <span className="flex flex-col hover:text-accent transition lg:flex-row w-full gap-1 lg:items-center lg:justify-center h-full">
-                      {item.label}
-                      {item.submenus && !isOpen && (
-                        <ChevronDownIcon
-                          className={`w-4 h-4 inline transition ${
-                            hoveredLink === item.label
-                              ? "rotate-0"
-                              : "rotate-180"
-                          }`}
-                        />
-                      )}
-                    </span>
-                  )) ||
-                    ""}
-
-                  {item.submenus && (
-                    <div className="lg:hidden flex flex-col gap-4 w-full text-sm mt-4 font-normal">
-                      {item.submenus?.map((submenu) => (
-                        <Link href={submenu.href} key={submenu.href}>
-                          <motion.div
-                            className="cursor-pointer hover:text-accent"
-                            transition={{ duration: 0.3 }}
-                          >
+          <div className="grid gap-4 py-6">
+            {navItems.map((item, index) =>
+              item.submenus ? (
+                <Collapsible className="grid gap-4" key={index}>
+                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90 py-2">
+                    {item.label}{" "}
+                    <ChevronRightIcon className="ml-auto h-5 w-5 transition-all" />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <div className="-mx-6 grid gap-6 bg-muted p-6">
+                      {item.submenus.map((submenu, subIndex) => (
+                        <Link
+                          href={submenu.href}
+                          className="group grid h-auto w-full justify-start gap-1"
+                          key={subIndex}
+                          prefetch={false}
+                        >
+                          <div className="text-sm font-medium leading-none group-hover:underline">
                             {submenu.label}
-                          </motion.div>
+                          </div>
+                          {submenu.description && (
+                            <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              {submenu.description}
+                            </div>
+                          )}
                         </Link>
                       ))}
                     </div>
+                  </CollapsibleContent>
+                </Collapsible>
+              ) : (
+                <Link
+                  href={item.href}
+                  className="flex flex-col w-full items-start py-2 text-lg font-semibold"
+                  key={index}
+                  prefetch={false}
+                >
+                  <div>{item.label}</div>
+                  {item.description && (
+                    <div className="text-sm leading-snug text-muted-foreground">
+                      {item.description}
+                    </div>
                   )}
+                </Link>
+              )
+            )}
+          </div>
+        </SheetContent>
+      </Sheet>
 
-                  {/* dropdown */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.85, y: 10 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={transition}
+      {/* mobile */}
+      <div className="ml-auto hidden lg:flex">
+        <NavigationMenu>
+          <NavigationMenuList>
+            {navItems.map((item, index) =>
+              item.submenus ? (
+                <NavigationMenuItem key={index}>
+                  <NavigationMenuTrigger
+                    className={`hover:text-accent bg-white hover:bg-white focus:bg-gray-100 ${
+                      isActive(item.href) ? "text-primary2" : ""
+                    }`}
                   >
-                    {item.submenus &&
-                      hoveredLink === item.label &&
-                      item.submenus.length > 0 && (
-                        <div className="absolute lg:flex hidden">
-                          <motion.div
-                            transition={transition}
-                            layoutId="active" // layoutId ensures smooth animation
-                            className="bg-white backdrop-blur-sm overflow-hidden rounded-md shadow-md w-full h-full"
+                    {item.label}
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid w-[400px] p-2">
+                      {item.submenus.map((submenu, subIndex) => (
+                        <NavigationMenuLink asChild key={subIndex}>
+                          <Link
+                            href={submenu.href}
+                            className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-accent focus:bg-gray-100 focus:outline-none"
+                            prefetch={false}
                           >
-                            <motion.div
-                              layout // layout ensures smooth animation
-                              className="w-max h-full p-4 pr-10 flex flex-col gap-3"
-                            >
-                              {item.submenus.map((submenu) => (
-                                <Link href={submenu.href} key={submenu.href}>
-                                  <motion.div
-                                    className="cursor-pointer text-secondary hover:text-accent transition"
-                                    transition={{ duration: 0.3 }}
-                                  >
-                                    {submenu.label}
-                                  </motion.div>
-                                </Link>
-                              ))}
-                            </motion.div>
-                          </motion.div>
-                        </div>
-                      )}
-                  </motion.div>
-                </li>
-              </Link>
-            ))}
-          </ul>
-        </div>
-        <div className="flex items-center gap-2">
-          {isOpen ? (
-            <Cross1Icon
-              className="lg:hidden cursor-pointer"
-              onClick={toggleMenu}
-            />
-          ) : (
-            <HamburgerMenuIcon
-              className="lg:hidden cursor-pointer"
-              onClick={toggleMenu}
-            />
-          )}
-        </div>
-      </nav>
-    </header>
+                            <div className="text-sm font-medium leading-none">
+                              {submenu.label}
+                            </div>
+                            {submenu.description && (
+                              <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                {submenu.description}
+                              </div>
+                            )}
+                          </Link>
+                        </NavigationMenuLink>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              ) : (
+                <NavigationMenuLink asChild key={index}>
+                  <Link
+                    href={item.href}
+                    className={`group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:text-accent focus:bg-gray-100 focus:outline-none ${
+                      isActive(item.href) ? "text-primary2" : ""
+                    }`}
+                    prefetch={false}
+                  >
+                    {item.label}
+                  </Link>
+                </NavigationMenuLink>
+              )
+            )}
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+    </motion.header>
+  );
+}
+
+function ChevronRightIcon(props: React.ComponentProps<"svg">) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m9 18 6-6-6-6" />
+    </svg>
+  );
+}
+
+function MenuIcon(props: React.ComponentProps<"svg">) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  );
+}
+
+function XIcon(props: React.ComponentProps<"svg">) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
+    </svg>
   );
 }
