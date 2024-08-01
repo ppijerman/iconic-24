@@ -19,6 +19,7 @@ import WindiImg from "@/assets/reviewers/Windi Kurnia Perangin-Angin.jpeg";
 import ZulfiqarImg from "@/assets/reviewers/Zulfikar Adlan Nadzir.jpg";
 import HilmanImg from "@/assets/reviewers/Muhammad Hilman Fatoni.jpg";
 import DitoImg from "@/assets/reviewers/Andita Aulia Pratama.jpeg";
+import NidaImg from "@/assets/reviewers/Muhammad Nida Fadlan.jpeg.jpg";
 
 export const persons = [
   {
@@ -164,5 +165,11 @@ export const persons = [
     institution: "TU Braunschweig",
     field: "Testing and Calibration, Energy",
     image: WindiImg,
+  },
+  {
+    name: "Muhammad Nida Fadlan",
+    institution: "University of Cologne, Germany",
+    field: "Indonesian Islamic Philology",
+    image: NidaImg,
   },
 ];
