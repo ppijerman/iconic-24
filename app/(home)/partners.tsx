@@ -101,7 +101,7 @@ export function Partners() {
           className="flex items-center justify-center mx-auto gap-5 w-fit p-2 hover:text-accent2 transition duration-500"
         >
           <h1 className="font-bold text-center text-xl md:text-2xl lg:text-4xl">
-            Learn more about becoming a partner with ICONIC
+            Our Sponsors
           </h1>
           <ArrowRightIcon className="w-12 h-12" />
         </Link>
