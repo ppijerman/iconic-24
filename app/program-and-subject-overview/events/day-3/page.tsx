@@ -8,7 +8,7 @@ export default function DayOne() {
     <main className="min-h-screen flex justify-center bg-white">
       <div className="container py-12 md:py-16 lg:py-20">
         <h1 className="font-bold text-3xl md:text-5xl">
-          Day 3 - Plenary Sessions, Parallel Conference & Meet the Industry
+          Day 3 - Plenary Sessions, Meet the Industry, and Parallel Conferences
         </h1>
         <div className="flex flex-col gap-10 py-4 md:py-6 lg:py-8">
           {/* Add the following content */}
