@@ -21,7 +21,7 @@ export function EventNavigation() {
   });
   return (
     <motion.header
-      className="sticky top-20 bg-white shrink-0"
+      className="sticky top-20 bg-white shrink-0 z-50"
       variants={{
         visible: { y: 0 },
         hidden: { y: "-150%" },
