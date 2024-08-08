@@ -24,7 +24,7 @@ import hapsari from "@/assets/team/hapsari.jpg";
 import fadlilah from "@/assets/team/fadlilahdila.jpg";
 
 // Program & Event
-import chaska from "@/assets/team/chaska.jpg";
+import chaska from "@/assets/team/Chaska (NEW).jpg";
 import hessel from "@/assets/team/hessel.jpg";
 import rohmaneo from "@/assets/team/rohmaneo.jpg";
 import eunike from "@/assets/team/eunike.png";
