@@ -143,8 +143,8 @@ function PlenarySession() {
               ]}
             />
             <Session
-              timeStart="15:15"
-              timeEnd="19:00"
+              timeStart="15:30"
+              timeEnd="17:00"
               title="Networking Break"
               venue="Foyer (Welcoming Hall), Zentrales Hörsaalgebäude (ZHG)"
             />
