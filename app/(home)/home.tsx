@@ -105,8 +105,8 @@ export function HomePage() {
             </div>
             <div className="flex flex-col md:flex-row w-full gap-y-4 gap-x-10 py-10 px-6">
               <Link href={PATHS.EVENT_REGISTRATION} className="w-full">
-                <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
-                  <h1 className="font-bold ">Get your tickets!</h1>
+                <div className="text-2xl flex flex-row gap-2 bg-accent2 text-white items-center justify-center group py-5 px-16 hover:bg-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
+                  <h1 className="font-bold">Get your tickets!</h1>
                 </div>
               </Link>
             </div>

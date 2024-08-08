@@ -6,22 +6,21 @@ import { Button } from "../../components/ui/button";
 import Link from "next/link";
 import { ImagesSlider } from "../../components/images-slider";
 import { motion } from "framer-motion";
+import { PATHS } from "@/lib/constants";
 
 export function CallToActionRegister() {
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen text-secondary w-screen font-utile-display"
+      className="flex flex-col items-center justify-center min-h-screen text-secondary w-screen"
       style={{
         backgroundImage: "url('/Bamboo_with_Gradient.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div
-        className="w-screen h-screen flex flex-col items-center justify-center z-50"
-      >
+      <div className="w-screen h-screen flex flex-col items-center justify-center z-40">
         <motion.div
-          className="flex flex-col items-center justify-center w-[80%] gap-7 py-10 z-50"
+          className="flex flex-col items-center justify-center w-[80%] gap-7 py-10 z-40"
           initial={{
             opacity: 0,
             y: -80,
@@ -49,16 +48,16 @@ export function CallToActionRegister() {
               RETHINK DEVELOPMENT.
             </h1>
           </div>
-          <p className="text-lg text-white md:text-2xl md:text-center rounded-md px-2">
+          <p className="text-md text-white md:text-lg md:text-center rounded-md px-2">
             Contribute to our future by{" "}
-            <span className="font-bold">submitting your abstract</span> for
+            <span className="font-bold">attending our event</span> for
             Transformation for Low-Carbon Development.
           </p>
           <Button
             asChild
-            className="mt-5 bg-accent text-white hover:bg-primary2 px-5 py-10 md:p-10 text-xl font-bold md:text-3xl shadow-lg"
+            className="mt-5 bg-accent text-white hover:bg-primary2 px-5 py-10 md:p-10 text-xl font-bold md:text-3xl shadow-lg disabled"
           >
-            <Link href="/submission">Submit Your Abstract</Link>
+            <Link href={PATHS.EVENT_REGISTRATION}>Attend ICONIC</Link>
           </Button>
         </motion.div>
       </div>

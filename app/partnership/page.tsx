@@ -30,6 +30,9 @@ import logoEnterNusantara from "@/assets/mediaPartner/EnterNusantara.png";
 import logoDoctrineUK from "@/assets/mediaPartner/DoctrineUK.png";
 import logoIGMadeAndi from "@/assets/mediaPartner/madeandi.png";
 import logoDW from "@/assets/mediaPartner/logoDW.png";
+import logoCase from "@/assets/mediaPartner/Case-Logo.png";
+import logoBbbc from "@/assets/mediaPartner/Salinan logo-bbbbc.png";
+import logoFapet from "@/assets/mediaPartner/Salinan Logo_FAPET_UNPAD.jpeg";
 
 export const metadata: Metadata = {
   title: APP_NAME + " | " + "Partnership",
@@ -38,16 +41,16 @@ export const metadata: Metadata = {
 
 const sponsorsPlatinum = [
   {
+    name: "KBRI Berlin",
+    logo: logoKBRIBerlin,
+  },
+  {
     name: "Treeo",
     logo: logoTreeo,
   },
   {
     name: "Astra",
     logo: logoAstra,
-  },
-  {
-    name: "KBRI Berlin",
-    logo: logoKBRIBerlin,
   },
   {
     name: "University of Göttingen",
@@ -90,6 +93,18 @@ const mediaPartners = [
   {
     name: "Lindungi Hutan",
     logo: logoLindungiHutan,
+  },
+  {
+    name: "BBBC",
+    logo: logoBbbc,
+  },
+  {
+    name: "FAPET UNPAD",
+    logo: logoFapet,
+  },
+  {
+    name: "Case",
+    logo: logoCase,
   },
   {
     name: "PPIDev",
@@ -139,8 +154,8 @@ export default function Component() {
         </div>
       </header>
 
-      <div className="container flex flex-col gap-5 mt-10 lg:w-1/2 text-center justify-center items-center ">
-        <h2 className="text-4xl font-bold mt-8 text-center">Our Sponsors</h2>
+      <div className="container flex flex-col gap-5 justify-center items-center text-justify max-w-6xl">
+        <h2 className="text-4xl font-bold mt-8 r">Our Sponsors</h2>
         <p className="text-gray-600 dark:text-gray-400">
           Becoming a sponsor for ICONIC 2024, a biennial international
           scientific conference in Germany by PPI Jerman, offers your company a
@@ -156,32 +171,6 @@ export default function Component() {
           commitment to sustainable solutions. Seize this chance to connect,
           influence, and lead towards a more inclusive and sustainable future.
         </p>
-        <div className="flex sm:flex-row flex-col gap-5 mt-5">
-          <div className="sm:w-fit flex p-5 pe-0.5 justify-between sm:justify-center bg-zinc-400 rounded shadow-lg">
-            <div className="text-sm md:text-base text-white text-left font-bold">
-              <p>
-                Hosted <br></br> by
-              </p>
-            </div>
-            <Image
-              src={logoPPIJ}
-              alt="Logo PPIJ"
-              className="max-h-20 max-w-48"
-            />
-          </div>
-          <div className="sm:w-fit flex gap-5 p-5 justify-between sm:justify-center bg-zinc-400 rounded shadow-lg">
-            <div className="text-sm md:text-base text-white text-left font-bold ">
-              <p>
-                Knowledge <br></br> Partner
-              </p>
-            </div>
-            <Image
-              src={logoEcadin}
-              alt="Logo Ecadin"
-              className="max-h-20 max-w-60"
-            />
-          </div>
-        </div>
       </div>
 
       <section className="container mt-5 pt-10 md:py-10 divide-y-2 divide-grey-200">
@@ -208,7 +197,6 @@ export default function Component() {
                   src={partner.logo}
                   alt={partner.name}
                   width={150}
-                  height={150}
                 />
               </div>
             ))}
@@ -261,8 +249,36 @@ export default function Component() {
           </div>
         </div>
       </section>
+      <section className="container flex flex-col text-center justify-center items-center pb-12 md:pb-16 lg:pb-20">
+        <div className="flex md:flex-row flex-col gap-5">
+          <div className="sm:w-fit flex p-4 pe-0.5 justify-between items-center bg-primary2 rounded shadow-lg">
+            <div className="text-sm md:text-base text-white text-left font-bold">
+              <p>
+                Hosted <br></br> by
+              </p>
+            </div>
+            <Image
+              src={logoPPIJ}
+              alt="Logo PPIJ"
+              className="max-w-20 md:max-w-40 lg:max-w-60"
+            />
+          </div>
+          <div className="w-fit md:w-full flex gap-5 p-4 justify-between items-center bg-secondary rounded shadow-lg">
+            <div className="text-sm md:text-base text-white text-left font-bold w-full">
+              <p>
+                Knowledge <br></br> Partner
+              </p>
+            </div>
+            <Image
+              src={logoEcadin}
+              alt="Logo Ecadin"
+              className="max-w-20 md:max-w-40 lg:max-w-60"
+            />
+          </div>
+        </div>
+      </section>
       <section className="px-10">
-        <div className="container p-10 text-center shadow-2xl rounded-xl">
+        <div className="container p-10 text-center rounded-xl">
           <h2 className="text-4xl font-bold mb-8">Our Media Partners</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
             {mediaPartners.map((partner) => (
