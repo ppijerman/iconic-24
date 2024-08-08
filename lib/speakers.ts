@@ -401,7 +401,8 @@ export const Speakers = {
   },
   YOSIAS_GANDHI: {
     name: "Yosias Gandhi",
-    title: "Ph.D Candidate in the Department of Tropical Silviculture and Forest Ecology, Georg-August-University of Göttingen",
+    title:
+      "Ph.D Candidate in the Department of Tropical Silviculture and Forest Ecology, Georg-August-University of Göttingen",
     image: YosiasGandhi,
   },
   THOMAS_AUER: {
@@ -435,15 +436,37 @@ export const Speakers = {
 
 export const FixedSpeakersList = [
   Speakers.HAVAS,
+  Speakers.SITI_NURBAYA,
+  Speakers.BERNHARDT,
   Speakers.DESTI,
+  Speakers.SVENJA,
+  Speakers.RACHMAT,
+  Speakers.BIMO_KUSUMO,
+  Speakers.BONDAN_SUSILO,
+  Speakers.HERSTATT,
   Speakers.TONNY,
   Speakers.ANTJE,
   Speakers.RUKKA,
   Speakers.GEORG,
   Speakers.JOKO,
-  Speakers.RACHMAT,
-  Speakers.HERSTATT,
   Speakers.KLEINSCHMIT,
+  Speakers.CANDRA_SUTAMA,
+  Speakers.RYANZA,
+  Speakers.DWIKORITA_KARNAWATI,
+  Speakers.MYRNA_ASNAWATI,
+  Speakers.SILVIA_BENEDITO,
+  Speakers.PRABAHARYAKA,
+  Speakers.BANDUNG_SAHARI,
+  Speakers.GEORG_SCHILLER,
+  Speakers.LIM_MASULIN,
+  Speakers.MARKUS_EURING,
   Speakers.SCHWEGLER,
   Speakers.RYANZA,
 ];
+
+export const PANELISTS = [
+  Speakers.WISNU_HARTO,
+  Speakers.PRABAHARYAKA,
+  Speakers.DESTI,
+  Speakers.YOSIAS_GANDHI,
+]
