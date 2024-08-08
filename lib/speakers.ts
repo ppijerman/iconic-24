@@ -75,7 +75,7 @@ import georgSchiller from "@/assets/speakers/06_Plenary 5_ Decarbonization and C
 import limMasulin from "@/assets/speakers/06_Plenary 5_ Decarbonization and Circularity in Construction Sector/Lim Masulin, BYOLiving.avif";
 
 //07
-import indrawanPrabaharyaka from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Indrawan Prabaharyaka, HU Berlin.jpg";
+import indrawanPrabaharyaka from "@/assets/speakers/Indrawan Prabaharyaka.png";
 import dwikorita from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Dwikorita Karnawati, BMKG.png";
 import thomasAuer from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Thomas Auer, Transsolar.jpg";
 import BondanSusilo from "@/assets/speakers/Bondan Susilo.jpeg";
@@ -85,6 +85,8 @@ import SilviaBenedito from "@/assets/speakers/Silvia Benedito.jpeg";
 import MyrnaAsnawati from "@/assets/speakers/Myrna Asnawati.jpeg";
 import BandungSahari from "@/assets/speakers/Bandung Sahari.jpeg";
 import MarkusEuring from "@/assets/speakers/Markus Euring.jpg";
+import WisnuAdiwijoyo from "@/assets/speakers/Wisnu Adiwijoyo.jpg";
+import YosiasGandhi from "@/assets/speakers/Yosias Gandhi.jpg";
 
 export const Speakers = {
   HAVAS: {
@@ -394,13 +396,13 @@ export const Speakers = {
   },
   WISNU_HARTO: {
     name: "Wisnu Harto Adiwijoyo, Ph.D.",
-    title: "",
-    image: placeholderPic,
+    title: "Ph.D., Research Analyst at the World Bank Group",
+    image: WisnuAdiwijoyo,
   },
   YOSIAS_GANDHI: {
     name: "Yosias Gandhi",
-    title: "",
-    image: placeholderPic,
+    title: "Ph.D Candidate in the Department of Tropical Silviculture and Forest Ecology, Georg-August-University of Göttingen",
+    image: YosiasGandhi,
   },
   THOMAS_AUER: {
     name: "Thomas Auer",
