@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
-import { IconicHeader } from "@/components/header";
+import { IconicHeader } from "@/components/Navbar/header";
 import { IconicFooter } from "@/components/footer";
 import { Analytics } from "@vercel/analytics/react";
 

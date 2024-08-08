@@ -1,9 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/m5bNsrk1NbL
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-
 "use client";
 
 import iconicLogo from "@/assets/logo.png";
@@ -11,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useScroll, motion, useMotionValueEvent } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useState, useEffect, use } from "react";
+import { useState } from "react";
 import { PATHS } from "@/lib/constants";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
