@@ -71,6 +71,43 @@ function ParallelSessions() {
         Parallel Conference Sessions
       </h3>
       <Session
+        timeStart="13:30"
+        timeEnd="15:15"
+        title="Green Financing and Sustainable Investments for Low Carbon Development"
+        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
+        details={
+          <div className="flex flex-col gap-2">
+            <p>
+              The plenary session encompass the sharing of insights and ideas on
+              the different alternatives that are open, as well as challenges,
+              in investing towards Low-Carbon Development projects and
+              initiatives. The speakers and discussion of this session would
+              highlight the role that venture capitals, financial institutions,
+              development banks, as well as commercial banks in the Global North
+              such as in Germany, as well as in the Global South contribute to
+              ensure that sustainability projects are financially catered for
+              and sufficiently funded. Their strategy and contribution to the
+              greater low-carbon development cause would also be further
+              expounded in this session.
+            </p>
+            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
+            <EventSpeaker
+              speakers={[
+                Speakers.JOKO,
+                Speakers.CHRISTIANE,
+                Speakers.WEMPI_SAPUTRA,
+                Speakers.ROYKE_TUMILAAR,
+                Speakers.DARMAWAN_JUNAIDI,
+                Speakers.SUNARSO,
+                Speakers.CHRISTIAN_SEWING,
+                Speakers.ANTJE,
+                Speakers.EDWIN_SYAHRUZAD,
+              ]}
+            />
+          </div>
+        }
+      />
+      <Session
         timeStart="09:00"
         timeEnd="10:30"
         title="Technological Innovation for Low-Carbon Development"

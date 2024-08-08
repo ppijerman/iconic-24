@@ -37,7 +37,7 @@ function Sessions() {
       />
       <Session
         timeStart="09:00"
-        timeEnd="10:00"
+        timeEnd="10:30"
         title="Opening Remarks"
         venue="Foyer, Zentrales Hörsaalgebäude (ZHG)"
         details={
@@ -53,14 +53,19 @@ function Sessions() {
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
-              speakers={[Speakers.HAVAS, Speakers.BERNHARDT, Speakers.SEKAR]}
+              speakers={[
+                Speakers.HAVAS,
+                Speakers.BERNHARDT,
+                Speakers.SEKAR,
+                Speakers.AGNIA,
+              ]}
             />
           </div>
         }
       />
       <Session
-        timeStart="10.00"
-        timeEnd="12.00"
+        timeStart="10.30"
+        timeEnd="12.30"
         title="Ministerial Talk: Financing Low-Carbon Development in Indonesia"
         venue="Main Plenary-Hall (Hall 10), Zentralhörsaal-Gebäude (ZHG)"
         details={
@@ -90,8 +95,8 @@ function Sessions() {
         }
       />
       <Session
-        timeStart="12:00"
-        timeEnd="14:00"
+        timeStart="12:30"
+        timeEnd="13:30"
         title="Lunch Break"
         venue="Foyer, Zentralhörsaal-Gebäude (ZHG)"
         details="Lunch session of all invited guests, partners, and participants of ICONIC 2024 that would also serve as one of the numerous networking opportunities between the diverse participants and stakeholders of ICONIC 2024."
@@ -107,55 +112,10 @@ function PlenarySession() {
         Plenary Session
       </h3>
       <Session
-        timeStart="14:00"
-        timeEnd="15:45"
-        title="Green Financing and Sustainable Investments for Low Carbon Development"
-        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
-        details={
-          <div className="flex flex-col gap-2">
-            <p>
-              The plenary session encompass the sharing of insights and ideas on
-              the different alternatives that are open, as well as challenges,
-              in investing towards Low-Carbon Development projects and
-              initiatives. The speakers and discussion of this session would
-              highlight the role that venture capitals, financial institutions,
-              development banks, as well as commercial banks in the Global North
-              such as in Germany, as well as in the Global South contribute to
-              ensure that sustainability projects are financially catered for
-              and sufficiently funded. Their strategy and contribution to the
-              greater low-carbon development cause would also be further
-              expounded in this session.
-            </p>
-            <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
-            <EventSpeaker
-              speakers={[
-                Speakers.JOKO,
-                Speakers.CHRISTIANE,
-                Speakers.WEMPI_SAPUTRA,
-                Speakers.ROYKE_TUMILAAR,
-                Speakers.DARMAWAN_JUNAIDI,
-                Speakers.SUNARSO,
-                Speakers.CHRISTIAN_SEWING,
-                Speakers.ANTJE,
-                Speakers.EDWIN_SYAHRUZAD,
-              ]}
-            />
-          </div>
-        }
-      />
-
-      <Session
-        timeStart="15:45"
-        timeEnd="16:00"
-        title="Coffee Break"
-        venue="ZHG - Welcoming Hall"
-      />
-
-      <Session
-        timeStart="16:00"
-        timeEnd="17:45"
+        timeStart="13:30"
+        timeEnd="15:15"
         title="Decarbonizing the Industrial and Transport Sectors"
-        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
+        venue="Zentrales Hörsaalgebäude (ZHG) 010"
         details={
           <div className="flex flex-col gap-2">
             <p>
@@ -176,20 +136,17 @@ function PlenarySession() {
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
               speakers={[
-                Speakers.VIERHOUT,
-                Speakers.TONNY,
+                Speakers.RACHMAT,
                 Speakers.BIMO_KUSUMO,
-                Speakers.DJONY,
-                Speakers.KEVIN_KUFS,
-                Speakers.JOCHEN_THEWES,
-                Speakers.DONNY_ARSAL,
-                Speakers.RAHMAD,
-                Speakers.MOHAMAD_FERIADI,
-                Speakers.ARIF_SUHARTONO,
-                Speakers.MMA_INDAH,
-                Speakers.DARMAWAN_PRASODJO,
-                Speakers.NICKE_WIDYAWATI,
+                Speakers.BONDAN_SUSILO,
+                Speakers.HERSTATT,
               ]}
+            />
+            <Session
+              timeStart="15:15"
+              timeEnd="19:00"
+              title="Networking Break"
+              venue="Foyer (Welcoming Hall), Zentrales Hörsaalgebäude (ZHG)"
             />
           </div>
         }

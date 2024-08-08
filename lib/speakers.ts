@@ -36,6 +36,7 @@ import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
 // 00 Opening
 import bernhard from "@/assets/speakers/Prof. Bernhard Brümmer - Vice President Uni Gö.jpg";
 import sekar from "@/assets/team/sekar.jpeg";
+import agnia from "@/assets/team/agnia.jpeg";
 
 // 02_Plenary 1_ Green Financing and Sustainable Investment for LCD
 import sitiNurbaya from "@/assets/speakers/Dr. Siti Nurbaya Bakar - Minister of Environment and Forestry.jpg";
@@ -77,6 +78,7 @@ import limMasulin from "@/assets/speakers/06_Plenary 5_ Decarbonization and Circ
 import indrawanPrabaharyaka from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Indrawan Prabaharyaka, HU Berlin.jpg";
 import dwikorita from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Dwikorita Karnawati, BMKG.png";
 import thomasAuer from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Thomas Auer, Transsolar.jpg";
+import BondanSusilo from "@/assets/speakers/Bondan Susilo.jpeg";
 
 export const Speakers = {
   HAVAS: {
@@ -110,6 +112,12 @@ export const Speakers = {
     title:
       "Professor for International Economic Policy, University of Göttingen",
     image: krisztina,
+  },
+  AGNIA: {
+    name: "Agnia Dewi Larasati",
+    title:
+      "President of the Indonesian Student Association in Germany (PPI Jerman/VIS e.V)",
+    image: agnia,
   },
   FRANK: {
     name: "Frank Bohnet",
@@ -393,5 +401,10 @@ export const Speakers = {
     title:
       "Profesor for Building Technology and Climate Responsive Design, Managing Director of Transsolar",
     image: thomasAuer,
+  },
+  BONDAN_SUSILO: {
+    name: "Bondan Susilo",
+    title: "Head of Environment, PT Astra Internasional Tbk",
+    image: BondanSusilo,
   },
 };
