@@ -36,6 +36,7 @@ import tonny from "@/assets/speakers/Tonny Wagey.jpeg";
 // 00 Opening
 import bernhard from "@/assets/speakers/Prof. Bernhard Brümmer - Vice President Uni Gö.jpg";
 import sekar from "@/assets/team/sekar.jpeg";
+import agnia from "@/assets/team/agnia.jpeg";
 
 // 02_Plenary 1_ Green Financing and Sustainable Investment for LCD
 import sitiNurbaya from "@/assets/speakers/Dr. Siti Nurbaya Bakar - Minister of Environment and Forestry.jpg";
@@ -74,9 +75,18 @@ import georgSchiller from "@/assets/speakers/06_Plenary 5_ Decarbonization and C
 import limMasulin from "@/assets/speakers/06_Plenary 5_ Decarbonization and Circularity in Construction Sector/Lim Masulin, BYOLiving.avif";
 
 //07
-import indrawanPrabaharyaka from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Indrawan Prabaharyaka, HU Berlin.jpg";
+import indrawanPrabaharyaka from "@/assets/speakers/Indrawan Prabaharyaka.png";
 import dwikorita from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Dwikorita Karnawati, BMKG.png";
 import thomasAuer from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Thomas Auer, Transsolar.jpg";
+import BondanSusilo from "@/assets/speakers/Bondan Susilo.jpeg";
+import CandraSutama from "@/assets/speakers/Candra Sutama.jpg";
+import RyanzaPrasetya from "@/assets/speakers/Ryanza Prasetya.jpg";
+import SilviaBenedito from "@/assets/speakers/Silvia Benedito.jpeg";
+import MyrnaAsnawati from "@/assets/speakers/Myrna Asnawati.jpeg";
+import BandungSahari from "@/assets/speakers/Bandung Sahari.jpeg";
+import MarkusEuring from "@/assets/speakers/Markus Euring.jpg";
+import WisnuAdiwijoyo from "@/assets/speakers/Wisnu Adiwijoyo.jpg";
+import YosiasGandhi from "@/assets/speakers/Yosias Gandhi.jpg";
 
 export const Speakers = {
   HAVAS: {
@@ -110,6 +120,12 @@ export const Speakers = {
     title:
       "Professor for International Economic Policy, University of Göttingen",
     image: krisztina,
+  },
+  AGNIA: {
+    name: "Agnia Dewi Larasati",
+    title:
+      "President of the Indonesian Student Association in Germany (PPI Jerman/VIS e.V)",
+    image: agnia,
   },
   FRANK: {
     name: "Frank Bohnet",
@@ -200,7 +216,7 @@ export const Speakers = {
     name: "Ryanda Dwi Ryanza",
     title:
       "Director of Climate Change Adaptation, Ministry of National Development Planning (BAPPENAS)",
-    image: placeholderPic,
+    image: RyanzaPrasetya,
   },
   HERSTATT: {
     name: "Prof. Dr. Dr. h.c. Cornelia Herstatt",
@@ -359,7 +375,7 @@ export const Speakers = {
     name: "Dr. Markus Euring",
     title:
       "Researcher, Chair of Wood Technology and Wood-based Composites, University of Göttingen",
-    image: placeholderPic,
+    image: MarkusEuring,
   },
   DWIKORITA_KARNAWATI: {
     name: "Prof. Dwikorita Karnawati",
@@ -371,7 +387,7 @@ export const Speakers = {
     name: "Prof. Silvia Benedito",
     title:
       "Associate Professor at Harvard Graduate School of Design and Climate Adaptation Consultant at UNIOLA",
-    image: placeholderPic,
+    image: SilviaBenedito,
   },
   RISMA_RIZKIA: {
     name: "Risma Rizkia Nurdianti",
@@ -380,13 +396,14 @@ export const Speakers = {
   },
   WISNU_HARTO: {
     name: "Wisnu Harto Adiwijoyo, Ph.D.",
-    title: "",
-    image: placeholderPic,
+    title: "Ph.D., Research Analyst at the World Bank Group",
+    image: WisnuAdiwijoyo,
   },
   YOSIAS_GANDHI: {
     name: "Yosias Gandhi",
-    title: "",
-    image: placeholderPic,
+    title:
+      "Ph.D Candidate in the Department of Tropical Silviculture and Forest Ecology, Georg-August-University of Göttingen",
+    image: YosiasGandhi,
   },
   THOMAS_AUER: {
     name: "Thomas Auer",
@@ -394,4 +411,62 @@ export const Speakers = {
       "Profesor for Building Technology and Climate Responsive Design, Managing Director of Transsolar",
     image: thomasAuer,
   },
+  BONDAN_SUSILO: {
+    name: "Bondan Susilo",
+    title: "Head of Environment, PT Astra Internasional Tbk",
+    image: BondanSusilo,
+  },
+  CANDRA_SUTAMA: {
+    name: "Candra Sutama",
+    title: "COO @ Energy Academy Indonesia (ECADIN)",
+    image: CandraSutama,
+  },
+  MYRNA_ASNAWATI: {
+    name: "Dr. Myrna Asnawati Safitri",
+    title:
+      "Deputy of Environment and Natural Ressources (IKN, the new capital city of Indonesia)",
+    image: MyrnaAsnawati,
+  },
+  BANDUNG_SAHARI: {
+    name: "Bandung Sahari",
+    title: "Vice President of Sustainability, PT. Astra Agro Lestari Tbk",
+    image: BandungSahari,
+  },
 };
+
+export const FixedSpeakersList = [
+  Speakers.HAVAS,
+  Speakers.SITI_NURBAYA,
+  Speakers.BERNHARDT,
+  Speakers.DESTI,
+  Speakers.SVENJA,
+  Speakers.RACHMAT,
+  Speakers.BIMO_KUSUMO,
+  Speakers.BONDAN_SUSILO,
+  Speakers.HERSTATT,
+  Speakers.TONNY,
+  Speakers.ANTJE,
+  Speakers.RUKKA,
+  Speakers.GEORG,
+  Speakers.JOKO,
+  Speakers.KLEINSCHMIT,
+  Speakers.CANDRA_SUTAMA,
+  Speakers.RYANZA,
+  Speakers.DWIKORITA_KARNAWATI,
+  Speakers.MYRNA_ASNAWATI,
+  Speakers.SILVIA_BENEDITO,
+  Speakers.PRABAHARYAKA,
+  Speakers.BANDUNG_SAHARI,
+  Speakers.GEORG_SCHILLER,
+  Speakers.LIM_MASULIN,
+  Speakers.MARKUS_EURING,
+  Speakers.SCHWEGLER,
+  Speakers.RYANZA,
+];
+
+export const PANELISTS = [
+  Speakers.WISNU_HARTO,
+  Speakers.PRABAHARYAKA,
+  Speakers.DESTI,
+  Speakers.YOSIAS_GANDHI,
+]

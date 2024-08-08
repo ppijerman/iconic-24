@@ -30,15 +30,15 @@ export function IconicSchedule() {
 
   const plenarySessions = [
     {
-      name: "Opening Ceremony, Ministerial Talk & Plenary Sessions",
+      name: "Opening Ceremony, Ministerial Talk, and Plenary Sessions",
       date: "September 4th 2024",
     },
     {
-      name: "Plenary Session, Parallel Conference & Meet the Industry",
+      name: "Plenary Sessions",
       date: "September 5th 2024",
     },
     {
-      name: "Plenary Session, Parallel Conference & Closing Ceremony",
+      name: "Plenary Session, Meet the Industry, and Parallel Conference",
       date: "September 6th 2024",
     },
   ];

@@ -1,11 +1,12 @@
 import React from "react";
 import { Speakers } from "@/lib/speakers";
 import { SPONSORS_ICONIC } from "@/lib/companies";
-
+import Link from "next/link";
 import { EventSpeaker } from "../event-speakers";
 import { EventSponsor } from "../event-sponsors";
 
 import { Session } from "../event-session";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 // Main EventDetails Component
 export function EventDetails() {
@@ -25,7 +26,9 @@ function Rundown() {
   return (
     <div className="flex flex-col gap-12 leading-relaxed">
       <PreSession />
-      <ParallelSessions />
+      <SharedDetailsParallelSession />
+      <ParallelSessionsOne />
+      <ParallelSessionsTwo />
       <MeetTheIndustry />
     </div>
   );
@@ -47,7 +50,7 @@ function PreSession() {
         timeStart="08:45"
         timeEnd="09:00"
         title="Opening Remarks"
-        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
+        venue="Zenraler Hörsaalgebäude (ZHG) 010"
         details={
           <div className="flex flex-col gap-2">
             <p>
@@ -64,66 +67,17 @@ function PreSession() {
 }
 
 // Parallel Sessions Component
-function ParallelSessions() {
+function ParallelSessionsOne() {
   return (
     <div className="flex flex-col gap-8 leading-relaxed">
       <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
-        Parallel Conference Sessions
+        Parallel Conference Session 1
       </h3>
       <Session
         timeStart="09:00"
-        timeEnd="10:30"
-        title="Technological Innovation for Low-Carbon Development"
-        venue="ZHG - Conference Venue 1"
-        details={
-          <div className="flex flex-col gap-2">
-            <p>
-              This session will explore innovative technical solutions
-              characterized by low emission intensity compared to
-              state-of-the-art alternatives. This session will highlight the
-              importance of such technologies in mitigating climate change and
-              advancing low-carbon development. Discussions will focus on
-              increasing the utilization of renewable resources, optimizing
-              energy efficiency, and developing competitive alternatives to
-              fossil fuels. Through this scholarly exchange, participants will
-              gain a comprehensive understanding of the latest advancements and
-              strategies in low-carbon technology.
-            </p>
-            <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
-            <EventSpeaker speakers={[Speakers.DESTI]} />
-          </div>
-        }
-      />
-      <Session
-        timeStart="10:30"
-        timeEnd="12:00"
-        title="Low-Carbon Development in Built Environment"
-        venue="ZHG - Conference Venue 2"
-        details={
-          <div className="flex flex-col gap-2">
-            <p>
-              This session will explore the importance of integrating low carbon
-              principles and practices within the built environment. Researchers
-              will present diverse approaches, innovative technologies, and
-              policy frameworks driving this transformative shift. Topics
-              include architectural and landscape design, urban and regional
-              planning, building materials, transportation infrastructure, and
-              policy interventions. The session aims to unveil the potential for
-              transformative change and scalable solutions, fostering resilient,
-              livable cities and communities that balance human needs with
-              environmental imperatives.
-            </p>
-            <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
-            <EventSpeaker speakers={[Speakers.PRABAHARYAKA]} />
-          </div>
-        }
-      />
-
-      <Session
-        timeStart="14:00"
-        timeEnd="15:30"
+        timeEnd="13:00"
         title="Economic and Social Implication of LCD"
-        venue="Conference Hall 1, Zentrales Hörsaalgebäude (ZHG)"
+        venue="Zentrales Hörsaalgebäude (ZHG) 006"
         details={
           <div className="flex flex-col gap-2">
             <p>
@@ -148,12 +102,46 @@ function ParallelSessions() {
           </div>
         }
       />
+      <Session
+        timeStart="09:00"
+        timeEnd="13:00"
+        title="Technological Innovation for Low-Carbon Development"
+        venue="Zentrales Hörsaalgebäude (ZHG) 007"
+        details={
+          <div className="flex flex-col gap-2">
+            <p>
+              This session will explore innovative technical solutions
+              characterized by low emission intensity compared to
+              state-of-the-art alternatives. This session will highlight the
+              importance of such technologies in mitigating climate change and
+              advancing low-carbon development. Discussions will focus on
+              increasing the utilization of renewable resources, optimizing
+              energy efficiency, and developing competitive alternatives to
+              fossil fuels. Through this scholarly exchange, participants will
+              gain a comprehensive understanding of the latest advancements and
+              strategies in low-carbon technology.
+            </p>
+            <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
+            <EventSpeaker speakers={[Speakers.DESTI]} />
+          </div>
+        }
+      />
+    </div>
+  );
+}
+
+function ParallelSessionsTwo() {
+  return (
+    <div className="flex flex-col gap-8 leading-relaxed">
+      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
+        Parallel Conference Session 2
+      </h3>
 
       <Session
-        timeStart="15:30"
-        timeEnd="17:00"
+        timeStart="14:00"
+        timeEnd="18:00"
         title="Political Economy of LCD within Global North and South Dynamics"
-        venue="ZHG - Conference Venue 2"
+        venue="Zentrales Hörsaalgebäude (ZHG) 006"
         details={
           <div className="flex flex-col gap-2">
             <p>
@@ -180,7 +168,93 @@ function ParallelSessions() {
           </div>
         }
       />
+
+      <Session
+        timeStart="14:00"
+        timeEnd="18:00"
+        title="Low-Carbon Development in Built Environment"
+        venue="Zentrales Hörsaalgebäude (ZHG) 007"
+        details={
+          <div className="flex flex-col gap-2">
+            <p className="">
+              This session will explore the importance of integrating low carbon
+              principles and practices within the built environment. Researchers
+              will present diverse approaches, innovative technologies, and
+              policy frameworks driving this transformative shift. Topics
+              include architectural and landscape design, urban and regional
+              planning, building materials, transportation infrastructure, and
+              policy interventions. The session aims to unveil the potential for
+              transformative change and scalable solutions, fostering resilient,
+              livable cities and communities that balance human needs with
+              environmental imperatives.
+            </p>
+            <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
+            <EventSpeaker speakers={[Speakers.PRABAHARYAKA]} />
+          </div>
+        }
+      />
     </div>
+  );
+}
+
+function SharedDetailsParallelSession() {
+  return (
+    <section className="bg-background text-foreground pt-10 pb-4">
+      <div className="">
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+              Conference Session Details
+            </h2>
+            <p className="text-muted-foreground">
+              Learn more about the format of the ICONIC parallel conference
+              sessions.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h3 className="text-lg font-medium">Presenters</h3>
+                <p className="text-muted-foreground">
+                  Researchers can deliver their findings either onsite or
+                  online.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium">Audience</h3>
+                <p className="text-muted-foreground">
+                  Attendees can participate in the sessions onsite or remotely.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h3 className="text-lg font-medium">Date & Time</h3>
+                <p className="text-muted-foreground">
+                  Friday, September 6th, 2024 | 09:00 - 18:00 CEST
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium">Location</h3>
+                <p className="text-muted-foreground">
+                  Zentrales Hörsaalgebäude - Lecture Hall 1 & 2, University of
+                  Göttingen
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium">Session Format</h3>
+              <p className="text-muted-foreground">
+                Conference session and presentation of submissions. Each
+                presenter has 10 minutes to share their findings, followed by a
+                5-minute Q&A. The chair will summarize the discussions and
+                suggest future research and policy directions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -193,65 +267,46 @@ function MeetTheIndustry() {
       </h3>
       <Session
         timeStart="09:00"
-        timeEnd="10:30"
-        title="Opening Talk"
-        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
+        timeEnd="10:45"
+        title="Green Financing and Sustainable Investments for Low Carbon Development"
+        venue="Zentrales Hörsaalgebäude (ZHG) 010"
         details={
           <div className="flex flex-col gap-2">
             <p>
-              In order to meet the goal of low carbon development,
-              collaborations are needed among different stakeholders, including
-              government policymakers, financial institutions, industries, and
-              the academic community. Industries serve as the frontline actors
-              in the collective effort to mitigate climate change. With
-              Indonesia&apos;s Nationally Determined Contribution (NDC) aiming
-              to reduce its GHG emissions by 32% unconditionally and 43%
-              conditionally, support from innovative enterprises is crucial.
-              This collaboration will help shape
-              investment-and-business-friendly policies that are socially just
-              and inclusive. ICONIC&apos;s main goal is to provide the platform
-              for the companies which sponsor our event to pitch their business
-              ideas and enable further discussion in attendance of the invited
-              ministerial officers or government, investors, and academics as to
-              how to advance low-carbon development projects in developing
-              countries, especially but not limited to Indonesia.
+              The plenary session encompass the sharing of insights and ideas on
+              the different alternatives that are open, as well as challenges,
+              in investing towards Low-Carbon Development projects and
+              initiatives. The speakers and discussion of this session would
+              highlight the role that venture capitals, financial institutions,
+              development banks, as well as commercial banks in the Global North
+              such as in Germany, as well as in the Global South contribute to
+              ensure that sustainability projects are financially catered for
+              and sufficiently funded. Their strategy and contribution to the
+              greater low-carbon development cause would also be further
+              expounded in this session.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
-              speakers={[Speakers.JOKO, Speakers.TONNY, Speakers.ANTJE]}
+              speakers={[
+                Speakers.TONNY,
+                Speakers.ANTJE,
+                Speakers.JOKO,
+                Speakers.WEMPI_SAPUTRA,
+              ]}
             />
-          </div>
-        }
-      />
-      <Session
-        timeStart="10:30"
-        timeEnd="12:00"
-        title="Presentation of Companies"
-        venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
-        details={
-          <div className="flex flex-col gap-2">
-            <p>
-              The start-ups and companies are chosen based on their influential
-              impacts on low-carbon development in developing countries,
-              especially Indonesia, and related policy-making processes. They
-              will present their company profile and activity in attendance of
-              the invited investor and Indonesian ministerial officers.
-            </p>
-            <ul className="list-disc list-inside">
-              <li>TREEO</li>
-              <li>Qualitas Sertifikasi Indonesia (QSI)</li>
-              <li>
-                International Sustainability and Carbon Certification (ISCC)
-              </li>
-              <li>WPD GmbH</li>
-              <li>Astra Internasional</li>
-            </ul>
           </div>
         }
       />
 
       <Session
-        timeStart="14:00"
+        timeStart="10:40"
+        timeEnd="11:00"
+        title="Coffee Break"
+        venue="Foyer, Zentrales Hörsaalgebäude (ZHG)"
+      />
+
+      <Session
+        timeStart="11:00"
         timeEnd="17:00"
         title="Presentation of Companies"
         venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
@@ -265,11 +320,73 @@ function MeetTheIndustry() {
               the invited investor and Indonesian ministerial officers.
             </p>
             <ul className="list-disc list-inside">
-              <li>ECADIN</li>
-              <li>Byo Living*</li>
-              <li>PT. Kayu Lapis Indonesia*</li>
-              <li>IKN Authority*</li>
+              <li>
+                <a
+                  href="https://treeo.one"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold hover:text-accent transition hover:underline "
+                >
+                  TREEO
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.qualitasertifikasi.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold hover:text-accent transition hover:underline "
+                >
+                  Qualitas Sertifikasi Indonesia (QSI)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.astra.co.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold hover:text-accent transition hover:underline "
+                >
+                  ASTRA Internasional
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.zinkpower.com/home.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold hover:text-accent transition hover:underline "
+                >
+                  Zinkpower Group
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://byoliving.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold hover:text-accent transition hover:underline "
+                >
+                  BYO Living
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.paragon-innovation.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold hover:text-accent hover:underline  transition"
+                >
+                  Paragon Technology and Innovation
+                </a>
+              </li>
             </ul>
+            <Link href="#">
+              <p className="flex gap-2 items-center text-primary2 hover:text-accent2 transition font-bold text-lg">
+                Check out their company profiles{" "}
+                <ArrowRightIcon className="h-6 w-6" />
+              </p>
+            </Link>
           </div>
         }
       />

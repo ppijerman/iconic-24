@@ -95,7 +95,7 @@ export function HomePage() {
               High Impact
             </h1>
           </motion.div>
-          <SecondCall />
+          {/* <SecondCall /> */}
           <div className="flex flex-col md:flex-row justify-center items-center w-full text-secondary">
             <div className="bg-gradient-to-r from-[#e3e3e5] to-transparent text-2xl w-full flex flex-col gap-2 font-semibold border-l-8 border-secondary pl-3">
               <h2 className=" font-bold md:text-3xl drop-shadow-lg shadow-white">
@@ -103,18 +103,13 @@ export function HomePage() {
               </h2>
               <h2>September 4th - 6th 2024</h2>
             </div>
-          </div>
-          <div className="flex flex-col md:flex-row w-full gap-y-4 gap-x-10 py-10 px-6">
-            <Link href={PATHS.SUBMISSION} className="w-full">
-              <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
-                <h1 className="font-bold ">Submit Your Abstract</h1>
-              </div>
-            </Link>
-            <Link href={PATHS.EVENT_REGISTRATION} className="w-full">
-              <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
-                <h1 className="font-bold ">Get your tickets!</h1>
-              </div>
-            </Link>
+            <div className="flex flex-col md:flex-row w-full gap-y-4 gap-x-10 py-10 px-6">
+              <Link href={PATHS.EVENT_REGISTRATION} className="w-full">
+                <div className="text-2xl flex flex-row gap-2 bg-gradient-to-r from-transparent via-white/70 to-transparent text-secondary items-center justify-center ring-2 ring-secondary group py-5 px-16 hover:text-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
+                  <h1 className="font-bold ">Get your tickets!</h1>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

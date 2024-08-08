@@ -17,24 +17,23 @@ export const metadata = {
 
 const events = [
   {
-    title: "Day 1 - Ministerial Talk & Optional City Trip",
+    title: "Day 1 - Opening Ceremony, Ministerial Talk, and Plenary Session",
     href: PATHS.DAY_ONE,
   },
   {
-    title: "Day 2 - Plenary Sessions, Parallel Conference & Meet the Industry",
+    title: "Day 2 - Plenary Sessions",
     href: PATHS.DAY_TWO,
   },
   {
-    title: "Day 3 - Plenary Sessions, Parallel Conference & Closing Ceremony",
+    title:
+      "Day 3 - Plenary Sessions, Meet the Industry, and Parallel Conference",
     href: PATHS.DAY_THREE,
   },
 ];
 
 export default function Page() {
   return (
-    <main
-      className="min-h-screen flex justify-center w-full"
-    >
+    <main className="min-h-screen flex justify-center w-full">
       <div className="container pb-32 pt-10 md:pt-20">
         <h1 className="font-bold text-3xl md:text-5xl">EVENTS</h1>
         <div className="my-16 flex flex-col gap-10">

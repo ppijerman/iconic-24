@@ -9,7 +9,7 @@ export default function DayOne() {
     <main className="min-h-screen flex justify-center bg-white">
       <div className="container py-12 md:py-16 lg:py-20">
         <h1 className="font-bold text-3xl md:text-5xl">
-          Day 1 - Ministerial Talk & Optional City Trip
+          Day 1 - Opening Ceremony, Ministerial Talk, and Plenary Session
         </h1>
         <div className="flex flex-col gap-10 py-4 md:py-6 lg:py-8">
           {/* Add the following content */}
@@ -23,20 +23,16 @@ export default function DayOne() {
                 </span>{" "}
                 of ICONIC 2024&apos;s range of events would start with an
                 official opening session by the Indonesian Ambassador for
-                Germany, the president of our host university, the University of
-                Göttingen, and the director of ICONIC 2024. It would then be
-                followed by a Ministerial Talk speech and discussion session on
-                the topic of low-carbon development financing, with ministerial
-                guest speakers from Indonesia and Germany.
+                Germany, the vice president of our host university, the
+                University of Göttingen and the director of ICONIC 2024. It
+                would then be followed by a keynote speech and discussion
+                session on the topic of low-carbon development financing, with
+                government officials from Indonesia and Germany.
               </p>
               <p>
-                Afterwards, a lunch break which will be attended by all of
-                ICONIC 2024&apos;s guest speakers, scientific chairs, as well as
-                industry presenters and partners as a networking opportunity.
-                The range of events for the day would then conclude with a city
-                trip delving into and peeking a glimpse into Göttingen&apos;s
-                world of research and academic pedigree by visiting a few
-                research centers and historical sites.
+                Afterwards, proceeding after the lunch break, the first plenary
+                session would proceed, which will cover topics of
+                decarbonization efforts in the industrial and transport sectors.
               </p>
             </div>
           </section>
