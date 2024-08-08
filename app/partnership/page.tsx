@@ -30,6 +30,9 @@ import logoEnterNusantara from "@/assets/mediaPartner/EnterNusantara.png";
 import logoDoctrineUK from "@/assets/mediaPartner/DoctrineUK.png";
 import logoIGMadeAndi from "@/assets/mediaPartner/madeandi.png";
 import logoDW from "@/assets/mediaPartner/logoDW.png";
+import logoCase from "@/assets/mediaPartner/Case-Logo.png";
+import logoBbbc from "@/assets/mediaPartner/Salinan logo-bbbbc.png";
+import logoFapet from "@/assets/mediaPartner/Salinan Logo_FAPET_UNPAD.jpeg";
 
 export const metadata: Metadata = {
   title: APP_NAME + " | " + "Partnership",
@@ -38,16 +41,16 @@ export const metadata: Metadata = {
 
 const sponsorsPlatinum = [
   {
+    name: "KBRI Berlin",
+    logo: logoKBRIBerlin,
+  },
+  {
     name: "Treeo",
     logo: logoTreeo,
   },
   {
     name: "Astra",
     logo: logoAstra,
-  },
-  {
-    name: "KBRI Berlin",
-    logo: logoKBRIBerlin,
   },
   {
     name: "University of Göttingen",
@@ -90,6 +93,18 @@ const mediaPartners = [
   {
     name: "Lindungi Hutan",
     logo: logoLindungiHutan,
+  },
+  {
+    name: "BBBC",
+    logo: logoBbbc,
+  },
+  {
+    name: "FAPET UNPAD",
+    logo: logoFapet,
+  },
+  {
+    name: "Case",
+    logo: logoCase,
   },
   {
     name: "PPIDev",
@@ -182,7 +197,6 @@ export default function Component() {
                   src={partner.logo}
                   alt={partner.name}
                   width={150}
-                  height={150}
                 />
               </div>
             ))}
