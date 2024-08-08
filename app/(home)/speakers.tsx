@@ -5,26 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { PATHS } from "@/lib/constants";
+import { FixedSpeakersList } from "@/lib/speakers";
 
 import styles from "./speakersScrollBar.module.css";
 
 import { Speakers } from "@/lib/speakers";
 
 export function SpeakersSection() {
-  const speakers = [
-    Speakers.HAVAS,
-    Speakers.DESTI,
-    Speakers.TONNY,
-    Speakers.ANTJE,
-    Speakers.RUKKA,
-    Speakers.GEORG,
-    Speakers.JOKO,
-    Speakers.RACHMAT,
-    Speakers.HERSTATT,
-    Speakers.KLEINSCHMIT,
-    Speakers.SCHWEGLER,
-    Speakers.RYANZA,
-  ];
+  const speakers = FixedSpeakersList;
 
   return (
     <section

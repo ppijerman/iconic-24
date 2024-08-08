@@ -81,6 +81,10 @@ import thomasAuer from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigatio
 import BondanSusilo from "@/assets/speakers/Bondan Susilo.jpeg";
 import CandraSutama from "@/assets/speakers/Candra Sutama.jpg";
 import RyanzaPrasetya from "@/assets/speakers/Ryanza Prasetya.jpg";
+import SilviaBenedito from "@/assets/speakers/Silvia Benedito.jpeg";
+import MyrnaAsnawati from "@/assets/speakers/Myrna Asnawati.jpeg";
+import BandungSahari from "@/assets/speakers/Bandung Sahari.jpeg";
+import MarkusEuring from "@/assets/speakers/Markus Euring.jpg";
 
 export const Speakers = {
   HAVAS: {
@@ -369,7 +373,7 @@ export const Speakers = {
     name: "Dr. Markus Euring",
     title:
       "Researcher, Chair of Wood Technology and Wood-based Composites, University of Göttingen",
-    image: placeholderPic,
+    image: MarkusEuring,
   },
   DWIKORITA_KARNAWATI: {
     name: "Prof. Dwikorita Karnawati",
@@ -381,7 +385,7 @@ export const Speakers = {
     name: "Prof. Silvia Benedito",
     title:
       "Associate Professor at Harvard Graduate School of Design and Climate Adaptation Consultant at UNIOLA",
-    image: placeholderPic,
+    image: SilviaBenedito,
   },
   RISMA_RIZKIA: {
     name: "Risma Rizkia Nurdianti",
@@ -414,4 +418,30 @@ export const Speakers = {
     title: "COO @ Energy Academy Indonesia (ECADIN)",
     image: CandraSutama,
   },
+  MYRNA_ASNAWATI: {
+    name: "Dr. Myrna Asnawati Safitri",
+    title:
+      "Deputy of Environment and Natural Ressources (IKN, the new capital city of Indonesia)",
+    image: MyrnaAsnawati,
+  },
+  BANDUNG_SAHARI: {
+    name: "Bandung Sahari",
+    title: "Vice President of Sustainability, PT. Astra Agro Lestari Tbk",
+    image: BandungSahari,
+  },
 };
+
+export const FixedSpeakersList = [
+  Speakers.HAVAS,
+  Speakers.DESTI,
+  Speakers.TONNY,
+  Speakers.ANTJE,
+  Speakers.RUKKA,
+  Speakers.GEORG,
+  Speakers.JOKO,
+  Speakers.RACHMAT,
+  Speakers.HERSTATT,
+  Speakers.KLEINSCHMIT,
+  Speakers.SCHWEGLER,
+  Speakers.RYANZA,
+];
