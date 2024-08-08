@@ -79,6 +79,8 @@ import indrawanPrabaharyaka from "@/assets/speakers/07_Plenary 6_ Adaptation and
 import dwikorita from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Dwikorita Karnawati, BMKG.png";
 import thomasAuer from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Thomas Auer, Transsolar.jpg";
 import BondanSusilo from "@/assets/speakers/Bondan Susilo.jpeg";
+import CandraSutama from "@/assets/speakers/Candra Sutama.jpg";
+import RyanzaPrasetya from "@/assets/speakers/Ryanza Prasetya.jpg";
 
 export const Speakers = {
   HAVAS: {
@@ -208,7 +210,7 @@ export const Speakers = {
     name: "Ryanda Dwi Ryanza",
     title:
       "Director of Climate Change Adaptation, Ministry of National Development Planning (BAPPENAS)",
-    image: placeholderPic,
+    image: RyanzaPrasetya,
   },
   HERSTATT: {
     name: "Prof. Dr. Dr. h.c. Cornelia Herstatt",
@@ -406,5 +408,10 @@ export const Speakers = {
     name: "Bondan Susilo",
     title: "Head of Environment, PT Astra Internasional Tbk",
     image: BondanSusilo,
+  },
+  CANDRA_SUTAMA: {
+    name: "Candra Sutama",
+    title: "COO @ Energy Academy Indonesia (ECADIN)",
+    image: CandraSutama,
   },
 };
