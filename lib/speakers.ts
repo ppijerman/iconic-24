@@ -219,7 +219,7 @@ export const Speakers = {
     image: RyanzaPrasetya,
   },
   HERSTATT: {
-    name: "Prof. Dr. Dr. h.c. Cornelia Herstatt",
+    name: "Prof. Dr. Dr. h.c. Cornelius Herstatt",
     title:
       "Professor for Technology and Innovation Management, Technical University of Hamburg",
     image: herstatt,
@@ -251,7 +251,7 @@ export const Speakers = {
   GEORG_SCHILLER: {
     name: "Dr. -Ing. Georg Schiller",
     title:
-      "Head of Research Group Anthropogenic and Natural Resources, Leibniz Institute of Ecological Urban and Regional Development, University of Göttingen",
+      "Head of Research Group Anthropogenic and Natural Resources, Leibniz Institute of Ecological, Urban and Regional Development",
     image: georgSchiller,
   },
   PRABAHARYAKA: {
