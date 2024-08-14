@@ -16,7 +16,6 @@ import logoKBRIBerlin from "@/assets/sponsors/Platinum_KBRI.jpeg";
 import logoTreeo from "@/assets/sponsors/Platinum_Treeo.png";
 import logoAstra from "@/assets/sponsors/Platinum_Astra.png";
 import logoQSI from "@/assets/sponsors/Platinum_QSI.png";
-import logoKJRIFrankfurt from "@/assets/sponsors/Silver_KJRI.png";
 import logoZinkPower from "@/assets/sponsors/Silver_Zinkpower.png";
 
 import logoPPID from "@/assets/mediaPartner/PPID.png";
@@ -33,6 +32,7 @@ import logoDW from "@/assets/mediaPartner/logoDW.png";
 import logoCase from "@/assets/mediaPartner/Case-Logo.png";
 import logoBbbc from "@/assets/mediaPartner/Salinan logo-bbbbc.png";
 import logoFapet from "@/assets/mediaPartner/Salinan Logo_FAPET_UNPAD.jpeg";
+import logoParagon from "@/assets/sponsors/Platinum_Paragon.png";
 
 export const metadata: Metadata = {
   title: APP_NAME + " | " + "Partnership",
@@ -64,13 +64,13 @@ const sponsorsPlatinum = [
     name: "QSI",
     logo: logoQSI,
   },
+  {
+    name: "Paragon",
+    logo: logoParagon,
+  },
 ];
 
 const sponsorsSilver = [
-  {
-    name: "KJRI Frankfurt",
-    logo: logoKJRIFrankfurt,
-  },
   {
     name: "Zink Power",
     logo: logoZinkPower,
@@ -196,13 +196,13 @@ export default function Component() {
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  width={150}
+                  className="object-contain w-44 h-20"
                 />
               </div>
             ))}
           </div>
         </div>
-        <div className="w-full pb-10 flex flex-col items-center gap-5">
+        {/* <div className="w-full pb-10 flex flex-col items-center gap-5">
           <div className="flex items-center justify-center gap-5 mt-5">
             <Image
               width="50"
@@ -218,7 +218,7 @@ export default function Component() {
           <div className="w-full flex justify-center flex-wrap gap-5 ">
             <p className="text-2xl">TO BE ANNOUNCED</p>
           </div>
-        </div>
+        </div> */}
         <div className="w-full pb-10 flex flex-col items-center gap-5">
           <div className="flex items-center justify-center gap-5 mt-5">
             <Image
@@ -277,8 +277,8 @@ export default function Component() {
           </div>
         </div>
       </section>
-      <section className="px-10">
-        <div className="container p-10 text-center rounded-xl">
+      <section className="container max-w-6xl">
+        <div className="py-10 text-center rounded-xl">
           <h2 className="text-4xl font-bold mb-8">Our Media Partners</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
             {mediaPartners.map((partner) => (
@@ -297,7 +297,7 @@ export default function Component() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col container py-12 md:py-16 lg:py-20">
+      <div className="flex flex-col container py-12 md:py-16 lg:py-20 max-w-6xl">
         <div className="flex flex-col md:flex-row gap-5 py-5 justify-center md:justify-between items-center w-full">
           <div className="flex flex-col gap-3">
             <h1 className="text-4xl font-bold">Contact us for partnership</h1>

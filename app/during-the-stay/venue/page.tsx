@@ -2,11 +2,14 @@ import Image from "next/image";
 import zhg1 from "@/assets/venue/Classroom.png";
 import zhg2 from "@/assets/venue/Foyer.png";
 import zhg3 from "@/assets/venue/Classroom_2.png";
+import floorplan from "@/assets/Graphics/floorplan_venue.png";
+import floorplan2 from "@/assets/venue/floorplan.png";
 
 import { APP_NAME } from "@/lib/constants";
-import { ZoomableImage } from "./zoomable-image";
 import lageplan from "@/assets/venue/lageplan_stadt.png";
+import { ZoomableImage } from "./zoomable-image";
 import React from "react";
+import { VenueImageCarousel } from "./venue-image-carousel";
 
 interface BusIconProps extends React.SVGProps<SVGSVGElement> {}
 interface CarIconProps extends React.SVGProps<SVGSVGElement> {}
@@ -27,6 +30,9 @@ export default function Venue() {
         </div>
         <div className="flex flex-col gap-2 py-12 md:py-16 lg:py-20">
           <h1 className="text-3xl md:text-4xl font-bold">Venue Floorplan</h1>
+          <div className="px-4">
+            <VenueImageCarousel />
+          </div>
         </div>
         <div className="flex flex-col gap-2 py-12 md:py-16 lg:py-20">
           <h1 className="text-3xl md:text-4xl font-bold">GETTING THERE</h1>
