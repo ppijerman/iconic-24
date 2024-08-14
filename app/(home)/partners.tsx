@@ -13,9 +13,9 @@ import logoUniGoe from "@/assets/sponsors/Platinum_University of Göttingen/GOE_
 import logoKBRIBerlin from "@/assets/sponsors/Platinum_KBRI.jpeg";
 import logoTreeo from "@/assets/sponsors/Platinum_Treeo.png";
 import logoZink from "@/assets/sponsors/Silver_Zinkpower.png";
-import logoKJRIFrankfurt from "@/assets/sponsors/Silver_KJRI.png";
 import logoAstra from "@/assets/sponsors/Platinum_Astra.png";
 import logoEcadin from "@/assets/sponsors/ECADIN_Bright.webp";
+import logoParagon from "@/assets/sponsors/Platinum_Paragon.png";
 
 const scrollVariants = {
   animate: {
@@ -62,8 +62,8 @@ export function Partners() {
       logo: logoZink,
     },
     {
-      name: "KJRI Frankfurt",
-      logo: logoKJRIFrankfurt ,
+      name: "Paragon",
+      logo: logoParagon,
     }
   ];
 
