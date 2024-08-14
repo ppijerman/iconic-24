@@ -97,13 +97,13 @@ export const scientificCommittee = [
       "Ph.D. Candidate Animal Nutrition and Rangeland Management, Universität Hohenheim",
     occupation: "Researcher in Universität Hohenheim, AFENUE IPB, FAPET UNPAD",
   },
-  {
-    imageSrc: kemal,
-    name: "Kemal Firdaus",
-    position: "Deputy Coordinator",
-    education: "Ph.D. Candidate Mathematics, Universität Hamburg",
-    occupation: "Research Associate, Universität Hamburg",
-  },
+  // {
+  //   imageSrc: kemal,
+  //   name: "Kemal Firdaus",
+  //   position: "Deputy Coordinator",
+  //   education: "Ph.D. Candidate Mathematics, Universität Hamburg",
+  //   occupation: "Research Associate, Universität Hamburg",
+  // },
 ];
 
 export const teams = [
@@ -259,13 +259,13 @@ export const teams = [
   {
     team: "Fundraising & Partnership",
     members: [
-      {
-        imageSrc: taqi,
-        name: "M. Rafi Taqiyyuddiin",
-        position: "Head of Fundraising & Partnership",
-        education: "B.Sc Transport System",
-        university: "TU Berlin",
-      },
+      // {
+      //   imageSrc: taqi,
+      //   name: "M. Rafi Taqiyyuddiin",
+      //   position: "Head of Fundraising & Partnership",
+      //   education: "B.Sc Transport System",
+      //   university: "TU Berlin",
+      // },
       {
         imageSrc: nata,
         name: "Daffa Aushafi Nata",
@@ -273,13 +273,13 @@ export const teams = [
         education: "B.A.Sc Industrial Engineering",
         university: "Hochschule Darmstadt",
       },
-      {
-        imageSrc: maulana,
-        name: "Muhammad Maulana",
-        position: "Staff of Fundraising & Partnership",
-        education: "M.A. National and International Administration Policy",
-        university: "Universität Postdam",
-      },
+      // {
+      //   imageSrc: maulana,
+      //   name: "Muhammad Maulana",
+      //   position: "Staff of Fundraising & Partnership",
+      //   education: "M.A. National and International Administration Policy",
+      //   university: "Universität Postdam",
+      // },
       {
         imageSrc: tazya,
         name: "Iqlima K. Mumtazya Harmansyah",
