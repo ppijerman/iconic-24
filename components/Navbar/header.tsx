@@ -39,12 +39,12 @@ const navItems: NavItem[] = [
       {
         href: PATHS.OUR_TEAM,
         label: "Our Team",
-        description: "Meet our dedicated team",
+        description: "Meet our dedicated ICONIC 2024 team",
       },
       {
         href: PATHS.REVIEWERS,
         label: "Reviewers",
-        description: "Our panel of reviewers",
+        description: "Our panel of abstract reviewers",
       },
       {
         href: PATHS.JOIN_THE_MOVEMENT,
@@ -65,7 +65,7 @@ const navItems: NavItem[] = [
       {
         href: PATHS.SPEAKERS,
         label: "Speakers",
-        description: "Meet our list of potential speakers",
+        description: "Meet our list of speakers",
       },
       {
         href: PATHS.SUBJECT,
