@@ -80,7 +80,7 @@ import dwikorita from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation
 import thomasAuer from "@/assets/speakers/07_Plenary 6_ Adaptation and Mitigation in the Built Environment in Heating Climate/Thomas Auer, Transsolar.jpg";
 import BondanSusilo from "@/assets/speakers/Bondan Susilo.jpeg";
 import CandraSutama from "@/assets/speakers/Candra Sutama.jpg";
-import RyanzaPrasetya from "@/assets/speakers/Ryanza Prasetya.jpg";
+import RyanzaPrasetya from "@/assets/speakers/Ryanza Prasetya.png";
 import SilviaBenedito from "@/assets/speakers/Silvia Benedito.jpeg";
 import MyrnaAsnawati from "@/assets/speakers/Myrna Asnawati.jpeg";
 import BandungSahari from "@/assets/speakers/Bandung Sahari.jpeg";
@@ -372,9 +372,9 @@ export const Speakers = {
     image: placeholderPic,
   },
   MARKUS_EURING: {
-    name: "Dr. Markus Euring",
+    name: "PD Dr. Markus Euring",
     title:
-      "Researcher, Chair of Wood Technology and Wood-based Composites, University of Göttingen",
+      "Researcher, Departement for Wood Technology and Wood-based Composites, University of Göttingen",
     image: MarkusEuring,
   },
   ARDHASENA_SOPAHELUWAKAN: {
@@ -455,6 +455,7 @@ export const FixedSpeakersList = [
   Speakers.RUKKA,
   Speakers.GEORG,
   Speakers.JOKO,
+  Speakers.ARDHASENA_SOPAHELUWAKAN,
   Speakers.KLEINSCHMIT,
   Speakers.CANDRA_SUTAMA,
   Speakers.RYANZA,
@@ -466,7 +467,6 @@ export const FixedSpeakersList = [
   Speakers.LIM_MASULIN,
   Speakers.MARKUS_EURING,
   Speakers.SCHWEGLER,
-  Speakers.RYANZA,
 ];
 
 export const PANELISTS = [

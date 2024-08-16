@@ -37,6 +37,11 @@ const navItems: NavItem[] = [
     label: "About",
     submenus: [
       {
+        href: PATHS.ABOUT,
+        label: "About",
+        description: "Learn more about ICONIC's objectives and goals",
+      },
+      {
         href: PATHS.OUR_TEAM,
         label: "Our Team",
         description: "Meet our dedicated ICONIC 2024 team",
@@ -78,6 +83,11 @@ const navItems: NavItem[] = [
     href: PATHS.DURING_THE_STAY,
     label: "During the Stay",
     submenus: [
+      {
+        href: PATHS.DURING_THE_STAY,
+        label: "During the Stay",
+        description: "Learn more about your stay during the conference",
+      },
       {
         href: PATHS.PREPARATION,
         label: "Preparation",
@@ -161,10 +171,12 @@ export function IconicHeader() {
             {navItems.map((item, index) =>
               item.submenus ? (
                 <Collapsible className="grid gap-4" key={index}>
-                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90 py-2">
-                    {item.label}{" "}
-                    <ChevronRightIcon className="ml-auto h-5 w-5 transition-all" />
-                  </CollapsibleTrigger>
+                  <Link href={item.href}>
+                    <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90 py-2">
+                      {item.label}{" "}
+                      <ChevronRightIcon className="ml-auto h-5 w-5 transition-all" />
+                    </CollapsibleTrigger>
+                  </Link>
                   <CollapsibleContent>
                     <div className="-mx-6 grid gap-6 bg-muted p-6">
                       {item.submenus.map((submenu, subIndex) => (
