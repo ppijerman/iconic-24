@@ -144,7 +144,7 @@ function PlenarySession() {
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
               speakers={[
-                Speakers.DWIKORITA_KARNAWATI,
+                Speakers.ARDHASENA_SOPAHELUWAKAN,
                 Speakers.MYRNA_ASNAWATI,
                 Speakers.SILVIA_BENEDITO,
                 Speakers.PRABAHARYAKA,

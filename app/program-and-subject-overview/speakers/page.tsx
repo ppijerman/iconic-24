@@ -45,7 +45,7 @@ export default function SpeakersSection() {
   ];
 
   const speakersAdaptation = [
-    Speakers.DWIKORITA_KARNAWATI,
+    Speakers.ARDHASENA_SOPAHELUWAKAN,
     Speakers.MYRNA_ASNAWATI,
     Speakers.SILVIA_BENEDITO,
     Speakers.PRABAHARYAKA,
@@ -53,6 +53,7 @@ export default function SpeakersSection() {
   ];
 
   const speakersDecarbonization = [
+    Speakers.RYANZA,
     Speakers.GEORG_SCHILLER,
     Speakers.LIM_MASULIN,
     Speakers.MARKUS_EURING,

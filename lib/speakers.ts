@@ -87,6 +87,7 @@ import BandungSahari from "@/assets/speakers/Bandung Sahari.jpeg";
 import MarkusEuring from "@/assets/speakers/Markus Euring.jpg";
 import WisnuAdiwijoyo from "@/assets/speakers/Wisnu Adiwijoyo.jpg";
 import YosiasGandhi from "@/assets/speakers/Yosias Gandhi.jpg";
+import ArdhasenaSopaheluwakan from "@/assets/speakers/Ardhasena_Sopaheluwakan.jpeg";
 
 export const Speakers = {
   HAVAS: {
@@ -214,8 +215,7 @@ export const Speakers = {
   },
   RYANZA: {
     name: "Ryanza Prasetya",
-    title:
-      "CEO PT Qualitas Sertifikasi Indonesia",
+    title: "CEO PT Qualitas Sertifikasi Indonesia",
     image: RyanzaPrasetya,
   },
   HERSTATT: {
@@ -377,6 +377,12 @@ export const Speakers = {
       "Researcher, Chair of Wood Technology and Wood-based Composites, University of Göttingen",
     image: MarkusEuring,
   },
+  ARDHASENA_SOPAHELUWAKAN: {
+    name: "Dr. Ardhasena Sopaheluwakan",
+    title:
+      "Deputy Head for Climatology, at the Agency for Meteorology Climatology and Geophysics (BMKG)",
+    image: ArdhasenaSopaheluwakan,
+  },
   DWIKORITA_KARNAWATI: {
     name: "Prof. Dwikorita Karnawati",
     title:
@@ -452,7 +458,6 @@ export const FixedSpeakersList = [
   Speakers.KLEINSCHMIT,
   Speakers.CANDRA_SUTAMA,
   Speakers.RYANZA,
-  Speakers.DWIKORITA_KARNAWATI,
   Speakers.MYRNA_ASNAWATI,
   Speakers.SILVIA_BENEDITO,
   Speakers.PRABAHARYAKA,
@@ -469,4 +474,4 @@ export const PANELISTS = [
   Speakers.PRABAHARYAKA,
   Speakers.DESTI,
   Speakers.YOSIAS_GANDHI,
-]
+];
