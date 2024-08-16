@@ -213,9 +213,9 @@ export const Speakers = {
     image: britta,
   },
   RYANZA: {
-    name: "Ryanda Dwi Ryanza",
+    name: "Ryanza Prasetya",
     title:
-      "Director of Climate Change Adaptation, Ministry of National Development Planning (BAPPENAS)",
+      "CEO PT Qualitas Sertifikasi Indonesia",
     image: RyanzaPrasetya,
   },
   HERSTATT: {
