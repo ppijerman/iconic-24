@@ -30,6 +30,7 @@ export default function SpeakersSection() {
     Speakers.BIMO_KUSUMO,
     Speakers.BONDAN_SUSILO,
     Speakers.HERSTATT,
+    Speakers.RYANZA,
   ];
 
   const speakersCarbonCapture = [
@@ -53,7 +54,6 @@ export default function SpeakersSection() {
   ];
 
   const speakersDecarbonization = [
-    Speakers.RYANZA,
     Speakers.GEORG_SCHILLER,
     Speakers.LIM_MASULIN,
     Speakers.MARKUS_EURING,
