@@ -441,7 +441,7 @@ export const Speakers = {
   },
   GIOVANNI_PRADIPTA: {
     name: "Giovanni Maurice Pradipta",
-    title: "Policy Advisotr, Germanwatch",
+    title: "Policy Advisor, Germanwatch",
     image: GiovanniPradipta,
   },
 };
