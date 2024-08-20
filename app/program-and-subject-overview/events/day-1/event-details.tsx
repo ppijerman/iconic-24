@@ -140,6 +140,7 @@ function PlenarySession() {
                 Speakers.BIMO_KUSUMO,
                 Speakers.BONDAN_SUSILO,
                 Speakers.HERSTATT,
+                Speakers.RYANZA,
               ]}
             />
             <Session

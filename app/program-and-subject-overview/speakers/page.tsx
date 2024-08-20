@@ -35,7 +35,7 @@ export default function SpeakersSection() {
 
   const speakersCarbonCapture = [
     Speakers.CANDRA_SUTAMA,
-    Speakers.RYANZA,
+    Speakers.GIOVANNI_PRADIPTA,
     Speakers.SCHWEGLER,
   ];
 

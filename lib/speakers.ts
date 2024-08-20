@@ -88,6 +88,7 @@ import MarkusEuring from "@/assets/speakers/Markus Euring.jpg";
 import WisnuAdiwijoyo from "@/assets/speakers/Wisnu Adiwijoyo.jpg";
 import YosiasGandhi from "@/assets/speakers/Yosias Gandhi.jpg";
 import ArdhasenaSopaheluwakan from "@/assets/speakers/Ardhasena_Sopaheluwakan.jpeg";
+import GiovanniPradipta from "@/assets/speakers/Giovanni Pradipta.jpg";
 
 export const Speakers = {
   HAVAS: {
@@ -438,6 +439,11 @@ export const Speakers = {
     title: "Vice President of Sustainability, PT. Astra Agro Lestari Tbk",
     image: BandungSahari,
   },
+  GIOVANNI_PRADIPTA: {
+    name: "Giovanni Maurice Pradipta",
+    title: "Policy Advisotr, Germanwatch",
+    image: GiovanniPradipta,
+  },
 };
 
 export const FixedSpeakersList = [
@@ -467,6 +473,7 @@ export const FixedSpeakersList = [
   Speakers.LIM_MASULIN,
   Speakers.MARKUS_EURING,
   Speakers.SCHWEGLER,
+  Speakers.GIOVANNI_PRADIPTA,
 ];
 
 export const PANELISTS = [

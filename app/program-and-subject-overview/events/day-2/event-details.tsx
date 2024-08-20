@@ -76,7 +76,7 @@ function PlenarySession() {
             <EventSpeaker
               speakers={[
                 Speakers.CANDRA_SUTAMA,
-                Speakers.RYANZA,
+                Speakers.GIOVANNI_PRADIPTA,
                 Speakers.SCHWEGLER,
               ]}
             />

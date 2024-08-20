@@ -16,6 +16,7 @@ import logoZink from "@/assets/sponsors/Silver_Zinkpower.png";
 import logoAstra from "@/assets/sponsors/Platinum_Astra.png";
 import logoEcadin from "@/assets/sponsors/ECADIN_Bright.webp";
 import logoParagon from "@/assets/sponsors/Platinum_Paragon.png";
+import logoQSI from "@/assets/sponsors/Platinum_QSI.png";
 
 const scrollVariants = {
   animate: {
@@ -39,7 +40,7 @@ export function Partners() {
     },
     {
       name: "Astra International",
-      logo: logoAstra
+      logo: logoAstra,
     },
     {
       name: "University of Göttingen",
@@ -64,7 +65,11 @@ export function Partners() {
     {
       name: "Paragon",
       logo: logoParagon,
-    }
+    },
+    {
+      name: "QSI",
+      logo: logoQSI,
+    },
   ];
 
   const doubledSponsors = [...sponsors, ...sponsors, ...sponsors, ...sponsors];
