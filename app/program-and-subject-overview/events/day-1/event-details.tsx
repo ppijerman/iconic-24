@@ -67,7 +67,7 @@ function Sessions() {
         timeStart="10.30"
         timeEnd="12.30"
         title="Ministerial Talk: Financing Low-Carbon Development in Indonesia"
-        venue="Main Plenary-Hall (Hall 10), Zentralhörsaal-Gebäude (ZHG)"
+        venue="Zentrales Hörsaalgebäude (ZHG) 010"
         details={
           <div className="flex flex-col gap-2">
             <p>

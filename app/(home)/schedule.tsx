@@ -1,45 +1,85 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { PATHS } from "@/lib/constants";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardFooter,
+} from "@/components/ui/card";
 
 export function IconicSchedule() {
-  const abstractSubmissionDeadlines = [
-    { name: "First Call of Abstract", date: "March 25th - April 30th 2024" },
-
+  const schedule = [
     {
-      name: "First Issuance - Letter of Acceptance",
-      date: "May 9th 2024",
+      day: "04",
+      dayOfWeek: "Wednesday",
+      date: "September 04, 2024",
+      events: [
+        {
+          name: "Opening Ceremony",
+          time: "9:00",
+        },
+        {
+          name: "Ministerial Talk: Financing Low-Carbon Development in Indonesia",
+          time: "10:30",
+        },
+        {
+          name: "Decarbonizing the Industrial and Transport Sectors",
+          time: "13:30",
+        },
+        {
+          name: "Career Talk Paragon, Food Bazaar, Muslim wears Elita, PPI Jerman Merch",
+          time: "15:30",
+        },
+      ],
     },
     {
-      name: "Second Call of Abstract",
-      date: "May 15th - June 30th 2024",
+      day: "05",
+      dayOfWeek: "Thursday",
+      date: "September 05, 2024",
+      events: [
+        {
+          name: "Carbon Capture, Storage, and Removal: A Pathway to Low Carbon Development",
+          time: "9:00",
+        },
+        {
+          name: "Reducing AFOLU Emissions: Balancing Development and Conservation",
+          time: "11:00",
+        },
+        {
+          name: "Adaptation and Mitigation in the Built Environment in a Heating Climate",
+          time: "14:00",
+        },
+      ],
+      scientificConference: [
+        {
+          name: "Economic and Social Implication of Low Carbon Development",
+          room: "ZHG 007",
+        },
+        {
+          name: "Technological Innovation for Low Carbon Development",
+          room: "ZHG 006",
+        },
+      ],
     },
     {
-      name: "Second Issuance - Letter of Acceptance",
-      date: "July 9th 2024",
-    },
-    {
-      name: "Third Call of Abstract",
-      date: "July 15th - August 4th 2024",
-    },
-    {
-      name: "Third Issuance - Letter of Acceptance",
-      date: "August 15th 2024",
-    },
-  ];
-
-  const plenarySessions = [
-    {
-      name: "Opening Ceremony, Ministerial Talk, and Plenary Sessions",
-      date: "September 4th 2024",
-    },
-    {
-      name: "Plenary Sessions",
-      date: "September 5th 2024",
-    },
-    {
-      name: "Plenary Session, Meet the Industry, and Parallel Conference",
-      date: "September 6th 2024",
+      day: "06",
+      dayOfWeek: "Friday",
+      date: "September 06, 2024",
+      events: [
+        { name: "Green Financing and Sustainable Investments for Low Carbon Development", time: "9:00" },
+        { name: "Meet the Industry: Presentation of Companies", time: "11:15" },
+      ],
+      scientificConference: [
+        {
+          name: "Political Economy of Low Carbon Development within Global North and South Dynamics",
+          room: "ZHG 007",
+        },
+        {
+          name: "LCD in Built Environment",
+          room: "ZHG 006",
+        },
+      ],
     },
   ];
 
@@ -47,56 +87,50 @@ export function IconicSchedule() {
     <section className="bg-white w-full text-secondary">
       <div className="container flex flex-col items-center justify-center py-12 md:py-16 lg:py-20">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Schedule</h1>
-        <div className=" py-4 flex text-md items-center justify-center">
+        <div className="py-4 flex text-md items-center justify-center">
           <p>
             *Please note that schedule is subject to change. Stay tuned for more
             information!
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center">
-          <div className="flex flex-col w-full py-12 md:py-16 lg:py-20">
-            <h1 className="text-2xl md:text-4xl font-bold">
-              Abstract Submission
-            </h1>
-            <ul className="text-2xl md:text-3xl">
-              {abstractSubmissionDeadlines.map((deadline) => (
-                <li className="mt-7" key={deadline.name}>
-                  <div className="flex flex-col border-b-2">
-                    <h3 className="text-gray-500 text-md md:text-lg">
-                      {deadline.date}
-                    </h3>
-                    <h2 className="font-semibold text-xl md:text-2xl">
-                      {deadline.name}
-                    </h2>
-                    {deadline.name === "Abstract Submission" && (
-                      <div className="text-base font-medium flex flex-row gap-3">
-                        <p>Notification of Abstract Acceptance</p>
-                        <p>Peer-review</p>
-                        <p>Revision</p>
-                      </div>
-                    )}
+        <h1 className="font-semibold text-xl md:text-2xl pt-4">
+          September 4th - 6th 2024
+        </h1>
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 py-12 md:py-16">
+          {schedule.map((daySchedule, index) => (
+            <Card key={index} className="w-full h-full">
+              <CardHeader className="bg-secondary text-white p-4 rounded-t-md">
+                <div className="text-4xl font-bold">{daySchedule.day}</div>
+                <div className="text-sm">{daySchedule.dayOfWeek}</div>
+              </CardHeader>
+              <CardContent className="p-4 flex flex-col gap-4 w-full">
+                {daySchedule.events.map((event, idx) => (
+                  <div className="flex items-center justify-between" key={idx}>
+                    <div className="font-medium">{event.name}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {event.time}
+                    </div>
                   </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex flex-col w-full py-12 md:py-16 lg:py-20">
-            <h1 className="text-2xl md:text-4xl font-bold">D-Day*</h1>
-            <ul className="text-2xl md:text-3xl">
-              {plenarySessions.map((event) => (
-                <li className="mt-7" key={event.name}>
-                  <div className="flex flex-col border-b-2">
-                    <h3 className="text-gray-500 text-md md:text-lg">
-                      {event.date}
-                    </h3>
-                    <h2 className="font-semibold text-xl md:text-2xl">
-                      {event.name}
-                    </h2>
+                ))}
+                {daySchedule.scientificConference && (
+                  <div className="flex items-center justify-between border-t-2 border-secondary py-2 mt-auto">
+                    <div className="font-bold">Scientific Conference</div>
+                    <div className="text-sm text-muted-foreground">
+                      9:00 - 13:00
+                    </div>
                   </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+                )}
+                {daySchedule.scientificConference?.map((event, idx) => (
+                  <div className="flex items-center justify-between" key={idx}>
+                    <div className="font-medium">{event.name}</div>
+                    <div className="text-sm text-muted-foreground text-right">
+                      {event.room}
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         <Link

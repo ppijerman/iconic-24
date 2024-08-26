@@ -22,6 +22,7 @@ function Rundown() {
     <div className="flex flex-col gap-12 leading-relaxed">
       <PreSession />
       <PlenarySession />
+      <ParallelSessionsOne />
     </div>
   );
 }
@@ -42,7 +43,7 @@ function PreSession() {
         timeStart="08:45"
         timeEnd="09:00"
         title="Opening Remarks"
-        venue="ZHG – Main Lecture Hall"
+        venue="Zentrales Hörsaalgebäude (ZHG) 010"
         details="Opening by Sekar Yunita, Director of ICONIC 2024"
       />
     </div>
@@ -200,12 +201,125 @@ function PlenarySession() {
 }
 
 // Parallel Sessions Component
-// function ParallelSessions() {
-//   return (
-//     <div className="flex flex-col gap-8 leading-relaxed">
-//       <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
-//         Plenary Session
-//       </h3>
-//     </div>
-//   );
-// }
+function ParallelSessionsOne() {
+  return (
+    <div className="flex flex-col gap-8 leading-relaxed">
+      <h3 className="text-xl font-medium md:text-2xl pt-4 border-b-2 pb-2">
+        Parallel Conference Session 1
+      </h3>
+      <Session
+        timeStart="09:00"
+        timeEnd="13:00"
+        title="Economic and Social Implication of LCD"
+        venue="Zentrales Hörsaalgebäude (ZHG) 006"
+        details={
+          <div className="flex flex-col gap-2">
+            <p>
+              The session &quot;Economic and Social Implication of Low Carbon
+              Development&quot; will explore the intersection of environmental
+              sustainability and economic and social progress. Low carbon
+              development strategies aim to mitigate climate change impacts
+              through energy efficiency, renewable energy sources, and improved
+              urban planning. The economic implications include job creation in
+              new industries and transformation of existing sectors, while
+              social implications encompass lifestyle changes, reductions in
+              energy poverty, and improved public health. The session will
+              discuss the challenges and opportunities these strategies present,
+              requiring multidisciplinary insights and collaboration among
+              policymakers, businesses, and communities. The session will
+              feature diverse research topics presented by scholars and experts,
+              fostering comprehensive understanding and dialogue on the economic
+              and social implications of low carbon development.
+            </p>
+            <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
+            <EventSpeaker speakers={[Speakers.YOSIAS_GANDHI]} />
+          </div>
+        }
+      />
+      <Session
+        timeStart="09:00"
+        timeEnd="13:00"
+        title="Technological Innovation for Low-Carbon Development"
+        venue="Zentrales Hörsaalgebäude (ZHG) 007"
+        details={
+          <div className="flex flex-col gap-2">
+            <p>
+              This session will explore innovative technical solutions
+              characterized by low emission intensity compared to
+              state-of-the-art alternatives. This session will highlight the
+              importance of such technologies in mitigating climate change and
+              advancing low-carbon development. Discussions will focus on
+              increasing the utilization of renewable resources, optimizing
+              energy efficiency, and developing competitive alternatives to
+              fossil fuels. Through this scholarly exchange, participants will
+              gain a comprehensive understanding of the latest advancements and
+              strategies in low-carbon technology.
+            </p>
+            <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
+            <EventSpeaker speakers={[Speakers.DESTI]} />
+          </div>
+        }
+      />
+    </div>
+  );
+}
+
+function SharedDetailsParallelSession() {
+  return (
+    <section className="bg-background text-foreground pt-10 pb-4">
+      <div className="">
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+              Conference Session Details
+            </h2>
+            <p className="text-muted-foreground">
+              Learn more about the format of the ICONIC parallel conference
+              sessions.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h3 className="text-lg font-medium">Presenters</h3>
+                <p className="text-muted-foreground">
+                  Researchers can deliver their findings either onsite or
+                  online.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium">Audience</h3>
+                <p className="text-muted-foreground">
+                  Attendees can participate in the sessions onsite or remotely.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h3 className="text-lg font-medium">Date & Time</h3>
+                <p className="text-muted-foreground">
+                  Thursday, September 5th, 2024 | 09:00 - 13:00 CEST
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium">Location</h3>
+                <p className="text-muted-foreground">
+                  Zentrales Hörsaalgebäude 006 & 007, University of Göttingen
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium">Session Format</h3>
+              <p className="text-muted-foreground">
+                Conference session and presentation of submissions. Each
+                presenter has 10 minutes to share their findings, followed by a
+                5-minute Q&A. The chair will summarize the discussions and
+                suggest future research and policy directions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
