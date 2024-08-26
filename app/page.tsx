@@ -14,11 +14,11 @@ export default function Home() {
     <main className="w-screen">
       <HomePage />
       <Countdown />
-      <DonationSection />
       <Introduction />
       <ThemeOverview />
       <IconicSchedule />
       <SpeakersSection />
+      <DonationSection />
       <CallToActionRegister />
       <StayInformation />
       <Partners />
