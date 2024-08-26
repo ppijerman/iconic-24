@@ -83,10 +83,6 @@ const mediaPartners = [
     logo: logoPPID,
   },
   {
-    name: "IFSA",
-    logo: logoIFSA,
-  },
-  {
     name: "Genau Indonesia",
     logo: logoGenauID,
   },
@@ -121,10 +117,6 @@ const mediaPartners = [
   {
     name: "Enter Nusantara",
     logo: logoEnterNusantara,
-  },
-  {
-    name: "Doctrine UK",
-    logo: logoDoctrineUK,
   },
   {
     name: "RPD",
