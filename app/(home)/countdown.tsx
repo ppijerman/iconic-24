@@ -41,7 +41,7 @@ export function Countdown() {
           Transformation For Low-Carbon Development
         </h2>
       </div>
-      <div className="grid grid-cols:2 md:grid-cols-4 items-center w-full sm:w-full lg:w-1/2 py-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 items-center w-full lg:w-1/2 py-5">
         {Object.entries(countdown).map(([key, value]) => (
           <div key={key} className="flex flex-col items-center space-y-1">
             <strong
