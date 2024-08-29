@@ -90,7 +90,7 @@ export function IconicSchedule() {
         <div className="py-4 flex text-md items-center justify-center">
           <p>
             *Please note that schedule is subject to change. Stay tuned for more information, 
-            <br />and don't forget to check out the <Link href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view" className="text-accent" target="_blank">event booklet</Link> for the latest updates and details!
+            <br />and don&apos;t forget to check out the <Link href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view" className="text-accent" target="_blank">event booklet</Link> for the latest updates and details!
           </p>
         </div>
         <h1 className="font-semibold text-xl md:text-2xl pt-4">
