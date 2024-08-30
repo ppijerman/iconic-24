@@ -318,7 +318,7 @@ function MeetTheIndustry() {
                 </a>
               </li>
             </ul>
-            <Link href="#">
+            <Link href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view" target="_blank">
               <p className="flex gap-2 items-center text-primary2 hover:text-accent2 transition font-bold text-lg">
                 Check out their company profiles{" "}
                 <ArrowRightIcon className="h-6 w-6" />

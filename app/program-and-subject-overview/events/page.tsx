@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { PATHS } from "@/lib/constants";
 import {
   Card,
@@ -36,7 +37,7 @@ export default function Page() {
     <main className="min-h-screen flex justify-center w-full">
       <div className="container pb-32 pt-10 md:pt-20">
         <h1 className="font-bold text-3xl md:text-5xl">EVENTS</h1>
-        <div className="my-16 flex flex-col gap-10">
+        <div className="mt-16 mb-7 flex flex-col gap-10">
           <div className="grid grid-cols-1 gap-5">
             {events.map((event) => (
               <Link key={event.title} href={event.href} className="group">
@@ -57,14 +58,19 @@ export default function Page() {
             ))}
           </div>
           <p className="">
-            Your event booklet will provide detailed schedules, speaker bios,
-            session descriptions, profiles of companies participating in the
-            &quot;Meet the Industry&quot; session, and other essential
-            information to help you make the most out of your ICONIC 2024
-            experience.
+            Enhance your ICONIC 2024 experience by exploring our comprehensive event booklet. 
+            Discover detailed schedules, speaker bios, in-depth session descriptions, 
+            and exclusive profiles of &quot;Meet the Industry&quot; companies. 
+            All designed to help you get the most out of the event.
           </p>
-          <p>Stay tuned for updates on how to access your event booklet!</p>
         </div>
+        <Button
+                  className="bg-accent w-80 h-10 text-white hover:bg-primary2 px-8 md:p-8 text-xl font-bold md:text-2xl shadow-lg"
+                >
+                  <Link href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view" target="_blank">
+                    Explore the Booklet
+                  </Link>
+        </Button>
       </div>
     </main>
   );
