@@ -8,6 +8,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { BiBook } from "react-icons/bi";
+import { m } from "framer-motion";
 
 export function IconicSchedule() {
   const schedule = [
@@ -51,6 +52,10 @@ export function IconicSchedule() {
           name: "Adaptation and Mitigation in the Built Environment in a Heating Climate",
           time: "14:00",
         },
+        {
+          name: "Decarbonization and Circularity in the Construction Industry",
+          time: "16:15",
+        }
       ],
       scientificConference: [
         {

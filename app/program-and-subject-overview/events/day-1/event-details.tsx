@@ -144,14 +144,14 @@ function PlenarySession() {
                 Speakers.RYANZA,
               ]}
             />
-            <Session
-              timeStart="15:30"
-              timeEnd="17:00"
-              title="Networking Break"
-              venue="Foyer (Welcoming Hall), Zentrales Hörsaalgebäude (ZHG)"
-            />
           </div>
         }
+      />
+      <Session
+        timeStart="15:30"
+        timeEnd="17:00"
+        title="Career Talk Paragon, Food Bazaar, Muslim wears Elita, PPI Jerman Merch"
+        venue="Foyer (Welcoming Hall), Zentrales Hörsaalgebäude (ZHG)"
       />
     </div>
   );

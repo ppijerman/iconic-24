@@ -93,6 +93,7 @@ import DavidTantow from "@/assets/speakers/David Tantow.jpeg";
 import IDewaGede from "@/assets/speakers/I Dewa Gede Arya Putra.jpeg";
 import TyasPutriSativa from "@/assets/speakers/Tyas Putri Sativa.jpeg";
 import ZulfikarAdlanNadzir from "@/assets/reviewers/Zulfikar Adlan Nadzir.jpg";
+import LaksmiDhewanthi from "@/assets/speakers/Laksmi Dhewanthi.jpg";
 
 export const Speakers = {
   IDewaGede: {
@@ -289,7 +290,7 @@ export const Speakers = {
   DEWANTHI: {
     name: "Laksmi Dhewanthi",
     title: "Director-General of Climate Change Control",
-    image: placeholderPic,
+    image: LaksmiDhewanthi,
   },
   DIRK_MEYER: {
     name: "Dirk Meyer",
@@ -474,10 +475,10 @@ export const Speakers = {
 
 export const FixedSpeakersList = [
   Speakers.HAVAS,
-  Speakers.SITI_NURBAYA,
+  Speakers.DEWANTHI,
   Speakers.BERNHARDT,
   Speakers.DESTI,
-  Speakers.SVENJA,
+  Speakers.DAVID_TANTOW,
   Speakers.RACHMAT,
   Speakers.BIMO_KUSUMO,
   Speakers.BONDAN_SUSILO,
@@ -487,7 +488,7 @@ export const FixedSpeakersList = [
   Speakers.RUKKA,
   Speakers.GEORG,
   Speakers.JOKO,
-  Speakers.ARDHASENA_SOPAHELUWAKAN,
+  Speakers.IDewaGede,
   Speakers.KLEINSCHMIT,
   Speakers.CANDRA_SUTAMA,
   Speakers.RYANZA,
@@ -500,6 +501,10 @@ export const FixedSpeakersList = [
   Speakers.MARKUS_EURING,
   Speakers.SCHWEGLER,
   Speakers.GIOVANNI_PRADIPTA,
+  Speakers.TYAS_PUTRI_SATIVA,
+  Speakers.WISNU_HARTO,
+  Speakers.ZULFIKAR_ADLAN,
+
 ];
 
 export const PANELISTS = [

@@ -17,6 +17,7 @@ export default function SpeakersSection() {
     Speakers.BERNHARDT,
     Speakers.SEKAR,
     Speakers.AGNIA,
+    Speakers.DESTI,
   ];
 
   const speakersMinisterial = [
