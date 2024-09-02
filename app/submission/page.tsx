@@ -5,9 +5,9 @@ export default function Page() {
   return (
     <main className="min-h-screen flex justify-center space-y-6 bg-white">
       <div className="container py-12 md:py-16">
-        <div className="space-y-2 border-b-2 py-3 mb-10">
+        <div className="space-y-2 py-6 mb-10">
           <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl py-12 md:py-16">
-            Thank you.
+            A heartfelt thank you.
           </h1>
           <p className="md:text-lg/relaxed lg:text-xl/relaxed xl:text-xl/relaxed font-normal py-4">
             The ICONIC 2024 team would like to thank you for submitting your
@@ -15,7 +15,7 @@ export default function Page() {
             contribution to the event and your commitment to advancing knowledge
             in the field.
           </p>
-
+          <h2 className="pt-16 pb-4 font-bold text-3xl md:text-4xl">Book of Abstracts (Preview)</h2>
           <p className="md:text-lg/relaxed lg:text-xl/relaxed xl:text-xl/relaxed font-normal py-4">
             We are also pleased to inform you that all accepted abstracts will
             be included in the Book of Abstracts, published by Cullivier Verlag

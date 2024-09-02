@@ -113,7 +113,7 @@ const navItems: NavItem[] = [
   },
   { href: PATHS.PARTNERSHIP, label: "Partnership" },
   { href: PATHS.EVENT_REGISTRATION, label: "Registration" },
-  { href: PATHS.SUBMISSION, label: "Abstract Submission" },
+  { href: PATHS.SUBMISSION, label: "Book of Abstract" },
 ];
 
 export function IconicHeader() {
