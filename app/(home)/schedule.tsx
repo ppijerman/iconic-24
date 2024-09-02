@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardFooter,
 } from "@/components/ui/card";
+import { BiBook } from "react-icons/bi";
 
 export function IconicSchedule() {
   const schedule = [
@@ -67,7 +68,10 @@ export function IconicSchedule() {
       dayOfWeek: "Friday",
       date: "September 06, 2024",
       events: [
-        { name: "Green Financing and Sustainable Investments for Low Carbon Development", time: "9:00" },
+        {
+          name: "Green Financing and Sustainable Investments for Low Carbon Development",
+          time: "9:00",
+        },
         { name: "Meet the Industry: Presentation of Companies", time: "11:15" },
       ],
       scientificConference: [
@@ -87,15 +91,22 @@ export function IconicSchedule() {
     <section className="bg-white w-full text-secondary">
       <div className="container flex flex-col items-center justify-center py-12 md:py-16 lg:py-20">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Schedule</h1>
-        <div className="py-4 flex text-md items-center justify-center">
-          <p>
-            *Please note that schedule is subject to change. Stay tuned for more information, 
-            <br />and don&apos;t forget to check out the <Link href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view" className="text-accent" target="_blank">event booklet</Link> for the latest updates and details!
-          </p>
-        </div>
         <h1 className="font-semibold text-xl md:text-2xl pt-4">
           September 4th - 6th 2024
         </h1>
+        <div className="py-4 flex text-md items-center justify-center">
+          <Link
+            href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view"
+            className="text-white p-4 bg-secondary rounded-md hover:bg-primary2 transition duration-300"
+            target="_blank"
+          >
+            <div className="flex items-center gap-2">
+              <BiBook className="w-8 h-8" />
+              <p>Access ICONIC event booklet</p>
+            </div>
+          </Link>
+        </div>
+
         <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 py-12 md:py-16">
           {schedule.map((daySchedule, index) => (
             <Card key={index} className="w-full h-full">

@@ -65,7 +65,7 @@ export default function Page() {
           </p>
         </div>
         <Button
-                  className="bg-accent w-80 h-10 text-white hover:bg-primary2 px-8 md:p-8 text-xl font-bold md:text-2xl shadow-lg"
+                  className="bg-secondary w-80 h-10 text-white hover:bg-primary2 px-8 md:p-8 text-xl font-bold md:text-2xl shadow-lg"
                 >
                   <Link href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view" target="_blank">
                     Explore the Booklet
