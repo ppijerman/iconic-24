@@ -53,7 +53,7 @@ function PreSession() {
         details={
           <div className="flex flex-col gap-2">
             <p>
-              Opening remarks by Risma Rizkia Rurnianti as the Editor In Chief
+              Opening remarks by Risma Rizkia Nurdianti as the Editor In Chief
               of ICONIC 2024.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
@@ -64,8 +64,6 @@ function PreSession() {
     </div>
   );
 }
-
-
 
 function ParallelSessionsTwo() {
   return (
@@ -109,7 +107,7 @@ function ParallelSessionsTwo() {
       <Session
         timeStart="09:00"
         timeEnd="13:00"
-        title="Low-Carbon Development in Built Environment"
+        title="Low-Carbon Development of the Built Environment"
         venue="Zentrales Hörsaalgebäude (ZHG) 007"
         details={
           <div className="flex flex-col gap-2">
@@ -126,7 +124,7 @@ function ParallelSessionsTwo() {
               environmental imperatives.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
-            <EventSpeaker speakers={[Speakers.PRABAHARYAKA]} />
+            <EventSpeaker speakers={[Speakers.ZULFIKAR_ADLAN]} />
           </div>
         }
       />
@@ -174,8 +172,7 @@ function SharedDetailsParallelSession() {
               <div>
                 <h3 className="text-lg font-medium">Location</h3>
                 <p className="text-muted-foreground">
-                  Zentrales Hörsaalgebäude 006 & 007, University of
-                  Göttingen
+                  Zentrales Hörsaalgebäude 006 & 007, University of Göttingen
                 </p>
               </div>
             </div>
@@ -243,8 +240,8 @@ function MeetTheIndustry() {
       />
 
       <Session
-        timeStart="11:00"
-        timeEnd="17:00"
+        timeStart="11:15"
+        timeEnd="16:00"
         title="Presentation of Companies"
         venue="Main Plenary-Hall (Hall 10), Zentrales Hörsaalgebäude (ZHG)"
         details={
@@ -318,7 +315,10 @@ function MeetTheIndustry() {
                 </a>
               </li>
             </ul>
-            <Link href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view" target="_blank">
+            <Link
+              href="https://drive.google.com/file/d/17ttyJ_toEDUmedjMbszCB5zhKnBU6B--/view"
+              target="_blank"
+            >
               <p className="flex gap-2 items-center text-primary2 hover:text-accent2 transition font-bold text-lg">
                 Check out their company profiles{" "}
                 <ArrowRightIcon className="h-6 w-6" />
@@ -326,6 +326,13 @@ function MeetTheIndustry() {
             </Link>
           </div>
         }
+      />
+
+      <Session
+        timeStart="16:00"
+        timeEnd="16:30"
+        title="Closing Ceremony"
+        venue="Foyer, Zentrales Hörsaalgebäude (ZHG)"
       />
     </div>
   );

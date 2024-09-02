@@ -145,7 +145,7 @@ function PlenarySession() {
             <h3 className="pt-2 font-semibold text-xl">Speakers</h3>
             <EventSpeaker
               speakers={[
-                Speakers.ARDHASENA_SOPAHELUWAKAN,
+                Speakers.IDewaGede,
                 Speakers.MYRNA_ASNAWATI,
                 Speakers.SILVIA_BENEDITO,
                 Speakers.PRABAHARYAKA,
@@ -256,7 +256,7 @@ function ParallelSessionsOne() {
               strategies in low-carbon technology.
             </p>
             <h3 className="pt-2 font-semibold text-xl">Conference Chair</h3>
-            <EventSpeaker speakers={[Speakers.DESTI]} />
+            <EventSpeaker speakers={[Speakers.TYAS_PUTRI_SATIVA]} />
           </div>
         }
       />

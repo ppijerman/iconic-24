@@ -38,7 +38,7 @@ function Sessions() {
       <Session
         timeStart="09:00"
         timeEnd="10:30"
-        title="Opening Remarks"
+        title="Opening Ceremony"
         venue="Foyer, Zentrales Hörsaalgebäude (ZHG)"
         details={
           <div className="flex flex-col gap-2">
@@ -58,14 +58,15 @@ function Sessions() {
                 Speakers.BERNHARDT,
                 Speakers.SEKAR,
                 Speakers.AGNIA,
+                Speakers.DESTI,
               ]}
             />
           </div>
         }
       />
       <Session
-        timeStart="10.30"
-        timeEnd="12.30"
+        timeStart="10.45"
+        timeEnd="13.00"
         title="Ministerial Talk: Financing Low-Carbon Development in Indonesia"
         venue="Zentrales Hörsaalgebäude (ZHG) 010"
         details={
@@ -87,16 +88,16 @@ function Sessions() {
             <EventSpeaker
               speakers={[
                 Speakers.HAVAS,
-                Speakers.SVENJA,
-                Speakers.SITI_NURBAYA,
+                Speakers.DEWANTHI,
+                Speakers.DAVID_TANTOW,
               ]}
             />
           </div>
         }
       />
       <Session
-        timeStart="12:30"
-        timeEnd="13:30"
+        timeStart="13:00"
+        timeEnd="14:00"
         title="Lunch Break"
         venue="Foyer, Zentralhörsaal-Gebäude (ZHG)"
         details="Lunch session of all invited guests, partners, and participants of ICONIC 2024 that would also serve as one of the numerous networking opportunities between the diverse participants and stakeholders of ICONIC 2024."

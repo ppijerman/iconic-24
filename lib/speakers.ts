@@ -89,8 +89,23 @@ import WisnuAdiwijoyo from "@/assets/speakers/Wisnu Adiwijoyo.jpg";
 import YosiasGandhi from "@/assets/speakers/Yosias Gandhi.jpg";
 import ArdhasenaSopaheluwakan from "@/assets/speakers/Ardhasena_Sopaheluwakan.jpeg";
 import GiovanniPradipta from "@/assets/speakers/Giovanni Pradipta.jpg";
+import DavidTantow from "@/assets/speakers/David Tantow.jpeg";
+import IDewaGede from "@/assets/speakers/I Dewa Gede Arya Putra.jpeg";
+import TyasPutriSativa from "@/assets/speakers/Tyas Putri Sativa.jpeg";
+import ZulfikarAdlanNadzir from "@/assets/reviewers/Zulfikar Adlan Nadzir.jpg";
 
 export const Speakers = {
+  IDewaGede: {
+    name: "I Dewa Gede Arya Putra",
+    title:
+      "Engineer of Indonesia Agency for Meteorology, Climatology, and Geophysics (BMKG)",
+    image: IDewaGede,
+  },
+  TYAS_PUTRI_SATIVA: {
+    name: "Tyas Putri Sativa, M.Sc.",
+    title: "Environmental Engineering Student at the University of Göttingen",
+    image: TyasPutriSativa,
+  },
   HAVAS: {
     name: "Arif Havas Oegroseno",
     title: "Indonesian Ambassador for the Federal Republic of Germany",
@@ -390,11 +405,22 @@ export const Speakers = {
       "Head of Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG)",
     image: dwikorita,
   },
+  DAVID_TANTOW: {
+    name: "Dr. David Tantow",
+    title:
+      "Deputy Head of Division Southeast Asia, BMZ Ministry of the Federal Republic of Germany",
+    image: DavidTantow,
+  },
   SILVIA_BENEDITO: {
     name: "Prof. Silvia Benedito",
     title:
       "Associate Professor at Harvard Graduate School of Design and Climate Adaptation Consultant at UNIOLA",
     image: SilviaBenedito,
+  },
+  ZULFIKAR_ADLAN: {
+    name: "Zulfikar Adlan",
+    title: "Geomatics Engineer, The University of Bonn",
+    image: ZulfikarAdlanNadzir,
   },
   RISMA_RIZKIA: {
     name: "Risma Rizkia Nurdianti",
@@ -402,7 +428,7 @@ export const Speakers = {
     image: rismaImg,
   },
   WISNU_HARTO: {
-    name: "Wisnu Harto Adiwijoyo, Ph.D.",
+    name: "Wisnu Harto Adiwijoyo",
     title: "Ph.D., Research Analyst at the World Bank Group",
     image: WisnuAdiwijoyo,
   },

@@ -143,7 +143,8 @@ export default function Registration() {
                   <h3 className="text-lg font-semibold">Day 1</h3>
                   <div className="flex flex-col gap-2">
                     <p className="bg-primary text-black p-4">Opening Session</p>
-                    <p className="bg-secondary text-white p-4">
+
+                    <p className="bg-accent text-white p-4">
                       Ministerial Talk
                     </p>
                     <p className="bg-accent2 text-white p-4">Plenary Talk</p>
@@ -161,6 +162,9 @@ export default function Registration() {
                 <div className="flex flex-col gap-4 bg-gray-100 text-secondary rounded-lg p-4">
                   <h3 className="text-lg font-semibold">Day 2</h3>
                   <div className="flex flex-col gap-2">
+                    <p className="bg-primary3 text-white p-4">
+                      Scientific Conference
+                    </p>
                     <p className="bg-accent2 text-white p-4">Plenary Talk</p>
                   </div>
                   <Link
@@ -176,10 +180,10 @@ export default function Registration() {
                 <div className="flex flex-col gap-4 bg-gray-100 text-secondary rounded-lg p-4">
                   <h3 className="text-lg font-semibold">Day 3</h3>
                   <div className="flex flex-col gap-2">
-                    <p className="bg-primary2 text-white p-4">
-                      International Conference
+                    <p className="bg-primary3 text-white p-4">
+                      Scientific Conference
                     </p>
-                    <p className="bg-accent text-white p-4">
+                    <p className="bg-primary2 text-white p-4">
                       Meet The Industry
                     </p>
                   </div>
