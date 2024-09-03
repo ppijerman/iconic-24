@@ -49,7 +49,7 @@ function PreSession() {
         timeStart="08:45"
         timeEnd="09:00"
         title="Opening Remarks"
-        venue="Zenraler Hörsaalgebäude (ZHG) 010"
+        venue="Zentrales Hörsaalgebäude (ZHG) 010"
         details={
           <div className="flex flex-col gap-2">
             <p>

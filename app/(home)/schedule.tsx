@@ -33,6 +33,10 @@ export function IconicSchedule() {
           name: "Career Talk Paragon, Food Bazaar, Muslim wears Elita, PPI Jerman Merch",
           time: "15:30",
         },
+        {
+          name: "Career Talk Indonesian Professionals Association",
+          time: "16:15",
+        },
       ],
     },
     {
@@ -55,7 +59,7 @@ export function IconicSchedule() {
         {
           name: "Decarbonization and Circularity in the Construction Industry",
           time: "16:15",
-        }
+        },
       ],
       scientificConference: [
         {

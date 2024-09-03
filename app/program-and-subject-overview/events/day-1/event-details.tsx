@@ -147,11 +147,19 @@ function PlenarySession() {
           </div>
         }
       />
+
       <Session
         timeStart="15:30"
         timeEnd="17:00"
         title="Career Talk Paragon, Food Bazaar, Muslim wears Elita, PPI Jerman Merch"
         venue="Foyer (Welcoming Hall), Zentrales Hörsaalgebäude (ZHG)"
+      />
+
+      <Session
+        timeStart="16:15"
+        timeEnd="17:15"
+        title="Career Talk Indonesian Professionals Association"
+        venue="Zentrales Hörsaalgebäude (ZHG) 007"
       />
     </div>
   );

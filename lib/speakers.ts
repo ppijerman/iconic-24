@@ -419,7 +419,7 @@ export const Speakers = {
     image: SilviaBenedito,
   },
   ZULFIKAR_ADLAN: {
-    name: "Zulfikar Adlan",
+    name: "Zulfikar Adlan Nadzir",
     title: "Geomatics Engineer, The University of Bonn",
     image: ZulfikarAdlanNadzir,
   },
@@ -434,7 +434,7 @@ export const Speakers = {
     image: WisnuAdiwijoyo,
   },
   YOSIAS_GANDHI: {
-    name: "Yosias Gandhi",
+    name: "Yosias Gandhi, Ph.D.",
     title:
       "Ph.D Candidate in the Department of Tropical Silviculture and Forest Ecology, Georg-August-University of Göttingen",
     image: YosiasGandhi,
