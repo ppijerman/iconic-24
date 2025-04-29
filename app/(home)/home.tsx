@@ -52,27 +52,6 @@ export function HomePage() {
               </h1>
             </motion.div>
           </div>
-
-          {/* <SecondCall /> */}
-          <div className="flex flex-col md:flex-row justify-center items-center w-full text-secondary py-12 md:py-16">
-            <div className="bg-gradient-to-r from-[#e3e3e5] to-transparent text-2xl w-full flex flex-col gap-2 font-semibold">
-              <p className="text-white bg-secondary font-medium text-xl max-w-5xl p-4 leading-tight">
-                Connect with global leaders, share groundbreaking ideas, and
-                contribute to a more inclusive, sustainable world.
-              </p>
-              <h2 className="px-4 font-bold text-3xl md:text-5xl drop-shadow-lg shadow-white">
-                Göttingen
-              </h2>
-              <h2 className="px-4 py-2">September 4th - 6th 2024</h2>
-            </div>
-            <div className="flex flex-col md:flex-row w-full gap-y-4 gap-x-10 py-10 px-6">
-              <Link href={PATHS.EVENT_REGISTRATION} className="w-full">
-                <div className="text-2xl flex flex-row gap-2 bg-secondary text-white items-center justify-center group py-5 px-16 hover:bg-primary2 hover:ring-primary2 transition duration-150 shadow-lg rounded-lg">
-                  <h1 className="font-bold">Get your tickets!</h1>
-                </div>
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </main>
